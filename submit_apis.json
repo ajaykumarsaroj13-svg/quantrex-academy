@@ -1,0 +1,3463 @@
+{
+  "https://accounts.examgoal.com/api/v1/auth/phone/supports": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "EG",
+        "name": "Egypt",
+        "phonePrefix": "+20",
+        "sampleNumber": "+20 10 01234567",
+        "flag": "https://flagcdn.com/w40/eg.webp"
+      },
+      {
+        "id": "IN",
+        "name": "India",
+        "phonePrefix": "+91",
+        "sampleNumber": "+91 81234 56789",
+        "flag": "https://flagcdn.com/w40/in.webp"
+      },
+      {
+        "id": "NP",
+        "name": "Nepal",
+        "phonePrefix": "+977",
+        "sampleNumber": "+977 984 1234567",
+        "flag": "https://flagcdn.com/w40/np.webp"
+      }
+    ]
+  },
+  "https://accounts.examgoal.com/api/v1/auth/phone/default": {
+    "statusCode": 0,
+    "data": {
+      "id": "IN",
+      "name": "India",
+      "phonePrefix": "+91",
+      "flag": "https://flagcdn.com/w40/in.webp"
+    }
+  },
+  "https://accounts.examgoal.com/api/_nuxt_icon/lucide.json?icons=chevron-down": {
+    "prefix": "lucide",
+    "icons": {
+      "chevron-down": {
+        "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m6 9l6 6l6-6\"/>"
+      }
+    },
+    "lastModified": 1742538041,
+    "width": 24,
+    "height": 24
+  },
+  "https://accounts.examgoal.com/api/_nuxt_icon/lucide.json?icons=refresh-cw": {
+    "prefix": "lucide",
+    "icons": {
+      "refresh-cw": {
+        "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M3 12a9 9 0 0 1 9-9a9.75 9.75 0 0 1 6.74 2.74L21 8\"/><path d=\"M21 3v5h-5m5 4a9 9 0 0 1-9 9a9.75 9.75 0 0 1-6.74-2.74L3 16\"/><path d=\"M8 16H3v5\"/></g>"
+      }
+    },
+    "lastModified": 1742538041,
+    "width": 24,
+    "height": 24
+  },
+  "https://accounts.examgoal.com/api/v1/auth/login/phone": {
+    "statusCode": 0,
+    "data": {
+      "isFirstLogin": false
+    }
+  },
+  "https://room.examgoal.com/api/v1/app/user/ping": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v1/auth/profile/me": {
+    "statusCode": 0,
+    "data": {
+      "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+      "displayName": "Ajay Kumar",
+      "firstName": "Ajay Kumar",
+      "middleName": null,
+      "lastName": null,
+      "email": "ajaykumarsaroj13@gmail.com",
+      "emailVerified": true,
+      "phone": "+917750858874",
+      "phoneVerified": true,
+      "dateOfBirth": null,
+      "gender": null,
+      "picture": "https://usercontent-cdn.examgoal.net/fly/@width/dp/35d44b89-383e-43d0-9194-d724d4617d73/picture.webp?lup=1761552853842",
+      "providers": [
+        "provider/google"
+      ],
+      "status": "ACTIVE",
+      "tokenIssuedAfter": 1655726192922,
+      "lastPasswordChangedAt": 1773898194188,
+      "createdAt": 1655726192922,
+      "userName": "ajaykumar_4991",
+      "subscription": null,
+      "subscriptionV2": {
+        "expireAt": 1817645456289,
+        "extras": [],
+        "gateway": "razorpay",
+        "lastUpdatedAt": 1754573456289,
+        "multiply": 1,
+        "orderId": "order_R2SgPDFGW5Gar1",
+        "startedAt": 1754573456289,
+        "status": "ACTIVE",
+        "subscriptionId": "examgoal_pass_2_years",
+        "title": "2 Years",
+        "type": "examgoal_pass",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73"
+      }
+    }
+  },
+  "https://room.examgoal.com/api/v2/subscription/shift": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v2/subscription/subscription": {
+    "statusCode": 0,
+    "data": {
+      "expireAt": 1817645456289,
+      "extras": [],
+      "gateway": "razorpay",
+      "lastUpdatedAt": 1754573456289,
+      "multiply": 1,
+      "orderId": "order_R2SgPDFGW5Gar1",
+      "startedAt": 1754573456289,
+      "status": "ACTIVE",
+      "subscriptionId": "examgoal_pass_2_years",
+      "title": "2 Years",
+      "type": "examgoal_pass",
+      "userId": "35d44b89-383e-43d0-9194-d724d4617d73"
+    }
+  },
+  "https://room.examgoal.com/api/v1/tools/goals": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "pyq",
+        "title": "PYQ",
+        "description": "Attempted previous year questions in any mode (test or practice)"
+      },
+      {
+        "id": "pyq_test",
+        "title": "PYQ Test",
+        "description": "Test taken based on previous year questions"
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/tools/goals/pref/daily": {
+    "statusCode": 0,
+    "data": {}
+  },
+  "https://room.examgoal.com/api/v1/tools/goals/daily/last-7-days": {
+    "statusCode": 0,
+    "results": [
+      {
+        "date": 1783017000000,
+        "info": {
+          "pyq": 1,
+          "pyq_test": 0
+        },
+        "pyq": 1,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782930600000,
+        "info": {
+          "pyq": 5,
+          "pyq_test": 0
+        },
+        "pyq": 5,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782844200000,
+        "info": {
+          "pyq": 7,
+          "pyq_test": 0
+        },
+        "pyq": 7,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782757800000,
+        "info": {
+          "pyq": 14,
+          "pyq_test": 0
+        },
+        "pyq": 14,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782671400000,
+        "info": {
+          "pyq": 28,
+          "pyq_test": 0
+        },
+        "pyq": 28,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782585000000,
+        "info": {
+          "pyq": 0,
+          "pyq_test": 0
+        },
+        "pyq": 0,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782498600000,
+        "info": {
+          "pyq": 0,
+          "pyq_test": 0
+        },
+        "pyq": 0,
+        "pyq_test": 0
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/multi/by-id": {
+    "statusCode": 0,
+    "data": {}
+  },
+  "https://room.examgoal.com/api/v1/tools/reminder/active-map": {
+    "statusCode": 0,
+    "data": {}
+  },
+  "https://room.examgoal.com/api/v1/past-question/tests/personalized/test": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "mpttbpj4u67109rbgym",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "NDA Sequence and Series ",
+        "createdAt": "2026-05-31T14:30:04.447Z"
+      },
+      {
+        "createdAt": "2025-12-17T13:35:54.841Z",
+        "title": "JEE MAIN 2026 ",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "id": "mja1zxlosmhidfpidel"
+      },
+      {
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "Custom Test",
+        "id": "204bc8d4-42ba-4fde-921a-c0b578b063c2",
+        "createdAt": "2025-08-26T09:16:05.430Z"
+      },
+      {
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "Custom Test",
+        "id": "cd189455-d907-41f7-9457-6d5567dea2f0",
+        "createdAt": "2025-08-20T14:46:05.577Z"
+      },
+      {
+        "createdAt": "2025-08-20T14:43:53.228Z",
+        "id": "bb6e4e28-18b0-484f-b327-4ff6c133514b",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "Custom Test"
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/examGroups?country=in&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "24d1ae7c-9246-5674-9ec1-87bf6d79729c",
+        "country": "in",
+        "key": "jee",
+        "createdAt": "2020-08-24T22:55:16.584Z",
+        "description": null,
+        "name": "JEE",
+        "updatedAt": "2023-03-01T02:24:03.858Z",
+        "title": "Joint Entrance Examination",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 0
+      },
+      {
+        "metaId": "2f58d07a-d9f9-5b81-9270-851bbde4004b",
+        "country": "in",
+        "key": "medical",
+        "createdAt": "2020-08-24T22:55:36.533Z",
+        "description": null,
+        "name": "Medical",
+        "updatedAt": "2020-11-08T21:18:58.929Z",
+        "title": "Medical",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 1
+      },
+      {
+        "metaId": "9a41eb02-0197-5b54-82ea-e22694036358",
+        "country": "in",
+        "key": "gate",
+        "createdAt": "2020-08-24T22:55:45.742Z",
+        "description": null,
+        "name": "GATE",
+        "updatedAt": "2020-12-19T05:55:00.077Z",
+        "title": "Graduate Aptitude Test in Engineering",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 2
+      },
+      {
+        "key": "civil-services",
+        "type": "examGroup",
+        "country": "in",
+        "createdAt": "2024-05-02T11:08:19.006Z",
+        "description": null,
+        "keyValuePairs": {},
+        "metaId": "32ffba14-f9f2-55e1-a751-151bca82d448",
+        "title": "Civil Services",
+        "updatedAt": "2024-05-02T11:08:19.006Z",
+        "order": 3
+      },
+      {
+        "metaId": "b166df24-9638-553d-b2e3-7c91805b2e46",
+        "country": "in",
+        "key": "defence",
+        "createdAt": "2021-07-16T06:20:30.972Z",
+        "description": null,
+        "keyValuePairs": {},
+        "title": "Defence",
+        "updatedAt": "2021-07-16T06:20:30.972Z",
+        "type": "examGroup",
+        "order": 4
+      },
+      {
+        "metaId": "20819be6-8325-537b-9017-0a9518020e4e",
+        "country": "in",
+        "key": "ssc",
+        "createdAt": "2020-08-24T22:55:52.225Z",
+        "description": null,
+        "name": "SSC",
+        "updatedAt": "2020-12-19T05:55:13.990Z",
+        "title": "Staff Selection Commission",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 5
+      },
+      {
+        "country": "in",
+        "key": "cbse",
+        "type": "examGroup",
+        "createdAt": "2021-12-06T14:25:38.957Z",
+        "description": null,
+        "keyValuePairs": {},
+        "metaId": "d22f934d-2a1f-5c3f-ab76-304a72f2fa4f",
+        "title": "CBSE",
+        "updatedAt": "2021-12-06T14:25:38.957Z",
+        "order": 6
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/auth/session/ping": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=jee&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "cea4e815-231c-545e-a844-bb45b16b5ccb",
+        "country": "in",
+        "examGroup": "jee",
+        "key": "jee-main",
+        "createdAt": "2020-08-24T22:56:22.187Z",
+        "description": null,
+        "name": "JEE Main",
+        "updatedAt": "2024-08-04T05:12:03.739Z",
+        "order": 0,
+        "title": "JEE Main",
+        "keyValuePairs": {},
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-main.png",
+        "type": "exam",
+        "badges": [
+          {
+            "title": "Latest Syllabus",
+            "color": "#22c55e"
+          },
+          {
+            "title": "PYQ Topic wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.jeemainpreparation.app",
+          "room-examgoal-com",
+          "com.examgoal.android.app"
+        ],
+        "quiz": {
+          "subjects": [
+            {
+              "country": "in",
+              "examGroup": "jee",
+              "exam": "jee-main",
+              "subject": "physics",
+              "question_types": [
+                {
+                  "types": [
+                    "mcq",
+                    "mcqm"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 4,
+                    "weekly": 10
+                  }
+                },
+                {
+                  "types": [
+                    "integer"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 1,
+                    "weekly": 5
+                  }
+                }
+              ]
+            },
+            {
+              "country": "in",
+              "examGroup": "jee",
+              "exam": "jee-main",
+              "subject": "chemistry",
+              "question_types": [
+                {
+                  "types": [
+                    "mcq",
+                    "mcqm"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 4,
+                    "weekly": 10
+                  }
+                },
+                {
+                  "types": [
+                    "integer"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 1,
+                    "weekly": 5
+                  }
+                }
+              ]
+            },
+            {
+              "country": "in",
+              "examGroup": "jee",
+              "exam": "jee-main",
+              "subject": "mathematics",
+              "question_types": [
+                {
+                  "types": [
+                    "mcq",
+                    "mcqm"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 4,
+                    "weekly": 10
+                  }
+                },
+                {
+                  "types": [
+                    "integer"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 1,
+                    "weekly": 5
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "performance": {
+          "score": 100,
+          "totalAttempts": 311296165
+        }
+      },
+      {
+        "metaId": "066f55b4-d2b7-5f8f-9534-4d8b4724cfc6",
+        "country": "in",
+        "examGroup": "jee",
+        "key": "jee-advanced",
+        "createdAt": "2020-08-24T22:56:13.097Z",
+        "description": null,
+        "name": "JEE Advanced",
+        "updatedAt": "2024-07-12T10:35:13.091Z",
+        "order": 1,
+        "title": "JEE Advanced",
+        "keyValuePairs": {},
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-advanced.png",
+        "type": "exam",
+        "badges": [
+          {
+            "title": "PYQ Topic Wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.jeeadvancedpreparation.app",
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app",
+          "room-examgoal-com"
+        ],
+        "performance": {
+          "score": 75.12,
+          "totalAttempts": 26926488
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "mht-cet",
+        "type": "exam",
+        "createdAt": "2023-06-12T10:37:36.515Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/mht-cet.png",
+        "keyValuePairs": {},
+        "metaId": "a3dc0201-1afc-543b-a9f7-9f30bbe0acc1",
+        "title": "MHT CET",
+        "updatedAt": "2026-01-25T07:17:36.757Z",
+        "order": 2,
+        "badges": [
+          {
+            "title": "PYQ Topic wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "room-examgoal-com",
+          "com.examgoal.jeemainpreparation.app",
+          "com.examgoal.mhtcet.preparation.app"
+        ],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 88.13,
+          "totalAttempts": 96845044
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "bitsat",
+        "type": "exam",
+        "createdAt": "2022-03-22T03:07:20.915Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/bitsat.png",
+        "keyValuePairs": {},
+        "metaId": "927dc81f-cde0-5a78-a96a-65d8cea03711",
+        "order": 3,
+        "title": "BITSAT",
+        "updatedAt": "2024-02-07T15:13:28.305Z",
+        "badges": [
+          {
+            "title": "PYQ Topic wise (Soon)",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app",
+          "room-examgoal-com"
+        ],
+        "performance": {
+          "score": 63.89,
+          "totalAttempts": 8914331
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "comedk",
+        "type": "exam",
+        "createdAt": "2023-05-28T05:49:10.855Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/comedk.png",
+        "keyValuePairs": {},
+        "metaId": "341df63e-dc3a-5b16-83a9-9f8513cf9c5d",
+        "title": "COMEDK",
+        "updatedAt": "2024-02-07T15:14:02.291Z",
+        "order": 4,
+        "badges": [
+          {
+            "title": "PYQ Topic wise (Soon)",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "room-examgoal-com",
+          "com.examgoal.jeemainpreparation.app"
+        ],
+        "performance": {
+          "score": 64.65,
+          "totalAttempts": 9610373
+        }
+      },
+      {
+        "metaId": "04a84f14-cc92-5940-99e3-f3c406a5157a",
+        "country": "in",
+        "examGroup": "jee",
+        "key": "wb-jee",
+        "createdAt": "2020-12-19T06:05:12.782Z",
+        "description": null,
+        "keyValuePairs": {},
+        "order": 5,
+        "title": "WB JEE",
+        "updatedAt": "2024-02-07T15:13:08.358Z",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/wbjee.png",
+        "type": "exam",
+        "badges": [
+          {
+            "title": "PYQ Topic wise (Soon)",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.jeemainpreparation.app",
+          "com.examgoal.wbjeepreparation.app",
+          "room-examgoal-com",
+          "com.examgoal.android.app"
+        ],
+        "performance": {
+          "score": 59.16,
+          "totalAttempts": 5599188
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "kcet",
+        "type": "exam",
+        "createdAt": "2023-10-28T07:36:50.767Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/kcet.png",
+        "keyValuePairs": {},
+        "metaId": "a06069a7-4020-5f0c-a91f-d76bdc38c55b",
+        "title": "KCET",
+        "updatedAt": "2024-02-27T04:29:46.886Z",
+        "order": 6,
+        "apps": [],
+        "badges": [],
+        "performance": {
+          "score": 62.98,
+          "totalAttempts": 8154761
+        }
+      },
+      {
+        "examGroup": "jee",
+        "type": "exam",
+        "key": "viteee",
+        "country": "in",
+        "apps": [],
+        "badges": [],
+        "createdAt": "2024-03-09T22:16:54.804Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5ef25410-97bb-4621-853a-755d0bbaac4d/348328b0-eb61-11ee-831d-6530431f76f8/6y3zli1lu89xfp8.png",
+        "keyValuePairs": {},
+        "metaId": "1bf9f8df-c674-58d9-9be2-ca0c599bed9f",
+        "title": "VITEEE",
+        "updatedAt": "2024-03-26T11:09:17.591Z",
+        "order": 7,
+        "performance": {
+          "score": 60.22,
+          "totalAttempts": 6213194
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "ap-eapcet",
+        "type": "exam",
+        "createdAt": "2023-06-15T00:06:32.149Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/67db133c-ba65-4e2c-ad65-05158ae574a3/a9db1730-387d-11ef-afbe-73a2e898f5a9/jaoe38c1ly4hsb39.png",
+        "keyValuePairs": {},
+        "metaId": "84c9c1a8-8503-524d-bf02-6ed33190e9ee",
+        "title": "AP EAPCET",
+        "updatedAt": "2024-07-02T14:16:57.943Z",
+        "order": 8,
+        "apps": [
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app"
+        ],
+        "badges": [],
+        "performance": {
+          "score": 57.65,
+          "totalAttempts": 4823486
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "ts-eamcet",
+        "type": "exam",
+        "createdAt": "2023-01-06T17:14:03.208Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/6dd28730-004e-4717-bdcb-88d719ed6def/739edcd0-d173-11ef-b8cb-250dbba0307d/jaoe38c1m5umvggu.png",
+        "keyValuePairs": {},
+        "metaId": "c619ebef-d879-5ed5-a158-c39b2d4b5f15",
+        "order": 9,
+        "title": "TS EAMCET",
+        "updatedAt": "2025-01-13T05:59:01.161Z",
+        "apps": [],
+        "badges": [],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 63.38,
+          "totalAttempts": 8477821
+        }
+      },
+      {
+        "key": "iat-iiser",
+        "country": "in",
+        "type": "exam",
+        "examGroup": "jee",
+        "apps": [
+          "room-examgoal-com",
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app"
+        ],
+        "badges": [],
+        "createdAt": "2025-04-25T06:03:51.744Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/0e359091-6260-42af-bb0d-5ad7d2e88c20/7c7eaee0-2658-11f0-a3e5-29ab2addad42/jaoe38c1ma50977y.png",
+        "keyValuePairs": {},
+        "metaId": "384abd13-f8f7-5869-a0be-91c399347bed",
+        "quiz": {
+          "subjects": []
+        },
+        "title": "IAT (IISER)",
+        "updatedAt": "2025-05-01T07:29:23.931Z",
+        "order": 10,
+        "performance": {
+          "score": 50.71,
+          "totalAttempts": 2437656
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=medical&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "64cc8fc8-f6ac-5196-b8df-4ea17b167ba0",
+        "country": "in",
+        "examGroup": "medical",
+        "key": "neet",
+        "createdAt": "2020-11-20T11:36:42.532Z",
+        "description": "The National Eligibility cum Entrance Test (Undergraduate), formerly the All India Pre-Medical Test, is an entrance examination in India for students who wish to study undergraduate medical courses and dental courses in government or private medical and dental colleges in India.",
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "NEET",
+        "updatedAt": "2024-06-01T14:14:11.057Z",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-main.png",
+        "badges": [
+          {
+            "title": "Latest Syllabus",
+            "color": "#22c55e"
+          },
+          {
+            "title": "PYQ Topic wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "com.neetcare.neetquestion",
+          "room-examgoal-com"
+        ],
+        "performance": {
+          "score": 93.81,
+          "totalAttempts": 169272031
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "medical",
+        "key": "aiims",
+        "type": "exam",
+        "badges": [],
+        "createdAt": "2024-01-18T04:06:00.448Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5ca40f45-b700-4f46-9b8f-83745abac08c/fc927a90-6799-11ef-8b22-651b64eb4256/jaoe38c1m0i5qvui.png",
+        "keyValuePairs": {},
+        "metaId": "e5fe5851-01c8-5703-ba3a-ddf78cac4935",
+        "title": "AIIMS",
+        "updatedAt": "2024-08-31T13:08:37.555Z",
+        "order": 1,
+        "apps": [
+          "com.examgoal.android.app",
+          "com.neetcare.neetquestion",
+          "room-examgoal-com"
+        ],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 32.89,
+          "totalAttempts": 422270
+        }
+      },
+      {
+        "key": "mht-cet-biology",
+        "type": "exam",
+        "country": "in",
+        "examGroup": "medical",
+        "apps": [
+          "room-examgoal-com",
+          "com.examgoal.android.app"
+        ],
+        "badges": [],
+        "createdAt": "2025-08-09T01:52:27.582Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/mht-cet.png",
+        "keyValuePairs": {},
+        "metaId": "338c68fe-01f8-5a4a-b53e-9d8a3aa734cc",
+        "quiz": {
+          "subjects": []
+        },
+        "title": "MHT CET (Biology)",
+        "updatedAt": "2025-08-22T10:15:15.141Z",
+        "order": 2,
+        "performance": {
+          "score": 46.4,
+          "totalAttempts": 1594426
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=gate&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "33462b07-edd3-5b7b-8995-2aa22c186a92",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-cse",
+        "createdAt": "2020-08-24T22:56:42.763Z",
+        "description": null,
+        "name": "GATE CSE",
+        "updatedAt": "2022-03-04T04:22:26.576Z",
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "GATE CSE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/cse.png",
+        "performance": {
+          "score": 57.41,
+          "totalAttempts": 4710655
+        }
+      },
+      {
+        "metaId": "a719d3f8-2de6-5987-8fa9-48b06791480c",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-ece",
+        "createdAt": "2020-08-24T22:56:54.391Z",
+        "description": null,
+        "name": "GATE ECE",
+        "updatedAt": "2022-03-04T04:22:33.142Z",
+        "keyValuePairs": {},
+        "order": 1,
+        "title": "GATE ECE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ece.png",
+        "performance": {
+          "score": 51.65,
+          "totalAttempts": 2672225
+        }
+      },
+      {
+        "metaId": "f503abea-1c67-589b-baa2-0a447c9c0121",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-ee",
+        "createdAt": "2020-08-24T22:56:49.093Z",
+        "description": null,
+        "name": "GATE EE",
+        "updatedAt": "2022-03-04T04:23:49.141Z",
+        "keyValuePairs": {},
+        "order": 2,
+        "title": "GATE EE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ee.png",
+        "performance": {
+          "score": 41.53,
+          "totalAttempts": 988194
+        }
+      },
+      {
+        "metaId": "f40e568d-a61e-5542-9850-6a5f273a20cc",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-me",
+        "createdAt": "2020-08-24T22:57:03.755Z",
+        "description": null,
+        "name": "GATE ME",
+        "updatedAt": "2022-03-04T04:25:17.065Z",
+        "keyValuePairs": {},
+        "order": 3,
+        "title": "GATE ME",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/me.png",
+        "performance": {
+          "score": 40.08,
+          "totalAttempts": 856263
+        }
+      },
+      {
+        "metaId": "50be1e92-1a20-5c91-b527-6c37a96ae89e",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-ce",
+        "createdAt": "2020-08-24T22:57:23.936Z",
+        "description": null,
+        "name": "GATE CE",
+        "updatedAt": "2022-03-04T04:26:21.209Z",
+        "keyValuePairs": {},
+        "order": 4,
+        "title": "GATE CE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ce.png",
+        "performance": {
+          "score": 31.64,
+          "totalAttempts": 373222
+        }
+      },
+      {
+        "metaId": "0a2e06b2-d550-523d-b388-9fc3c8e3baee",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-pi",
+        "createdAt": "2020-08-24T22:57:35.411Z",
+        "description": null,
+        "name": "GATE PI",
+        "updatedAt": "2022-03-04T04:28:34.473Z",
+        "keyValuePairs": {},
+        "order": 5,
+        "title": "GATE PI",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/pi.png",
+        "performance": {
+          "score": 7.62,
+          "totalAttempts": 35136
+        }
+      },
+      {
+        "metaId": "d229641f-a783-56bd-99e6-f7da2631a251",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-in",
+        "createdAt": "2020-08-24T22:57:44.939Z",
+        "description": null,
+        "name": "GATE IN",
+        "updatedAt": "2022-03-04T04:28:40.657Z",
+        "keyValuePairs": {},
+        "order": 6,
+        "title": "GATE IN",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/in.png",
+        "performance": {
+          "score": 0,
+          "totalAttempts": 16594
+        }
+      },
+      {
+        "type": "exam",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-da",
+        "apps": [],
+        "badges": [],
+        "createdAt": "2025-07-25T01:21:17.952Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/cse.png",
+        "keyValuePairs": {},
+        "metaId": "c9a17f1a-4398-59fc-a2d2-0e0d884637f9",
+        "quiz": {
+          "subjects": []
+        },
+        "title": "GATE Data Science and Artificial Intelligence",
+        "updatedAt": "2025-07-25T01:21:17.952Z",
+        "order": 7,
+        "performance": {
+          "score": 8.98,
+          "totalAttempts": 40168
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=civil-services&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "country": "in",
+        "examGroup": "civil-services",
+        "key": "upsc-civil-service",
+        "type": "exam",
+        "createdAt": "2021-10-19T04:48:31.124Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5934fd03-d35c-42e7-b582-f058dd46bd57/324c2970-0876-11ef-b9c4-01b5e1672438/6y3zli1lvp5p37s.png",
+        "keyValuePairs": {},
+        "metaId": "e09ee9bf-f953-5127-9ab2-6a50c5534637",
+        "order": 0,
+        "title": "UPSC Civil Service",
+        "updatedAt": "2026-05-14T10:47:40.550Z",
+        "apps": [],
+        "badges": [],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 35.06,
+          "totalAttempts": 522838
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=defence&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "ae12242c-2043-5d12-97f1-4863e7f59180",
+        "country": "in",
+        "examGroup": "defence",
+        "key": "nda",
+        "createdAt": "2021-07-16T06:21:07.078Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/624092ec-6f87-4440-9fac-93c921e8668e/c68613a0-1bde-11ef-ba88-abbdc110e2a5/6y3zli1lwog7v8b.png",
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "NDA",
+        "updatedAt": "2024-05-27T04:09:04.104Z",
+        "type": "exam",
+        "apps": [
+          "com.examgoal.android.app",
+          "com.examgoal.ndapreparation.app",
+          "room-examgoal-com"
+        ],
+        "badges": [],
+        "performance": {
+          "score": 65.09,
+          "totalAttempts": 10031451
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=ssc&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "3911a0aa-0693-5c54-9ca0-c4505fba880f",
+        "country": "in",
+        "examGroup": "ssc",
+        "key": "ssc-cgl-tier-i",
+        "createdAt": "2020-12-22T06:51:03.399Z",
+        "description": null,
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "SSC CGL Tier I",
+        "updatedAt": "2024-08-23T04:16:11.723Z",
+        "type": "exam",
+        "apps": [],
+        "badges": [],
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/c293926d-776b-4c5d-87c7-c94d7c4c1112/614e3c70-6106-11ef-a495-011539d502ba/jaoe38c1m06789mf.png",
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 36.58,
+          "totalAttempts": 607149
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=cbse&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "country": "in",
+        "examGroup": "cbse",
+        "key": "class-12",
+        "type": "exam",
+        "createdAt": "2021-12-06T18:16:08.836Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/cbse.png",
+        "keyValuePairs": {},
+        "metaId": "9990e3cc-d4c9-59c0-95cc-7c362f6d79f8",
+        "order": 0,
+        "title": "Class 12",
+        "updatedAt": "2024-01-13T20:24:34.110Z",
+        "badges": [],
+        "performance": {
+          "score": 40.28,
+          "totalAttempts": 873197
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/test/user/test/tst-19g61moahy6ef?out_of_syllabus=false": {
+    "statusCode": 0,
+    "data": {
+      "testId": "tst-19g61moahy6ef",
+      "defaultLanguage": "en",
+      "description": "Logarithmic Properties, Logarithmic Equations",
+      "difficulty": null,
+      "instructions": null,
+      "isAnalysisDeletable": false,
+      "isPremium": false,
+      "keyValuePairs": {},
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "layout": "nta",
+      "liveAt": "2026-06-01T00:30:00.000Z",
+      "maxAttempt": 2,
+      "maxMarks": 60,
+      "maxNegMarks": 15,
+      "policy": "jee-main",
+      "sections": [
+        {
+          "id": "f6973310-2ec3-4189-abb9-cd37e98fa0d2",
+          "title": "SECTION A",
+          "description": null,
+          "maxMarks": 40,
+          "maxNegMarks": 10,
+          "timeAllotted": 1440000,
+          "totalQuestions": 10,
+          "optional": [],
+          "questions": [
+            {
+              "questionId": "tq-mpwjmktt",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "easy",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>$ \\frac{\\log_{2}(9 - 2^{x})}{x - 3} = 1 $. Then number of solution is</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>3</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>2</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>1</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>0</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>$ \\frac{\\log_{2}(9 - 2^{x})}{x - 3} = 1 $ है। तो हलों की संख्या है</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>3</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>2</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>1</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>0</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwkdqxi",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "hard",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>If $\\log_5(\\sqrt[x]{5} + 125) = \\log_5 6 + 1 + \\frac{1}{2x}$ then $x$ is</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>-1</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>1/2</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>1/16</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>No solution</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>यदि $\\log_5(\\sqrt[x]{5} + 125) = \\log_5 6 + 1 + \\frac{1}{2x}$ है, तो $x$ है</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>-1</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>1/2</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>1/16</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>कोई हल नहीं</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwk1gtr",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "easy",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>If $x^2 + 7^{\\log_7{x}} - 2 = 0$ then $x$ is</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>2</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>-2</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>-1</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>1</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>यदि $x^2 + 7^{\\log_7{x}} - 2 = 0$ है, तो $x$ का मान है:</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>2</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>-2</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>-1</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>1</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwmiqnr",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "$5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$ then $x$ is",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>1 Only</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>1/16 Only</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>1/2</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>1, 1/16</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "यदि $5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$ है, तो $x$ का मान है:",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>केवल 1</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>केवल 1/16</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>1/2</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>1, 1/16</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwmt9c3",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "Solve for $x: \\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 \\pm  2\\sqrt{6}}{2}$$"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}$$"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 - 2\\sqrt{6}}{2}$$"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}$$"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "$x$ के लिए हल कीजिए: $\\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 \\pm  2\\sqrt{6}}{2}$$"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}$$"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 - 2\\sqrt{6}}{2}$$"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "$$x = 0, \\quad x = \\frac{7}{4}$$"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwn4bpy",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>Indicate all correct alternatives, where base of the $\\log$ is 2 .</p>\n<p>The equation $x^{\\frac{3}{4}}\\left(\\log _2 x\\right)^2+\\log _2 x-\\frac{5}{4}=\\sqrt{2}$ has :</p>\n<p>(A) At least one real solution</p>\n<p>(B) Exactly 3 real solutions</p>\n<p>(C) Exactly one irrational solution</p>\n<p>(D) Imaginary roots</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "A Only"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "A, B and D Only"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "A, B and C Only"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "B and D Only"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>सभी सही विकल्पों को इंगित करें, जहाँ $\\log$ का आधार 2 है।</p>\n<p>समीकरण $x^{\\frac{3}{4}}\\left(\\log _2 x\\right)^2+\\log _2 x-\\frac{5}{4}=\\sqrt{2}$ के हैं :</p>\n<p>(A) कम से कम एक वास्तविक हल</p>\n<p>(B) ठीक 3 वास्तविक हल</p>\n<p>(C) ठीक एक अपरिमेय हल</p>\n<p>(D) काल्पनिक मूल</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "केवल A"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "केवल A, B और D"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "केवल A, B और C"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "केवल B और D"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwnofgh",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "hard",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>The equation $x^{\\left[\\left(\\log _3 x\\right)^2-(\\frac{9}{2} \\log _3 x)+5\\right]}=3 \\sqrt{3}$ has</p>\n<p>(A) Exactly 3 real solutions</p>\n<p>(B) At least one real solution</p>\n<p>(C) Exactly one irrational solution</p>\n<p>(D) Complex roots</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "A, B and C Only"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "A, B, C and D"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "A, C Only"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "B, C Only"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>समीकरण $x^{\\left[\\left(\\log _3 x\\right)^2-(\\frac{9}{2} \\log _3 x)+5\\right]}=3 \\sqrt{3}$ के</p>\n<p>(A) ठीक 3 वास्तविक हल हैं</p>\n<p>(B) कम से कम एक वास्तविक हल है</p>\n<p>(C) ठीक एक अपरिमेय हल है</p>\n<p>(D) सम्मिश्र मूल हैं</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "केवल A, B और C"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "A, B, C और D"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "केवल A, C"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "केवल B, C"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwv4ksq",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>Positive integers <i>a</i> and <i>b</i> satisfy the condition $\\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0$. Then which can not be possible values of $a + b$ is :</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>501</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>252</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>128</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>66</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>धनात्मक पूर्णांक <i>a</i> और <i>b</i> प्रतिबंध $\\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0$ को संतुष्ट करते हैं। तो $a + b$ का संभावित मान निम्न में से कौन सा नहीं हो सकता है :</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>501</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>252</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>128</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>66</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwvegtr",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>If $\\log_{12}{27} = a$, then $\\log_{6}{16}$ is equal to</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>$4 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>$4 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>$2 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>$2 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>यदि $\\log_{12}{27} = a$ है, तो $\\log_{6}{16}$ बराबर है</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>$4 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>$4 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>$2 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>$2 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-properties",
+              "type": "mcq"
+            },
+            {
+              "questionId": "tq-mpwvwzq2",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$ is equal to</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>0</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>1</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>$\\log 2$</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>$\\log 3$</p>"
+                    }
+                  ]
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$ बराबर है:</p>",
+                  "options": [
+                    {
+                      "identifier": "A",
+                      "content": "<p>0</p>"
+                    },
+                    {
+                      "identifier": "B",
+                      "content": "<p>1</p>"
+                    },
+                    {
+                      "identifier": "C",
+                      "content": "<p>$\\log 2$</p>"
+                    },
+                    {
+                      "identifier": "D",
+                      "content": "<p>$\\log 3$</p>"
+                    }
+                  ]
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-properties",
+              "type": "mcq"
+            }
+          ],
+          "instructions": null
+        },
+        {
+          "id": "32f0027d-91c1-43e1-b437-13c0a923644e",
+          "title": "SECTION B",
+          "description": null,
+          "maxMarks": 20,
+          "maxNegMarks": 5,
+          "timeAllotted": 720000,
+          "totalQuestions": 5,
+          "optional": [],
+          "questions": [
+            {
+              "questionId": "tq-mpwhvzax",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "easy",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>If $a, b$ and $c$ are positive real numbers such that $a^{\\log _3 7}=27 ; b^{\\log _7 11}=49$ and $c^{\\log _{11} 25}=\\sqrt{11}$.</p>\n<p>Find the value of $\\left(a^{\\left(\\log _3 7\\right)^2}+b^{\\left(\\log _7 11\\right)^2}+c^{\\left(\\log _{11} 25\\right)^2}\\right)$.</p>",
+                  "options": []
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>यदि $a, b$ और $c$ ऐसी धनात्मक वास्तविक संख्याएँ हैं कि $a^{\\log _3 7}=27 ; b^{\\log _7 11}=49$ और $c^{\\log _{11} 25}=\\sqrt{11}$ है।</p> <p>$\\left(a^{\\left(\\log _3 7\\right)^2}+b^{\\left(\\log _7 11\\right)^2}+c^{\\left(\\log _{11} 25\\right)^2}\\right)$ का मान ज्ञात कीजिए।</p>",
+                  "options": []
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-properties",
+              "type": "integer"
+            },
+            {
+              "questionId": "tq-mpwi5eua",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "easy",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "Solve for $x: \\log _4\\left(2 \\log _3\\left(1+\\log _2\\left(1+3 \\log _3 x\\right)\\right)\\right)=1 / 2$",
+                  "options": []
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "$x$ के लिए हल कीजिए: $\\log _4\\left(2 \\log _3\\left(1+\\log _2\\left(1+3 \\log _3 x\\right)\\right)\\right)=1 / 2$",
+                  "options": []
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "integer"
+            },
+            {
+              "questionId": "tq-mpwiqdgb",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "Let $y=\\sqrt{\\log _2 3 \\cdot \\log _2 12 \\cdot \\log _2 48 \\cdot \\log _2 192+16}-\\log _2 12 \\cdot \\log _2 48+10$. Find $y$.",
+                  "options": []
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "माना $y=\\sqrt{\\log _2 3 \\cdot \\log _2 12 \\cdot \\log _2 48 \\cdot \\log _2 192+16}-\\log _2 12 \\cdot \\log _2 48+10$ है। $y$ का मान ज्ञात कीजिए।",
+                  "options": []
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-properties",
+              "type": "integer"
+            },
+            {
+              "questionId": "tq-mpwj3po4",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "medium",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>Find the square of the sum of the roots of the equation</p>\n<p>$$ \\log _3 x \\cdot \\log _4 x \\cdot \\log _5 x=\\log _3 x \\cdot \\log _4 x+\\log _4 x \\cdot \\log _5 x+\\log _5 x \\cdot \\log _3 x . $$</p>",
+                  "options": []
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>समीकरण के मूलों के योग का वर्ग ज्ञात कीजिए:</p>\n<p>$$ \\log _3 x \\cdot \\log _4 x \\cdot \\log _5 x=\\log _3 x \\cdot \\log _4 x+\\log _4 x \\cdot \\log _5 x+\\log _5 x \\cdot \\log _3 x . $$</p>",
+                  "options": []
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-equations",
+              "type": "integer"
+            },
+            {
+              "questionId": "tq-mpwjf09v",
+              "chapter": "logarithm",
+              "chapterGroup": "algebra",
+              "country": "in",
+              "difficulty": "easy",
+              "exam": "jee-main",
+              "examGroup": "jee",
+              "languages": [
+                "en"
+              ],
+              "marks": 4,
+              "negMarks": 1,
+              "question": {
+                "en": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>Simplify $: \\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>",
+                  "options": []
+                },
+                "hi": {
+                  "comprehension": null,
+                  "direction": null,
+                  "content": "<p>सरल कीजिए $: \\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>",
+                  "options": []
+                }
+              },
+              "subTopic": null,
+              "subject": "mathematics",
+              "timeAllotted": 90000,
+              "topic": "logarithmic-properties",
+              "type": "integer"
+            }
+          ],
+          "instructions": null
+        }
+      ],
+      "syllabus": "Logarithmic Properties, Logarithmic Equations",
+      "timeAllotted": 2160000,
+      "title": "Logarithm Test - 1 (Topic Test)",
+      "totalQuestions": 15,
+      "type": "topic",
+      "isWatermarkEnabled": true,
+      "percentileId": "prc-19g61mlq40gq7",
+      "isUpcoming": false,
+      "seriesId": "tsr-19g61mnpryz1v"
+    }
+  },
+  "https://room.examgoal.com/api/v1/test/user/session/tst-19g61moahy6ef": {
+    "statusCode": 0,
+    "data": {
+      "hasShownInstructions": false,
+      "metadata": {
+        "options": {
+          "outOfSyllabus": false
+        },
+        "isStrict": false
+      },
+      "sessionId": "ffbe6080-729b-11f1-9aad-e19819b880c2",
+      "lastAttempted": "2026-07-03T08:20:00.293Z",
+      "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+      "layout": 1,
+      "lastQuestionId": "tq-mpwjf09v",
+      "timeSpent": 183313,
+      "language": "en",
+      "state": {
+        "tq-mpwk1gtr": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 0
+        },
+        "tq-mpwnofgh": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwvwzq2": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 3000
+        },
+        "tq-mpwjmktt": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 14000
+        },
+        "tq-mpwn4bpy": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 0
+        },
+        "tq-mpwj3po4": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 2000
+        },
+        "tq-mpwiqdgb": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwmt9c3": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwjf09v": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 158000
+        },
+        "tq-mpwhvzax": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwv4ksq": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwkdqxi": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwmiqnr": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwvegtr": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 0
+        },
+        "tq-mpwi5eua": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 2000
+        }
+      },
+      "testId": "tst-19g61moahy6ef"
+    }
+  },
+  "https://room.examgoal.com/api/v1/past-question/report/types": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "typo",
+        "image": "https://app-assets.cdn.examgoal.net/fly/50/image/typing.png",
+        "title": "Typo Error",
+        "description": "If question has error or spelling mistake or misprint etc."
+      },
+      {
+        "id": "answer",
+        "image": "https://app-assets.cdn.examgoal.net/fly/50/image/content_error.png",
+        "title": "Answer Error",
+        "description": "If question's answer is wrong."
+      },
+      {
+        "id": "classification",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/319dd308-b040-4207-ba2f-f2ab596bc529/dbfffcf0-234f-11ef-b35e-6b52368f3106/6y3zli1lx1zdbgg.png",
+        "title": "Classification Error",
+        "description": "If question in wrong chapter, wrong topic or wrong difficulty level."
+      },
+      {
+        "id": "translation",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/4b7e43cc-d484-43ef-93d8-22973f5d5dcf/b69646f0-2bcc-11f0-979c-4549ded3cdf1/jaoe38c1maexabbz.png",
+        "title": "Translation Error",
+        "description": "If question's translation is wrong or has error."
+      },
+      {
+        "id": "other",
+        "image": "https://app-assets.cdn.examgoal.net/fly/50/image/warning.png",
+        "title": "Other Error",
+        "description": "Error which can't be categorized in above those error types."
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/test/question/report/types": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "typo",
+        "image": "https://app-assets.cdn.examgoal.net/fly/50/image/typing.png",
+        "title": "Typo Error",
+        "description": "If question has error or spelling mistake or misprint etc."
+      },
+      {
+        "id": "answer",
+        "image": "https://app-assets.cdn.examgoal.net/fly/50/image/content_error.png",
+        "title": "Answer Error",
+        "description": "If question's answer is wrong."
+      },
+      {
+        "id": "classification",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/319dd308-b040-4207-ba2f-f2ab596bc529/dbfffcf0-234f-11ef-b35e-6b52368f3106/6y3zli1lx1zdbgg.png",
+        "title": "Classification Error",
+        "description": "If question in wrong chapter, wrong topic or wrong difficulty level."
+      },
+      {
+        "id": "translation",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/4b7e43cc-d484-43ef-93d8-22973f5d5dcf/b69646f0-2bcc-11f0-979c-4549ded3cdf1/jaoe38c1maexabbz.png",
+        "title": "Translation Error",
+        "description": "If question's translation is wrong or has error."
+      },
+      {
+        "id": "other",
+        "image": "https://app-assets.cdn.examgoal.net/fly/50/image/warning.png",
+        "title": "Other Error",
+        "description": "Error which can't be categorized in above those error types."
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/test/user/session": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v1/test/user/test": {
+    "statusCode": 0,
+    "data": {
+      "analysisId": "ffbe6080-729b-11f1-9aad-e19819b880c2"
+    }
+  },
+  "https://room.examgoal.com/api/v1/test/user/analysis/ffbe6080-729b-11f1-9aad-e19819b880c2": {
+    "statusCode": 0,
+    "data": {
+      "metadata": {
+        "options": {
+          "outOfSyllabus": false
+        },
+        "isStrict": false
+      },
+      "testId": "tst-19g61moahy6ef",
+      "status": "SUCCESS",
+      "createdAt": 1783074567433,
+      "performance": {
+        "maxTime": 2160000,
+        "totalQuestions": 15,
+        "correct": 0,
+        "timeSpent": 191313,
+        "accuracy": 0,
+        "skip": 15,
+        "none": 15,
+        "marks": 0,
+        "maxMarks": 60,
+        "wrong": 0,
+        "negMarks": 0,
+        "attempted": 0,
+        "maxNegMarks": 15
+      },
+      "lastUpdatedAt": 1783074567433,
+      "state": {
+        "tq-mpwk1gtr": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 0
+        },
+        "tq-mpwnofgh": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwvwzq2": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 3000
+        },
+        "tq-mpwjmktt": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 14000
+        },
+        "tq-mpwn4bpy": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 0
+        },
+        "tq-mpwj3po4": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 2000
+        },
+        "tq-mpwiqdgb": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwmt9c3": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwjf09v": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 166000
+        },
+        "tq-mpwhvzax": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwv4ksq": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwkdqxi": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwmiqnr": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 1000
+        },
+        "tq-mpwvegtr": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 0
+        },
+        "tq-mpwi5eua": {
+          "st": "seen",
+          "nma": 0,
+          "ma": 0,
+          "si": [],
+          "ip": "",
+          "ir": false,
+          "ts": 2000
+        }
+      },
+      "title": "Logarithm Test - 1 (Topic Test)",
+      "analysisId": "ffbe6080-729b-11f1-9aad-e19819b880c2",
+      "test": {
+        "testId": "tst-19g61moahy6ef",
+        "defaultLanguage": "en",
+        "description": "Logarithmic Properties, Logarithmic Equations",
+        "difficulty": null,
+        "instructions": null,
+        "isAnalysisDeletable": false,
+        "isPremium": false,
+        "keyValuePairs": {},
+        "languages": [
+          "en",
+          "hi"
+        ],
+        "layout": "nta",
+        "liveAt": "2026-06-01T00:30:00.000Z",
+        "maxAttempt": 2,
+        "maxMarks": 60,
+        "maxNegMarks": 15,
+        "policy": "jee-main",
+        "sections": [
+          {
+            "id": "f6973310-2ec3-4189-abb9-cd37e98fa0d2",
+            "title": "SECTION A",
+            "description": null,
+            "maxMarks": 40,
+            "maxNegMarks": 10,
+            "timeAllotted": 1440000,
+            "totalQuestions": 10,
+            "optional": [],
+            "questions": [
+              {
+                "questionId": "tq-mpwjmktt",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$ \\frac{\\log_{2}(9 - 2^{x})}{x - 3} = 1 $. Then number of solution is</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>3</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>2</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>1</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>0</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>We need to solve</p>\n<p>$$ \\frac{\\log_{2}(9-2^x)}{x-3}=1 $$</p>\n<p>This means</p>\n<p>$$ \\log_{2}(9-2^x)=x-3 $$</p>\n<p>Now we also keep in mind the domain.</p>\n<p>For $\\log_{2}(9-2^x)$ to exist,</p>\n<p>$$ 9-2^x>0 \\quad\\Rightarrow\\quad 2^x<9 \\quad\\Rightarrow\\quad x<\\log_2 9 $$</p>\n<p>Also, the denominator should not be zero:</p>\n<p>$$ x\\ne 3 $$</p>\n<p>Now from</p>\n<p>$$ \\log_{2}(9-2^x)=x-3 $$</p>\n\n<p>$$\\Rightarrow $$ $$ 9-2^x=2^{x-3} $$</p>\n\n<p>$$\\Rightarrow $$ $$ 72-8\\cdot 2^x=2^x $$</p>\n\n<p>$$\\Rightarrow $$ $$ 72=9\\cdot 2^x $$</p>\n<p>$$\\Rightarrow $$ $$ 2^x=8 $$</p>\n<p>$$\\Rightarrow $$ $$ x=3 $$</p>\n<p>But $x=3$ is not allowed because the original denominator $x-3$ becomes zero.</p>\n<p>So this value is extraneous for the original equation.</p>\n<p>Hence, the equation has no solution.</p>\n<p>$$ \\text{Number of solutions}=0 $$</p>\n<p>So the correct option is $ \\boxed{D} $.</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$ \\frac{\\log_{2}(9 - 2^{x})}{x - 3} = 1 $ है। तो हलों की संख्या है</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>3</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>2</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>1</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>0</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>हमें हल करना है</p><p>$$ \\frac{\\log_{2}(9-2^x)}{x-3}=1 $$</p><p>इसका अर्थ है</p><p>$$ \\log_{2}(9-2^x)=x-3 $$</p><p>अब हम इसके प्रांत (domain) को भी ध्यान में रखते हैं।</p><p>$\\log_{2}(9-2^x)$ के परिभाषित होने के लिए,</p><p>$$ 9-2^x>0 \\quad\\Rightarrow\\quad 2^x<9 \\quad\\Rightarrow\\quad x<\\log_2 9 $$</p><p>साथ ही, हर शून्य नहीं होना चाहिए:</p><p>$$ x\\ne 3 $$</p><p>अब</p><p>$$ \\log_{2}(9-2^x)=x-3 $$</p><p>$$\\Rightarrow $$ $$ 9-2^x=2^{x-3} $$</p><p>$$\\Rightarrow $$ $$ 72-8\\cdot 2^x=2^x $$</p><p>$$\\Rightarrow $$ $$ 72=9\\cdot 2^x $$</p><p>$$\\Rightarrow $$ $$ 2^x=8 $$</p><p>$$\\Rightarrow $$ $$ x=3 $$</p><p>लेकिन $x=3$ स्वीकार्य नहीं है क्योंकि प्रारंभिक समीकरण का हर $x-3$ शून्य हो जाता है।</p><p>इसलिए यह मान मूल समीकरण के लिए अमान्य है।</p><p>अतः, समीकरण का कोई हल नहीं है।</p><p>$$ \\text{हलों की संख्या}=0 $$</p><p>अतः सही विकल्प $ \\boxed{D} $ है।</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwkdqxi",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If $\\log_5(\\sqrt[x]{5} + 125) = \\log_5 6 + 1 + \\frac{1}{2x}$ then $x$ is</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>-1</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>1/2</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>1/16</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>No solution</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "\n<p>$$\\log_5\\left(5^{\\frac{1}{x}} + 125\\right) = \\log_5 6 + 1 + \\frac{1}{2x}$$</p>\n\n<p>$$\\Rightarrow $$ $$5^{\\frac{1}{x}} + 125 = 5^{\\left(\\log_5 6 + 1 + \\frac{1}{2x}\\right)}$$</p>\n<p>Using the property $a^{m+n} = a^m \\cdot a^n$, the right side is split up:</p>\n<p>$$5^{\\frac{1}{x}} + 125 = 5^{\\log_5 6} \\cdot 5^1 \\cdot 5^{\\frac{1}{2x}}$$</p>\n\n<p>$$5^{\\frac{1}{x}} + 125 = 6 \\cdot 5 \\cdot 5^{\\frac{1}{2x}}$$</p>\n<p>$$5^{\\frac{1}{x}} + 125 = 30 \\cdot 5^{\\frac{1}{2x}}$$</p>\n\n<p>$$5^{\\frac{1}{x}} - 30 \\cdot 5^{\\frac{1}{2x}} + 125 = 0$$</p>\n<p>Let $t = 5^{\\frac{1}{2x}}$. $$\\Rightarrow $$ $t^2 = 5^{\\frac{1}{x}}$.</p>\n<p>$$t^2 - 30t + 125 = 0$$</p>\n<p>$$(t - 25)(t - 5) = 0$$</p>\n<p>$$t = 25 \\quad \\text{or} \\quad t = 5$$</p>\n\n<p>Substituting $t$ back:</p>\n<ul>\n<li><p>$5^{\\frac{1}{2x}} = 5^2 \\implies \\frac{1}{2x} = 2 \\implies x = \\frac{1}{4}$</p></li>\n<li><p>$5^{\\frac{1}{2x}} = 5^1 \\implies \\frac{1}{2x} = 1 \\implies x = \\frac{1}{2}$</p></li>\n</ul>\n\n<p>The original equation contains the term</p>\n<blockquote>\n  <p>$\\sqrt[x]{5} = 5^{\\frac{1}{x}} \\quad \\text{where } \\mathbf{x \\in \\mathbb{N}, x \\ge 2}$</p>\n</blockquote>\n<p>By strict mathematical convention, for the radical notation $\\sqrt[x]{y}$ to be properly defined, <strong>the index $x$ must be a natural number greater than or equal to 2</strong> (e.g., a square root where $x=2$, a cube root where $x=3$).</p>\n<p>Our algebraic solutions are $x = \\frac{1}{4}$ and $x = \\frac{1}{2}$. Neither of these are natural numbers. If you were to plug $x = \\frac{1}{2}$ back into the original notation, you would get $\\sqrt[\\frac{1}{2}]{5}$, which is a notationally invalid construct under strict definitions.</p>\n<p>Because neither algebraic solution satisfies the strict domain constraint of the radical index, they must be rejected.</p>\n<p>Therefore, under these strict bounds, the correct answer to the original multiple-choice question is actually <strong>Option D: No solution</strong>.</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि $\\log_5(\\sqrt[x]{5} + 125) = \\log_5 6 + 1 + \\frac{1}{2x}$ है, तो $x$ है</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>-1</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>1/2</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>1/16</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>कोई हल नहीं</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$\\log_5\\left(5^{\\frac{1}{x}} + 125\\right) = \\log_5 6 + 1 + \\frac{1}{2x}$$</p><p>$$\\Rightarrow $$ $$5^{\\frac{1}{x}} + 125 = 5^{\\left(\\log_5 6 + 1 + \\frac{1}{2x}\\right)}$$</p><p>गुणधर्म $a^{m+n} = a^m \\cdot a^n$ का उपयोग करते हुए, दाएँ भाग को इस प्रकार विभाजित किया जाता है:</p><p>$$5^{\\frac{1}{x}} + 125 = 5^{\\log_5 6} \\cdot 5^1 \\cdot 5^{\\frac{1}{2x}}$$</p><p>$$5^{\\frac{1}{x}} + 125 = 6 \\cdot 5 \\cdot 5^{\\frac{1}{2x}}$$</p><p>$$5^{\\frac{1}{x}} + 125 = 30 \\cdot 5^{\\frac{1}{2x}}$$</p><p>$$5^{\\frac{1}{x}} - 30 \\cdot 5^{\\frac{1}{2x}} + 125 = 0$$</p><p>माना $t = 5^{\\frac{1}{2x}}$ है। $$\\Rightarrow $$ $t^2 = 5^{\\frac{1}{x}}$</p><p>$$t^2 - 30t + 125 = 0$$</p><p>$$(t - 25)(t - 5) = 0$$</p><p>$$t = 25 \\quad \\text{या} \\quad t = 5$$</p><p>$t$ का मान वापस प्रतिस्थापित करने पर:</p><ul><li><p>$5^{\\frac{1}{2x}} = 5^2 \\implies \\frac{1}{2x} = 2 \\implies x = \\frac{1}{4}$</p></li><li><p>$5^{\\frac{1}{2x}} = 5^1 \\implies \\frac{1}{2x} = 1 \\implies x = \\frac{1}{2}$</p></li></ul><p>मूल समीकरण में निम्नलिखित पद शामिल है</p><blockquote><p>$\\sqrt[x]{5} = 5^{\\frac{1}{x}} \\quad \\text{जहाँ } \\mathbf{x \\in \\mathbb{N}, x \\ge 2}$</p></blockquote><p>कठोर गणितीय परिपाटी के अनुसार, करणी (radical) संकेतन $\\sqrt[x]{y}$ को उचित रूप से परिभाषित होने के लिए, <strong>घातांक (index) $x$ का मान 2 या उससे अधिक एक प्राकृत संख्या होना चाहिए</strong> (उदाहरण के लिए, वर्गमूल जहाँ $x=2$, घनमूल जहाँ $x=3$)।</p><p>हमारे बीजगणितीय हल $x = \\frac{1}{4}$ और $x = \\frac{1}{2}$ हैं। इनमें से कोई भी प्राकृत संख्या नहीं है। यदि आप $x = \\frac{1}{2}$ को वापस मूल संकेतन में रखते हैं, तो आपको $\\sqrt[\\frac{1}{2}]{5}$ प्राप्त होगा, जो कठोर परिभाषाओं के तहत एक अमान्य संरचना है।</p><p>चूँकि कोई भी बीजगणितीय हल करणी घातांक (radical index) की कठोर डोमेन बाधा को संतुष्ट नहीं करता है, इसलिए उन्हें अस्वीकार कर दिया जाना चाहिए।</p><p>इसलिए, इन कठोर सीमाओं के तहत, मूल बहुविकल्पीय प्रश्न का सही उत्तर वास्तव में <strong>विकल्प D: कोई हल नहीं</strong> है।</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwk1gtr",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If $x^2 + 7^{\\log_7{x}} - 2 = 0$ then $x$ is</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>2</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>-2</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>-1</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>1</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>We use the property</p>\n<p>$$ a^{\\log_a x} = x $$</p>\n<p>but this is valid only when $x>0$, because $\\log_7 x$ is defined only for positive $x$.</p>\n<p>So the given equation becomes</p>\n<p>$$ x^2 + x - 2 = 0 $$</p>\n<p>Now factorise:</p>\n<p>$$ x^2 + x - 2 = (x+2)(x-1)=0 $$</p>\n<p>So the possible values are</p>\n<p>$$ x=-2 \\quad \\text{or} \\quad x=1 $$</p>\n<p>But $x=-2$ is not allowed, since $\\log_7 x$ is not defined for a negative number.</p>\n<p>So the only valid value is</p>\n<p>$$ x=1 $$</p>\n<p>Option D: $1$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि $x^2 + 7^{\\log_7{x}} - 2 = 0$ है, तो $x$ का मान है:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>2</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>-2</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>-1</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>1</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>हम निम्न गुणधर्म का उपयोग करते हैं:</p>\n<p>$$ a^{\\log_a x} = x $$</p>\n<p>लेकिन यह केवल तभी मान्य है जब $x>0$ हो, क्योंकि $\\log_7 x$ केवल धनात्मक $x$ के लिए परिभाषित है।</p>\n<p>इसलिए दी गई समीकरण बन जाती है:</p>\n<p>$$ x^2 + x - 2 = 0 $$</p>\n<p>अब इसके गुणनखंड करने पर:</p>\n<p>$$ x^2 + x - 2 = (x+2)(x-1)=0 $$</p>\n<p>अतः संभावित मान हैं:</p>\n<p>$$ x=-2 \\quad \\text{या} \\quad x=1 $$</p>\n<p>लेकिन $x=-2$ स्वीकार्य नहीं है, क्योंकि किसी ऋणात्मक संख्या के लिए $\\log_7 x$ परिभाषित नहीं है।</p>\n<p>इसलिए एकमात्र मान्य मान है:</p>\n<p>$$ x=1 $$</p>\n<p>विकल्प D: $1$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwmiqnr",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "$5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$ then $x$ is",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>1 Only</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>1/16 Only</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>1/2</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>1, 1/16</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "\n<p>$$5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$$</p>\n\n<p>$$\\Rightarrow $$ $$5^{1+\\log_4 x} + 5^{-\\log_4 x - 1} = \\frac{26}{5}$$</p>\n\n<p>$$\\Rightarrow $$$$-\\log_4 x - 1 = -(1 + \\log_4 x)$$</p>\n\n<p>$$\\Rightarrow $$$$5^{1+\\log_4 x} + 5^{-(1+\\log_4 x)} = \\frac{26}{5}$$</p>\n\n<p>Let $t = 5^{1+\\log_4 x}$.</p>\n<p>Because $a^{-n} = \\frac{1}{a^n}$, the second term becomes $\\frac{1}{t}$.</p>\n\n<p>$$\\therefore $$ $$t + \\frac{1}{t} = \\frac{26}{5}$$</p>\n\n<p>$$\\Rightarrow $$ $$5t^2 + 5 = 26t$$</p>\n<p>$$\\Rightarrow $$ $$5t^2 - 26t + 5 = 0$$</p>\n\n<p>$$\\Rightarrow $$ $$5t^2 - 25t - t + 5 = 0$$</p>\n<p>$$\\Rightarrow $$ $$5t(t - 5) - 1(t - 5) = 0$$</p>\n<p>$$\\Rightarrow $$ $$(5t - 1)(t - 5) = 0$$</p>\n\n<p>$$t = \\frac{1}{5} \\quad \\text{or} \\quad t = 5$$</p>\n<p>Substitute $t = 5^{1+\\log_4 x}$ back in to find $x$.</p>\n<p><strong>Case 1:</strong></p>\n<p>$$5^{1+\\log_4 x} = \\frac{1}{5}$$</p>\n<p>$$5^{1+\\log_4 x} = 5^{-1}$$</p>\n<p>Equate the exponents:</p>\n<p>$$1 + \\log_4 x = -1$$</p>\n<p>$$\\log_4 x = -2$$</p>\n<p>$$x = 4^{-2} = \\mathbf{\\frac{1}{16}}$$</p>\n<p><strong>Case 2:</strong></p>\n<p>$$5^{1+\\log_4 x} = 5$$</p>\n<p>$$5^{1+\\log_4 x} = 5^1$$</p>\n<p>Equate the exponents:</p>\n<p>$$1 + \\log_4 x = 1$$</p>\n<p>$$\\log_4 x = 0$$</p>\n<p>$$x = 4^0 = \\mathbf{1}$$</p>\n<p>Since $x$ must be strictly greater than $0$ for a logarithm to exist, both $1$ and $1/16$ are valid solutions.</p>\n<p><strong>Final Answer:</strong></p>\n<p>Option D: <strong>1, 1/16</strong></p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "यदि $5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$ है, तो $x$ का मान है:",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>केवल 1</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>केवल 1/16</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>1/2</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>1, 1/16</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$5^{1+\\log _4 x}+5^{\\log _{\\frac{1}{4}} x-1}=\\frac{26}{5}$$</p><p>$$\\Rightarrow $$ $$5^{1+\\log_4 x} + 5^{-\\log_4 x - 1} = \\frac{26}{5}$$</p><p>$$\\Rightarrow $$$$-\\log_4 x - 1 = -(1 + \\log_4 x)$$</p><p>$$\\Rightarrow $$$$5^{1+\\log_4 x} + 5^{-(1+\\log_4 x)} = \\frac{26}{5}$$</p><p>माना $t = 5^{1+\\log_4 x}$ है।</p><p>चूँकि $a^{-n} = \\frac{1}{a^n}$ होता है, इसलिए दूसरा पद $\\frac{1}{t}$ हो जाएगा।</p><p>$$\\therefore $$ $$t + \\frac{1}{t} = \\frac{26}{5}$$</p><p>$$\\Rightarrow $$ $$5t^2 + 5 = 26t$$</p><p>$$\\Rightarrow $$ $$5t^2 - 26t + 5 = 0$$</p><p>$$\\Rightarrow $$ $$5t^2 - 25t - t + 5 = 0$$</p><p>$$\\Rightarrow $$ $$5t(t - 5) - 1(t - 5) = 0$$</p><p>$$\\Rightarrow $$ $$(5t - 1)(t - 5) = 0$$</p><p>$$t = \\frac{1}{5} \\quad \\text{या} \\quad t = 5$$</p><p>$x$ का मान ज्ञात करने के लिए पुनः $t = 5^{1+\\log_4 x}$ प्रतिस्थापित करने पर।</p><p><strong>स्थिति 1:</strong></p><p>$$5^{1+\\log_4 x} = \\frac{1}{5}$$</p><p>$$5^{1+\\log_4 x} = 5^{-1}$$</p><p>घातांकों की तुलना करने पर:</p><p>$$1 + \\log_4 x = -1$$</p><p>$$\\log_4 x = -2$$</p><p>$$x = 4^{-2} = \\mathbf{\\frac{1}{16}}$$</p><p><strong>स्थिति 2:</strong></p><p>$$5^{1+\\log_4 x} = 5$$</p><p>$$5^{1+\\log_4 x} = 5^1$$</p><p>घातांकों की तुलना करने पर:</p><p>$$1 + \\log_4 x = 1$$</p><p>$$\\log_4 x = 0$$</p><p>$$x = 4^0 = \\mathbf{1}$$</p><p>चूँकि लघुगणक (लॉग) के अस्तित्व के लिए $x$ का मान $0$ से बड़ा होना अनिवार्य है, इसलिए $1$ और $1/16$ दोनों वैध हल हैं।</p><p><strong>अंतिम उत्तर:</strong></p><p>विकल्प D: <strong>1, 1/16</strong></p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwmt9c3",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Solve for $x: \\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 \\pm  2\\sqrt{6}}{2}$$"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}$$"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 - 2\\sqrt{6}}{2}$$"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}$$"
+                      }
+                    ],
+                    "correct_options": [
+                      "B"
+                    ],
+                    "answer": null,
+                    "explanation": "Given, $\\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$\n\n<p>Let $a = \\log(4-x)$ and $b = \\log\\left(x + \\frac{1}{2}\\right)$.</p>\n<p>The equation becomes</p>\n<p>$$a^2 + ab - 2b^2 = 0.$$</p>\n\n<p>$$a^2 + 2ab - ab - 2b^2 = 0$$</p>\n<p>$$a(a + 2b) - b(a + 2b) = 0$$</p>\n<p>$$(a - b)(a + 2b) = 0.$$</p>\n<p>So either $a = b$ or $a = -2b$.</p>\n<p><strong>First case: $a = b$</strong></p>\n<p>This means</p>\n<p>$$\\log(4-x) = \\log\\left(x + \\frac{1}{2}\\right).$$</p>\n<p>Since the logs are equal, the numbers inside must be equal.</p>\n<p>$$4 - x = x + \\frac{1}{2}$$</p>\n<p>$$\\frac{7}{2} = 2x \\implies x = \\frac{7}{4}.$$</p>\n<p><strong>Second case: $a = -2b$</strong></p>\n<p>This means</p>\n<p>$$\\log(4-x) = -2\\log\\left(x + \\frac{1}{2}\\right) = \\log\\left(x + \\frac{1}{2}\\right)^{-2}.$$</p>\n<p>So</p>\n<p>$$4 - x = \\frac{1}{\\left(x + \\frac{1}{2}\\right)^2}.$$</p>\n<p>$x + \\frac{1}{2} = \\frac{2x+1}{2}$, so $\\left(x+\\frac{1}{2}\\right)^2 = \\frac{(2x+1)^2}{4}$.</p>\n<p>The equation turns into</p>\n<p>$$4 - x = \\frac{4}{(2x+1)^2}.$$</p>\n\n<p>$$(4 - x)(2x+1)^2 = 4.$$</p>\n\n<p>$$(4 - x)(4x^2 + 4x + 1) = 4.$$</p>\n<p>$$16x^2 + 16x + 4 - 4x^3 - 4x^2 - x = 4$$</p>\n<p>$$-4x^3 + 12x^2 + 15x + 4 = 4$$</p>\n<p>$$-4x^3 + 12x^2 + 15x = 0$$</p>\n<p>$$x(-4x^2 + 12x + 15) = 0.$$</p>\n<p>So $x = 0$, or</p>\n<p>$$4x^2 - 12x - 15 = 0.$$</p>\n<p>Using the quadratic formula,</p>\n<p>$$x = \\frac{12 \\pm \\sqrt{144 + 240}}{8} = \\frac{12 \\pm \\sqrt{384}}{8} = \\frac{12 \\pm 8\\sqrt{6}}{8} = \\frac{3 \\pm 2\\sqrt{6}}{2}.$$</p>\n<p><strong>Checking which values are allowed</strong></p>\n<p>The logarithms only make sense when $4 - x > 0$ and $x + \\frac{1}{2} > 0$. That means</p>\n<p>$$-\\frac{1}{2} < x < 4.$$</p>\n<p>Now I'll check each answer.</p>\n<ul>\n<li><p>$x = \\frac{7}{4} = 1.75$ — this lies between $-\\frac{1}{2}$ and $4$, so it is valid.</p></li>\n<li><p>$x = 0$ — this also lies in the range, so it is valid.</p></li>\n<li><p>$x = \\frac{3 + 2\\sqrt{6}}{2} \\approx \\frac{3 + 4.9}{2} \\approx 3.95$ — this is less than $4$ and greater than $-\\frac{1}{2}$, so it is valid.</p></li>\n<li><p>$x = \\frac{3 - 2\\sqrt{6}}{2} \\approx \\frac{3 - 4.9}{2} \\approx -0.95$ — this is less than $-\\frac{1}{2}$, so it is rejected.</p></li>\n</ul>\n<p>The acceptable solutions are</p>\n<p>$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}.$$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "$x$ के लिए हल कीजिए: $\\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 \\pm  2\\sqrt{6}}{2}$$"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}$$"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 - 2\\sqrt{6}}{2}$$"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "$$x = 0, \\quad x = \\frac{7}{4}$$"
+                      }
+                    ],
+                    "correct_options": [
+                      "B"
+                    ],
+                    "answer": null,
+                    "explanation": "दिया गया है, $\\log ^2(4-x)+\\log (4-x) \\cdot \\log \\left(x+\\frac{1}{2}\\right)-2 \\log ^2\\left(x+\\frac{1}{2}\\right)=0$\n\n<p>माना $a = \\log(4-x)$ और $b = \\log\\left(x + \\frac{1}{2}\\right)$ है।</p>\n<p>समीकरण इस प्रकार बन जाता है</p>\n<p>$$a^2 + ab - 2b^2 = 0.$$</p>\n\n<p>$$a^2 + 2ab - ab - 2b^2 = 0$$</p>\n<p>$$a(a + 2b) - b(a + 2b) = 0$$</p>\n<p>$$(a - b)(a + 2b) = 0.$$</p>\n<p>इसलिए या तो $a = b$ या $a = -2b$ होगा।</p>\n<p><strong>पहली स्थिति: $a = b$</strong></p>\n<p>इसका अर्थ है</p>\n<p>$$\\log(4-x) = \\log\\left(x + \\frac{1}{2}\\right).$$</p>\n<p>चूँकि लघुगणक (logs) बराबर हैं, इसलिए उनके अंदर की संख्याएँ भी बराबर होनी चाहिए।</p>\n<p>$$4 - x = x + \\frac{1}{2}$$</p>\n<p>$$\\frac{7}{2} = 2x \\implies x = \\frac{7}{4}.$$</p>\n<p><strong>दूसरी स्थिति: $a = -2b$</strong></p>\n<p>इसका अर्थ है</p>\n<p>$$\\log(4-x) = -2\\log\\left(x + \\frac{1}{2}\\right) = \\log\\left(x + \\frac{1}{2}\\right)^{-2}.$$</p>\n<p>इसलिए</p>\n<p>$$4 - x = \\frac{1}{\\left(x + \\frac{1}{2}\\right)^2}.$$</p>\n<p>$x + \\frac{1}{2} = \\frac{2x+1}{2}$, इसलिए $\\left(x+\\frac{1}{2}\\right)^2 = \\frac{(2x+1)^2}{4}$ होगा।</p>\n<p>समीकरण इस प्रकार बदल जाता है</p>\n<p>$$4 - x = \\frac{4}{(2x+1)^2}.$$</p>\n\n<p>$$(4 - x)(2x+1)^2 = 4.$$</p>\n\n<p>$$(4 - x)(4x^2 + 4x + 1) = 4.$$</p>\n<p>$$16x^2 + 16x + 4 - 4x^3 - 4x^2 - x = 4$$</p>\n<p>$$-4x^3 + 12x^2 + 15x + 4 = 4$$</p>\n<p>$$-4x^3 + 12x^2 + 15x = 0$$</p>\n<p>$$x(-4x^2 + 12x + 15) = 0.$$</p>\n<p>इसलिए $x = 0$, या</p>\n<p>$$4x^2 - 12x - 15 = 0.$$</p>\n<p>द्विघात सूत्र (quadratic formula) का उपयोग करने पर,</p>\n<p>$$x = \\frac{12 \\pm \\sqrt{144 + 240}}{8} = \\frac{12 \\pm \\sqrt{384}}{8} = \\frac{12 \\pm 8\\sqrt{6}}{8} = \\frac{3 \\pm 2\\sqrt{6}}{2}.$$</p>\n<p><strong>यह जाँचना कि कौन-से मान स्वीकार्य हैं</strong></p>\n<p>लघुगणक केवल तभी परिभाषित होते हैं जब $4 - x > 0$ और $x + \\frac{1}{2} > 0$ हो। इसका अर्थ है कि</p>\n<p>$$-\\frac{1}{2} < x < 4.$$</p>\n<p>अब हम प्रत्येक उत्तर की जाँच करेंगे।</p>\n<ul>\n<li><p>$x = \\frac{7}{4} = 1.75$ — यह $-\\frac{1}{2}$ और $4$ के बीच स्थित है, इसलिए यह मान्य है।</p></li>\n<li><p>$x = 0$ — यह भी इसी सीमा (range) में स्थित है, इसलिए यह मान्य है।</p></li>\n<li><p>$x = \\frac{3 + 2\\sqrt{6}}{2} \\approx \\frac{3 + 4.9}{2} \\approx 3.95$ — यह $4$ से छोटा और $-\\frac{1}{2}$ से बड़ा है, इसलिए यह मान्य है।</p></li>\n<li><p>$x = \\frac{3 - 2\\sqrt{6}}{2} \\approx \\frac{3 - 4.9}{2} \\approx -0.95$ — यह $-\\frac{1}{2}$ से छोटा है, इसलिए इसे अस्वीकार कर दिया गया है।</p></li>\n</ul>\n<p>अतः स्वीकार्य हल हैं</p>\n<p>$$x = 0, \\quad x = \\frac{7}{4}, \\quad x = \\frac{3 + 2\\sqrt{6}}{2}.$$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwn4bpy",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Indicate all correct alternatives, where base of the $\\log$ is 2 .</p>\n<p>The equation $x^{\\frac{3}{4}}\\left(\\log _2 x\\right)^2+\\log _2 x-\\frac{5}{4}=\\sqrt{2}$ has :</p>\n<p>(A) At least one real solution</p>\n<p>(B) Exactly 3 real solutions</p>\n<p>(C) Exactly one irrational solution</p>\n<p>(D) Imaginary roots</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "A Only"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "A, B and D Only"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "A, B and C Only"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "B and D Only"
+                      }
+                    ],
+                    "correct_options": [
+                      "C"
+                    ],
+                    "answer": null,
+                    "explanation": "\n<p>$$x^{\\frac{3}{4}(\\log_2 x)^2 + \\log_2 x - \\frac{5}{4}} = \\sqrt{2}$$</p>\n<p>We take the given base of the logarithm, which is $2$, and apply $\\log_2$ on both sides of the equation:</p>\n<p>$$\\log_2 \\left( x^{\\frac{3}{4} (\\log_2 x)^2 + \\log_2 x - \\frac{5}{4}} \\right) = \\log_2 (\\sqrt{2})$$</p>\n\n<p>$$\\left( \\frac{3}{4} (\\log_2 x)^2 + \\log_2 x - \\frac{5}{4} \\right) \\log_2 x = \\frac{1}{2}$$</p>\n\n<p>Let's substitute $\\log_2 x = t$.</p>\n<p>$$\\left( \\frac{3}{4} t^2 + t - \\frac{5}{4} \\right) t = \\frac{1}{2}$$</p>\n\n<p>$$\\left( 3t^2 + 4t - 5 \\right) t = 2$$</p>\n\n<p>$$3t^3 + 4t^2 - 5t - 2 = 0$$</p>\n<p>We substitute $t = 1$:</p>\n<p>$$3(1)^3 + 4(1)^2 - 5(1) - 2 = 3 + 4 - 5 - 2 = 0$$</p>\n<p>Since it satisfies the equation, $t = 1$ is a root, meaning $(t - 1)$ is a factor. We can now factor the cubic polynomial by splitting the terms:</p>\n<p>$$3t^3 - 3t^2 + 7t^2 - 7t + 2t - 2 = 0$$</p>\n<p>$$3t^2(t - 1) + 7t(t - 1) + 2(t - 1) = 0$$</p>\n<p>$$(t - 1)(3t^2 + 7t + 2) = 0$$</p>\n<p>Next, we factor the quadratic polynomial $3t^2 + 7t + 2$:</p>\n<p>$$3t^2 + 6t + t + 2 = 0$$</p>\n<p>$$3t(t + 2) + 1(t + 2) = 0$$</p>\n<p>$$(3t + 1)(t + 2) = 0$$</p>\n<p>Putting everything together, the complete factorization is:</p>\n<p>$$(t - 1)(3t + 1)(t + 2) = 0$$</p>\n<p>This gives three possible values for $t$:</p>\n<p>$$t = 1, \\quad t = -\\frac{1}{3}, \\quad t = -2$$</p>\n<p>Substituting back $t = \\log_2 x$, we find the corresponding values for $x$:</p>\n<ol>\n<li><p>$\\log_2 x = 1 \\implies x = 2^1 = 2$</p></li>\n<li><p>$\\log_2 x = -\\frac{1}{3} \\implies x = 2^{-\\frac{1}{3}} = \\frac{1}{\\sqrt[3]{2}}$</p></li>\n<li><p>$\\log_2 x = -2 \\implies x = 2^{-2} = \\frac{1}{4}$</p></li>\n</ol>\n<p>We have three values for $x$ ($2$, $\\frac{1}{\\sqrt[3]{2}}$, and $\\frac{1}{4}$). All three expressions are real, positive numbers, which means they are valid arguments for the original logarithm (since the domain of $\\log_2 x$ is $x > 0$).</p>\n<p>Now, let's analyze the roots based on the given options:</p>\n<ul>\n<li><p><strong>(A) At least one real solution:</strong> This is correct because we found real solutions.</p></li>\n<li><p><strong>(B) Exactly 3 real solutions:</strong> This is correct as we obtained exactly three distinct real numbers for $x$.</p></li>\n<li><p><strong>(C) Exactly one irrational solution:</strong> This is correct. Among our solutions, $2$ and $\\frac{1}{4}$ are rational numbers, but $2^{-\\frac{1}{3}}$ (or $\\frac{1}{\\sqrt[3]{2}}$) is an irrational number. Thus, there is exactly one irrational solution.</p></li>\n<li><p><strong>(D) Imaginary roots:</strong> This is incorrect since all our roots are strictly real numbers.</p></li>\n</ul>\n<p>So, the true statements correspond to options (A), (B), and (C).</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>सभी सही विकल्पों को इंगित करें, जहाँ $\\log$ का आधार 2 है।</p>\n<p>समीकरण $x^{\\frac{3}{4}}\\left(\\log _2 x\\right)^2+\\log _2 x-\\frac{5}{4}=\\sqrt{2}$ के हैं :</p>\n<p>(A) कम से कम एक वास्तविक हल</p>\n<p>(B) ठीक 3 वास्तविक हल</p>\n<p>(C) ठीक एक अपरिमेय हल</p>\n<p>(D) काल्पनिक मूल</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "केवल A"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "केवल A, B और D"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "केवल A, B और C"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "केवल B और D"
+                      }
+                    ],
+                    "correct_options": [
+                      "C"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$x^{\\frac{3}{4}(\\log_2 x)^2 + \\log_2 x - \\frac{5}{4}} = \\sqrt{2}$$</p>\n<p>हम लघुगणक का दिए गए आधार 2 को प्रयुक्त करके समीकरण के दोनों पक्षों का $\\log_2$ लेते हैं:</p>\n<p>$$\\log_2 \\left( x^{\\frac{3}{4} (\\log_2 x)^2 + \\log_2 x - \\frac{5}{4}} \\right) = \\log_2 (\\sqrt{2})$$</p>\n\n<p>$$\\left( \\frac{3}{4} (\\log_2 x)^2 + \\log_2 x - \\frac{5}{4} \\right) \\log_2 x = \\frac{1}{2}$$</p>\n\n<p>माना $\\log_2 x = t$ है।</p>\n<p>$$\\left( \\frac{3}{4} t^2 + t - \\frac{5}{4} \\right) t = \\frac{1}{2}$$</p>\n\n<p>$$\\left( 3t^2 + 4t - 5 \\right) t = 2$$</p>\n\n<p>$$3t^3 + 4t^2 - 5t - 2 = 0$$</p>\n<p>हम $t = 1$ प्रतिस्थापित करते हैं:</p>\n<p>$$3(1)^3 + 4(1)^2 - 5(1) - 2 = 3 + 4 - 5 - 2 = 0$$</p>\n<p>चूँकि यह समीकरण को संतुष्ट करता है, इसलिए $t = 1$ एक मूल है, जिसका अर्थ है कि $(t - 1)$ एक गुणनखंड है। अब हम पदों को विभक्त करके त्रिघात बहुपद का गुणनखंड कर सकते हैं:</p>\n<p>$$3t^3 - 3t^2 + 7t^2 - 7t + 2t - 2 = 0$$</p>\n<p>$$3t^2(t - 1) + 7t(t - 1) + 2(t - 1) = 0$$</p>\n<p>$$(t - 1)(3t^2 + 7t + 2) = 0$$</p>\n<p>आगे, हम द्विघात बहुपद $3t^2 + 7t + 2$ का गुणनखंड करते हैं:</p>\n<p>$$3t^2 + 6t + t + 2 = 0$$</p>\n<p>$$3t(t + 2) + 1(t + 2) = 0$$</p>\n<p>$$(3t + 1)(t + 2) = 0$$</p>\n<p>सब कुछ एक साथ रखने पर, पूर्ण गुणनखंडन है:</p>\n<p>$$(t - 1)(3t + 1)(t + 2) = 0$$</p>\n<p>इससे $t$ के तीन संभावित मान मिलते हैं:</p>\n<p>$$t = 1, \\quad t = -\\frac{1}{3}, \\quad t = -2$$</p>\n<p>वापस $t = \\log_2 x$ प्रतिस्थापित करने पर, हमें $x$ के संगत मान मिलते हैं:</p>\n<ol>\n<li><p>$\\log_2 x = 1 \\implies x = 2^1 = 2$</p></li>\n<li><p>$\\log_2 x = -\\frac{1}{3} \\implies x = 2^{-\\frac{1}{3}} = \\frac{1}{\\sqrt[3]{2}}$</p></li>\n<li><p>$\\log_2 x = -2 \\implies x = 2^{-2} = \\frac{1}{4}$</p></li>\n</ol>\n<p>हमारे पास $x$ के तीन मान ($2$, $\\frac{1}{\\sqrt[3]{2}}$, और $\\frac{1}{4}$) हैं। सभी तीन व्यंजक वास्तविक, धनात्मक संख्याएँ हैं, जिसका अर्थ है कि वे मूल लघुगणक के लिए वैध मान हैं (चूँकि $\\log_2 x$ का प्रांत $x > 0$ है)।</p>\n<p>अब, आइए दिए गए विकल्पों के आधार पर मूलों का विश्लेषण करें:</p>\n<ul>\n<li><p><strong>(A) कम से कम एक वास्तविक हल:</strong> यह सही है क्योंकि हमने वास्तविक हल प्राप्त किये हैं।</p></li>\n<li><p><strong>(B) ठीक 3 वास्तविक हल:</strong> यह सही है क्योंकि हमने $x$ के लिए ठीक तीन भिन्न वास्तविक संख्याएँ प्राप्त की हैं।</p></li>\n<li><p><strong>(C) ठीक एक अपरिमेय हल:</strong> यह सही है। हमारे हलों में, $2$ और $\\frac{1}{4}$ परिमेय संख्याएँ हैं, लेकिन $2^{-\\frac{1}{3}}$ (या $\\frac{1}{\\sqrt[3]{2}}$) एक अपरिमेय संख्या है। इसलिए, यहाँ ठीक एक ही अपरिमेय हल है।</p></li>\n<li><p><strong>(D) काल्पनिक मूल:</strong> यह गलत है क्योंकि हमारे सभी मूल पूर्णतया वास्तविक संख्याएँ हैं।</p></li>\n</ul>\n<p>अतः, सही कथन विकल्प (A), (B), और (C) के संगत हैं।</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwnofgh",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>The equation $x^{\\left[\\left(\\log _3 x\\right)^2-(\\frac{9}{2} \\log _3 x)+5\\right]}=3 \\sqrt{3}$ has</p>\n<p>(A) Exactly 3 real solutions</p>\n<p>(B) At least one real solution</p>\n<p>(C) Exactly one irrational solution</p>\n<p>(D) Complex roots</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "A, B and C Only"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "A, B, C and D"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "A, C Only"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "B, C Only"
+                      }
+                    ],
+                    "correct_options": [
+                      "B"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$x^{\\left[\\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5\\right]} = 3 \\sqrt{3}$$</p>\n\n<p>$$\\Rightarrow $$ $$x^{\\left[\\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5\\right]} = 3^{\\frac{3}{2}}$$</p>\n\n<p>To bring the complex exponent down, take the logarithm base $3$ ($\\log_3$) of both sides.</p>\n<p>$$\\left[ \\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5 \\right] \\cdot \\log_3 x = \\log_3 \\left( 3^{\\frac{3}{2}} \\right)$$</p>\n\n<p>$$\\left[ \\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5 \\right] \\cdot \\log_3 x = \\frac{3}{2}$$</p>\n<p>Let $t = \\log_3 x$. Substitute $t$ into the equation:</p>\n<p>$$\\left( t^2 - \\frac{9}{2}t + 5 \\right) t = \\frac{3}{2}$$</p>\n\n<p>$$2 \\left( t^3 - \\frac{9}{2}t^2 + 5t \\right) = 2 \\left( \\frac{3}{2} \\right)$$</p>\n<p>$$2t^3 - 9t^2 + 10t = 3$$</p>\n<p>$$2t^3 - 9t^2 + 10t - 3 = 0$$</p>\n<p>Using the Rational Root Theorem, test $t = 1$:</p>\n<p>$$2(1)^3 - 9(1)^2 + 10(1) - 3 = 2 - 9 + 10 - 3 = 0$$</p>\n<p>Since $t = 1$ is a valid root, $(t - 1)$ must be a factor.</p>\n<p>$$(t - 1)(2t^2 - 7t + 3) = 0$$</p>\n<p>Factor the quadratic equation $2t^2 - 7t + 3 = 0$:</p>\n<p>$$2t^2 - 6t - t + 3 = 0$$</p>\n<p>$$2t(t - 3) - 1(t - 3) = 0$$</p>\n<p>$$(2t - 1)(t - 3) = 0$$</p>\n<p>Setting all factors to zero gives three values for $t$:</p>\n<p>$$t = 1, \\quad t = \\frac{1}{2}, \\quad t = 3$$</p>\n<p>Reverse the substitution $t = \\log_3 x$, which means $x = 3^t$.</p>\n<ul>\n<li><p>$x_1 = 3^1 = \\mathbf{3}$</p></li>\n<li><p>$x_2 = 3^{\\frac{1}{2}} = \\mathbf{\\sqrt{3}}$</p></li>\n<li><p>$x_3 = 3^3 = \\mathbf{27}$</p></li>\n</ul>\n<p><strong>The Solution Set:</strong> $x \\in \\{3, \\sqrt{3}, 27\\}$</p>\n\n\n<ul>\n<li><p><strong>(A) Exactly 3 real solutions:</strong> <strong>TRUE.</strong> The numbers $3$, $\\sqrt{3}$, and $27$ are all valid points on the real number line.</p></li>\n<li><p><strong>(B) At least one real solution:</strong> <strong>TRUE.</strong> A set of three real numbers satisfies the condition of having \"at least one.\"</p></li>\n<li><p><strong>(C) Exactly one irrational solution:</strong> <strong>TRUE.</strong> The root $\\sqrt{3}$ is irrational, while $3$ and $27$ are rational integers.</p></li>\n<li><p><strong>(D) Complex roots:</strong> <strong>TRUE.</strong> Under the formal definition of a complex number ($a + bi$), every real number $a$ is a complex number where $b = 0$. Therefore, $3 + 0i$, $\\sqrt{3} + 0i$, and $27 + 0i$ are all strictly complex roots.</p></li>\n</ul>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>समीकरण $x^{\\left[\\left(\\log _3 x\\right)^2-(\\frac{9}{2} \\log _3 x)+5\\right]}=3 \\sqrt{3}$ के</p>\n<p>(A) ठीक 3 वास्तविक हल हैं</p>\n<p>(B) कम से कम एक वास्तविक हल है</p>\n<p>(C) ठीक एक अपरिमेय हल है</p>\n<p>(D) सम्मिश्र मूल हैं</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "केवल A, B और C"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "A, B, C और D"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "केवल A, C"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "केवल B, C"
+                      }
+                    ],
+                    "correct_options": [
+                      "B"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$x^{\\left[\\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5\\right]} = 3 \\sqrt{3}$$</p>\n\n<p>$$\\Rightarrow $$ $$x^{\\left[\\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5\\right]} = 3^{\\frac{3}{2}}$$</p>\n\n<p>घातांक को नीचे लाने के लिए, दोनों पक्षों का आधार $3$ पर लघुगणक ($\\log_3$) लें।</p>\n<p>$$\\left[ \\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5 \\right] \\cdot \\log_3 x = \\log_3 \\left( 3^{\\frac{3}{2}} \\right)$$</p>\n\n<p>$$\\left[ \\left(\\log _3 x\\right)^2 - \\frac{9}{2} \\log _3 x + 5 \\right] \\cdot \\log_3 x = \\frac{3}{2}$$</p>\n<p>माना $t = \\log_3 x$ है। समीकरण में $t$ का मान रखने पर:</p>\n<p>$$\\left( t^2 - \\frac{9}{2}t + 5 \\right) t = \\frac{3}{2}$$</p>\n\n<p>$$2 \\left( t^3 - \\frac{9}{2}t^2 + 5t \\right) = 2 \\left( \\frac{3}{2} \\right)$$</p>\n<p>$$2t^3 - 9t^2 + 10t = 3$$</p>\n<p>$$2t^3 - 9t^2 + 10t - 3 = 0$$</p>\n<p>परिमेय मूल प्रमेय (Rational Root Theorem) का उपयोग करके $t = 1$ का परीक्षण करने पर:</p>\n<p>$$2(1)^3 - 9(1)^2 + 10(1) - 3 = 2 - 9 + 10 - 3 = 0$$</p>\n<p>चूँकि $t = 1$ एक वैध मूल है, $(t - 1)$ एक गुणनखंड होना चाहिए।</p>\n<p>$$(t - 1)(2t^2 - 7t + 3) = 0$$</p>\n<p>द्विघात समीकरण $2t^2 - 7t + 3 = 0$ के गुणनखंड करने पर:</p>\n<p>$$2t^2 - 6t - t + 3 = 0$$</p>\n<p>$$2t(t - 3) - 1(t - 3) = 0$$</p>\n<p>$$(2t - 1)(t - 3) = 0$$</p>\n<p>सभी गुणनखंडों को शून्य के बराबर रखने पर $t$ के तीन मान प्राप्त होते हैं:</p>\n<p>$$t = 1, \\quad t = \\frac{1}{2}, \\quad t = 3$$</p>\n<p>प्रतिस्थापन $t = \\log_3 x$ को वापस रखने पर, जिसका अर्थ है $x = 3^t$:</p>\n<ul>\n<li><p>$x_1 = 3^1 = \\mathbf{3}$</p></li>\n<li><p>$x_2 = 3^{\\frac{1}{2}} = \\mathbf{\\sqrt{3}}$</p></li>\n<li><p>$x_3 = 3^3 = \\mathbf{27}$</p></li>\n</ul>\n<p><strong>हल समुच्चय:</strong> $x \\in \\{3, \\sqrt{3}, 27\\}$</p>\n\n<ul>\n<li><p><strong>(A) ठीक 3 वास्तविक हल हैं:</strong> <strong>सत्य।</strong> संख्याएँ $3$, $\\sqrt{3}$, और $27$ सभी वास्तविक संख्या रेखा पर वैध बिंदु हैं।</p></li>\n<li><p><strong>(B) कम से कम एक वास्तविक हल है:</strong> <strong>सत्य।</strong> तीन वास्तविक संख्याओं का एक समुच्चय \"कम से कम एक\" होने की शर्त को पूर्ण करता है।</p></li>\n<li><p><strong>(C) ठीक एक अपरिमेय हल है:</strong> <strong>सत्य।</strong> मूल $\\sqrt{3}$ अपरिमेय है, जबकि $3$ और $27$ परिमेय पूर्णांक हैं।</p></li>\n<li><p><strong>(D) सम्मिश्र मूल हैं:</strong> <strong>सत्य।</strong> सम्मिश्र संख्या ($a + bi$) की औपचारिक परिभाषा के अनुसार, प्रत्येक वास्तविक संख्या $a$ एक सम्मिश्र संख्या होती है जहाँ $b = 0$ होता है। इसलिए, $3 + 0i$, $\\sqrt{3} + 0i$, और $27 + 0i$ सभी विशुद्ध रूप से सम्मिश्र मूल हैं।</p></li>\n</ul>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwv4ksq",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Positive integers <i>a</i> and <i>b</i> satisfy the condition $\\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0$. Then which can not be possible values of $a + b$ is :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>501</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>252</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>128</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>66</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>We have the equation:</p>\n<p>$$ \\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0 $$</p>\n<p>$$ \\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right) = 2^0 $$</p>\n<p>$$ \\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right) = 1 $$</p>\n<p>$$ \\log _{2^b}\\left(2^{1000}\\right) = 2^a $$</p>\n<p>We can use the property of logarithms that states $\\log_{x^y}(x^z) = \\frac{z}{y}$.</p>\n<p>$$ \\log_{2^b}\\left(2^{1000}\\right) = \\frac{1000}{b} $$</p>\n<p>Substitute this back into our equation:</p>\n<p>$$ \\frac{1000}{b} = 2^a $$</p>\n<p>$$ b \\cdot 2^a = 1000 $$</p>\n<p>We are given that $a$ and $b$ are positive integers. This means $2^a$ is an integer that must exactly divide $1000$. Let's write down the prime factorization of $1000$ to see its factors better:</p>\n<p>$$ 1000 = 8 \\times 125 = 2^3 \\times 5^3 $$</p>\n<p>For $b$ to remain an integer, the power of $2$ dividing $1000$ can be at most $2^3$. Since $a$ is a positive integer ($a \\ge 1$), the possible values for $2^a$ that divide $1000$ are $2^1$, $2^2$, and $2^3$. This means the possible values for $a$ are $1, 2,$ and $3$.</p>\n<p>Let's find the corresponding values for $b$ and the sum of $a + b$ in each case:</p>\n<p>If $a = 1$:</p>\n<p>$$ 2^a = 2^1 = 2 $$</p>\n<p>$$ b = \\frac{1000}{2} = 500 $$</p>\n<p>The sum is $a + b = 1 + 500 = 501$.</p>\n<p>If $a = 2$:</p>\n<p>$$ 2^a = 2^2 = 4 $$</p>\n<p>$$ b = \\frac{1000}{4} = 250 $$</p>\n<p>The sum is $a + b = 2 + 250 = 252$.</p>\n<p>If $a = 3$:</p>\n<p>$$ 2^a = 2^3 = 8 $$</p>\n<p>$$ b = \\frac{1000}{8} = 125 $$</p>\n<p>The sum is $a + b = 3 + 125 = 128$.</p>\n<p>The possible values for $a + b$ are $501$, $252$, and $128$. Looking at the given options, $66$ is not a possible value. </p>\n<p>Option D is correct.</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>धनात्मक पूर्णांक <i>a</i> और <i>b</i> प्रतिबंध $\\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0$ को संतुष्ट करते हैं। तो $a + b$ का संभावित मान निम्न में से कौन सा नहीं हो सकता है :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>501</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>252</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>128</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>66</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "D"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>हमारे पास समीकरण है:</p><p>$$ \\log _2\\left[\\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right)\\right]=0 $$</p><p>$$ \\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right) = 2^0 $$</p><p>$$ \\log _{2^a}\\left(\\log _{2^b}\\left(2^{1000}\\right)\\right) = 1 $$</p><p>$$ \\log _{2^b}\\left(2^{1000}\\right) = 2^a $$</p><p>हम लघुगणक (logarithm) के गुणधर्म का उपयोग कर सकते हैं जिसके अनुसार $\\log_{x^y}(x^z) = \\frac{z}{y}$ होता है।</p><p>$$ \\log_{2^b}\\left(2^{1000}\\right) = \\frac{1000}{b} $$</p><p>इसे पुनः हमारे समीकरण में प्रतिस्थापित करने पर:</p><p>$$ \\frac{1000}{b} = 2^a $$</p><p>$$ b \\cdot 2^a = 1000 $$</p><p>हमें दिया गया है कि $a$ और $b$ धनात्मक पूर्णांक हैं। इसका अर्थ है कि $2^a$ एक पूर्णांक है जो $1000$ को पूर्णतः विभाजित करना चाहिए। आइए इसके गुणनखंडों को बेहतर ढंग से देखने के लिए $1000$ का अभाज्य गुणनखंडन (prime factorization) लिखें:</p><p>$$ 1000 = 8 \\times 125 = 2^3 \\times 5^3 $$</p><p>$b$ को एक पूर्णांक बने रहने के लिए, $1000$ को विभाजित करने वाली $2$ की अधिकतम घात $2^3$ हो सकती है। चूँकि $a$ एक धनात्मक पूर्णांक है ($a \\ge 1$), $1000$ को विभाजित करने वाले $2^a$ के संभावित मान $2^1$, $2^2$, और $2^3$ हैं। इसका अर्थ है कि $a$ के संभावित मान $1, 2,$ और $3$ हैं।</p><p>आइए प्रत्येक स्थिति में $b$ के संगत मान और $a + b$ का योग ज्ञात करें:</p><p>यदि $a = 1$:</p><p>$$ 2^a = 2^1 = 2 $$</p><p>$$ b = \\frac{1000}{2} = 500 $$</p><p>योग $a + b = 1 + 500 = 501$ है।</p><p>यदि $a = 2$:</p><p>$$ 2^a = 2^2 = 4 $$</p><p>$$ b = \\frac{1000}{4} = 250 $$</p><p>योग $a + b = 2 + 250 = 252$ है।</p><p>यदि $a = 3$:</p><p>$$ 2^a = 2^3 = 8 $$</p><p>$$ b = \\frac{1000}{8} = 125 $$</p><p>योग $a + b = 3 + 125 = 128$ है।</p><p>$a + b$ के संभावित मान $501$, $252$, और $128$ हैं। दिए गए विकल्पों को देखते हुए, $66$ एक संभावित मान नहीं है।</p><p>विकल्प D सही है।</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwvegtr",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If $\\log_{12}{27} = a$, then $\\log_{6}{16}$ is equal to</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$4 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$4 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$2 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$2 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "B"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>Given,</p>\n<p>$$ \\log_{12} 27 = a $$</p>\n<p>$$ \\log_{12} 27 = \\frac{\\log 27}{\\log 12} $$</p>\n<p>So,</p>\n<p>$$ a=\\frac{\\log 3^3}{\\log (3 \\cdot 2^2)} =\\frac{3\\log 3}{\\log 3+2\\log 2} $$</p>\n<p>Now let</p>\n<p>$$ \\log 2=x,\\qquad \\log 3=y $$</p>\n<p>Then,</p>\n<p>$$ a=\\frac{3y}{y+2x} $$</p>\n<p>$$ a(y+2x)=3y $$</p>\n<p>$$ ay+2ax=3y $$</p>\n<p>$$ 2ax=3y-ay=y(3-a) $$</p>\n<p>So,</p>\n<p>$$ \\frac{x}{y}=\\frac{3-a}{2a} $$</p>\n<p>Now,</p>\n<p>$$ \\log_6 16=\\frac{\\log 16}{\\log 6} =\\frac{4\\log 2}{\\log 2+\\log 3} =\\frac{4x}{x+y} $$</p>\n<p>$$ \\log_6 16=\\frac{4\\frac{x}{y}}{\\frac{x}{y}+1} $$</p>\n<p>Substitute $\\frac{x}{y}=\\frac{3-a}{2a}$:</p>\n<p>$$ \\log_6 16= \\frac{4\\left(\\frac{3-a}{2a}\\right)}{\\left(\\frac{3-a}{2a}\\right)+1} $$</p>\n<p>$$ = \\frac{4\\left(\\frac{3-a}{2a}\\right)}{\\frac{3-a+2a}{2a}} = \\frac{4(3-a)}{3+a} $$</p>\n<p>So,</p>\n<p>$$ \\log_6 16 = 4\\left(\\frac{3-a}{3+a}\\right) $$</p>\n<p>The correct option is B.</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि $\\log_{12}{27} = a$ है, तो $\\log_{6}{16}$ बराबर है</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$4 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$4 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$2 \\left( \\frac{3 - a}{3 + a} \\right)$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$2 \\left( \\frac{3 + a}{3 - a} \\right)$</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "B"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>दिया गया है,</p><p>$$ \\log_{12} 27 = a $$</p><p>$$ \\log_{12} 27 = \\frac{\\log 27}{\\log 12} $$</p><p>इसलिए,</p><p>$$ a=\\frac{\\log 3^3}{\\log (3 \\cdot 2^2)} =\\frac{3\\log 3}{\\log 3+2\\log 2} $$</p><p>अब माना</p><p>$$ \\log 2=x,\\qquad \\log 3=y $$</p><p>तब,</p><p>$$ a=\\frac{3y}{y+2x} $$</p><p>$$ a(y+2x)=3y $$</p><p>$$ ay+2ax=3y $$</p><p>$$ 2ax=3y-ay=y(3-a) $$</p><p>इसलिए,</p><p>$$ \\frac{x}{y}=\\frac{3-a}{2a} $$</p><p>अब,</p><p>$$ \\log_6 16=\\frac{\\log 16}{\\log 6} =\\frac{4\\log 2}{\\log 2+\\log 3} =\\frac{4x}{x+y} $$</p><p>$$ \\log_6 16=\\frac{4\\frac{x}{y}}{\\frac{x}{y}+1} $$</p><p>$\\frac{x}{y}=\\frac{3-a}{2a}$ प्रतिस्थापित करने पर:</p><p>$$ \\log_6 16= \\frac{4\\left(\\frac{3-a}{2a}\\right)}{\\left(\\frac{3-a}{2a}\\right)+1} $$</p><p>$$ = \\frac{4\\left(\\frac{3-a}{2a}\\right)}{\\frac{3-a+2a}{2a}} = \\frac{4(3-a)}{3+a} $$</p><p>इसलिए,</p><p>$$ \\log_6 16 = 4\\left(\\frac{3-a}{3+a}\\right) $$</p><p>सही विकल्प B है।</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-properties",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpwvwzq2",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$ is equal to</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>0</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>1</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$\\log 2$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$\\log 3$</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "C"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$$</p>\n<p>= $$7 \\log \\left( \\frac{2^4}{3 \\times 5} \\right) + 5 \\log \\left( \\frac{5^2}{2^3 \\times 3} \\right) + 3 \\log \\left( \\frac{3^4}{2^4 \\times 5} \\right)$$</p>\n<p>The properties we need are \n\n<br/><br/>$\\log \\left( \\frac{m}{n} \\right) = \\log m - \\log n$, $\\log (mn) = \\log m + \\log n$, and the power rule $\\log(m^n) = n \\log m$.</p>\n<p>For the first term:</p>\n<p>$$7 (\\log 2^4 - \\log 3 - \\log 5)$$</p>\n<p>$$= 7 (4 \\log 2 - \\log 3 - \\log 5)$$</p>\n<p>$$= 28 \\log 2 - 7 \\log 3 - 7 \\log 5$$</p>\n<p>For the second term:</p>\n<p>$$5 (\\log 5^2 - \\log 2^3 - \\log 3)$$</p>\n<p>$$= 5 (2 \\log 5 - 3 \\log 2 - \\log 3)$$</p>\n<p>$$= 10 \\log 5 - 15 \\log 2 - 5 \\log 3$$</p>\n<p>For the third term:</p>\n<p>$$3 (\\log 3^4 - \\log 2^4 - \\log 5)$$</p>\n<p>$$= 3 (4 \\log 3 - 4 \\log 2 - \\log 5)$$</p>\n<p>$$= 12 \\log 3 - 12 \\log 2 - 3 \\log 5$$</p>\n<p>$$\\therefore $$ $$7 \\log \\left( \\frac{2^4}{3 \\times 5} \\right) + 5 \\log \\left( \\frac{5^2}{2^3 \\times 3} \\right) + 3 \\log \\left( \\frac{3^4}{2^4 \\times 5} \\right)$$</p>\n<p>= $$(28 \\log 2 - 7 \\log 3 - 7 \\log 5) + (- 15 \\log 2 - 5 \\log 3 + 10 \\log 5) + (- 12 \\log 2 + 12 \\log 3 - 3 \\log 5)$$</p>\n<p>Grouping $\\log 2$ terms:</p>\n<p>$$28 \\log 2 - 15 \\log 2 - 12 \\log 2 = (28 - 27) \\log 2 = \\log 2$$</p>\n<p>Grouping $\\log 3$ terms:</p>\n<p>$$-7 \\log 3 - 5 \\log 3 + 12 \\log 3 = (-12 + 12) \\log 3 = 0$$</p>\n<p>Grouping $\\log 5$ terms:</p>\n<p>$$-7 \\log 5 + 10 \\log 5 - 3 \\log 5 = (-10 + 10) \\log 5 = 0$$</p>\n<p>By adding these up, the $\\log 3$ and $\\log 5$ terms completely cancel out, leaving us with just $\\log 2$. </p>\n<p>Option C is the correct answer.</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$ बराबर है:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>0</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>1</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$\\log 2$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$\\log 3$</p>"
+                      }
+                    ],
+                    "correct_options": [
+                      "C"
+                    ],
+                    "answer": null,
+                    "explanation": "<p>$$7 \\log \\left( \\frac{16}{15} \\right) + 5 \\log \\left( \\frac{25}{24} \\right) + 3 \\log \\left( \\frac{81}{80} \\right)$$</p>\n<p>= $$7 \\log \\left( \\frac{2^4}{3 \\times 5} \\right) + 5 \\log \\left( \\frac{5^2}{2^3 \\times 3} \\right) + 3 \\log \\left( \\frac{3^4}{2^4 \\times 5} \\right)$$</p>\n<p>हमें जिन गुणधर्मों की आवश्यकता है, वे हैं: \n\n<br/><br/>$\\log \\left( \\frac{m}{n} \\right) = \\log m - \\log n$, $\\log (mn) = \\log m + \\log n$, तथा घात का नियम $\\log(m^n) = n \\log m$.</p>\n<p>पहले पद के लिए:</p>\n<p>$$7 (\\log 2^4 - \\log 3 - \\log 5)$$</p>\n<p>$$= 7 (4 \\log 2 - \\log 3 - \\log 5)$$</p>\n<p>$$= 28 \\log 2 - 7 \\log 3 - 7 \\log 5$$</p>\n<p>दूसरे पद के लिए:</p>\n<p>$$5 (\\log 5^2 - \\log 2^3 - \\log 3)$$</p>\n<p>$$= 5 (2 \\log 5 - 3 \\log 2 - \\log 3)$$</p>\n<p>$$= 10 \\log 5 - 15 \\log 2 - 5 \\log 3$$</p>\n<p>तीसरे पद के लिए:</p>\n<p>$$3 (\\log 3^4 - \\log 2^4 - \\log 5)$$</p>\n<p>$$= 3 (4 \\log 3 - 4 \\log 2 - \\log 5)$$</p>\n<p>$$= 12 \\log 3 - 12 \\log 2 - 3 \\log 5$$</p>\n<p>$$\\therefore $$ $$7 \\log \\left( \\frac{2^4}{3 \\times 5} \\right) + 5 \\log \\left( \\frac{5^2}{2^3 \\times 3} \\right) + 3 \\log \\left( \\frac{3^4}{2^4 \\times 5} \\right)$$</p>\n<p>= $$(28 \\log 2 - 7 \\log 3 - 7 \\log 5) + (- 15 \\log 2 - 5 \\log 3 + 10 \\log 5) + (- 12 \\log 2 + 12 \\log 3 - 3 \\log 5)$$</p>\n<p>$\\log 2$ वाले पदों को एक साथ रखने पर:</p>\n<p>$$28 \\log 2 - 15 \\log 2 - 12 \\log 2 = (28 - 27) \\log 2 = \\log 2$$</p>\n<p>$\\log 3$ वाले पदों को एक साथ रखने पर:</p>\n<p>$$-7 \\log 3 - 5 \\log 3 + 12 \\log 3 = (-12 + 12) \\log 3 = 0$$</p>\n<p>$\\log 5$ वाले पदों को एक साथ रखने पर:</p>\n<p>$$-7 \\log 5 + 10 \\log 5 - 3 \\log 5 = (-10 + 10) \\log 5 = 0$$</p>\n<p>इन्हें जोड़ने पर, $\\log 3$ और $\\log 5$ वाले पद पूरी तरह से निरस्त हो जाते हैं, और हमारे पास केवल $\\log 2$ बचता है। </p>\n<p>विकल्प C सही उत्तर है।</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-properties",
+                "type": "mcq"
+              }
+            ],
+            "instructions": null
+          },
+          {
+            "id": "32f0027d-91c1-43e1-b437-13c0a923644e",
+            "title": "SECTION B",
+            "description": null,
+            "maxMarks": 20,
+            "maxNegMarks": 5,
+            "timeAllotted": 720000,
+            "totalQuestions": 5,
+            "optional": [],
+            "questions": [
+              {
+                "questionId": "tq-mpwhvzax",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If $a, b$ and $c$ are positive real numbers such that $a^{\\log _3 7}=27 ; b^{\\log _7 11}=49$ and $c^{\\log _{11} 25}=\\sqrt{11}$.</p>\n<p>Find the value of $\\left(a^{\\left(\\log _3 7\\right)^2}+b^{\\left(\\log _7 11\\right)^2}+c^{\\left(\\log _{11} 25\\right)^2}\\right)$.</p>",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": null,
+                    "explanation": "<p>$$E = \\left(a^{\\log_3 7}\\right)^{\\log_3 7} + \\left(b^{\\log_7 11}\\right)^{\\log_7 11} + \\left(c^{\\log_{11} 25}\\right)^{\\log_{11} 25}$$</p>\n\n<p>$$= 27^{\\log_3 7} + (49)^{\\log_7 11} + (\\sqrt{11})^{\\log_{11} 25}$$</p>\n\n<p>$$= 3^{3\\log_3 7} + 7^{2\\log_7 11} + 11^{\\frac{1}{2}\\log_{11} 25}$$</p>\n<p>Apply the logarithmic power rule ($n \\log_b(x) = \\log_b(x^n)$) to move the coefficients into the exponents:</p>\n<p>$$= 3^{\\log_3 7^3} + 7^{\\log_7 11^2} + 11^{\\log_{11} 25^{1/2}}$$</p>\n<p>Apply the logarithm identity $b^{\\log_b(x)} = x$:</p>\n<p>$$= 7^3 + 11^2 + 25^{1/2}$$</p>\n<p>$$= 343 + 121 + 5 = 469$$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि $a, b$ और $c$ ऐसी धनात्मक वास्तविक संख्याएँ हैं कि $a^{\\log _3 7}=27 ; b^{\\log _7 11}=49$ और $c^{\\log _{11} 25}=\\sqrt{11}$ है।</p> <p>$\\left(a^{\\left(\\log _3 7\\right)^2}+b^{\\left(\\log _7 11\\right)^2}+c^{\\left(\\log _{11} 25\\right)^2}\\right)$ का मान ज्ञात कीजिए।</p>",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": null,
+                    "explanation": "<p>$$E = \\left(a^{\\log_3 7}\\right)^{\\log_3 7} + \\left(b^{\\log_7 11}\\right)^{\\log_7 11} + \\left(c^{\\log_{11} 25}\\right)^{\\log_{11} 25}$$</p> <p>$$= 27^{\\log_3 7} + (49)^{\\log_7 11} + (\\sqrt{11})^{\\log_{11} 25}$$</p> <p>$$= 3^{3\\log_3 7} + 7^{2\\log_7 11} + 11^{\\frac{1}{2}\\log_{11} 25}$$</p> <p>गुणांकों को घातांक में ले जाने के लिए लघुगणकीय घात नियम ($n \\log_b(x) = \\log_b(x^n)$) लागू करने पर:</p> <p>$$= 3^{\\log_3 7^3} + 7^{\\log_7 11^2} + 11^{\\log_{11} 25^{1/2}}$$</p> <p>लघुगणक सर्वसमिका $b^{\\log_b(x)} = x$ लागू करने पर:</p> <p>$$= 7^3 + 11^2 + 25^{1/2}$$</p> <p>$$= 343 + 121 + 5 = 469$$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-properties",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpwi5eua",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Solve for $x: \\log _4\\left(2 \\log _3\\left(1+\\log _2\\left(1+3 \\log _3 x\\right)\\right)\\right)=1 / 2$",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "3",
+                    "explanation": "<p>We are given the equation:</p>\n<p>$$ \\log_4\\left(2 \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right)\\right)= \\frac{1}{2} $$</p>\n\n\n<p>$$\\Rightarrow $$ $$ 2 \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right) = 4^{1/2} $$</p>\n\n<p>$$\\Rightarrow $$ $$ 2 \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right) = 2 $$</p>\n\n<p>$$\\Rightarrow $$ $$ \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right) = 1 $$</p>\n\n<p>$$\\Rightarrow $$$$ 1+\\log_2\\left(1+3 \\log_3 x\\right) = 3^1 $$</p>\n<p>$$\\Rightarrow $$ $$ 1+\\log_2\\left(1+3 \\log_3 x\\right) = 3 $$</p>\n<p>$$\\Rightarrow $$ $$ \\log_2\\left(1+3 \\log_3 x\\right) = 3 - 1 $$</p>\n<p>$$\\Rightarrow $$ $$ \\log_2\\left(1+3 \\log_3 x\\right) = 2 $$</p>\n<p>$$\\Rightarrow $$ $$ 1+3 \\log_3 x = 2^2 $$</p>\n<p>$$\\Rightarrow $$ $$ 1+3 \\log_3 x = 4 $$</p>\n\n<p>$$\\Rightarrow $$ $$ 3 \\log_3 x = 4 - 1 $$</p>\n<p>$$\\Rightarrow $$ $$ 3 \\log_3 x = 3 $$</p>\n\n<p>$$\\Rightarrow $$ $$ \\log_3 x = 1 $$</p>\n<p>$$\\Rightarrow $$ $$ x = 3^1 $$</p>\n<p>$$\\Rightarrow $$ $$ x = 3 $$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "$x$ के लिए हल कीजिए: $\\log _4\\left(2 \\log _3\\left(1+\\log _2\\left(1+3 \\log _3 x\\right)\\right)\\right)=1 / 2$",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "3",
+                    "explanation": "<p>हमें समीकरण दिया गया है:</p> <p>$$ \\log_4\\left(2 \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right)\\right)= \\frac{1}{2} $$</p> <p>$$\\Rightarrow $$ $$ 2 \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right) = 4^{1/2} $$</p> <p>$$\\Rightarrow $$ $$ 2 \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right) = 2 $$</p> <p>$$\\Rightarrow $$ $$ \\log_3\\left(1+\\log_2\\left(1+3 \\log_3 x\\right)\\right) = 1 $$</p> <p>$$\\Rightarrow $$$$ 1+\\log_2\\left(1+3 \\log_3 x\\right) = 3^1 $$</p> <p>$$\\Rightarrow $$ $$ 1+\\log_2\\left(1+3 \\log_3 x\\right) = 3 $$</p> <p>$$\\Rightarrow $$ $$ \\log_2\\left(1+3 \\log_3 x\\right) = 3 - 1 $$</p> <p>$$\\Rightarrow $$ $$ \\log_2\\left(1+3 \\log_3 x\\right) = 2 $$</p> <p>$$\\Rightarrow $$ $$ 1+3 \\log_3 x = 2^2 $$</p> <p>$$\\Rightarrow $$ $$ 1+3 \\log_3 x = 4 $$</p> <p>$$\\Rightarrow $$ $$ 3 \\log_3 x = 4 - 1 $$</p> <p>$$\\Rightarrow $$ $$ 3 \\log_3 x = 3 $$</p> <p>$$\\Rightarrow $$ $$ \\log_3 x = 1 $$</p> <p>$$\\Rightarrow $$ $$ x = 3^1 $$</p> <p>$$\\Rightarrow $$ $$ x = 3 $$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpwiqdgb",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Let $y=\\sqrt{\\log _2 3 \\cdot \\log _2 12 \\cdot \\log _2 48 \\cdot \\log _2 192+16}-\\log _2 12 \\cdot \\log _2 48+10$. Find $y$.",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "6",
+                    "explanation": "<p>Let  </p>\n<p>$$a=\\log_2 3.$$</p>\n<p>Then we can rewrite the other logarithms easily:</p>\n<p>$$\\log_2 12=\\log_2(3\\cdot 4)=\\log_2 3+\\log_2 4=a+2,$$</p>\n<p>$$\\log_2 48=\\log_2(3\\cdot 16)=\\log_2 3+\\log_2 16=a+4,$$</p>\n<p>$$\\log_2 192=\\log_2(3\\cdot 64)=\\log_2 3+\\log_2 64=a+6.$$</p>\n<p>So the given expression becomes</p>\n<p>$$y=\\sqrt{a(a+2)(a+4)(a+6)+16}-(a+2)(a+4)+10.$$</p>\n<p>Now group the factors cleverly:</p>\n<p>$$a(a+6)=a^2+6a,$$</p>\n<p>$$(a+2)(a+4)=a^2+6a+8.$$</p>\n<p>Let</p>\n<p>$$t=a^2+6a.$$</p>\n<p>Then</p>\n<p>$$a(a+2)(a+4)(a+6)=t(t+8).$$</p>\n<p>So inside the square root we get</p>\n<p>$$t(t+8)+16=t^2+8t+16=(t+4)^2.$$</p>\n<p>Hence,</p>\n<p>$$\\sqrt{a(a+2)(a+4)(a+6)+16}=\\sqrt{(t+4)^2}=t+4,$$</p>\n<p>since $t+4=(a^2+6a+4)$ is positive.</p>\n<p>Now</p>\n<p>$$y=(t+4)-(a+2)(a+4)+10.$$</p>\n<p>But</p>\n<p>$$(a+2)(a+4)=t+8.$$</p>\n<p>So</p>\n<p>$$y=(t+4)-(t+8)+10=6.$$</p>\n<p>Thus,</p>\n<p>$$\\boxed{y=6}.$$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "माना $y=\\sqrt{\\log _2 3 \\cdot \\log _2 12 \\cdot \\log _2 48 \\cdot \\log _2 192+16}-\\log _2 12 \\cdot \\log _2 48+10$ है। $y$ का मान ज्ञात कीजिए।",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "6",
+                    "explanation": "<p>माना </p>\n<p>$$a=\\log_2 3.$$</p>\n<p>तब हम अन्य लघुगणकों को आसानी से इस प्रकार लिख सकते हैं:</p>\n<p>$$\\log_2 12=\\log_2(3\\cdot 4)=\\log_2 3+\\log_2 4=a+2,$$</p>\n<p>$$\\log_2 48=\\log_2(3\\cdot 16)=\\log_2 3+\\log_2 16=a+4,$$</p>\n<p>$$\\log_2 192=\\log_2(3\\cdot 64)=\\log_2 3+\\log_2 64=a+6.$$</p>\n<p>इसलिए दिया गया व्यंजक निम्न हो जाता है:</p>\n<p>$$y=\\sqrt{a(a+2)(a+4)(a+6)+16}-(a+2)(a+4)+10.$$</p>\n<p>अब गुणनखंडों को उचित रूप से समूहित करने पर:</p>\n<p>$$a(a+6)=a^2+6a,$$</p>\n<p>$$(a+2)(a+4)=a^2+6a+8.$$</p>\n<p>माना</p>\n<p>$$t=a^2+6a.$$</p>\n<p>तब</p>\n<p>$$a(a+2)(a+4)(a+6)=t(t+8).$$</p>\n<p>अत: वर्गमूल के अंदर हमें प्राप्त होता है</p>\n<p>$$t(t+8)+16=t^2+8t+16=(t+4)^2.$$</p>\n<p>अत:, </p>\n<p>$$\\sqrt{a(a+2)(a+4)(a+6)+16}=\\sqrt{(t+4)^2}=t+4,$$</p>\n<p>चूँकि $t+4=(a^2+6a+4)$ धनात्मक है।</p>\n<p>अब</p>\n<p>$$y=(t+4)-(a+2)(a+4)+10.$$</p>\n<p>लेकिन</p>\n<p>$$(a+2)(a+4)=t+8.$$</p>\n<p>इसलिए</p>\n<p>$$y=(t+4)-(t+8)+10=6.$$</p>\n<p>इस प्रकार,</p>\n<p>$$\\boxed{y=6}.$$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-properties",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpwj3po4",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Find the square of the sum of the roots of the equation</p>\n<p>$$ \\log _3 x \\cdot \\log _4 x \\cdot \\log _5 x=\\log _3 x \\cdot \\log _4 x+\\log _4 x \\cdot \\log _5 x+\\log _5 x \\cdot \\log _3 x . $$</p>",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "3721",
+                    "explanation": "<p>Let</p>\n<p>$$ a=\\log_3 x,\\quad b=\\log_4 x,\\quad c=\\log_5 x. $$</p>\n<p>Then the given equation becomes</p>\n<p>$$ abc=ab+bc+ca. $$</p>\n<p>Now use the change of base formula:</p>\n<p>$$ \\log_3 x=\\frac{\\log x}{\\log 3},\\quad \\log_4 x=\\frac{\\log x}{\\log 4},\\quad \\log_5 x=\\frac{\\log x}{\\log 5}. $$</p>\n<p>If we put $\\log x=t$, then</p>\n<p>$$ a=\\frac{t}{\\log 3},\\quad b=\\frac{t}{\\log 4},\\quad c=\\frac{t}{\\log 5}. $$</p>\n<p>Substitute into $abc=ab+bc+ca$:</p>\n<p>$$ \\frac{t}{\\log 3}\\cdot \\frac{t}{\\log 4}\\cdot \\frac{t}{\\log 5} = \\frac{t}{\\log 3}\\cdot \\frac{t}{\\log 4} + \\frac{t}{\\log 4}\\cdot \\frac{t}{\\log 5} + \\frac{t}{\\log 5}\\cdot \\frac{t}{\\log 3}. $$</p>\n<p>This gives</p>\n<p>$$ \\frac{t^3}{\\log 3\\,\\log 4\\,\\log 5} = \\frac{t^2}{\\log 3\\,\\log 4} + \\frac{t^2}{\\log 4\\,\\log 5} + \\frac{t^2}{\\log 5\\,\\log 3}. $$</p>\n\n<p>$$\\Rightarrow $$ $$ t^3=t^2(\\log 5+\\log 3+\\log 4). $$</p>\n\n<p>$$\\Rightarrow $$ $$ t^2\\bigl(t-(\\log 3+\\log 4+\\log 5)\\bigr)=0. $$</p>\n<p>Hence,</p>\n<p>$$ t=0 \\quad \\text{or} \\quad t=\\log 3+\\log 4+\\log 5=\\log(60). $$</p>\n<p>Since $t=\\log x$, we get</p>\n<p>$$ \\log x=0 \\Rightarrow x=1, $$</p>\n<p>and</p>\n<p>$$ \\log x=\\log 60 \\Rightarrow x=60. $$</p>\n<p>So the roots are $1$ and $60$.</p>\n<p>Their sum is</p>\n<p>$$ 1+60=61. $$</p>\n<p>The square of the sum is</p>\n<p>$$ 61^2=3721. $$</p>\n<p>$$ \\boxed{3721} $$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>समीकरण के मूलों के योग का वर्ग ज्ञात कीजिए:</p>\n<p>$$ \\log _3 x \\cdot \\log _4 x \\cdot \\log _5 x=\\log _3 x \\cdot \\log _4 x+\\log _4 x \\cdot \\log _5 x+\\log _5 x \\cdot \\log _3 x . $$</p>",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "3721",
+                    "explanation": "<p>माना</p>\n<p>$$ a=\\log_3 x,\\quad b=\\log_4 x,\\quad c=\\log_5 x. $$</p>\n<p>तब दिया गया समीकरण हो जाता है:</p>\n<p>$$ abc=ab+bc+ca. $$</p>\n<p>अब आधार परिवर्तन सूत्र का उपयोग करने पर:</p>\n<p>$$ \\log_3 x=\\frac{\\log x}{\\log 3},\\quad \\log_4 x=\\frac{\\log x}{\\log 4},\\quad \\log_5 x=\\frac{\\log x}{\\log 5}. $$</p>\n<p>यदि हम $\\log x=t$ रखें, तो</p>\n<p>$$ a=\\frac{t}{\\log 3},\\quad b=\\frac{t}{\\log 4},\\quad c=\\frac{t}{\\log 5}. $$</p>\n<p>इन्हें $abc=ab+bc+ca$ में प्रतिस्थापित करने पर:</p>\n<p>$$ \\frac{t}{\\log 3}\\cdot \\frac{t}{\\log 4}\\cdot \\frac{t}{\\log 5} = \\frac{t}{\\log 3}\\cdot \\frac{t}{\\log 4} + \\frac{t}{\\log 4}\\cdot \\frac{t}{\\log 5} + \\frac{t}{\\log 5}\\cdot \\frac{t}{\\log 3}. $$</p>\n<p>इससे प्राप्त होता है</p>\n<p>$$ \\frac{t^3}{\\log 3\\,\\log 4\\,\\log 5} = \\frac{t^2}{\\log 3\\,\\log 4} + \\frac{t^2}{\\log 4\\,\\log 5} + \\frac{t^2}{\\log 5\\,\\log 3}. $$</p>\n\n<p>$$\\Rightarrow $$ $$ t^3=t^2(\\log 5+\\log 3+\\log 4). $$</p>\n\n<p>$$\\Rightarrow $$ $$ t^2\\bigl(t-(\\log 3+\\log 4+\\log 5)\\bigr)=0. $$</p>\n<p>अतः,</p>\n<p>$$ t=0 \\quad \\text{या} \\quad t=\\log 3+\\log 4+\\log 5=\\log(60). $$</p>\n<p>चूँकि $t=\\log x$ है, हमें प्राप्त होता है</p>\n<p>$$ \\log x=0 \\Rightarrow x=1, $$</p>\n<p>और</p>\n<p>$$ \\log x=\\log 60 \\Rightarrow x=60. $$</p>\n<p>इसलिए मूल $1$ और $60$ हैं।</p>\n<p>इनका योग है</p>\n<p>$$ 1+60=61. $$</p>\n<p>योग का वर्ग है</p>\n<p>$$ 61^2=3721. $$</p>\n<p>$$ \\boxed{3721} $$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-equations",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpwjf09v",
+                "chapter": "logarithm",
+                "chapterGroup": "algebra",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Simplify $: \\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "1",
+                    "explanation": "<p>$\\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>\n\n<p>= $$\\frac{9^{2 \\log_9 5} + 3^{3 \\log_3 \\sqrt{6}}}{409} \\left( 7^{\\frac{1}{2} \\cdot 2 \\cdot \\log_7 25} - 5^{\\frac{3}{2} \\log_5 6} \\right)$$</p>\n\n<p>$$\\frac{9^{\\log_9 25} + 3^{\\log_3 6^{\\frac{3}{2}}}}{409} \\left( 25 - 6^{\\frac{3}{2}} \\right)$$</p>\n\n<p>$$\\frac{(25 + 6^{\\frac{3}{2}})(25 - 6^{\\frac{3}{2}})}{409}$$</p>\n\n<p>$$= \\frac{625 - 216}{409} = 1$$</p>"
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>सरल कीजिए $: \\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p>",
+                    "options": [],
+                    "correct_options": [],
+                    "answer": "1",
+                    "explanation": "<p>$\\frac{81^{\\frac{1}{\\log _5 9}}+3^{\\frac{3}{\\log _{\\sqrt{6}} 3}}}{409} \\cdot\\left((\\sqrt{7})^{\\frac{2}{\\log _{25} 7}}-(125)^{\\log _{25} 6}\\right)$</p><p>= $$\\frac{9^{2 \\log_9 5} + 3^{3 \\log_3 \\sqrt{6}}}{409} \\left( 7^{\\frac{1}{2} \\cdot 2 \\cdot \\log_7 25} - 5^{\\frac{3}{2} \\log_5 6} \\right)$$</p><p>$$\\frac{9^{\\log_9 25} + 3^{\\log_3 6^{\\frac{3}{2}}}}{409} \\left( 25 - 6^{\\frac{3}{2}} \\right)$$</p><p>$$\\frac{(25 + 6^{\\frac{3}{2}})(25 - 6^{\\frac{3}{2}})}{409}$$</p><p>$$= \\frac{625 - 216}{409} = 1$$</p>"
+                  }
+                },
+                "subTopic": null,
+                "subject": "mathematics",
+                "timeAllotted": 90000,
+                "topic": "logarithmic-properties",
+                "type": "integer"
+              }
+            ],
+            "instructions": null
+          }
+        ],
+        "syllabus": "Logarithmic Properties, Logarithmic Equations",
+        "timeAllotted": 2160000,
+        "title": "Logarithm Test - 1 (Topic Test)",
+        "totalQuestions": 15,
+        "type": "topic",
+        "isWatermarkEnabled": true,
+        "percentileId": "prc-19g61mlq40gq7",
+        "isUpcoming": false,
+        "seriesId": "tsr-19g61mnpryz1v"
+      }
+    }
+  },
+  "https://room.examgoal.com/api/v1/test/user/analysis/ffbe6080-729b-11f1-9aad-e19819b880c2/percentile?v=2": {
+    "statusCode": 0,
+    "data": {
+      "prediction": {
+        "percentile": {
+          "min": -2.5,
+          "expected": 0,
+          "max": 2.5
+        },
+        "rank": {
+          "min": 1272038,
+          "expected": 1304654,
+          "max": 1337270
+        },
+        "message": "As per JEE Mains 2026 January All Shifts Data"
+      },
+      "percentile": 11.1111
+    }
+  }
+}

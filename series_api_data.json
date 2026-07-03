@@ -1,0 +1,1116 @@
+{
+  "https://accounts.examgoal.com/api/v1/auth/phone/supports": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "EG",
+        "name": "Egypt",
+        "phonePrefix": "+20",
+        "sampleNumber": "+20 10 01234567",
+        "flag": "https://flagcdn.com/w40/eg.webp"
+      },
+      {
+        "id": "IN",
+        "name": "India",
+        "phonePrefix": "+91",
+        "sampleNumber": "+91 81234 56789",
+        "flag": "https://flagcdn.com/w40/in.webp"
+      },
+      {
+        "id": "NP",
+        "name": "Nepal",
+        "phonePrefix": "+977",
+        "sampleNumber": "+977 984 1234567",
+        "flag": "https://flagcdn.com/w40/np.webp"
+      }
+    ]
+  },
+  "https://accounts.examgoal.com/api/v1/auth/phone/default": {
+    "statusCode": 0,
+    "data": {
+      "id": "IN",
+      "name": "India",
+      "phonePrefix": "+91",
+      "flag": "https://flagcdn.com/w40/in.webp"
+    }
+  },
+  "https://accounts.examgoal.com/api/_nuxt_icon/lucide.json?icons=chevron-down": {
+    "prefix": "lucide",
+    "icons": {
+      "chevron-down": {
+        "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m6 9l6 6l6-6\"/>"
+      }
+    },
+    "lastModified": 1742538041,
+    "width": 24,
+    "height": 24
+  },
+  "https://accounts.examgoal.com/api/_nuxt_icon/lucide.json?icons=refresh-cw": {
+    "prefix": "lucide",
+    "icons": {
+      "refresh-cw": {
+        "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M3 12a9 9 0 0 1 9-9a9.75 9.75 0 0 1 6.74 2.74L21 8\"/><path d=\"M21 3v5h-5m5 4a9 9 0 0 1-9 9a9.75 9.75 0 0 1-6.74-2.74L3 16\"/><path d=\"M8 16H3v5\"/></g>"
+      }
+    },
+    "lastModified": 1742538041,
+    "width": 24,
+    "height": 24
+  },
+  "https://room.examgoal.com/api/v1/app/user/ping": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v1/auth/profile/me": {
+    "statusCode": 0,
+    "data": {
+      "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+      "displayName": "Ajay Kumar",
+      "firstName": "Ajay Kumar",
+      "middleName": null,
+      "lastName": null,
+      "email": "ajaykumarsaroj13@gmail.com",
+      "emailVerified": true,
+      "phone": "+917750858874",
+      "phoneVerified": true,
+      "dateOfBirth": null,
+      "gender": null,
+      "picture": "https://usercontent-cdn.examgoal.net/fly/@width/dp/35d44b89-383e-43d0-9194-d724d4617d73/picture.webp?lup=1761552853842",
+      "providers": [
+        "provider/google"
+      ],
+      "status": "ACTIVE",
+      "tokenIssuedAfter": 1655726192922,
+      "lastPasswordChangedAt": 1773898194188,
+      "createdAt": 1655726192922,
+      "userName": "ajaykumar_4991",
+      "subscription": null,
+      "subscriptionV2": {
+        "expireAt": 1817645456289,
+        "extras": [],
+        "gateway": "razorpay",
+        "lastUpdatedAt": 1754573456289,
+        "multiply": 1,
+        "orderId": "order_R2SgPDFGW5Gar1",
+        "startedAt": 1754573456289,
+        "status": "ACTIVE",
+        "subscriptionId": "examgoal_pass_2_years",
+        "title": "2 Years",
+        "type": "examgoal_pass",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73"
+      }
+    }
+  },
+  "https://room.examgoal.com/api/v2/subscription/shift": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v2/subscription/subscription": {
+    "statusCode": 0,
+    "data": {
+      "expireAt": 1817645456289,
+      "extras": [],
+      "gateway": "razorpay",
+      "lastUpdatedAt": 1754573456289,
+      "multiply": 1,
+      "orderId": "order_R2SgPDFGW5Gar1",
+      "startedAt": 1754573456289,
+      "status": "ACTIVE",
+      "subscriptionId": "examgoal_pass_2_years",
+      "title": "2 Years",
+      "type": "examgoal_pass",
+      "userId": "35d44b89-383e-43d0-9194-d724d4617d73"
+    }
+  },
+  "https://room.examgoal.com/api/v1/tools/goals": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "pyq",
+        "title": "PYQ",
+        "description": "Attempted previous year questions in any mode (test or practice)"
+      },
+      {
+        "id": "pyq_test",
+        "title": "PYQ Test",
+        "description": "Test taken based on previous year questions"
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/tools/goals/pref/daily": {
+    "statusCode": 0,
+    "data": {}
+  },
+  "https://room.examgoal.com/api/v1/tools/goals/daily/last-7-days": {
+    "statusCode": 0,
+    "results": [
+      {
+        "date": 1783017000000,
+        "info": {
+          "pyq": 1,
+          "pyq_test": 0
+        },
+        "pyq": 1,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782930600000,
+        "info": {
+          "pyq": 5,
+          "pyq_test": 0
+        },
+        "pyq": 5,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782844200000,
+        "info": {
+          "pyq": 7,
+          "pyq_test": 0
+        },
+        "pyq": 7,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782757800000,
+        "info": {
+          "pyq": 14,
+          "pyq_test": 0
+        },
+        "pyq": 14,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782671400000,
+        "info": {
+          "pyq": 28,
+          "pyq_test": 0
+        },
+        "pyq": 28,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782585000000,
+        "info": {
+          "pyq": 0,
+          "pyq_test": 0
+        },
+        "pyq": 0,
+        "pyq_test": 0
+      },
+      {
+        "date": 1782498600000,
+        "info": {
+          "pyq": 0,
+          "pyq_test": 0
+        },
+        "pyq": 0,
+        "pyq_test": 0
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/multi/by-id": {
+    "statusCode": 0,
+    "data": {}
+  },
+  "https://room.examgoal.com/api/v1/tools/reminder/active-map": {
+    "statusCode": 0,
+    "data": {}
+  },
+  "https://room.examgoal.com/api/v1/past-question/tests/personalized/test": {
+    "statusCode": 0,
+    "results": [
+      {
+        "id": "mpttbpj4u67109rbgym",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "NDA Sequence and Series ",
+        "createdAt": "2026-05-31T14:30:04.447Z"
+      },
+      {
+        "createdAt": "2025-12-17T13:35:54.841Z",
+        "title": "JEE MAIN 2026 ",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "id": "mja1zxlosmhidfpidel"
+      },
+      {
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "Custom Test",
+        "id": "204bc8d4-42ba-4fde-921a-c0b578b063c2",
+        "createdAt": "2025-08-26T09:16:05.430Z"
+      },
+      {
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "Custom Test",
+        "id": "cd189455-d907-41f7-9457-6d5567dea2f0",
+        "createdAt": "2025-08-20T14:46:05.577Z"
+      },
+      {
+        "createdAt": "2025-08-20T14:43:53.228Z",
+        "id": "bb6e4e28-18b0-484f-b327-4ff6c133514b",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "title": "Custom Test"
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/examGroups?country=in&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "24d1ae7c-9246-5674-9ec1-87bf6d79729c",
+        "country": "in",
+        "key": "jee",
+        "createdAt": "2020-08-24T22:55:16.584Z",
+        "description": null,
+        "name": "JEE",
+        "updatedAt": "2023-03-01T02:24:03.858Z",
+        "title": "Joint Entrance Examination",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 0
+      },
+      {
+        "metaId": "2f58d07a-d9f9-5b81-9270-851bbde4004b",
+        "country": "in",
+        "key": "medical",
+        "createdAt": "2020-08-24T22:55:36.533Z",
+        "description": null,
+        "name": "Medical",
+        "updatedAt": "2020-11-08T21:18:58.929Z",
+        "title": "Medical",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 1
+      },
+      {
+        "metaId": "9a41eb02-0197-5b54-82ea-e22694036358",
+        "country": "in",
+        "key": "gate",
+        "createdAt": "2020-08-24T22:55:45.742Z",
+        "description": null,
+        "name": "GATE",
+        "updatedAt": "2020-12-19T05:55:00.077Z",
+        "title": "Graduate Aptitude Test in Engineering",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 2
+      },
+      {
+        "key": "civil-services",
+        "type": "examGroup",
+        "country": "in",
+        "createdAt": "2024-05-02T11:08:19.006Z",
+        "description": null,
+        "keyValuePairs": {},
+        "metaId": "32ffba14-f9f2-55e1-a751-151bca82d448",
+        "title": "Civil Services",
+        "updatedAt": "2024-05-02T11:08:19.006Z",
+        "order": 3
+      },
+      {
+        "metaId": "b166df24-9638-553d-b2e3-7c91805b2e46",
+        "country": "in",
+        "key": "defence",
+        "createdAt": "2021-07-16T06:20:30.972Z",
+        "description": null,
+        "keyValuePairs": {},
+        "title": "Defence",
+        "updatedAt": "2021-07-16T06:20:30.972Z",
+        "type": "examGroup",
+        "order": 4
+      },
+      {
+        "metaId": "20819be6-8325-537b-9017-0a9518020e4e",
+        "country": "in",
+        "key": "ssc",
+        "createdAt": "2020-08-24T22:55:52.225Z",
+        "description": null,
+        "name": "SSC",
+        "updatedAt": "2020-12-19T05:55:13.990Z",
+        "title": "Staff Selection Commission",
+        "keyValuePairs": {},
+        "type": "examGroup",
+        "order": 5
+      },
+      {
+        "country": "in",
+        "key": "cbse",
+        "type": "examGroup",
+        "createdAt": "2021-12-06T14:25:38.957Z",
+        "description": null,
+        "keyValuePairs": {},
+        "metaId": "d22f934d-2a1f-5c3f-ab76-304a72f2fa4f",
+        "title": "CBSE",
+        "updatedAt": "2021-12-06T14:25:38.957Z",
+        "order": 6
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/auth/session/ping": {
+    "statusCode": 0
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=jee&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "cea4e815-231c-545e-a844-bb45b16b5ccb",
+        "country": "in",
+        "examGroup": "jee",
+        "key": "jee-main",
+        "createdAt": "2020-08-24T22:56:22.187Z",
+        "description": null,
+        "name": "JEE Main",
+        "updatedAt": "2024-08-04T05:12:03.739Z",
+        "order": 0,
+        "title": "JEE Main",
+        "keyValuePairs": {},
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-main.png",
+        "type": "exam",
+        "badges": [
+          {
+            "title": "Latest Syllabus",
+            "color": "#22c55e"
+          },
+          {
+            "title": "PYQ Topic wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.jeemainpreparation.app",
+          "room-examgoal-com",
+          "com.examgoal.android.app"
+        ],
+        "quiz": {
+          "subjects": [
+            {
+              "country": "in",
+              "examGroup": "jee",
+              "exam": "jee-main",
+              "subject": "physics",
+              "question_types": [
+                {
+                  "types": [
+                    "mcq",
+                    "mcqm"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 4,
+                    "weekly": 10
+                  }
+                },
+                {
+                  "types": [
+                    "integer"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 1,
+                    "weekly": 5
+                  }
+                }
+              ]
+            },
+            {
+              "country": "in",
+              "examGroup": "jee",
+              "exam": "jee-main",
+              "subject": "chemistry",
+              "question_types": [
+                {
+                  "types": [
+                    "mcq",
+                    "mcqm"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 4,
+                    "weekly": 10
+                  }
+                },
+                {
+                  "types": [
+                    "integer"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 1,
+                    "weekly": 5
+                  }
+                }
+              ]
+            },
+            {
+              "country": "in",
+              "examGroup": "jee",
+              "exam": "jee-main",
+              "subject": "mathematics",
+              "question_types": [
+                {
+                  "types": [
+                    "mcq",
+                    "mcqm"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 4,
+                    "weekly": 10
+                  }
+                },
+                {
+                  "types": [
+                    "integer"
+                  ],
+                  "marks": 4,
+                  "negMarks": 1,
+                  "timeAllotted": 144000,
+                  "maxQuestions": {
+                    "daily": 1,
+                    "weekly": 5
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "performance": {
+          "score": 100,
+          "totalAttempts": 311296165
+        }
+      },
+      {
+        "metaId": "066f55b4-d2b7-5f8f-9534-4d8b4724cfc6",
+        "country": "in",
+        "examGroup": "jee",
+        "key": "jee-advanced",
+        "createdAt": "2020-08-24T22:56:13.097Z",
+        "description": null,
+        "name": "JEE Advanced",
+        "updatedAt": "2024-07-12T10:35:13.091Z",
+        "order": 1,
+        "title": "JEE Advanced",
+        "keyValuePairs": {},
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-advanced.png",
+        "type": "exam",
+        "badges": [
+          {
+            "title": "PYQ Topic Wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.jeeadvancedpreparation.app",
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app",
+          "room-examgoal-com"
+        ],
+        "performance": {
+          "score": 75.12,
+          "totalAttempts": 26926488
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "mht-cet",
+        "type": "exam",
+        "createdAt": "2023-06-12T10:37:36.515Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/mht-cet.png",
+        "keyValuePairs": {},
+        "metaId": "a3dc0201-1afc-543b-a9f7-9f30bbe0acc1",
+        "title": "MHT CET",
+        "updatedAt": "2026-01-25T07:17:36.757Z",
+        "order": 2,
+        "badges": [
+          {
+            "title": "PYQ Topic wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "room-examgoal-com",
+          "com.examgoal.jeemainpreparation.app",
+          "com.examgoal.mhtcet.preparation.app"
+        ],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 88.13,
+          "totalAttempts": 96845044
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "bitsat",
+        "type": "exam",
+        "createdAt": "2022-03-22T03:07:20.915Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/bitsat.png",
+        "keyValuePairs": {},
+        "metaId": "927dc81f-cde0-5a78-a96a-65d8cea03711",
+        "order": 3,
+        "title": "BITSAT",
+        "updatedAt": "2024-02-07T15:13:28.305Z",
+        "badges": [
+          {
+            "title": "PYQ Topic wise (Soon)",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app",
+          "room-examgoal-com"
+        ],
+        "performance": {
+          "score": 63.89,
+          "totalAttempts": 8914331
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "comedk",
+        "type": "exam",
+        "createdAt": "2023-05-28T05:49:10.855Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/comedk.png",
+        "keyValuePairs": {},
+        "metaId": "341df63e-dc3a-5b16-83a9-9f8513cf9c5d",
+        "title": "COMEDK",
+        "updatedAt": "2024-02-07T15:14:02.291Z",
+        "order": 4,
+        "badges": [
+          {
+            "title": "PYQ Topic wise (Soon)",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "room-examgoal-com",
+          "com.examgoal.jeemainpreparation.app"
+        ],
+        "performance": {
+          "score": 64.65,
+          "totalAttempts": 9610373
+        }
+      },
+      {
+        "metaId": "04a84f14-cc92-5940-99e3-f3c406a5157a",
+        "country": "in",
+        "examGroup": "jee",
+        "key": "wb-jee",
+        "createdAt": "2020-12-19T06:05:12.782Z",
+        "description": null,
+        "keyValuePairs": {},
+        "order": 5,
+        "title": "WB JEE",
+        "updatedAt": "2024-02-07T15:13:08.358Z",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/wbjee.png",
+        "type": "exam",
+        "badges": [
+          {
+            "title": "PYQ Topic wise (Soon)",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.jeemainpreparation.app",
+          "com.examgoal.wbjeepreparation.app",
+          "room-examgoal-com",
+          "com.examgoal.android.app"
+        ],
+        "performance": {
+          "score": 59.16,
+          "totalAttempts": 5599188
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "kcet",
+        "type": "exam",
+        "createdAt": "2023-10-28T07:36:50.767Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/kcet.png",
+        "keyValuePairs": {},
+        "metaId": "a06069a7-4020-5f0c-a91f-d76bdc38c55b",
+        "title": "KCET",
+        "updatedAt": "2024-02-27T04:29:46.886Z",
+        "order": 6,
+        "apps": [],
+        "badges": [],
+        "performance": {
+          "score": 62.98,
+          "totalAttempts": 8154761
+        }
+      },
+      {
+        "examGroup": "jee",
+        "type": "exam",
+        "key": "viteee",
+        "country": "in",
+        "apps": [],
+        "badges": [],
+        "createdAt": "2024-03-09T22:16:54.804Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5ef25410-97bb-4621-853a-755d0bbaac4d/348328b0-eb61-11ee-831d-6530431f76f8/6y3zli1lu89xfp8.png",
+        "keyValuePairs": {},
+        "metaId": "1bf9f8df-c674-58d9-9be2-ca0c599bed9f",
+        "title": "VITEEE",
+        "updatedAt": "2024-03-26T11:09:17.591Z",
+        "order": 7,
+        "performance": {
+          "score": 60.22,
+          "totalAttempts": 6213194
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "ap-eapcet",
+        "type": "exam",
+        "createdAt": "2023-06-15T00:06:32.149Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/67db133c-ba65-4e2c-ad65-05158ae574a3/a9db1730-387d-11ef-afbe-73a2e898f5a9/jaoe38c1ly4hsb39.png",
+        "keyValuePairs": {},
+        "metaId": "84c9c1a8-8503-524d-bf02-6ed33190e9ee",
+        "title": "AP EAPCET",
+        "updatedAt": "2024-07-02T14:16:57.943Z",
+        "order": 8,
+        "apps": [
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app"
+        ],
+        "badges": [],
+        "performance": {
+          "score": 57.65,
+          "totalAttempts": 4823486
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "jee",
+        "key": "ts-eamcet",
+        "type": "exam",
+        "createdAt": "2023-01-06T17:14:03.208Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/6dd28730-004e-4717-bdcb-88d719ed6def/739edcd0-d173-11ef-b8cb-250dbba0307d/jaoe38c1m5umvggu.png",
+        "keyValuePairs": {},
+        "metaId": "c619ebef-d879-5ed5-a158-c39b2d4b5f15",
+        "order": 9,
+        "title": "TS EAMCET",
+        "updatedAt": "2025-01-13T05:59:01.161Z",
+        "apps": [],
+        "badges": [],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 63.38,
+          "totalAttempts": 8477821
+        }
+      },
+      {
+        "key": "iat-iiser",
+        "country": "in",
+        "type": "exam",
+        "examGroup": "jee",
+        "apps": [
+          "room-examgoal-com",
+          "com.examgoal.android.app",
+          "com.examgoal.jeemainpreparation.app"
+        ],
+        "badges": [],
+        "createdAt": "2025-04-25T06:03:51.744Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/0e359091-6260-42af-bb0d-5ad7d2e88c20/7c7eaee0-2658-11f0-a3e5-29ab2addad42/jaoe38c1ma50977y.png",
+        "keyValuePairs": {},
+        "metaId": "384abd13-f8f7-5869-a0be-91c399347bed",
+        "quiz": {
+          "subjects": []
+        },
+        "title": "IAT (IISER)",
+        "updatedAt": "2025-05-01T07:29:23.931Z",
+        "order": 10,
+        "performance": {
+          "score": 50.71,
+          "totalAttempts": 2437656
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=medical&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "64cc8fc8-f6ac-5196-b8df-4ea17b167ba0",
+        "country": "in",
+        "examGroup": "medical",
+        "key": "neet",
+        "createdAt": "2020-11-20T11:36:42.532Z",
+        "description": "The National Eligibility cum Entrance Test (Undergraduate), formerly the All India Pre-Medical Test, is an entrance examination in India for students who wish to study undergraduate medical courses and dental courses in government or private medical and dental colleges in India.",
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "NEET",
+        "updatedAt": "2024-06-01T14:14:11.057Z",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-main.png",
+        "badges": [
+          {
+            "title": "Latest Syllabus",
+            "color": "#22c55e"
+          },
+          {
+            "title": "PYQ Topic wise",
+            "color": "#ef4444"
+          }
+        ],
+        "apps": [
+          "com.examgoal.android.app",
+          "com.neetcare.neetquestion",
+          "room-examgoal-com"
+        ],
+        "performance": {
+          "score": 93.81,
+          "totalAttempts": 169272031
+        }
+      },
+      {
+        "country": "in",
+        "examGroup": "medical",
+        "key": "aiims",
+        "type": "exam",
+        "badges": [],
+        "createdAt": "2024-01-18T04:06:00.448Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5ca40f45-b700-4f46-9b8f-83745abac08c/fc927a90-6799-11ef-8b22-651b64eb4256/jaoe38c1m0i5qvui.png",
+        "keyValuePairs": {},
+        "metaId": "e5fe5851-01c8-5703-ba3a-ddf78cac4935",
+        "title": "AIIMS",
+        "updatedAt": "2024-08-31T13:08:37.555Z",
+        "order": 1,
+        "apps": [
+          "com.examgoal.android.app",
+          "com.neetcare.neetquestion",
+          "room-examgoal-com"
+        ],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 32.89,
+          "totalAttempts": 422270
+        }
+      },
+      {
+        "key": "mht-cet-biology",
+        "type": "exam",
+        "country": "in",
+        "examGroup": "medical",
+        "apps": [
+          "room-examgoal-com",
+          "com.examgoal.android.app"
+        ],
+        "badges": [],
+        "createdAt": "2025-08-09T01:52:27.582Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/mht-cet.png",
+        "keyValuePairs": {},
+        "metaId": "338c68fe-01f8-5a4a-b53e-9d8a3aa734cc",
+        "quiz": {
+          "subjects": []
+        },
+        "title": "MHT CET (Biology)",
+        "updatedAt": "2025-08-22T10:15:15.141Z",
+        "order": 2,
+        "performance": {
+          "score": 46.4,
+          "totalAttempts": 1594426
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=gate&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "33462b07-edd3-5b7b-8995-2aa22c186a92",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-cse",
+        "createdAt": "2020-08-24T22:56:42.763Z",
+        "description": null,
+        "name": "GATE CSE",
+        "updatedAt": "2022-03-04T04:22:26.576Z",
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "GATE CSE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/cse.png",
+        "performance": {
+          "score": 57.41,
+          "totalAttempts": 4710655
+        }
+      },
+      {
+        "metaId": "a719d3f8-2de6-5987-8fa9-48b06791480c",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-ece",
+        "createdAt": "2020-08-24T22:56:54.391Z",
+        "description": null,
+        "name": "GATE ECE",
+        "updatedAt": "2022-03-04T04:22:33.142Z",
+        "keyValuePairs": {},
+        "order": 1,
+        "title": "GATE ECE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ece.png",
+        "performance": {
+          "score": 51.65,
+          "totalAttempts": 2672225
+        }
+      },
+      {
+        "metaId": "f503abea-1c67-589b-baa2-0a447c9c0121",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-ee",
+        "createdAt": "2020-08-24T22:56:49.093Z",
+        "description": null,
+        "name": "GATE EE",
+        "updatedAt": "2022-03-04T04:23:49.141Z",
+        "keyValuePairs": {},
+        "order": 2,
+        "title": "GATE EE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ee.png",
+        "performance": {
+          "score": 41.53,
+          "totalAttempts": 988194
+        }
+      },
+      {
+        "metaId": "f40e568d-a61e-5542-9850-6a5f273a20cc",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-me",
+        "createdAt": "2020-08-24T22:57:03.755Z",
+        "description": null,
+        "name": "GATE ME",
+        "updatedAt": "2022-03-04T04:25:17.065Z",
+        "keyValuePairs": {},
+        "order": 3,
+        "title": "GATE ME",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/me.png",
+        "performance": {
+          "score": 40.08,
+          "totalAttempts": 856263
+        }
+      },
+      {
+        "metaId": "50be1e92-1a20-5c91-b527-6c37a96ae89e",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-ce",
+        "createdAt": "2020-08-24T22:57:23.936Z",
+        "description": null,
+        "name": "GATE CE",
+        "updatedAt": "2022-03-04T04:26:21.209Z",
+        "keyValuePairs": {},
+        "order": 4,
+        "title": "GATE CE",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ce.png",
+        "performance": {
+          "score": 31.64,
+          "totalAttempts": 373222
+        }
+      },
+      {
+        "metaId": "0a2e06b2-d550-523d-b388-9fc3c8e3baee",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-pi",
+        "createdAt": "2020-08-24T22:57:35.411Z",
+        "description": null,
+        "name": "GATE PI",
+        "updatedAt": "2022-03-04T04:28:34.473Z",
+        "keyValuePairs": {},
+        "order": 5,
+        "title": "GATE PI",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/pi.png",
+        "performance": {
+          "score": 7.62,
+          "totalAttempts": 35136
+        }
+      },
+      {
+        "metaId": "d229641f-a783-56bd-99e6-f7da2631a251",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-in",
+        "createdAt": "2020-08-24T22:57:44.939Z",
+        "description": null,
+        "name": "GATE IN",
+        "updatedAt": "2022-03-04T04:28:40.657Z",
+        "keyValuePairs": {},
+        "order": 6,
+        "title": "GATE IN",
+        "type": "exam",
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/in.png",
+        "performance": {
+          "score": 0,
+          "totalAttempts": 16594
+        }
+      },
+      {
+        "type": "exam",
+        "country": "in",
+        "examGroup": "gate",
+        "key": "gate-da",
+        "apps": [],
+        "badges": [],
+        "createdAt": "2025-07-25T01:21:17.952Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/cse.png",
+        "keyValuePairs": {},
+        "metaId": "c9a17f1a-4398-59fc-a2d2-0e0d884637f9",
+        "quiz": {
+          "subjects": []
+        },
+        "title": "GATE Data Science and Artificial Intelligence",
+        "updatedAt": "2025-07-25T01:21:17.952Z",
+        "order": 7,
+        "performance": {
+          "score": 8.98,
+          "totalAttempts": 40168
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=civil-services&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "country": "in",
+        "examGroup": "civil-services",
+        "key": "upsc-civil-service",
+        "type": "exam",
+        "createdAt": "2021-10-19T04:48:31.124Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5934fd03-d35c-42e7-b582-f058dd46bd57/324c2970-0876-11ef-b9c4-01b5e1672438/6y3zli1lvp5p37s.png",
+        "keyValuePairs": {},
+        "metaId": "e09ee9bf-f953-5127-9ab2-6a50c5534637",
+        "order": 0,
+        "title": "UPSC Civil Service",
+        "updatedAt": "2026-05-14T10:47:40.550Z",
+        "apps": [],
+        "badges": [],
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 35.06,
+          "totalAttempts": 522838
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=defence&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "ae12242c-2043-5d12-97f1-4863e7f59180",
+        "country": "in",
+        "examGroup": "defence",
+        "key": "nda",
+        "createdAt": "2021-07-16T06:21:07.078Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/624092ec-6f87-4440-9fac-93c921e8668e/c68613a0-1bde-11ef-ba88-abbdc110e2a5/6y3zli1lwog7v8b.png",
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "NDA",
+        "updatedAt": "2024-05-27T04:09:04.104Z",
+        "type": "exam",
+        "apps": [
+          "com.examgoal.android.app",
+          "com.examgoal.ndapreparation.app",
+          "room-examgoal-com"
+        ],
+        "badges": [],
+        "performance": {
+          "score": 65.09,
+          "totalAttempts": 10031451
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=ssc&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "metaId": "3911a0aa-0693-5c54-9ca0-c4505fba880f",
+        "country": "in",
+        "examGroup": "ssc",
+        "key": "ssc-cgl-tier-i",
+        "createdAt": "2020-12-22T06:51:03.399Z",
+        "description": null,
+        "keyValuePairs": {},
+        "order": 0,
+        "title": "SSC CGL Tier I",
+        "updatedAt": "2024-08-23T04:16:11.723Z",
+        "type": "exam",
+        "apps": [],
+        "badges": [],
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/c293926d-776b-4c5d-87c7-c94d7c4c1112/614e3c70-6106-11ef-a495-011539d502ba/jaoe38c1m06789mf.png",
+        "quiz": {
+          "subjects": []
+        },
+        "performance": {
+          "score": 36.58,
+          "totalAttempts": 607149
+        }
+      }
+    ]
+  },
+  "https://room.examgoal.com/api/v1/metadata/exams?country=in&examGroup=cbse&from=pq": {
+    "statusCode": 0,
+    "results": [
+      {
+        "country": "in",
+        "examGroup": "cbse",
+        "key": "class-12",
+        "type": "exam",
+        "createdAt": "2021-12-06T18:16:08.836Z",
+        "description": null,
+        "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/cbse.png",
+        "keyValuePairs": {},
+        "metaId": "9990e3cc-d4c9-59c0-95cc-7c362f6d79f8",
+        "order": 0,
+        "title": "Class 12",
+        "updatedAt": "2024-01-13T20:24:34.110Z",
+        "badges": [],
+        "performance": {
+          "score": 40.28,
+          "totalAttempts": 873197
+        }
+      }
+    ]
+  }
+}

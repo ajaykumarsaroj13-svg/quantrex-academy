@@ -1,0 +1,2933 @@
+{
+  "captured": {
+    "/api/v1/auth/phone/supports": {
+      "statusCode": 0,
+      "results": [
+        {
+          "id": "EG",
+          "name": "Egypt",
+          "phonePrefix": "+20",
+          "sampleNumber": "+20 10 01234567",
+          "flag": "https://flagcdn.com/w40/eg.webp"
+        },
+        {
+          "id": "IN",
+          "name": "India",
+          "phonePrefix": "+91",
+          "sampleNumber": "+91 81234 56789",
+          "flag": "https://flagcdn.com/w40/in.webp"
+        },
+        {
+          "id": "NP",
+          "name": "Nepal",
+          "phonePrefix": "+977",
+          "sampleNumber": "+977 984 1234567",
+          "flag": "https://flagcdn.com/w40/np.webp"
+        }
+      ]
+    },
+    "/api/v1/auth/phone/default": {
+      "statusCode": 0,
+      "data": {
+        "id": "IN",
+        "name": "India",
+        "phonePrefix": "+91",
+        "flag": "https://flagcdn.com/w40/in.webp"
+      }
+    },
+    "/api/_nuxt_icon/lucide.json?icons=chevron-down": {
+      "prefix": "lucide",
+      "icons": {
+        "chevron-down": {
+          "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m6 9l6 6l6-6\"/>"
+        }
+      },
+      "lastModified": 1742538041,
+      "width": 24,
+      "height": 24
+    },
+    "/api/_nuxt_icon/lucide.json?icons=refresh-cw": {
+      "prefix": "lucide",
+      "icons": {
+        "refresh-cw": {
+          "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path d=\"M3 12a9 9 0 0 1 9-9a9.75 9.75 0 0 1 6.74 2.74L21 8\"/><path d=\"M21 3v5h-5m5 4a9 9 0 0 1-9 9a9.75 9.75 0 0 1-6.74-2.74L3 16\"/><path d=\"M8 16H3v5\"/></g>"
+        }
+      },
+      "lastModified": 1742538041,
+      "width": 24,
+      "height": 24
+    },
+    "/api/v1/app/user/ping": {
+      "statusCode": 0
+    },
+    "/api/v1/auth/profile/me": {
+      "statusCode": 0,
+      "data": {
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+        "displayName": "Ajay Kumar",
+        "firstName": "Ajay Kumar",
+        "middleName": null,
+        "lastName": null,
+        "email": "ajaykumarsaroj13@gmail.com",
+        "emailVerified": true,
+        "phone": "+917750858874",
+        "phoneVerified": true,
+        "dateOfBirth": null,
+        "gender": null,
+        "picture": "https://usercontent-cdn.examgoal.net/fly/@width/dp/35d44b89-383e-43d0-9194-d724d4617d73/picture.webp?lup=1761552853842",
+        "providers": [
+          "provider/google"
+        ],
+        "status": "ACTIVE",
+        "tokenIssuedAfter": 1655726192922,
+        "lastPasswordChangedAt": 1773898194188,
+        "createdAt": 1655726192922,
+        "userName": "ajaykumar_4991",
+        "subscription": null,
+        "subscriptionV2": {
+          "expireAt": 1817645456289,
+          "extras": [],
+          "gateway": "razorpay",
+          "lastUpdatedAt": 1754573456289,
+          "multiply": 1,
+          "orderId": "order_R2SgPDFGW5Gar1",
+          "startedAt": 1754573456289,
+          "status": "ACTIVE",
+          "subscriptionId": "examgoal_pass_2_years",
+          "title": "2 Years",
+          "type": "examgoal_pass",
+          "userId": "35d44b89-383e-43d0-9194-d724d4617d73"
+        }
+      }
+    },
+    "/api/v2/subscription/shift": {
+      "statusCode": 0
+    },
+    "/api/v2/subscription/subscription": {
+      "statusCode": 0,
+      "data": {
+        "expireAt": 1817645456289,
+        "extras": [],
+        "gateway": "razorpay",
+        "lastUpdatedAt": 1754573456289,
+        "multiply": 1,
+        "orderId": "order_R2SgPDFGW5Gar1",
+        "startedAt": 1754573456289,
+        "status": "ACTIVE",
+        "subscriptionId": "examgoal_pass_2_years",
+        "title": "2 Years",
+        "type": "examgoal_pass",
+        "userId": "35d44b89-383e-43d0-9194-d724d4617d73"
+      }
+    },
+    "/api/v1/tools/goals": {
+      "statusCode": 0,
+      "results": [
+        {
+          "id": "pyq",
+          "title": "PYQ",
+          "description": "Attempted previous year questions in any mode (test or practice)"
+        },
+        {
+          "id": "pyq_test",
+          "title": "PYQ Test",
+          "description": "Test taken based on previous year questions"
+        }
+      ]
+    },
+    "/api/v1/tools/goals/pref/daily": {
+      "statusCode": 0,
+      "data": {}
+    },
+    "/api/v1/tools/goals/daily/last-7-days": {
+      "statusCode": 0,
+      "results": [
+        {
+          "date": 1783017000000,
+          "info": {
+            "pyq": 1,
+            "pyq_test": 0
+          },
+          "pyq": 1,
+          "pyq_test": 0
+        },
+        {
+          "date": 1782930600000,
+          "info": {
+            "pyq": 5,
+            "pyq_test": 0
+          },
+          "pyq": 5,
+          "pyq_test": 0
+        },
+        {
+          "date": 1782844200000,
+          "info": {
+            "pyq": 7,
+            "pyq_test": 0
+          },
+          "pyq": 7,
+          "pyq_test": 0
+        },
+        {
+          "date": 1782757800000,
+          "info": {
+            "pyq": 14,
+            "pyq_test": 0
+          },
+          "pyq": 14,
+          "pyq_test": 0
+        },
+        {
+          "date": 1782671400000,
+          "info": {
+            "pyq": 28,
+            "pyq_test": 0
+          },
+          "pyq": 28,
+          "pyq_test": 0
+        },
+        {
+          "date": 1782585000000,
+          "info": {
+            "pyq": 0,
+            "pyq_test": 0
+          },
+          "pyq": 0,
+          "pyq_test": 0
+        },
+        {
+          "date": 1782498600000,
+          "info": {
+            "pyq": 0,
+            "pyq_test": 0
+          },
+          "pyq": 0,
+          "pyq_test": 0
+        }
+      ]
+    },
+    "/api/v1/metadata/multi/by-id": {
+      "statusCode": 0,
+      "data": {}
+    },
+    "/api/v1/past-question/tests/personalized/test": {
+      "statusCode": 0,
+      "results": [
+        {
+          "id": "mpttbpj4u67109rbgym",
+          "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+          "title": "NDA Sequence and Series ",
+          "createdAt": "2026-05-31T14:30:04.447Z"
+        },
+        {
+          "createdAt": "2025-12-17T13:35:54.841Z",
+          "title": "JEE MAIN 2026 ",
+          "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+          "id": "mja1zxlosmhidfpidel"
+        },
+        {
+          "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+          "title": "Custom Test",
+          "id": "204bc8d4-42ba-4fde-921a-c0b578b063c2",
+          "createdAt": "2025-08-26T09:16:05.430Z"
+        },
+        {
+          "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+          "title": "Custom Test",
+          "id": "cd189455-d907-41f7-9457-6d5567dea2f0",
+          "createdAt": "2025-08-20T14:46:05.577Z"
+        },
+        {
+          "createdAt": "2025-08-20T14:43:53.228Z",
+          "id": "bb6e4e28-18b0-484f-b327-4ff6c133514b",
+          "userId": "35d44b89-383e-43d0-9194-d724d4617d73",
+          "title": "Custom Test"
+        }
+      ]
+    },
+    "/api/v1/tools/reminder/active-map": {
+      "statusCode": 0,
+      "data": {}
+    },
+    "/api/v1/metadata/examGroups?country=in&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "metaId": "24d1ae7c-9246-5674-9ec1-87bf6d79729c",
+          "country": "in",
+          "key": "jee",
+          "createdAt": "2020-08-24T22:55:16.584Z",
+          "description": null,
+          "name": "JEE",
+          "updatedAt": "2023-03-01T02:24:03.858Z",
+          "title": "Joint Entrance Examination",
+          "keyValuePairs": {},
+          "type": "examGroup",
+          "order": 0
+        },
+        {
+          "metaId": "2f58d07a-d9f9-5b81-9270-851bbde4004b",
+          "country": "in",
+          "key": "medical",
+          "createdAt": "2020-08-24T22:55:36.533Z",
+          "description": null,
+          "name": "Medical",
+          "updatedAt": "2020-11-08T21:18:58.929Z",
+          "title": "Medical",
+          "keyValuePairs": {},
+          "type": "examGroup",
+          "order": 1
+        },
+        {
+          "metaId": "9a41eb02-0197-5b54-82ea-e22694036358",
+          "country": "in",
+          "key": "gate",
+          "createdAt": "2020-08-24T22:55:45.742Z",
+          "description": null,
+          "name": "GATE",
+          "updatedAt": "2020-12-19T05:55:00.077Z",
+          "title": "Graduate Aptitude Test in Engineering",
+          "keyValuePairs": {},
+          "type": "examGroup",
+          "order": 2
+        },
+        {
+          "key": "civil-services",
+          "type": "examGroup",
+          "country": "in",
+          "createdAt": "2024-05-02T11:08:19.006Z",
+          "description": null,
+          "keyValuePairs": {},
+          "metaId": "32ffba14-f9f2-55e1-a751-151bca82d448",
+          "title": "Civil Services",
+          "updatedAt": "2024-05-02T11:08:19.006Z",
+          "order": 3
+        },
+        {
+          "metaId": "b166df24-9638-553d-b2e3-7c91805b2e46",
+          "country": "in",
+          "key": "defence",
+          "createdAt": "2021-07-16T06:20:30.972Z",
+          "description": null,
+          "keyValuePairs": {},
+          "title": "Defence",
+          "updatedAt": "2021-07-16T06:20:30.972Z",
+          "type": "examGroup",
+          "order": 4
+        },
+        {
+          "metaId": "20819be6-8325-537b-9017-0a9518020e4e",
+          "country": "in",
+          "key": "ssc",
+          "createdAt": "2020-08-24T22:55:52.225Z",
+          "description": null,
+          "name": "SSC",
+          "updatedAt": "2020-12-19T05:55:13.990Z",
+          "title": "Staff Selection Commission",
+          "keyValuePairs": {},
+          "type": "examGroup",
+          "order": 5
+        },
+        {
+          "country": "in",
+          "key": "cbse",
+          "type": "examGroup",
+          "createdAt": "2021-12-06T14:25:38.957Z",
+          "description": null,
+          "keyValuePairs": {},
+          "metaId": "d22f934d-2a1f-5c3f-ab76-304a72f2fa4f",
+          "title": "CBSE",
+          "updatedAt": "2021-12-06T14:25:38.957Z",
+          "order": 6
+        }
+      ]
+    },
+    "/api/v1/auth/session/ping": {
+      "statusCode": 0
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=jee&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "metaId": "cea4e815-231c-545e-a844-bb45b16b5ccb",
+          "country": "in",
+          "examGroup": "jee",
+          "key": "jee-main",
+          "createdAt": "2020-08-24T22:56:22.187Z",
+          "description": null,
+          "name": "JEE Main",
+          "updatedAt": "2024-08-04T05:12:03.739Z",
+          "order": 0,
+          "title": "JEE Main",
+          "keyValuePairs": {},
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-main.png",
+          "type": "exam",
+          "badges": [
+            {
+              "title": "Latest Syllabus",
+              "color": "#22c55e"
+            },
+            {
+              "title": "PYQ Topic wise",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.jeemainpreparation.app",
+            "room-examgoal-com",
+            "com.examgoal.android.app"
+          ],
+          "quiz": {
+            "subjects": [
+              {
+                "country": "in",
+                "examGroup": "jee",
+                "exam": "jee-main",
+                "subject": "physics",
+                "question_types": [
+                  {
+                    "types": [
+                      "mcq",
+                      "mcqm"
+                    ],
+                    "marks": 4,
+                    "negMarks": 1,
+                    "timeAllotted": 144000,
+                    "maxQuestions": {
+                      "daily": 4,
+                      "weekly": 10
+                    }
+                  },
+                  {
+                    "types": [
+                      "integer"
+                    ],
+                    "marks": 4,
+                    "negMarks": 1,
+                    "timeAllotted": 144000,
+                    "maxQuestions": {
+                      "daily": 1,
+                      "weekly": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "country": "in",
+                "examGroup": "jee",
+                "exam": "jee-main",
+                "subject": "chemistry",
+                "question_types": [
+                  {
+                    "types": [
+                      "mcq",
+                      "mcqm"
+                    ],
+                    "marks": 4,
+                    "negMarks": 1,
+                    "timeAllotted": 144000,
+                    "maxQuestions": {
+                      "daily": 4,
+                      "weekly": 10
+                    }
+                  },
+                  {
+                    "types": [
+                      "integer"
+                    ],
+                    "marks": 4,
+                    "negMarks": 1,
+                    "timeAllotted": 144000,
+                    "maxQuestions": {
+                      "daily": 1,
+                      "weekly": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "country": "in",
+                "examGroup": "jee",
+                "exam": "jee-main",
+                "subject": "mathematics",
+                "question_types": [
+                  {
+                    "types": [
+                      "mcq",
+                      "mcqm"
+                    ],
+                    "marks": 4,
+                    "negMarks": 1,
+                    "timeAllotted": 144000,
+                    "maxQuestions": {
+                      "daily": 4,
+                      "weekly": 10
+                    }
+                  },
+                  {
+                    "types": [
+                      "integer"
+                    ],
+                    "marks": 4,
+                    "negMarks": 1,
+                    "timeAllotted": 144000,
+                    "maxQuestions": {
+                      "daily": 1,
+                      "weekly": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "performance": {
+            "score": 100,
+            "totalAttempts": 311296165
+          }
+        },
+        {
+          "metaId": "066f55b4-d2b7-5f8f-9534-4d8b4724cfc6",
+          "country": "in",
+          "examGroup": "jee",
+          "key": "jee-advanced",
+          "createdAt": "2020-08-24T22:56:13.097Z",
+          "description": null,
+          "name": "JEE Advanced",
+          "updatedAt": "2024-07-12T10:35:13.091Z",
+          "order": 1,
+          "title": "JEE Advanced",
+          "keyValuePairs": {},
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-advanced.png",
+          "type": "exam",
+          "badges": [
+            {
+              "title": "PYQ Topic Wise",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.jeeadvancedpreparation.app",
+            "com.examgoal.android.app",
+            "com.examgoal.jeemainpreparation.app",
+            "room-examgoal-com"
+          ],
+          "performance": {
+            "score": 75.12,
+            "totalAttempts": 26926488
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "jee",
+          "key": "mht-cet",
+          "type": "exam",
+          "createdAt": "2023-06-12T10:37:36.515Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/mht-cet.png",
+          "keyValuePairs": {},
+          "metaId": "a3dc0201-1afc-543b-a9f7-9f30bbe0acc1",
+          "title": "MHT CET",
+          "updatedAt": "2026-01-25T07:17:36.757Z",
+          "order": 2,
+          "badges": [
+            {
+              "title": "PYQ Topic wise",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.android.app",
+            "room-examgoal-com",
+            "com.examgoal.jeemainpreparation.app",
+            "com.examgoal.mhtcet.preparation.app"
+          ],
+          "quiz": {
+            "subjects": []
+          },
+          "performance": {
+            "score": 88.13,
+            "totalAttempts": 96845044
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "jee",
+          "key": "bitsat",
+          "type": "exam",
+          "createdAt": "2022-03-22T03:07:20.915Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/bitsat.png",
+          "keyValuePairs": {},
+          "metaId": "927dc81f-cde0-5a78-a96a-65d8cea03711",
+          "order": 3,
+          "title": "BITSAT",
+          "updatedAt": "2024-02-07T15:13:28.305Z",
+          "badges": [
+            {
+              "title": "PYQ Topic wise (Soon)",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.android.app",
+            "com.examgoal.jeemainpreparation.app",
+            "room-examgoal-com"
+          ],
+          "performance": {
+            "score": 63.89,
+            "totalAttempts": 8914331
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "jee",
+          "key": "comedk",
+          "type": "exam",
+          "createdAt": "2023-05-28T05:49:10.855Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/comedk.png",
+          "keyValuePairs": {},
+          "metaId": "341df63e-dc3a-5b16-83a9-9f8513cf9c5d",
+          "title": "COMEDK",
+          "updatedAt": "2024-02-07T15:14:02.291Z",
+          "order": 4,
+          "badges": [
+            {
+              "title": "PYQ Topic wise (Soon)",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.android.app",
+            "room-examgoal-com",
+            "com.examgoal.jeemainpreparation.app"
+          ],
+          "performance": {
+            "score": 64.65,
+            "totalAttempts": 9610373
+          }
+        },
+        {
+          "metaId": "04a84f14-cc92-5940-99e3-f3c406a5157a",
+          "country": "in",
+          "examGroup": "jee",
+          "key": "wb-jee",
+          "createdAt": "2020-12-19T06:05:12.782Z",
+          "description": null,
+          "keyValuePairs": {},
+          "order": 5,
+          "title": "WB JEE",
+          "updatedAt": "2024-02-07T15:13:08.358Z",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/wbjee.png",
+          "type": "exam",
+          "badges": [
+            {
+              "title": "PYQ Topic wise (Soon)",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.jeemainpreparation.app",
+            "com.examgoal.wbjeepreparation.app",
+            "room-examgoal-com",
+            "com.examgoal.android.app"
+          ],
+          "performance": {
+            "score": 59.16,
+            "totalAttempts": 5599188
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "jee",
+          "key": "kcet",
+          "type": "exam",
+          "createdAt": "2023-10-28T07:36:50.767Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/kcet.png",
+          "keyValuePairs": {},
+          "metaId": "a06069a7-4020-5f0c-a91f-d76bdc38c55b",
+          "title": "KCET",
+          "updatedAt": "2024-02-27T04:29:46.886Z",
+          "order": 6,
+          "apps": [],
+          "badges": [],
+          "performance": {
+            "score": 62.98,
+            "totalAttempts": 8154761
+          }
+        },
+        {
+          "examGroup": "jee",
+          "type": "exam",
+          "key": "viteee",
+          "country": "in",
+          "apps": [],
+          "badges": [],
+          "createdAt": "2024-03-09T22:16:54.804Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5ef25410-97bb-4621-853a-755d0bbaac4d/348328b0-eb61-11ee-831d-6530431f76f8/6y3zli1lu89xfp8.png",
+          "keyValuePairs": {},
+          "metaId": "1bf9f8df-c674-58d9-9be2-ca0c599bed9f",
+          "title": "VITEEE",
+          "updatedAt": "2024-03-26T11:09:17.591Z",
+          "order": 7,
+          "performance": {
+            "score": 60.22,
+            "totalAttempts": 6213194
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "jee",
+          "key": "ap-eapcet",
+          "type": "exam",
+          "createdAt": "2023-06-15T00:06:32.149Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/67db133c-ba65-4e2c-ad65-05158ae574a3/a9db1730-387d-11ef-afbe-73a2e898f5a9/jaoe38c1ly4hsb39.png",
+          "keyValuePairs": {},
+          "metaId": "84c9c1a8-8503-524d-bf02-6ed33190e9ee",
+          "title": "AP EAPCET",
+          "updatedAt": "2024-07-02T14:16:57.943Z",
+          "order": 8,
+          "apps": [
+            "com.examgoal.android.app",
+            "com.examgoal.jeemainpreparation.app"
+          ],
+          "badges": [],
+          "performance": {
+            "score": 57.65,
+            "totalAttempts": 4823486
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "jee",
+          "key": "ts-eamcet",
+          "type": "exam",
+          "createdAt": "2023-01-06T17:14:03.208Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/6dd28730-004e-4717-bdcb-88d719ed6def/739edcd0-d173-11ef-b8cb-250dbba0307d/jaoe38c1m5umvggu.png",
+          "keyValuePairs": {},
+          "metaId": "c619ebef-d879-5ed5-a158-c39b2d4b5f15",
+          "order": 9,
+          "title": "TS EAMCET",
+          "updatedAt": "2025-01-13T05:59:01.161Z",
+          "apps": [],
+          "badges": [],
+          "quiz": {
+            "subjects": []
+          },
+          "performance": {
+            "score": 63.38,
+            "totalAttempts": 8477821
+          }
+        },
+        {
+          "key": "iat-iiser",
+          "country": "in",
+          "type": "exam",
+          "examGroup": "jee",
+          "apps": [
+            "room-examgoal-com",
+            "com.examgoal.android.app",
+            "com.examgoal.jeemainpreparation.app"
+          ],
+          "badges": [],
+          "createdAt": "2025-04-25T06:03:51.744Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/0e359091-6260-42af-bb0d-5ad7d2e88c20/7c7eaee0-2658-11f0-a3e5-29ab2addad42/jaoe38c1ma50977y.png",
+          "keyValuePairs": {},
+          "metaId": "384abd13-f8f7-5869-a0be-91c399347bed",
+          "quiz": {
+            "subjects": []
+          },
+          "title": "IAT (IISER)",
+          "updatedAt": "2025-05-01T07:29:23.931Z",
+          "order": 10,
+          "performance": {
+            "score": 50.71,
+            "totalAttempts": 2437656
+          }
+        }
+      ]
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=medical&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "metaId": "64cc8fc8-f6ac-5196-b8df-4ea17b167ba0",
+          "country": "in",
+          "examGroup": "medical",
+          "key": "neet",
+          "createdAt": "2020-11-20T11:36:42.532Z",
+          "description": "The National Eligibility cum Entrance Test (Undergraduate), formerly the All India Pre-Medical Test, is an entrance examination in India for students who wish to study undergraduate medical courses and dental courses in government or private medical and dental colleges in India.",
+          "keyValuePairs": {},
+          "order": 0,
+          "title": "NEET",
+          "updatedAt": "2024-06-01T14:14:11.057Z",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/jee-main.png",
+          "badges": [
+            {
+              "title": "Latest Syllabus",
+              "color": "#22c55e"
+            },
+            {
+              "title": "PYQ Topic wise",
+              "color": "#ef4444"
+            }
+          ],
+          "apps": [
+            "com.examgoal.android.app",
+            "com.neetcare.neetquestion",
+            "room-examgoal-com"
+          ],
+          "performance": {
+            "score": 93.81,
+            "totalAttempts": 169272031
+          }
+        },
+        {
+          "country": "in",
+          "examGroup": "medical",
+          "key": "aiims",
+          "type": "exam",
+          "badges": [],
+          "createdAt": "2024-01-18T04:06:00.448Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5ca40f45-b700-4f46-9b8f-83745abac08c/fc927a90-6799-11ef-8b22-651b64eb4256/jaoe38c1m0i5qvui.png",
+          "keyValuePairs": {},
+          "metaId": "e5fe5851-01c8-5703-ba3a-ddf78cac4935",
+          "title": "AIIMS",
+          "updatedAt": "2024-08-31T13:08:37.555Z",
+          "order": 1,
+          "apps": [
+            "com.examgoal.android.app",
+            "com.neetcare.neetquestion",
+            "room-examgoal-com"
+          ],
+          "quiz": {
+            "subjects": []
+          },
+          "performance": {
+            "score": 32.89,
+            "totalAttempts": 422270
+          }
+        },
+        {
+          "key": "mht-cet-biology",
+          "type": "exam",
+          "country": "in",
+          "examGroup": "medical",
+          "apps": [
+            "room-examgoal-com",
+            "com.examgoal.android.app"
+          ],
+          "badges": [],
+          "createdAt": "2025-08-09T01:52:27.582Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/jee/mht-cet.png",
+          "keyValuePairs": {},
+          "metaId": "338c68fe-01f8-5a4a-b53e-9d8a3aa734cc",
+          "quiz": {
+            "subjects": []
+          },
+          "title": "MHT CET (Biology)",
+          "updatedAt": "2025-08-22T10:15:15.141Z",
+          "order": 2,
+          "performance": {
+            "score": 46.4,
+            "totalAttempts": 1594426
+          }
+        }
+      ]
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=gate&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "metaId": "33462b07-edd3-5b7b-8995-2aa22c186a92",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-cse",
+          "createdAt": "2020-08-24T22:56:42.763Z",
+          "description": null,
+          "name": "GATE CSE",
+          "updatedAt": "2022-03-04T04:22:26.576Z",
+          "keyValuePairs": {},
+          "order": 0,
+          "title": "GATE CSE",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/cse.png",
+          "performance": {
+            "score": 57.41,
+            "totalAttempts": 4710655
+          }
+        },
+        {
+          "metaId": "a719d3f8-2de6-5987-8fa9-48b06791480c",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-ece",
+          "createdAt": "2020-08-24T22:56:54.391Z",
+          "description": null,
+          "name": "GATE ECE",
+          "updatedAt": "2022-03-04T04:22:33.142Z",
+          "keyValuePairs": {},
+          "order": 1,
+          "title": "GATE ECE",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ece.png",
+          "performance": {
+            "score": 51.65,
+            "totalAttempts": 2672225
+          }
+        },
+        {
+          "metaId": "f503abea-1c67-589b-baa2-0a447c9c0121",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-ee",
+          "createdAt": "2020-08-24T22:56:49.093Z",
+          "description": null,
+          "name": "GATE EE",
+          "updatedAt": "2022-03-04T04:23:49.141Z",
+          "keyValuePairs": {},
+          "order": 2,
+          "title": "GATE EE",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ee.png",
+          "performance": {
+            "score": 41.53,
+            "totalAttempts": 988194
+          }
+        },
+        {
+          "metaId": "f40e568d-a61e-5542-9850-6a5f273a20cc",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-me",
+          "createdAt": "2020-08-24T22:57:03.755Z",
+          "description": null,
+          "name": "GATE ME",
+          "updatedAt": "2022-03-04T04:25:17.065Z",
+          "keyValuePairs": {},
+          "order": 3,
+          "title": "GATE ME",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/me.png",
+          "performance": {
+            "score": 40.08,
+            "totalAttempts": 856263
+          }
+        },
+        {
+          "metaId": "50be1e92-1a20-5c91-b527-6c37a96ae89e",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-ce",
+          "createdAt": "2020-08-24T22:57:23.936Z",
+          "description": null,
+          "name": "GATE CE",
+          "updatedAt": "2022-03-04T04:26:21.209Z",
+          "keyValuePairs": {},
+          "order": 4,
+          "title": "GATE CE",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/ce.png",
+          "performance": {
+            "score": 31.64,
+            "totalAttempts": 373222
+          }
+        },
+        {
+          "metaId": "0a2e06b2-d550-523d-b388-9fc3c8e3baee",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-pi",
+          "createdAt": "2020-08-24T22:57:35.411Z",
+          "description": null,
+          "name": "GATE PI",
+          "updatedAt": "2022-03-04T04:28:34.473Z",
+          "keyValuePairs": {},
+          "order": 5,
+          "title": "GATE PI",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/pi.png",
+          "performance": {
+            "score": 7.62,
+            "totalAttempts": 35136
+          }
+        },
+        {
+          "metaId": "d229641f-a783-56bd-99e6-f7da2631a251",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-in",
+          "createdAt": "2020-08-24T22:57:44.939Z",
+          "description": null,
+          "name": "GATE IN",
+          "updatedAt": "2022-03-04T04:28:40.657Z",
+          "keyValuePairs": {},
+          "order": 6,
+          "title": "GATE IN",
+          "type": "exam",
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/in.png",
+          "performance": {
+            "score": 0,
+            "totalAttempts": 16594
+          }
+        },
+        {
+          "type": "exam",
+          "country": "in",
+          "examGroup": "gate",
+          "key": "gate-da",
+          "apps": [],
+          "badges": [],
+          "createdAt": "2025-07-25T01:21:17.952Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/in/gate/cse.png",
+          "keyValuePairs": {},
+          "metaId": "c9a17f1a-4398-59fc-a2d2-0e0d884637f9",
+          "quiz": {
+            "subjects": []
+          },
+          "title": "GATE Data Science and Artificial Intelligence",
+          "updatedAt": "2025-07-25T01:21:17.952Z",
+          "order": 7,
+          "performance": {
+            "score": 8.98,
+            "totalAttempts": 40168
+          }
+        }
+      ]
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=civil-services&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "country": "in",
+          "examGroup": "civil-services",
+          "key": "upsc-civil-service",
+          "type": "exam",
+          "createdAt": "2021-10-19T04:48:31.124Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/5934fd03-d35c-42e7-b582-f058dd46bd57/324c2970-0876-11ef-b9c4-01b5e1672438/6y3zli1lvp5p37s.png",
+          "keyValuePairs": {},
+          "metaId": "e09ee9bf-f953-5127-9ab2-6a50c5534637",
+          "order": 0,
+          "title": "UPSC Civil Service",
+          "updatedAt": "2026-05-14T10:47:40.550Z",
+          "apps": [],
+          "badges": [],
+          "quiz": {
+            "subjects": []
+          },
+          "performance": {
+            "score": 35.06,
+            "totalAttempts": 522838
+          }
+        }
+      ]
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=defence&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "metaId": "ae12242c-2043-5d12-97f1-4863e7f59180",
+          "country": "in",
+          "examGroup": "defence",
+          "key": "nda",
+          "createdAt": "2021-07-16T06:21:07.078Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/624092ec-6f87-4440-9fac-93c921e8668e/c68613a0-1bde-11ef-ba88-abbdc110e2a5/6y3zli1lwog7v8b.png",
+          "keyValuePairs": {},
+          "order": 0,
+          "title": "NDA",
+          "updatedAt": "2024-05-27T04:09:04.104Z",
+          "type": "exam",
+          "apps": [
+            "com.examgoal.android.app",
+            "com.examgoal.ndapreparation.app",
+            "room-examgoal-com"
+          ],
+          "badges": [],
+          "performance": {
+            "score": 65.09,
+            "totalAttempts": 10031451
+          }
+        }
+      ]
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=ssc&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "metaId": "3911a0aa-0693-5c54-9ca0-c4505fba880f",
+          "country": "in",
+          "examGroup": "ssc",
+          "key": "ssc-cgl-tier-i",
+          "createdAt": "2020-12-22T06:51:03.399Z",
+          "description": null,
+          "keyValuePairs": {},
+          "order": 0,
+          "title": "SSC CGL Tier I",
+          "updatedAt": "2024-08-23T04:16:11.723Z",
+          "type": "exam",
+          "apps": [],
+          "badges": [],
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/assets/c293926d-776b-4c5d-87c7-c94d7c4c1112/614e3c70-6106-11ef-a495-011539d502ba/jaoe38c1m06789mf.png",
+          "quiz": {
+            "subjects": []
+          },
+          "performance": {
+            "score": 36.58,
+            "totalAttempts": 607149
+          }
+        }
+      ]
+    },
+    "/api/v1/metadata/exams?country=in&examGroup=cbse&from=pq": {
+      "statusCode": 0,
+      "results": [
+        {
+          "country": "in",
+          "examGroup": "cbse",
+          "key": "class-12",
+          "type": "exam",
+          "createdAt": "2021-12-06T18:16:08.836Z",
+          "description": null,
+          "image": "https://app-assets.cdn.examgoal.net/fly/@width/image/exam-icons/cbse.png",
+          "keyValuePairs": {},
+          "metaId": "9990e3cc-d4c9-59c0-95cc-7c362f6d79f8",
+          "order": 0,
+          "title": "Class 12",
+          "updatedAt": "2024-01-13T20:24:34.110Z",
+          "badges": [],
+          "performance": {
+            "score": 40.28,
+            "totalAttempts": 873197
+          }
+        }
+      ]
+    },
+    "/api/v1/test/user/test/tst-19g61mnpzhlyq?out_of_syllabus=false": {
+      "statusCode": 0,
+      "data": {
+        "testId": "tst-19g61mnpzhlyq",
+        "defaultLanguage": "en",
+        "description": "Units, Dimensions",
+        "difficulty": null,
+        "instructions": null,
+        "isAnalysisDeletable": false,
+        "isPremium": true,
+        "keyValuePairs": {},
+        "languages": [
+          "en",
+          "hi"
+        ],
+        "layout": "nta",
+        "liveAt": "2026-05-31T01:00:00.000Z",
+        "maxAttempt": 3,
+        "maxMarks": 60,
+        "maxNegMarks": 15,
+        "policy": "jee-main",
+        "sections": [
+          {
+            "id": "f6973310-2ec3-4189-abb9-cd37e98fa0d2",
+            "title": "SECTION A",
+            "description": null,
+            "maxMarks": 40,
+            "maxNegMarks": 10,
+            "timeAllotted": 1440000,
+            "totalQuestions": 10,
+            "optional": [],
+            "questions": [
+              {
+                "questionId": "tq-mpsxdme8",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Charge on the capacitor is given by $Q = I \\alpha e^{\\frac{tI}{\\Delta V \\epsilon_0 \\beta}}$ where $\\alpha$ and $\\beta$ are constants. $t =$ time, $I =$ current, $\\Delta V =$ potential difference.</p> <p>Then dimensions of $\\frac{\\beta}{\\alpha}$ is same as the dimensions of</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$\\mu_0 \\epsilon_0$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$\\sqrt{\\mu_0 \\epsilon_0}$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$\\frac{1}{\\mu_0 \\epsilon_0}$</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>संधारित्र पर आवेश $Q = I \\alpha e^{\\frac{tI}{\\Delta V \\epsilon_0 \\beta}}$ द्वारा दिया गया है, जहाँ $\\alpha$ और $\\beta$ नियतांक हैं। $t =$ समय, $I =$ धारा, $\\Delta V =$ विभवांतर।</p> <p>तो $\\frac{\\beta}{\\alpha}$ की विमाएँ निम्न में से किसके विमाओं के समान हैं?</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$\\mu_0 \\epsilon_0$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$\\sqrt{\\mu_0 \\epsilon_0}$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$\\frac{1}{\\mu_0 \\epsilon_0}$</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsy5ne3",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p><b>Match the following</b></p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;}th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;}td {border: 1px solid lightgrey;padding: 10px;text-align: left;}</style><table><tr><th colspan=\"2\">Table-1</th><th colspan=\"2\">Table-2</th></tr><tr><td>(A)</td><td><div style=\"text-align: center;\"><span style=\"font-size:1.2em;\">$\\dfrac{R}{L}$</span></div></td><td>(P)</td><td><b>Time</b></td></tr><tr><td>(B)</td><td><span style=\"font-size:1.2em;\">CR</span></td><td>(Q)</td><td><b>Frequency</b></td></tr><tr><td>(C)</td><td><span style=\"font-size:1.2em;\">E/B</span></td><td>(R)</td><td><b>Speed</b></td></tr><tr><td>(D)</td><td><span style=\"font-size:1.2em;\">$\\sqrt{\\epsilon_0\\mu_0}$</span></td><td>(S)</td><td><b>None</b></td></tr></table><p>Match the items of Table-1 with the correct options from Table-2:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "(A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (R); (C) $\\rightarrow$ (P); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "(A) $\\rightarrow$ (S); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (Q)"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p><b>निम्नलिखित का मिलान करें</b></p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;}th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;}td {border: 1px solid lightgrey;padding: 10px;text-align: left;}</style><table><tr><th colspan=\"2\">तालिका-1</th><th colspan=\"2\">तालिका-2</th></tr><tr><td>(A)</td><td><div style=\"text-align: center;\"><span style=\"font-size:1.2em;\">$\\dfrac{R}{L}$</span></div></td><td>(P)</td><td><b>समय</b></td></tr><tr><td>(B)</td><td><span style=\"font-size:1.2em;\">CR</span></td><td>(Q)</td><td><b>आवृत्ति</b></td></tr><tr><td>(C)</td><td><span style=\"font-size:1.2em;\">E/B</span></td><td>(R)</td><td><b>चाल</b></td></tr><tr><td>(D)</td><td><span style=\"font-size:1.2em;\">$\\sqrt{\\epsilon_0\\mu_0}$</span></td><td>(S)</td><td><b>कोई नहीं</b></td></tr></table><p>तालिका-1 के मदों का तालिका-2 के सही विकल्पों के साथ मिलान करें:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "(A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (R); (C) $\\rightarrow$ (P); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "(A) $\\rightarrow$ (S); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (Q)"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsxxdir",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>An unknown quantity '<b>α</b>' is expressed as $\\alpha = \\dfrac{2ma}{\\beta} \\log\\left(1 + \\dfrac{2\\beta \\ell}{ma}\\right)$, where $m$ = mass, $a$ = acceleration, $\\ell$ = length. The unit of $\\alpha$ should be</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>s<sup>−1</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>m/s</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>m/s<sup>2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>meter</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>एक अज्ञात राशि '<b>α</b>' को $\\alpha = \\dfrac{2ma}{\\beta} \\log\\left(1 + \\dfrac{2\\beta \\ell}{ma}\\right)$ के रूप में व्यक्त किया गया है, जहाँ $m$ = द्रव्यमान, $a$ = त्वरण, $\\ell$ = लंबाई। $\\alpha$ का मात्रक होना चाहिए</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>s<sup>−1</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>m/s</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>m/s<sup>2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>मीटर</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsxt0o8",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Given that $y = A \\sin\\left[\\frac{2 \\pi}{\\lambda}(ct - x)\\right]$, where $y$ and $x$ are measured in metres. Which of the following statements is true?</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>The unit of $\\lambda$ is same as that of $x$ and $A$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>The unit of $\\lambda$ is same as that of $x$ but not of $A$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>The unit of $c$ is same as that of $\\frac{2\\pi}{\\lambda}$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>The unit of $(ct - x)$ is same as that of $\\frac{2\\pi}{\\lambda}$</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>दिया गया है कि $y = A \\sin\\left[\\frac{2 \\pi}{\\lambda}(ct - x)\\right]$, जहाँ $y$ और $x$ मीटर में मापे जाते हैं। निम्नलिखित में से कौन सा कथन सत्य है?</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$\\lambda$ की इकाई $x$ और $A$ की इकाई के समान है</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$\\lambda$ की इकाई $x$ की इकाई के समान है परन्तु $A$ की नहीं</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$c$ की इकाई $\\frac{2\\pi}{\\lambda}$ की इकाई के समान है</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$(ct - x)$ की इकाई $\\frac{2\\pi}{\\lambda}$ की इकाई के समान है</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsyfn6u",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Match the following</p><style>table {width: 100%; border-collapse: collapse; margin: 20px 0;} th {background-color: blue; color: white; border: 1px solid lightgrey; padding: 10px;} td {border: 1px solid lightgrey; padding: 10px; text-align: left;} </style><table><tr><th colspan=\"2\">Table 1</th><th colspan=\"2\">Table 2</th></tr><tr><td><b>(A)</b></td><td><b>Stress</b></td><td><b>(P)</b></td><td><b>Pressure</b></td></tr><tr><td><b>(B)</b></td><td><b>Strain</b></td><td><b>(Q)</b></td><td><b>Energy density</b></td></tr><tr><td><b>(C)</b></td><td><b>Modulus of elasticity</b></td><td><b>(R)</b></td><td><b>Angle</b></td></tr><tr><td><b>(D)</b></td><td><b>Torque</b></td><td><b>(S)</b></td><td><b>Energy</b></td></tr></table><p>Select the correct matching from the options given below :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{S}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{R})$"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P});(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>निम्नलिखित का मिलान करें</p><style>table {width: 100%; border-collapse: collapse; margin: 20px 0;} th {background-color: blue; color: white; border: 1px solid lightgrey; padding: 10px;} td {border: 1px solid lightgrey; padding: 10px; text-align: left;} </style><table><tr><th colspan=\"2\">तालिका 1</th><th colspan=\"2\">तालिका 2</th></tr><tr><td><b>(A)</b></td><td><b>प्रतिबल</b></td><td><b>(P)</b></td><td><b>दाब</b></td></tr><tr><td><b>(B)</b></td><td><b>विकृति</b></td><td><b>(Q)</b></td><td><b>ऊर्जा घनत्व</b></td></tr><tr><td><b>(C)</b></td><td><b>प्रत्यास्थता गुणांक</b></td><td><b>(R)</b></td><td><b>कोण</b></td></tr><tr><td><b>(D)</b></td><td><b>बल आघूर्ण</b></td><td><b>(S)</b></td><td><b>ऊर्जा</b></td></tr></table><p>नीचे दिए गए विकल्पों में से सही मिलान चुनें :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{S}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{R})$"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P});(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsyo43w",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If speed of light <b>c</b>, Planck's constant <b>h</b> and gravitational constant <b>G</b> are chosen as fundamental quantities, dimensions of time in this system of units is</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>ch<sup>3/2</sup>G<sup>&minus;3/2</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>c<sup>-2</sup>G<sup>1/2</sup>h</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>c<sup>2</sup>G<sup>1/2</sup>h<sup>5/2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>c<sup>&minus;5/2</sup>G<sup>1/2</sup>h<sup>1/2</sup></p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि प्रकाश की चाल <b>c</b>, प्लांक स्थिरांक <b>h</b> और गुरुत्वाकर्षण स्थिरांक <b>G</b> को मूल राशियों के रूप में चुना जाए, तो इस मात्रक प्रणाली में समय की विमाएँ हैं</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>ch<sup>3/2</sup>G<sup>&minus;3/2</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>c<sup>-2</sup>G<sup>1/2</sup>h</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>c<sup>2</sup>G<sup>1/2</sup>h<sup>5/2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>c<sup>&minus;5/2</sup>G<sup>1/2</sup>h<sup>1/2</sup></p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsznqy5",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$\\text{erg} \\, m^{-1}$ can be the unit of the measure of</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>force</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>momentum</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>power</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>acceleration</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$\\text{erg} \\, m^{-1}$ निम्न में से किसके मापन की इकाई हो सकती है</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>बल</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>संवेग</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>शक्ति</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>त्वरण</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpszqzfp",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If the present units of length, time and mass (m, s, kg) are changed to 100 m, 100 s, and $\\frac{1}{10}$ kg, then</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>the new unit of velocity is increased 10 times</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>the new unit of force is decreased $\\frac{1}{1000}$ times</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>the new unit of energy is increased 10 times</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>the new unit of pressure is increased 1000 times</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि लंबाई, समय और द्रव्यमान (m, s, kg) के वर्तमान मात्रकों को बदलकर 100 m, 100 s और $\\frac{1}{10}$ kg कर दिया जाए, तो</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>वेग का नया मात्रक 10 गुना बढ़ जाता है</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>बल का नया मात्रक $\\frac{1}{1000}$ गुना घट जाता है</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>ऊर्जा का नया मात्रक 10 गुना बढ़ जाता है</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>दाब का नया मात्रक 1000 गुना बढ़ जाता है</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpszvywd",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>In C.G.S. system the magnitude of the force is 100 dyne.In another system where the fundamental physical quantities are kilogram, metre and minute, the magnitude of the force is :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>0.036</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>0.36</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>3.6</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>36</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>C.G.S. प्रणाली में बल का परिमाण 100 डाइन है। एक अन्य प्रणाली में जहाँ मूल भौतिक राशियाँ किलोग्राम, मीटर और मिनट हैं, बल का परिमाण है :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>0.036</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>0.36</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>3.6</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>36</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpt019fi",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Suppose force (F), area (A) and time (T) are the fundamental units, then match the following:</p><style>  table {      width: 100%;      border-collapse: collapse;      margin: 20px 0;  }  th {      background-color: blue;      color: white;      border: 1px solid lightgrey;      padding: 10px;  }  td {      border: 1px solid lightgrey;      padding: 10px;      text-align: left;  }</style><table>  <tr>    <th colspan=\"2\">Table 1</th>    <th colspan=\"2\">Table 2</th>  </tr>  <tr>    <td>(A)</td>    <td><b>Work</b></td>    <td>(P)</td>    <td>$\\left[ A^{1/2}T^{-1} \\right]$</td>  </tr>  <tr>    <td>(B)</td>    <td><b>Moment of inertia</b></td>    <td>(Q)</td>    <td>$\\left[ FA^{1/2} \\right]$</td>  </tr>  <tr>    <td>(C)</td>    <td><b>Velocity</b></td>    <td>(R)</td>    <td>$\\left[ FA^{1/2}T^2 \\right]$</td>  </tr></table><p>Match the items in Table 1 with those in Table 2 :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>(A)-(Q), (B)-(R), (C)-(P)</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>(A)-(R), (B)-(P), (C)-(Q)</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>(A)-(P), (B)-(Q), (C)-(R)</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>(A)-(P), (B)-(R), (C)-(Q)</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>मान लीजिए बल (F), क्षेत्रफल (A) और समय (T) मूलभूत इकाइयाँ हैं, तो निम्नलिखित का मिलान कीजिए:</p><style>  table {      width: 100%;      border-collapse: collapse;      margin: 20px 0;  }  th {      background-color: blue;      color: white;      border: 1px solid lightgrey;      padding: 10px;  }  td {      border: 1px solid lightgrey;      padding: 10px;      text-align: left;  }</style><table>  <tr>    <th colspan=\"2\">सारणी 1</th>    <th colspan=\"2\">सारणी 2</th>  </tr>  <tr>    <td>(A)</td>    <td><b>कार्य</b></td>    <td>(P)</td>    <td>$\\left[ A^{1/2}T^{-1} \\right]$</td>  </tr>  <tr>    <td>(B)</td>    <td><b>जड़त्व आघूर्ण</b></td>    <td>(Q)</td>    <td>$\\left[ FA^{1/2} \\right]$</td>  </tr>  <tr>    <td>(C)</td>    <td><b>वेग</b></td>    <td>(R)</td>    <td>$\\left[ FA^{1/2}T^2 \\right]$</td>  </tr></table><p>सारणी 1 की वस्तुओं का सारणी 2 की वस्तुओं के साथ मिलान कीजिए:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>(A)-(Q), (B)-(R), (C)-(P)</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>(A)-(R), (B)-(P), (C)-(Q)</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>(A)-(P), (B)-(Q), (C)-(R)</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>(A)-(P), (B)-(R), (C)-(Q)</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              }
+            ],
+            "instructions": null
+          },
+          {
+            "id": "32f0027d-91c1-43e1-b437-13c0a923644e",
+            "title": "SECTION B",
+            "description": null,
+            "maxMarks": 20,
+            "maxNegMarks": 5,
+            "timeAllotted": 720000,
+            "totalQuestions": 5,
+            "optional": [],
+            "questions": [
+              {
+                "questionId": "tq-mpsyymaw",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Density of a material in the cgs system is $8 \\mathrm{gcc}^{-1}$. In a system of units in which the unit of mass is 20 g and that of length is 5 cm , what is the density of the material in this new system of units.",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "cgs प्रणाली में किसी पदार्थ का घनत्व $8 \\mathrm{gcc}^{-1}$ है। मात्रकों की एक ऐसी प्रणाली में जिसमें द्रव्यमान का मात्रक 20 g और लंबाई का मात्रक 5 cm है, मात्रकों की इस नई प्रणाली में पदार्थ का घनत्व क्या होगा?",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpszfkfg",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Using Kepler’s laws of planetary motion, planets revolve around the Sun in almost circular paths. Suppose the time period of revolution depends on the orbital radius ( $r$ ), the Sun’s mass ( $M$ ) and the universal gravitational constant ( $G$ ) in the form</p>\n<p>$$ T^a=4 \\pi^2 \\frac{r^b}{M^c G^d} $$</p>\n<p>Determine the value of $a+b+c$ + $d$.</p>",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>केप्लर के ग्रहीय गति के नियमों के अनुसार, ग्रह सूर्य के चारों ओर लगभग वृत्ताकार पथों में परिक्रमा करते हैं। मान लीजिए कि परिक्रमण काल कक्षीय त्रिज्या ( $r$ ), सूर्य के द्रव्यमान ( $M$ ) और सार्वत्रिक गुरुत्वाकर्षण नियतांक ( $G$ ) पर निम्न रूप में निर्भर करता है:</p><p>$$ T^a=4 \\pi^2 \\frac{r^b}{M^c G^d} $$</p><p>$a+b+c+d$ का मान ज्ञात कीजिए।</p>",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpsz1cxh",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "A new unit of length is chosen such that the speed\nof light in vacuum is unity. What is the distance\nbetween the sun and earth in terms of the new unit\nif light take 8 min and 20 s to cover this distance.",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "लंबाई का एक नया मात्रक इस प्रकार चुना जाता है कि निर्वात में प्रकाश की चाल एकांक (एक) हो। यदि प्रकाश इस दूरी को तय करने में 8 मिनट और 20 सेकंड का समय लेता है, तो नए मात्रक के पदों में सूर्य और पृथ्वी के बीच की दूरी क्या है?",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpsz7wjy",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Consider a new system of units in which the unit of mass is $\\alpha \\mathrm{kg}$, unit of length is $\\beta \\mathrm{m}$ and that of time is $\\gamma \\mathrm{s}$. The value of calorie in the new system is calculated to be $4.2 \\alpha^{-x} \\beta^{-y} \\gamma^z$. Find the values of $x+y+z$.",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "मान लीजिए कि मात्रकों की एक नई प्रणाली है जिसमें द्रव्यमान का मात्रक $\\alpha \\mathrm{kg}$ है, लंबाई का मात्रक $\\beta \\mathrm{m}$ है और समय का मात्रक $\\gamma \\mathrm{s}$ है। नई प्रणाली में कैलोरी का मान $4.2 \\alpha^{-x} \\beta^{-y} \\gamma^z$ प्राप्त होता है। $x+y+z$ का मान ज्ञात कीजिए।",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpszjc5d",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>The quantity $\\frac{e^x}{2 h \\varepsilon_0 c}$ has dimensional formula $M^0 L^0 T^0$. Calculate $x$.</p>",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>राशि $\\frac{e^x}{2 h \\varepsilon_0 c}$ का विमीय सूत्र $M^0 L^0 T^0$ है। $x$ की गणना कीजिए।</p>",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "integer"
+              }
+            ],
+            "instructions": null
+          }
+        ],
+        "syllabus": "Units, Dimensions",
+        "timeAllotted": 2160000,
+        "title": "Units and Measurement Test - 1 (Topic Test )",
+        "totalQuestions": 15,
+        "type": "topic",
+        "isWatermarkEnabled": true,
+        "percentileId": null,
+        "isUpcoming": false,
+        "seriesId": "tsr-19g61mnpryz1v"
+      }
+    },
+    "/api/v1/test/user/session/tst-19g61mnpzhlyq": {
+      "statusCode": 0,
+      "data": null
+    },
+    "/api/v1/test/user/test/tst-19g61mnpzhlyq": {
+      "statusCode": 0,
+      "data": {
+        "testId": "tst-19g61mnpzhlyq",
+        "defaultLanguage": "en",
+        "description": "Units, Dimensions",
+        "difficulty": null,
+        "instructions": null,
+        "isAnalysisDeletable": false,
+        "isPremium": true,
+        "keyValuePairs": {},
+        "languages": [
+          "en",
+          "hi"
+        ],
+        "layout": "nta",
+        "liveAt": "2026-05-31T01:00:00.000Z",
+        "maxAttempt": 3,
+        "maxMarks": 60,
+        "maxNegMarks": 15,
+        "policy": "jee-main",
+        "sections": [
+          {
+            "id": "f6973310-2ec3-4189-abb9-cd37e98fa0d2",
+            "title": "SECTION A",
+            "description": null,
+            "maxMarks": 40,
+            "maxNegMarks": 10,
+            "timeAllotted": 1440000,
+            "totalQuestions": 10,
+            "optional": [],
+            "questions": [
+              {
+                "questionId": "tq-mpsxdme8",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Charge on the capacitor is given by $Q = I \\alpha e^{\\frac{tI}{\\Delta V \\epsilon_0 \\beta}}$ where $\\alpha$ and $\\beta$ are constants. $t =$ time, $I =$ current, $\\Delta V =$ potential difference.</p> <p>Then dimensions of $\\frac{\\beta}{\\alpha}$ is same as the dimensions of</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$\\mu_0 \\epsilon_0$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$\\sqrt{\\mu_0 \\epsilon_0}$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$\\frac{1}{\\mu_0 \\epsilon_0}$</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>संधारित्र पर आवेश $Q = I \\alpha e^{\\frac{tI}{\\Delta V \\epsilon_0 \\beta}}$ द्वारा दिया गया है, जहाँ $\\alpha$ और $\\beta$ नियतांक हैं। $t =$ समय, $I =$ धारा, $\\Delta V =$ विभवांतर।</p> <p>तो $\\frac{\\beta}{\\alpha}$ की विमाएँ निम्न में से किसके विमाओं के समान हैं?</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$\\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$\\mu_0 \\epsilon_0$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$\\sqrt{\\mu_0 \\epsilon_0}$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$\\frac{1}{\\mu_0 \\epsilon_0}$</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsy5ne3",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p><b>Match the following</b></p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;}th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;}td {border: 1px solid lightgrey;padding: 10px;text-align: left;}</style><table><tr><th colspan=\"2\">Table-1</th><th colspan=\"2\">Table-2</th></tr><tr><td>(A)</td><td><div style=\"text-align: center;\"><span style=\"font-size:1.2em;\">$\\dfrac{R}{L}$</span></div></td><td>(P)</td><td><b>Time</b></td></tr><tr><td>(B)</td><td><span style=\"font-size:1.2em;\">CR</span></td><td>(Q)</td><td><b>Frequency</b></td></tr><tr><td>(C)</td><td><span style=\"font-size:1.2em;\">E/B</span></td><td>(R)</td><td><b>Speed</b></td></tr><tr><td>(D)</td><td><span style=\"font-size:1.2em;\">$\\sqrt{\\epsilon_0\\mu_0}$</span></td><td>(S)</td><td><b>None</b></td></tr></table><p>Match the items of Table-1 with the correct options from Table-2:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "(A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (R); (C) $\\rightarrow$ (P); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "(A) $\\rightarrow$ (S); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (Q)"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p><b>निम्नलिखित का मिलान करें</b></p><style>table {width: 100%;border-collapse: collapse;margin: 20px 0;}th {background-color: blue;color: white;border: 1px solid lightgrey;padding: 10px;}td {border: 1px solid lightgrey;padding: 10px;text-align: left;}</style><table><tr><th colspan=\"2\">तालिका-1</th><th colspan=\"2\">तालिका-2</th></tr><tr><td>(A)</td><td><div style=\"text-align: center;\"><span style=\"font-size:1.2em;\">$\\dfrac{R}{L}$</span></div></td><td>(P)</td><td><b>समय</b></td></tr><tr><td>(B)</td><td><span style=\"font-size:1.2em;\">CR</span></td><td>(Q)</td><td><b>आवृत्ति</b></td></tr><tr><td>(C)</td><td><span style=\"font-size:1.2em;\">E/B</span></td><td>(R)</td><td><b>चाल</b></td></tr><tr><td>(D)</td><td><span style=\"font-size:1.2em;\">$\\sqrt{\\epsilon_0\\mu_0}$</span></td><td>(S)</td><td><b>कोई नहीं</b></td></tr></table><p>तालिका-1 के मदों का तालिका-2 के सही विकल्पों के साथ मिलान करें:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "(A) $\\rightarrow$ (P); (B) $\\rightarrow$ (Q); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "(A) $\\rightarrow$ (Q); (B) $\\rightarrow$ (R); (C) $\\rightarrow$ (P); (D) $\\rightarrow$ (S)"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "(A) $\\rightarrow$ (S); (B) $\\rightarrow$ (P); (C) $\\rightarrow$ (R); (D) $\\rightarrow$ (Q)"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsxxdir",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>An unknown quantity '<b>α</b>' is expressed as $\\alpha = \\dfrac{2ma}{\\beta} \\log\\left(1 + \\dfrac{2\\beta \\ell}{ma}\\right)$, where $m$ = mass, $a$ = acceleration, $\\ell$ = length. The unit of $\\alpha$ should be</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>s<sup>−1</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>m/s</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>m/s<sup>2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>meter</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>एक अज्ञात राशि '<b>α</b>' को $\\alpha = \\dfrac{2ma}{\\beta} \\log\\left(1 + \\dfrac{2\\beta \\ell}{ma}\\right)$ के रूप में व्यक्त किया गया है, जहाँ $m$ = द्रव्यमान, $a$ = त्वरण, $\\ell$ = लंबाई। $\\alpha$ का मात्रक होना चाहिए</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>s<sup>−1</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>m/s</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>m/s<sup>2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>मीटर</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsxt0o8",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Given that $y = A \\sin\\left[\\frac{2 \\pi}{\\lambda}(ct - x)\\right]$, where $y$ and $x$ are measured in metres. Which of the following statements is true?</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>The unit of $\\lambda$ is same as that of $x$ and $A$</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>The unit of $\\lambda$ is same as that of $x$ but not of $A$</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>The unit of $c$ is same as that of $\\frac{2\\pi}{\\lambda}$</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>The unit of $(ct - x)$ is same as that of $\\frac{2\\pi}{\\lambda}$</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>दिया गया है कि $y = A \\sin\\left[\\frac{2 \\pi}{\\lambda}(ct - x)\\right]$, जहाँ $y$ और $x$ मीटर में मापे जाते हैं। निम्नलिखित में से कौन सा कथन सत्य है?</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>$\\lambda$ की इकाई $x$ और $A$ की इकाई के समान है</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>$\\lambda$ की इकाई $x$ की इकाई के समान है परन्तु $A$ की नहीं</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>$c$ की इकाई $\\frac{2\\pi}{\\lambda}$ की इकाई के समान है</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>$(ct - x)$ की इकाई $\\frac{2\\pi}{\\lambda}$ की इकाई के समान है</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsyfn6u",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Match the following</p><style>table {width: 100%; border-collapse: collapse; margin: 20px 0;} th {background-color: blue; color: white; border: 1px solid lightgrey; padding: 10px;} td {border: 1px solid lightgrey; padding: 10px; text-align: left;} </style><table><tr><th colspan=\"2\">Table 1</th><th colspan=\"2\">Table 2</th></tr><tr><td><b>(A)</b></td><td><b>Stress</b></td><td><b>(P)</b></td><td><b>Pressure</b></td></tr><tr><td><b>(B)</b></td><td><b>Strain</b></td><td><b>(Q)</b></td><td><b>Energy density</b></td></tr><tr><td><b>(C)</b></td><td><b>Modulus of elasticity</b></td><td><b>(R)</b></td><td><b>Angle</b></td></tr><tr><td><b>(D)</b></td><td><b>Torque</b></td><td><b>(S)</b></td><td><b>Energy</b></td></tr></table><p>Select the correct matching from the options given below :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{S}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{R})$"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P});(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>निम्नलिखित का मिलान करें</p><style>table {width: 100%; border-collapse: collapse; margin: 20px 0;} th {background-color: blue; color: white; border: 1px solid lightgrey; padding: 10px;} td {border: 1px solid lightgrey; padding: 10px; text-align: left;} </style><table><tr><th colspan=\"2\">तालिका 1</th><th colspan=\"2\">तालिका 2</th></tr><tr><td><b>(A)</b></td><td><b>प्रतिबल</b></td><td><b>(P)</b></td><td><b>दाब</b></td></tr><tr><td><b>(B)</b></td><td><b>विकृति</b></td><td><b>(Q)</b></td><td><b>ऊर्जा घनत्व</b></td></tr><tr><td><b>(C)</b></td><td><b>प्रत्यास्थता गुणांक</b></td><td><b>(R)</b></td><td><b>कोण</b></td></tr><tr><td><b>(D)</b></td><td><b>बल आघूर्ण</b></td><td><b>(S)</b></td><td><b>ऊर्जा</b></td></tr></table><p>नीचे दिए गए विकल्पों में से सही मिलान चुनें :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{B}) \\rightarrow(\\mathrm{S}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{P}),(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{R})$"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "$(\\mathrm{A}) \\rightarrow(\\mathrm{P});(\\mathrm{B}) \\rightarrow(\\mathrm{R}) ;(\\mathrm{C}) \\rightarrow(\\mathrm{Q}) ;(\\mathrm{D}) \\rightarrow(\\mathrm{S})$"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsyo43w",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If speed of light <b>c</b>, Planck's constant <b>h</b> and gravitational constant <b>G</b> are chosen as fundamental quantities, dimensions of time in this system of units is</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>ch<sup>3/2</sup>G<sup>&minus;3/2</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>c<sup>-2</sup>G<sup>1/2</sup>h</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>c<sup>2</sup>G<sup>1/2</sup>h<sup>5/2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>c<sup>&minus;5/2</sup>G<sup>1/2</sup>h<sup>1/2</sup></p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि प्रकाश की चाल <b>c</b>, प्लांक स्थिरांक <b>h</b> और गुरुत्वाकर्षण स्थिरांक <b>G</b> को मूल राशियों के रूप में चुना जाए, तो इस मात्रक प्रणाली में समय की विमाएँ हैं</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>ch<sup>3/2</sup>G<sup>&minus;3/2</sup></p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>c<sup>-2</sup>G<sup>1/2</sup>h</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>c<sup>2</sup>G<sup>1/2</sup>h<sup>5/2</sup></p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>c<sup>&minus;5/2</sup>G<sup>1/2</sup>h<sup>1/2</sup></p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpsznqy5",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$\\text{erg} \\, m^{-1}$ can be the unit of the measure of</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>force</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>momentum</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>power</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>acceleration</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>$\\text{erg} \\, m^{-1}$ निम्न में से किसके मापन की इकाई हो सकती है</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>बल</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>संवेग</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>शक्ति</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>त्वरण</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpszqzfp",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "hard",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>If the present units of length, time and mass (m, s, kg) are changed to 100 m, 100 s, and $\\frac{1}{10}$ kg, then</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>the new unit of velocity is increased 10 times</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>the new unit of force is decreased $\\frac{1}{1000}$ times</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>the new unit of energy is increased 10 times</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>the new unit of pressure is increased 1000 times</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>यदि लंबाई, समय और द्रव्यमान (m, s, kg) के वर्तमान मात्रकों को बदलकर 100 m, 100 s और $\\frac{1}{10}$ kg कर दिया जाए, तो</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>वेग का नया मात्रक 10 गुना बढ़ जाता है</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>बल का नया मात्रक $\\frac{1}{1000}$ गुना घट जाता है</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>ऊर्जा का नया मात्रक 10 गुना बढ़ जाता है</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>दाब का नया मात्रक 1000 गुना बढ़ जाता है</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpszvywd",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>In C.G.S. system the magnitude of the force is 100 dyne.In another system where the fundamental physical quantities are kilogram, metre and minute, the magnitude of the force is :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>0.036</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>0.36</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>3.6</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>36</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>C.G.S. प्रणाली में बल का परिमाण 100 डाइन है। एक अन्य प्रणाली में जहाँ मूल भौतिक राशियाँ किलोग्राम, मीटर और मिनट हैं, बल का परिमाण है :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>0.036</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>0.36</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>3.6</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>36</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "mcq"
+              },
+              {
+                "questionId": "tq-mpt019fi",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Suppose force (F), area (A) and time (T) are the fundamental units, then match the following:</p><style>  table {      width: 100%;      border-collapse: collapse;      margin: 20px 0;  }  th {      background-color: blue;      color: white;      border: 1px solid lightgrey;      padding: 10px;  }  td {      border: 1px solid lightgrey;      padding: 10px;      text-align: left;  }</style><table>  <tr>    <th colspan=\"2\">Table 1</th>    <th colspan=\"2\">Table 2</th>  </tr>  <tr>    <td>(A)</td>    <td><b>Work</b></td>    <td>(P)</td>    <td>$\\left[ A^{1/2}T^{-1} \\right]$</td>  </tr>  <tr>    <td>(B)</td>    <td><b>Moment of inertia</b></td>    <td>(Q)</td>    <td>$\\left[ FA^{1/2} \\right]$</td>  </tr>  <tr>    <td>(C)</td>    <td><b>Velocity</b></td>    <td>(R)</td>    <td>$\\left[ FA^{1/2}T^2 \\right]$</td>  </tr></table><p>Match the items in Table 1 with those in Table 2 :</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>(A)-(Q), (B)-(R), (C)-(P)</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>(A)-(R), (B)-(P), (C)-(Q)</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>(A)-(P), (B)-(Q), (C)-(R)</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>(A)-(P), (B)-(R), (C)-(Q)</p>"
+                      }
+                    ]
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>मान लीजिए बल (F), क्षेत्रफल (A) और समय (T) मूलभूत इकाइयाँ हैं, तो निम्नलिखित का मिलान कीजिए:</p><style>  table {      width: 100%;      border-collapse: collapse;      margin: 20px 0;  }  th {      background-color: blue;      color: white;      border: 1px solid lightgrey;      padding: 10px;  }  td {      border: 1px solid lightgrey;      padding: 10px;      text-align: left;  }</style><table>  <tr>    <th colspan=\"2\">सारणी 1</th>    <th colspan=\"2\">सारणी 2</th>  </tr>  <tr>    <td>(A)</td>    <td><b>कार्य</b></td>    <td>(P)</td>    <td>$\\left[ A^{1/2}T^{-1} \\right]$</td>  </tr>  <tr>    <td>(B)</td>    <td><b>जड़त्व आघूर्ण</b></td>    <td>(Q)</td>    <td>$\\left[ FA^{1/2} \\right]$</td>  </tr>  <tr>    <td>(C)</td>    <td><b>वेग</b></td>    <td>(R)</td>    <td>$\\left[ FA^{1/2}T^2 \\right]$</td>  </tr></table><p>सारणी 1 की वस्तुओं का सारणी 2 की वस्तुओं के साथ मिलान कीजिए:</p>",
+                    "options": [
+                      {
+                        "identifier": "A",
+                        "content": "<p>(A)-(Q), (B)-(R), (C)-(P)</p>"
+                      },
+                      {
+                        "identifier": "B",
+                        "content": "<p>(A)-(R), (B)-(P), (C)-(Q)</p>"
+                      },
+                      {
+                        "identifier": "C",
+                        "content": "<p>(A)-(P), (B)-(Q), (C)-(R)</p>"
+                      },
+                      {
+                        "identifier": "D",
+                        "content": "<p>(A)-(P), (B)-(R), (C)-(Q)</p>"
+                      }
+                    ]
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "mcq"
+              }
+            ],
+            "instructions": null
+          },
+          {
+            "id": "32f0027d-91c1-43e1-b437-13c0a923644e",
+            "title": "SECTION B",
+            "description": null,
+            "maxMarks": 20,
+            "maxNegMarks": 5,
+            "timeAllotted": 720000,
+            "totalQuestions": 5,
+            "optional": [],
+            "questions": [
+              {
+                "questionId": "tq-mpsyymaw",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Density of a material in the cgs system is $8 \\mathrm{gcc}^{-1}$. In a system of units in which the unit of mass is 20 g and that of length is 5 cm , what is the density of the material in this new system of units.",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "cgs प्रणाली में किसी पदार्थ का घनत्व $8 \\mathrm{gcc}^{-1}$ है। मात्रकों की एक ऐसी प्रणाली में जिसमें द्रव्यमान का मात्रक 20 g और लंबाई का मात्रक 5 cm है, मात्रकों की इस नई प्रणाली में पदार्थ का घनत्व क्या होगा?",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpszfkfg",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>Using Kepler’s laws of planetary motion, planets revolve around the Sun in almost circular paths. Suppose the time period of revolution depends on the orbital radius ( $r$ ), the Sun’s mass ( $M$ ) and the universal gravitational constant ( $G$ ) in the form</p>\n<p>$$ T^a=4 \\pi^2 \\frac{r^b}{M^c G^d} $$</p>\n<p>Determine the value of $a+b+c$ + $d$.</p>",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>केप्लर के ग्रहीय गति के नियमों के अनुसार, ग्रह सूर्य के चारों ओर लगभग वृत्ताकार पथों में परिक्रमा करते हैं। मान लीजिए कि परिक्रमण काल कक्षीय त्रिज्या ( $r$ ), सूर्य के द्रव्यमान ( $M$ ) और सार्वत्रिक गुरुत्वाकर्षण नियतांक ( $G$ ) पर निम्न रूप में निर्भर करता है:</p><p>$$ T^a=4 \\pi^2 \\frac{r^b}{M^c G^d} $$</p><p>$a+b+c+d$ का मान ज्ञात कीजिए।</p>",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpsz1cxh",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "easy",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "A new unit of length is chosen such that the speed\nof light in vacuum is unity. What is the distance\nbetween the sun and earth in terms of the new unit\nif light take 8 min and 20 s to cover this distance.",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "लंबाई का एक नया मात्रक इस प्रकार चुना जाता है कि निर्वात में प्रकाश की चाल एकांक (एक) हो। यदि प्रकाश इस दूरी को तय करने में 8 मिनट और 20 सेकंड का समय लेता है, तो नए मात्रक के पदों में सूर्य और पृथ्वी के बीच की दूरी क्या है?",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpsz7wjy",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "Consider a new system of units in which the unit of mass is $\\alpha \\mathrm{kg}$, unit of length is $\\beta \\mathrm{m}$ and that of time is $\\gamma \\mathrm{s}$. The value of calorie in the new system is calculated to be $4.2 \\alpha^{-x} \\beta^{-y} \\gamma^z$. Find the values of $x+y+z$.",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "मान लीजिए कि मात्रकों की एक नई प्रणाली है जिसमें द्रव्यमान का मात्रक $\\alpha \\mathrm{kg}$ है, लंबाई का मात्रक $\\beta \\mathrm{m}$ है और समय का मात्रक $\\gamma \\mathrm{s}$ है। नई प्रणाली में कैलोरी का मान $4.2 \\alpha^{-x} \\beta^{-y} \\gamma^z$ प्राप्त होता है। $x+y+z$ का मान ज्ञात कीजिए।",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "unit-of-physical-quantities",
+                "type": "integer"
+              },
+              {
+                "questionId": "tq-mpszjc5d",
+                "chapter": "units-and-measurements",
+                "chapterGroup": "mechanics",
+                "country": "in",
+                "difficulty": "medium",
+                "exam": "jee-main",
+                "examGroup": "jee",
+                "languages": [
+                  "en"
+                ],
+                "marks": 4,
+                "negMarks": 1,
+                "question": {
+                  "en": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>The quantity $\\frac{e^x}{2 h \\varepsilon_0 c}$ has dimensional formula $M^0 L^0 T^0$. Calculate $x$.</p>",
+                    "options": []
+                  },
+                  "hi": {
+                    "comprehension": null,
+                    "direction": null,
+                    "content": "<p>राशि $\\frac{e^x}{2 h \\varepsilon_0 c}$ का विमीय सूत्र $M^0 L^0 T^0$ है। $x$ की गणना कीजिए।</p>",
+                    "options": []
+                  }
+                },
+                "subTopic": null,
+                "subject": "physics",
+                "timeAllotted": 90000,
+                "topic": "dimensions-of-physical-quantities",
+                "type": "integer"
+              }
+            ],
+            "instructions": null
+          }
+        ],
+        "syllabus": "Units, Dimensions",
+        "timeAllotted": 2160000,
+        "title": "Units and Measurement Test - 1 (Topic Test )",
+        "totalQuestions": 15,
+        "type": "topic",
+        "isWatermarkEnabled": true,
+        "percentileId": null,
+        "isUpcoming": false,
+        "seriesId": "tsr-19g61mnpryz1v"
+      }
+    },
+    "/api/v1/test/tst-19g61mnpzhlyq": {
+      "statusCode": 404
+    }
+  },
+  "directResult": {
+    "/api/v1/test/user/session/tst-19g61mnpzhlyq": {
+      "status": 200,
+      "data": "{\"statusCode\":0,\"data\":null}"
+    },
+    "/api/v1/test/user/test/tst-19g61mnpzhlyq": {
+      "status": 200,
+      "data": "{\"statusCode\":0,\"data\":{\"testId\":\"tst-19g61mnpzhlyq\",\"defaultLanguage\":\"en\",\"description\":\"Units, Dimensions\",\"difficulty\":null,\"instructions\":null,\"isAnalysisDeletable\":false,\"isPremium\":true,\"keyValuePairs\":{},\"languages\":[\"en\",\"hi\"],\"layout\":\"nta\",\"liveAt\":\"2026-05-31T01:00:00.000Z\",\"maxAttempt\":3,\"maxMarks\":60,\"maxNegMarks\":15,\"policy\":\"jee-main\",\"sections\":[{\"id\":\"f6973310-2ec3-4189-abb9-cd37e98fa0d2\",\"title\":\"SECTION A\",\"description\":null,\"maxMarks\":40,\"maxNegMarks\":10,\"timeAllotted\":14400"
+    },
+    "/api/v1/test/tst-19g61mnpzhlyq": {
+      "status": 404,
+      "data": "{\"statusCode\":404}"
+    },
+    "/api/v1/test/user/start/tst-19g61mnpzhlyq": {
+      "status": 404,
+      "data": "{\"statusCode\":404}"
+    }
+  }
+}

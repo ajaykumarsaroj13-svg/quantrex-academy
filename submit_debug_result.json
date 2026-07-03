@@ -1,0 +1,69 @@
+{
+  "allRequests": [
+    {
+      "method": "POST",
+      "url": "/api/v1/test/user/session",
+      "body": "{\"hasShownInstructions\":false,\"metadata\":{\"options\":{\"outOfSyllabus\":false},\"isStrict\":false},\"sessionId\":\"50f731e0-729f-11f1-9ab2-3325b095d636\",\"lastAttempted\":\"2026-07-03T12:33:40.799Z\",\"userId\":\"35"
+    },
+    {
+      "method": "POST",
+      "url": "/api/v1/test/user/test",
+      "body": "{\"testId\":\"tst-19g61mo679bu2\"}"
+    },
+    {
+      "method": "POST",
+      "url": "/api/v1/app/user/ping",
+      "body": ""
+    }
+  ],
+  "allResponses": [
+    {
+      "url": "/api/v1/test/user/session",
+      "status": 200,
+      "body": "{\"statusCode\":0}"
+    },
+    {
+      "url": "/api/v1/test/user/test",
+      "status": 403,
+      "body": "{\"error\":{\"code\":\"test/test-max-attempt-reached\",\"message\":\"Test max attempt reached!\"}}"
+    },
+    {
+      "url": "/api/v1/app/user/ping",
+      "status": 200,
+      "body": "{\"statusCode\":0}"
+    }
+  ],
+  "state1": {
+    "url": "https://room.examgoal.com/tests/tst-19g61mo679bu2",
+    "buttons": [
+      "SECTION A",
+      "SECTION B",
+      "Clear Response",
+      "Previous",
+      "Next",
+      "Submit Test"
+    ],
+    "bodyText": "Structure of Atom Test - 1 (Topic Test)\n34:08\nSECTION A\nSECTION B\n1\n01:52 | \n+4\n \n-1\nMCQ Single Answer\n\nA photon of energy \nℎ\n𝜈\n is absorbed by a free electron of a metal having work function \n𝑤\n<\nℎ\n𝜈\n. Then :\n\nA\n\nThe electron is sure to come out\n\nB\n\nThe electron is sure to come out with a kineti"
+  },
+  "state2": {
+    "url": "https://room.examgoal.com/tests/tst-19g61mo679bu2",
+    "buttons": [
+      "SECTION A",
+      "SECTION B",
+      "Clear Response",
+      "Previous",
+      "Next",
+      "Submit Test",
+      "Submit Test"
+    ],
+    "bodyText": "Structure of Atom Test - 1 (Topic Test)\n34:05\nSECTION A\nSECTION B\n1\n01:55 | \n+4\n \n-1\nMCQ Single Answer\n\nA photon of energy \nℎ\n𝜈\n is absorbed by a free electron of a metal having work function \n𝑤\n<\nℎ\n𝜈\n. Then :\n\nA\n\nThe electron is sure to come out\n\nB\n\nThe electron is sure to come out with a kinetic energy \n(\nℎ\n𝜈\n−\n𝑤\n)\n\nC\n\nEither the electron does not come out or it comes with a kinetic energy \n(\nℎ\n𝜈\n−\n𝑤\n)\n\nD\n\nIt may come out with a kinetic energy less than \n(\nℎ\n𝜈\n−\n𝑤\n)\n\nClear Response\nPr"
+  },
+  "state3": {
+    "url": "https://room.examgoal.com/tests/tst-19g61mo679bu2",
+    "bodyText": "Structure of Atom Test - 1 (Topic Test)\n34:02\nSECTION A\nSECTION B\n1\n01:58 | \n+4\n \n-1\nMCQ Single Answer\n\nA photon of energy \nℎ\n𝜈\n is absorbed by a free electron of a metal having work function \n𝑤\n<\nℎ\n𝜈\n. Then :\n\nA\n\nThe electron is sure to come out\n\nB\n\nThe electron is sure to come out with a kineti"
+  },
+  "state4": {
+    "url": "https://room.examgoal.com/tests/tst-19g61mo679bu2",
+    "bodyText": "Structure of Atom Test - 1 (Topic Test)\n33:54\nSECTION A\nSECTION B\n1\n02:06 | \n+4\n \n-1\nMCQ Single Answer\n\nA photon of energy \nℎ\n𝜈\n is absorbed by a free electron of a metal having work function \n𝑤\n<\nℎ\n𝜈\n. Then :\n\nA\n\nThe electron is sure to come out\n\nB\n\nThe electron is sure to come out with a kinetic energy \n(\nℎ\n𝜈\n−\n𝑤\n)\n\nC\n\nEither the electron does not come out or it comes with a kinetic energy \n(\nℎ\n𝜈\n−\n𝑤\n)\n\nD\n\nIt may come out with a kinetic energy less than \n(\nℎ\n𝜈\n−\n𝑤\n)\n\nClear Response\nPr"
+  }
+}

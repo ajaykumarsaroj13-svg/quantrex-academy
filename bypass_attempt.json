@@ -1,0 +1,41 @@
+{
+  "post_analysis": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "post_analysis_with_session": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "patch_session_submitted": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "put_analysis": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "delete_session": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "post_test_after_delete": {
+    "status": 403,
+    "body": "{\"error\":{\"code\":\"test/test-max-attempt-reached\",\"message\":\"Test max attempt reached!\"}}"
+  },
+  "post_submit": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "post_complete": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "post_finish": {
+    "status": 404,
+    "body": "{\"statusCode\":404}"
+  },
+  "analysis_after_everything": {
+    "body": "{\"error\":{\"code\":\"test/test-analysis-not-found\",\"message\":\"Test analysis not found!\"}}"
+  }
+}

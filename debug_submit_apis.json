@@ -1,0 +1,49 @@
+{
+  "result": [
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/session",
+      "status": 500,
+      "response": "{\"error\":{\"code\":\"test/internal-error\",\"message\":\"Internal error occurred at our end! Our engineers have been notified\"}}"
+    },
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/session/tst-19g61mnpzhlyq",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    },
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/session/tst-19g61mnpzhlyq/start",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    },
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/start",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    },
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/start/tst-19g61mnpzhlyq",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    }
+  ],
+  "submitResult": [
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/submit/tst-19g61mnpzhlyq",
+      "method": "POST",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    },
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/session/tst-19g61mnpzhlyq/submit",
+      "method": "POST",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    },
+    {
+      "url": "https://room.examgoal.com/api/v1/test/user/session/tst-19g61mnpzhlyq",
+      "method": "PATCH",
+      "status": 404,
+      "response": "{\"statusCode\":404}"
+    }
+  ]
+}
