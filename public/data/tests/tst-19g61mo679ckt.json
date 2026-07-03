@@ -27,7 +27,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>We know that the radius of an orbit in a hydrogen atom is given by</p>\n<p>$$r_n = n^2 a_0$$</p>\n<p>where $a_0$ is the first Bohr radius.</p>\n<p>So for the initial state $n_1$ and final state $n_2$, the radii are $r_1 = n_1^2 a_0$ and $r_2 = n_2^2 a_0$.</p>\n<p>The difference is</p>\n<p>$$r_1 - r_2 = (n_1^2 - n_2^2)\\, a_0$$</p>\n<p>We are told this difference equals $24 a_0$, so</p>\n<p>$$n_1^2 - n_2^2 = 24$$</p>\n<p>Now check the options. For the transition $5 \\to 1$:</p>\n<p>$$5^2 - 1^2 = 25 - 1 = 24$$</p>\n<p>This matches perfectly.</p>\n<p>Just to be sure, look at the others quickly. For $8 \\to 3$, $64 - 9 = 55$. For $6 \\to 5$, $36 - 25 = 11$. For $25 \\to 1$, $625 - 1 = 624$. None of these give 24.</p>\n<p>So the transition is $5 \\to 1$, which is <strong>Option A</strong>.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -51,7 +51,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>Let me start with the energy formula for a single-electron species. For any hydrogen-like atom or ion,</p>\n<p>$$E_n = -13.6 \\times \\frac{Z^2}{n^2} \\text{ eV}$$</p>\n<p>Here $Z$ is the nuclear charge and $n$ is the energy level. So to compare these energies, I just need to find $\\frac{Z^2}{n^2}$ for each case.</p>\n<p>For hydrogen, $E_1$: here $Z = 1$ and $n = 1$.</p>\n<p>$$E_1(\\text{H}) = -13.6 \\times \\frac{1^2}{1^2} = -13.6 \\text{ eV}$$</p>\n<p>For He$^+$, $E_2$: here $Z = 2$ and $n = 2$.</p>\n<p>$$E_2(\\text{He}^+) = -13.6 \\times \\frac{2^2}{2^2} = -13.6 \\times \\frac{4}{4} = -13.6 \\text{ eV}$$</p>\n<p>For Li$^{2+}$, $E_3$: here $Z = 3$ and $n = 3$.</p>\n<p>$$E_3(\\text{Li}^{2+}) = -13.6 \\times \\frac{3^2}{3^2} = -13.6 \\times \\frac{9}{9} = -13.6 \\text{ eV}$$</p>\n<p>For Be$^{3+}$, $E_4$: here $Z = 4$ and $n = 4$.</p>\n<p>$$E_4(\\text{Be}^{3+}) = -13.6 \\times \\frac{4^2}{4^2} = -13.6 \\times \\frac{16}{16} = -13.6 \\text{ eV}$$</p>\n<p>Notice the neat pattern here. In every case the value of $n$ equals the value of $Z$. So the ratio $\\frac{Z^2}{n^2}$ becomes $1$ each time, and all four energies come out exactly equal at $-13.6$ eV.</p>\n<p>This means</p>\n<p>$$E_1(\\text{H}) = E_2(\\text{He}^+) = E_3(\\text{Li}^{2+}) = E_4(\\text{Be}^{3+})$$</p>\n<p>So the correct choice is <strong>Option B</strong>.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -75,7 +75,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>For an electronic transition, the energy of the photon emitted or absorbed is</p>\n<p>$$ \\Delta E = h\\nu = \\frac{hc}{\\lambda} $$</p>\n<p>From this,</p>\n<p>$$ \\lambda = \\frac{hc}{\\Delta E} $$</p>\n<p>So the wavelength $\\lambda$ is inversely proportional to the energy difference $\\Delta E$ involved in the transition.</p>\n<p>Hence, the correct option is:</p>\n<p>$$ \\text{Option D: the difference in the energy involved in the transition} $$</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -99,7 +99,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>For Li²⁺, the atomic number is $Z = 3$, so $Z^2 = 9$.</p>\n<p>The wave number is given by</p>\n<p>$$\\bar{\\nu} = R Z^2 \\left( \\frac{1}{n_1^2} - \\frac{1}{n_2^2} \\right)$$</p>\n<p>Let me find the first line of the Balmer series. The Balmer series has $n_1 = 2$, and the first line means the smallest jump, which comes from $n_2 = 3$.</p>\n<p>$$\\bar{\\nu}_1 = R \\cdot 9 \\left( \\frac{1}{2^2} - \\frac{1}{3^2} \\right) = 9R \\left( \\frac{1}{4} - \\frac{1}{9} \\right)$$</p>\n<p>$$= 9R \\left( \\frac{9 - 4}{36} \\right) = 9R \\cdot \\frac{5}{36} = \\frac{45R}{36} = \\frac{5R}{4}$$</p>\n<p>Now the last line of the Paschen series. The Paschen series has $n_1 = 3$, and the last line means the electron jumps from infinity, so $n_2 = \\infty$.</p>\n<p>$$\\bar{\\nu}_2 = R \\cdot 9 \\left( \\frac{1}{3^2} - \\frac{1}{\\infty} \\right) = 9R \\cdot \\frac{1}{9} = R$$</p>\n<p>Now take the difference between the two wave numbers.</p>\n<p>$$\\bar{\\nu}_1 - \\bar{\\nu}_2 = \\frac{5R}{4} - R = \\frac{5R - 4R}{4} = \\frac{R}{4}$$</p>\n<p>So the answer is option D, $\\dfrac{R}{4}$.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -123,7 +123,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>We know that angular momentum in a Bohr orbit is given by</p>\n<p>$$mvr = \\frac{nh}{2\\pi}$$</p>\n<p>So we can find $n$ from the given angular momentum.</p>\n<p>$$n = \\frac{2\\pi \\times (mvr)}{h} = \\frac{2 \\times 3.14 \\times 3.1652 \\times 10^{-34}}{6.626 \\times 10^{-34}}$$</p>\n<p>Working this out gives $n \\approx 3$.</p>\n<p>So the electron is in the third orbit of He$^+$. It falls to the first excited state, which means $n = 2$.</p>\n<p>For a hydrogen-like species, the wave number is</p>\n<p>$$\\bar{\\nu} = R Z^2 \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$$</p>\n<p>For He$^+$, $Z = 2$, with $n_1 = 2$ and $n_2 = 3$.</p>\n<p>$$\\bar{\\nu} = R (2)^2 \\left(\\frac{1}{2^2} - \\frac{1}{3^2}\\right) = 4R\\left(\\frac{1}{4} - \\frac{1}{9}\\right)$$</p>\n<p>$$\\bar{\\nu} = 4R \\left(\\frac{9 - 4}{36}\\right) = 4R \\times \\frac{5}{36} = \\frac{20R}{36} = \\frac{5R}{9}$$</p>\n<p>So the wave number is $\\dfrac{5R}{9}$, which is option B.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -147,7 +147,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>For a hydrogen-like ion such as $\\text{Be}^{3+}$, the total energy of an electron in the $n$th orbit is</p>\n<p>$$ E_n = -13.6 \\frac{Z^2}{n^2}\\ \\text{eV} $$</p>\n<p>Here, for $\\text{Be}^{3+}$,</p>\n<p>$$ Z = 4 $$</p>\n<p>The $N$-shell means</p>\n<p>$$ n = 4 $$</p>\n<p>So,</p>\n<p>$$ E_n = -13.6 \\times \\frac{4^2}{4^2} = -13.6\\ \\text{eV} $$</p>\n<p>Now, the potential energy is related to total energy by</p>\n<p>$$ U = 2E $$</p>\n<p>Hence,</p>\n<p>$$ U = 2 \\times (-13.6) = -27.2\\ \\text{eV} $$</p>\n<p>So the correct option is</p>\n<p>$$ \\boxed{-27.2\\ \\text{eV}} $$</p>\n<p>Option B.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -171,7 +171,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>For a hydrogen-like ion, the wavelength or energy of spectral lines is found using</p>\n<p>$$ \\Delta E = 13.6\\,Z^2\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)\\text{ eV} $$</p>\n<p>Here the ion is $\\mathrm{Li}^{2+}$, so $Z=3$.</p>\n<p>The second line of Balmer series means the transition is from $n=4$ to $n=2$.</p>\n<p>So energy of this radiation is</p>\n<p>$$ \\Delta E = 13.6 \\times 3^2 \\left(\\frac{1}{2^2}-\\frac{1}{4^2}\\right) $$</p>\n<p>$$ = 13.6 \\times 9 \\left(\\frac{1}{4}-\\frac{1}{16}\\right) $$</p>\n<p>$$ = 13.6 \\times 9 \\times \\frac{3}{16} $$</p>\n<p>$$ = 22.95\\text{ eV} $$</p>\n<p>Now this radiation falls on hydrogen atom in its first excited state.</p>\n<p>First excited state of H-atom means $n=2$.</p>\n<p>The energy of electron in $n=2$ state is</p>\n<p>$$ E_2 = -\\frac{13.6}{2^2} = -3.4\\text{ eV} $$</p>\n<p>So ionization energy from first excited state is</p>\n<p>$$ 0 - (-3.4) = 3.4\\text{ eV} $$</p>\n<p>Now kinetic energy of ejected electron is</p>\n<p>$$ K.E. = 22.95 - 3.4 = 19.55\\text{ eV} $$</p>\n<p>So the correct answer is</p>\n<p>$$ \\boxed{19.55\\text{ eV}} $$</p>\n<p>Option D</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -195,7 +195,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "\n<p>It is given that the electron is in the $7^{\\text{th}}$ excited state. Since the ground state corresponds to the principal quantum number $n = 1$, the $1^{\\text{st}}$ excited state is $n = 2$, the $2^{\\text{nd}}$ excited state is $n = 3$, and so on. Therefore, for the $7^{\\text{th}}$ excited state, the initial principal quantum number is:</p>\n<p>$$n_2 = 7 + 1 = 8$$</p>\n<p>The question mentions the Paschen series, which refers to the spectrum of lines produced when an electron transitions from higher energy levels down to the principal quantum number:</p>\n<p>$$n_1 = 3$$</p>\n<p>Whenever an electron cascades from a higher energy level $n_2$ to a lower energy level $n_1$, it can do so directly or by jumping through intermediate levels. The total number of possible emitted spectral lines during this cascade is given by the formula:</p>\n<p>$$\\text{Total number of lines} = \\frac{(n_2 - n_1)(n_2 - n_1 + 1)}{2}$$</p>\n<p>Let's plug our values of $n_2 = 8$ and $n_1 = 3$ into the formula:</p>\n<p>$$\\text{Total number of lines} = \\frac{(8 - 3)(8 - 3 + 1)}{2}$$</p>\n<p>$$\\text{Total number of lines} = \\frac{5 \\times 6}{2}$$</p>\n<p>$$\\text{Total number of lines} = \\frac{30}{2} = 15$$</p>\n\n<p>Option A is the correct answer.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -219,7 +219,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>For hydrogen-like species, the wavelength is given by</p>\n<p>$$ \\frac{1}{\\lambda}=RZ^2\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right) $$</p>\n<p>where $Z$ is the atomic number.</p>\n<p>For $\\text{He}^+$, $Z=2$.</p>\n<p>In the Lyman series, $n_1=1$.</p>\n<p>The shortest wavelength in this series comes when $n_2=\\infty$.</p>\n<p>So,</p>\n<p>$$ \\frac{1}{x}=R(2)^2\\left(1-\\frac{1}{\\infty^2}\\right)=4R $$</p>\n<p>Hence,</p>\n<p>$$ x=\\frac{1}{4R} $$</p>\n<p>Now for $\\text{Be}^{3+}$, $Z=4$.</p>\n<p>In the Balmer series, $n_1=2$.</p>\n<p>The longest wavelength comes for the first line of the series, that is $n_2=3$.</p>\n<p>So,</p>\n<p>$$ \\frac{1}{\\lambda}=R(4)^2\\left(\\frac{1}{2^2}-\\frac{1}{3^2}\\right) $$</p>\n<p>$$ \\frac{1}{\\lambda}=16R\\left(\\frac{1}{4}-\\frac{1}{9}\\right) $$</p>\n<p>$$ \\frac{1}{\\lambda}=16R\\cdot\\frac{5}{36}=\\frac{20R}{9} $$</p>\n<p>Thus,</p>\n<p>$$ \\lambda=\\frac{9}{20R} $$</p>\n<p>Now use $x=\\frac{1}{4R}$:</p>\n<p>$$ \\lambda=\\frac{9}{20R}=\\frac{9}{5}\\cdot\\frac{1}{4R}=\\frac{9x}{5} $$</p>\n<p>So the correct option is</p>\n<p>$$ \\boxed{\\frac{9x}{5}} $$</p>\n<p>Option B</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -243,7 +243,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>For a hydrogen-like ion, the ionization energy is</p>\n<p>$$ E = 13.6 Z^2 \\text{ eV} $$</p>\n<p>Given,</p>\n<p>$$ 13.6 Z^2 = 217.6 $$</p>\n<p>So,</p>\n<p>$$ Z^2 = \\frac{217.6}{13.6} = 16 $$</p>\n<p>$$ Z = 4 $$</p>\n<p>Atomic number $4$ means the ion is of beryllium.</p>\n<p>A one-electron ion of beryllium is $\\text{Be}^{3+}$.</p>\n<p>Now beryllium has atomic number $4$, and its common mass number is $9$.</p>\n<p>Number of neutrons</p>\n<p>$$ = A - Z = 9 - 4 = 5 $$</p>\n<p>So the correct answer is:</p>\n<p>$$ \\boxed{5} $$</p>\n<p>Option C</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "jee-main"
@@ -262,7 +262,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>For a hydrogen atom in the $n^{th}$ energy state, let me recall how each quantity depends on $n$.</p>\n<p>The angular momentum from Bohr's quantisation condition is</p>\n<p>$$\\ell = \\frac{nh}{2\\pi}$$</p>\n<p>So $\\ell \\propto n$.</p>\n<p>The radius of the $n^{th}$ orbit is</p>\n<p>$$r \\propto n^2$$</p>\n<p>And the velocity of the electron in the $n^{th}$ orbit is</p>\n<p>$$v \\propto \\frac{1}{n}$$</p>\n<p>Now multiply all three together:</p>\n<p>$$v\\, r\\, \\ell \\propto \\frac{1}{n} \\times n^2 \\times n$$</p>\n<p>Adding up the powers of $n$:</p>\n<p>$$n^{-1+2+1} = n^{2}$$</p>\n<p>So $v r \\ell \\propto n^2$, which means</p>\n<p>$$x = 2$$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "jee-main"
@@ -281,7 +281,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>For hydrogen atom, the $5^\\text{th}$ excited state means</p>\n<p>$$ n=6 $$</p>\n<p>because:</p>\n<ul>\n<li><p>ground state $\\to n=1$</p></li>\n<li><p>$1^\\text{st}$ excited state $\\to n=2$</p></li>\n<li><p>$2^\\text{nd}$ excited state $\\to n=3$</p></li>\n<li><p>$3^\\text{rd}$ excited state $\\to n=4$</p></li>\n<li><p>$4^\\text{th}$ excited state $\\to n=5$</p></li>\n<li><p>$5^\\text{th}$ excited state $\\to n=6$</p></li>\n</ul>\n<p>Now electrons can make all possible transitions from levels $n=6$ down to lower levels.</p>\n<p>Infrared lines in hydrogen belong to series ending at:</p>\n<ul>\n<li><p>$n=3$ (Paschen series)</p></li>\n<li><p>$n=4$ (Brackett series)</p></li>\n<li><p>$n=5$ (Pfund series)</p></li>\n</ul>\n<p>Now count possible transitions for each of these.</p>\n<p>For Paschen series, final level is $n=3$:</p>\n<p>$$ 6 \\to 3,\\quad 5 \\to 3,\\quad 4 \\to 3 $$</p>\n<p>So, number of lines $=3$</p>\n<p>For Brackett series, final level is $n=4$:</p>\n<p>$$ 6 \\to 4,\\quad 5 \\to 4 $$</p>\n<p>So, number of lines $=2$</p>\n<p>For Pfund series, final level is $n=5$:</p>\n<p>$$ 6 \\to 5 $$</p>\n<p>So, number of lines $=1$</p>\n<p>Total infrared lines:</p>\n<p>$$ 3+2+1=6 $$</p>\n<p>So, the number of lines in the infrared region is</p>\n<p>$$ \\boxed{6} $$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "jee-main"
@@ -300,7 +300,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>In the ground state, the energy of the electron in a hydrogen atom is $-13.6$ eV. When the electron absorbs $10.2$ eV, its new energy becomes :</p>\n<p>$$E = -13.6 + 10.2 = -3.4 \\text{ eV}$$</p>\n<p>Now we find which orbit has this energy. The energy of an electron in the $n$th orbit is :</p>\n<p>$$E_n = \\frac{-13.6}{n^2} \\text{ eV}$$</p>\n<p>So we set this equal to $-3.4$ eV:</p>\n<p>$$\\frac{-13.6}{n^2} = -3.4$$</p>\n<p>$$n^2 = \\frac{13.6}{3.4} = 4$$</p>\n<p>$$n = 2$$</p>\n<p>So the electron is now in the second orbit.</p>\n<p>The number of waves made by the electron in an orbit is equal to the orbit number $n$. This comes from de Broglie's idea, where the circumference of the orbit holds a whole number of wavelengths:</p>\n<p>$$2\\pi r = n\\lambda$$</p>\n<p>Here the number of complete waves is exactly $n$.</p>\n<p>So in the excited state $n = 2$, the electron makes $2$ waves.</p>\n<p>$$\\boxed{\\text{Number of waves} = 2}$$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "jee-main"
@@ -319,7 +319,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>The wavelength of the emitted light is related to the electron transition in a hydrogen atom by the formula</p>\n<p>$$\\bar{\\nu} = \\frac{1}{\\lambda} = Z^2 \\bar{R}_H \\left[\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right]$$</p>\n<p>For hydrogen, $ Z = 1 $, and here $ n_2 = 7 $. So,</p>\n<p>$$\\frac{1}{2170 \\times 10^{-9}} = (1)^2 (1.09679 \\times 10^7) \\left[\\frac{1}{n_1^2} - \\frac{1}{7^2}\\right]$$</p>\n<p>Now, rearranging for $ \\frac{1}{n_1^2} $,</p>\n<p>$$\\frac{1}{n_1^2} = \\frac{1}{49} + \\frac{1}{2170 \\times 10^{-9} \\times 1.09679 \\times 10^7}$$</p>\n\n\n<p>$$\\Rightarrow $$ $$\\frac{1}{n_1^2} = 0.0204 + 0.042 = 0.0624$$</p>\n<p>Hence,</p>\n<p>$$n_1^2 = 16 \\Rightarrow n_1 = 4$$</p>\n<p>Thus, the electron transition is from $ n_2 = 7 $ to $ n_1 = 4 $.</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "jee-main"
@@ -338,7 +338,7 @@
       "subject": "Chemistry",
       "topic": "Structure of Atom",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>For a hydrogen-like ion, the radius of the orbit is</p>\n<p>$$ r_n=\\frac{n^2 a_0}{Z} $$</p>\n<p>where $a_0$ is Bohr's radius and $Z$ is the atomic number.</p>\n<p>For $\\mathrm{Be}^{3+}$, we have $Z=4$.  </p>\n<p>So its orbital radius in the $n$th orbit is</p>\n<p>$$ r_n=\\frac{n^2 a_0}{4} $$</p>\n<p>It is given that this radius is equal to the Bohr radius of hydrogen atom in ground state, that is $a_0$.</p>\n<p>So,</p>\n<p>$$ \\frac{n^2 a_0}{4}=a_0 $$</p>\n\n<p>$$ \\frac{n^2}{4}=1 $$</p>\n<p>$$ n^2=4 $$</p>\n<p>$$ n=2 $$</p>\n<p>This means the electron is in the second orbit.</p>\n<p>Now, excited state number $=$ $n-1$.</p>\n<p>So,</p>\n<p>$$ 2-1=1 $$</p>\n<p>Hence, the required state is the $\\boxed{1^\\text{st}\\text{ excited state}}$.</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "jee-main"

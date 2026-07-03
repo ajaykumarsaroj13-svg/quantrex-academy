@@ -27,7 +27,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>For any square matrix $A$, we know that</p>\n<p>$$ A(\\operatorname{adj} A)=|A|I $$</p>\n<p>So we only need to find $\\det(A)$.</p>\n<p>Given</p>\n<p>$$ A=\\begin{bmatrix} x & 3 & 2\\\\ 1 & y & 4\\\\ 2 & 2 & z \\end{bmatrix} $$</p>\n<p>Now expand the determinant along the first row:</p>\n<p>$$ |A|=x\\begin{vmatrix} y & 4\\\\ 2 & z \\end{vmatrix} -3\\begin{vmatrix} 1 & 4\\\\ 2 & z \\end{vmatrix} +2\\begin{vmatrix} 1 & y\\\\ 2 & 2 \\end{vmatrix} $$</p>\n<p>$$ = x(yz-8)-3(z-8)+2(2-2y) $$</p>\n<p>$$ = xyz-8x-3z+24+4-4y $$</p>\n<p>$$ = xyz-(8x+4y+3z)+28 $$</p>\n<p>Now use the given values:</p>\n<p>$$ xyz=50,\\qquad 8x+4y+3z=30 $$</p>\n<p>So,</p>\n<p>$$ |A|=50-30+28=48 $$</p>\n<p>Hence,</p>\n<p>$$ A(\\operatorname{adj} A)=|A|I=48I $$</p>\n<p>So the correct answer is</p>\n<p>$$ \\boxed{48I} $$</p>\n<p>Option B.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -51,7 +51,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>To find the value of the given determinant, we can use a basic algebraic identity to simplify the terms inside it. Let's write down the determinant first:</p>\n<p>$$ \\Delta = \\left| \\begin{array}{ccc} (a^x + a^{-x})^2 & (a^x - a^{-x})^2 & 1 \\\\ (b^y + b^{-y})^2 & (b^y - b^{-y})^2 & 1 \\\\ (c^z + c^{-z})^2 & (c^z - c^{-z})^2 & 1 \\end{array} \\right| $$</p>\n<p>Notice the pattern in the first and second columns. They look like $(p + q)^2$ and $(p - q)^2$. We know from basic algebra that:</p>\n<p>$$(p + q)^2 - (p - q)^2 = 4pq$$</p>\n<p>Let's subtract the second column from the first column. Our operation will be $C_1 \\rightarrow C_1 - C_2$.</p>\n\n<p>For the first element: </p>\n<p>$$(a^x + a^{-x})^2 - (a^x - a^{-x})^2 = 4(a^x)(a^{-x}) = 4(a^0) = 4(1) = 4$$</p>\n<p>For the second element:</p>\n<p>$$(b^y + b^{-y})^2 - (b^y - b^{-y})^2 = 4(b^y)(b^{-y}) = 4(b^0) = 4(1) = 4$$</p>\n<p>For the third element:</p>\n<p>$$(c^z + c^{-z})^2 - (c^z - c^{-z})^2 = 4(c^z)(c^{-z}) = 4(c^0) = 4(1) = 4$$</p>\n<p>After applying the column operation, all the elements in the first column become $4$. The determinant now looks like this:</p>\n<p>$$ \\Delta = \\left| \\begin{array}{ccc} 4 & (a^x - a^{-x})^2 & 1 \\\\ 4 & (b^y - b^{-y})^2 & 1 \\\\ 4 & (c^z - c^{-z})^2 & 1 \\end{array} \\right| $$</p>\n<p>$$ \\Delta = 4 \\left| \\begin{array}{ccc} 1 & (a^x - a^{-x})^2 & 1 \\\\ 1 & (b^y - b^{-y})^2 & 1 \\\\ 1 & (c^z - c^{-z})^2 & 1 \\end{array} \\right| $$</p>\n<p>Looking at the simplified determinant, we can see that the first column ($C_1$) and the third column ($C_3$) are completely identical. </p>\n<p>According to the properties of determinants, if any two rows or columns of a determinant are identical, the value of the determinant is zero. </p>\n<p>$$ \\Delta = 4 \\times 0 = 0 $$</p>\n<p>The given determinant evaluates to zero.</p>\n<p>Option D is correct.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -75,7 +75,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>The new determinant $|B|$ looks like this:</p>\n<p>$$|B| = \\begin{vmatrix} k^{0}a_{11} & k^{-1}a_{12} & k^{-2}a_{13} \\\\ k^{1}a_{21} & k^{0}a_{22} & k^{-1}a_{23} \\\\ k^{2}a_{31} & k^{1}a_{32} & k^{0}a_{33} \\end{vmatrix}$$</p>\n\n<p>$$|B| = k \\cdot k^{2} \\begin{vmatrix} a_{11} & k^{-1}a_{12} & k^{-2}a_{13} \\\\ a_{21} & k^{-1}a_{22} & k^{-2}a_{23} \\\\ a_{31} & k^{-1}a_{32} & k^{-2}a_{33} \\end{vmatrix}$$</p>\n\n<p>$$|B| = k^{3} \\cdot k^{-1} \\cdot k^{-2} \\begin{vmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{vmatrix}$$</p>\n\n<p>$$|B| = k^{0} \\cdot |A| = |A|$$</p>\n<p>So $|B| = |A|$, which means</p>\n<p>$$k_1 |A| + k_2 |B| = (k_1 + k_2)|A| = 0$$</p>\n<p>Since $|A| \\neq 0$, we get $k_1 + k_2 = 0$.</p>\n<p>The answer is option C.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -99,7 +99,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>Let</p>\n<p>$$ a=\\frac{1}{\\alpha},\\quad b=\\frac{1}{\\beta},\\quad c=\\frac{1}{\\gamma} $$</p>\n<p>Then the determinant becomes</p>\n<p>$$ \\Delta= \\begin{vmatrix} a & b & c\\\\ b & c & a\\\\ c & a & b \\end{vmatrix} $$</p>\n\n<p>$$ \\Delta = a(cb-a^2)-b(b^2-ac)+c(ab-c^2) $$</p>\n<p>$$ \\Delta = abc-a^3-b^3+abc+abc-c^3 $$</p>\n<p>$$ \\Delta=3abc-(a^3+b^3+c^3) $$</p>\n<p>Now, by Vieta’s formula for</p>\n<p>$$ x^3+px^2+q=0 $$</p>\n<p>we have</p>\n<p>$$ \\alpha\\beta+\\beta\\gamma+\\gamma\\alpha=0 $$</p>\n<p>So,</p>\n<p>$$ a+b+c = \\frac{1}{\\alpha}+\\frac{1}{\\beta}+\\frac{1}{\\gamma} = \\frac{\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha}{\\alpha\\beta\\gamma} =0 $$</p>\n<p>Using the identity</p>\n<p>$$ a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca) $$</p>\n<p>Since $a+b+c=0$,</p>\n<p>$$ a^3+b^3+c^3=3abc $$</p>\n<p>Hence,</p>\n<p>$$ \\Delta=3abc-(a^3+b^3+c^3)=0 $$</p>\n<p>So the value of the determinant is $0$, which is not among Options A, B, or C.</p>\n<p>$$ \\boxed{\\text{Option D: None of these}} $$</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -123,7 +123,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>Apply $R_2 \\to R_2 - R_1$ and $R_3 \\to R_3 - R_1$:</p>\n<p>$$\\begin{vmatrix} x+1 & x+2 & x+a \\\\ 1 & 1 & b-a \\\\ 2 & 2 & c-a \\end{vmatrix}$$</p>\n<p>Now apply $R_3 \\to R_3 - 2R_2$:</p>\n<p>$$\\begin{vmatrix} x+1 & x+2 & x+a \\\\ 1 & 1 & b-a \\\\ 0 & 0 & c-a-2(b-a) \\end{vmatrix}$$</p>\n<p>The last entry of $R_3$ becomes $c - a - 2b + 2a = a - 2b + c$.</p>\n<p>Since we are given $a - 2b + c = 1$, this simplifies to:</p>\n<p>$$\\begin{vmatrix} x+1 & x+2 & x+a \\\\ 1 & 1 & b-a \\\\ 0 & 0 & 1 \\end{vmatrix}$$</p>\n\n<p>$$1 \\cdot \\begin{vmatrix} x+1 & x+2 \\\\ 1 & 1 \\end{vmatrix} = (x+1) - (x+2) = -1$$</p>\n<p>So the value of the determinant is $-1$.</p>\n<p>The correct option is <strong>C</strong>.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -147,7 +147,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>Since $x, y, z$ are the 2nd, 3rd and 4th terms of a G.P. with common ratio $r$, we can write</p>\n<p>$$x = ar,\\quad y = ar^2,\\quad z = ar^3$$</p>\n<p>where $a$ is the first term.</p>\n<p>Now look at the determinant. Take $x^k$, $y^k$, $z^k$ common from the three rows:</p>\n<p>$$\\Delta = x^k y^k z^k \\left| \\begin{matrix} 1 & x & x^2 \\\\ 1 & y & y^2 \\\\ 1 & z & z^2 \\end{matrix} \\right|$$</p>\n<p>The determinant on the right is the well-known Vandermonde determinant, whose value is $(y-x)(z-x)(z-y)$.</p>\n<p>So</p>\n<p>$$\\Delta = (xyz)^k (y-x)(z-x)(z-y)$$</p>\n<p>Let's evaluate each factor using $x=ar,\\ y=ar^2,\\ z=ar^3$.</p>\n<p>$$xyz = a^3 r^6$$</p>\n<p>$$y - x = ar^2 - ar = ar(r-1)$$</p>\n<p>$$z - x = ar^3 - ar = ar(r^2-1) = ar(r-1)(r+1)$$</p>\n<p>$$z - y = ar^3 - ar^2 = ar^2(r-1)$$</p>\n<p>Multiplying these three,</p>\n<p>$$(y-x)(z-x)(z-y) = a^3 r^4 (r-1)^3 (r+1)$$</p>\n<p>So</p>\n<p>$$\\Delta = (a^3 r^6)^k \\cdot a^3 r^4 (r-1)^3 (r+1)$$</p>\n<p>Now simplify the given RHS:</p>\n<p>$$(r-1)^2\\left(1 - \\frac{1}{r^2}\\right) = (r-1)^2 \\cdot \\frac{r^2-1}{r^2} = \\frac{(r-1)^3(r+1)}{r^2}$$</p>\n<p>So we need</p>\n<p>$$(a^3 r^6)^k \\cdot a^3 r^4 (r-1)^3(r+1) = \\frac{(r-1)^3(r+1)}{r^2}$$</p>\n<p>$$a^{3k+3}\\, r^{6k+4} = r^{-2}$$</p>\n<p>For this to hold for all valid $a$ and $r$, we need the power of $a$ to be zero and the power of $r$ to match:</p>\n<p>$$3k+3 = 0 \\Rightarrow k = -1$$</p>\n<p>Check the $r$ part: $6(-1)+4 = -2$. ✓</p>\n<p>So $k = -1$, which is option A.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -171,7 +171,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>We have,</p>\n<p>$$(ax-b)^2+(bx-c)^2+(cx-d)^2 \\leq 0$$</p>\n<p>$$\\Rightarrow (ax-b)^2=(bx-c)^2=(cx-d)^2=0$$</p>\n<p>$$\\Rightarrow \\frac{b}{a}=\\frac{c}{b}=\\frac{d}{c}=x$$</p>\n<p>$$\\Rightarrow b^2=ac \\text{ or } 2\\log b=\\log a+\\log c$$</p>\n<p>Given that</p>\n<p>$$\\Delta=\\begin{vmatrix} 33 & 14 & \\log a\\\\ 65 & 27 & \\log b\\\\ 97 & 40 & \\log c \\end{vmatrix}=$$</p>\n<p>Applying $R_1 \\rightarrow R_1+R_3$, we get</p>\n<p>$$\\Delta=\\begin{vmatrix} 130 & 54 & \\log a+\\log c\\\\ 65 & 27 & \\log b\\\\ 97 & 40 & \\log c \\end{vmatrix}$$</p>\n<p>Applying $R_1 \\rightarrow R_1-2R_2$, we get</p>\n<p>$$\\Delta=\\begin{vmatrix} 0 & 0 & 0\\\\ 65 & 27 & \\log b\\\\ 97 & 40 & \\log c \\end{vmatrix}$$</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -195,7 +195,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>Here $A$ contains all $3 \\times 3$ determinants whose entries are only $0$ or $1$.</p>\n<p>$B$ contains those determinants whose value is $1$.</p>\n<p>$C$ contains those determinants whose value is $-1$.</p>\n<p>To compare the number of elements in $B$ and $C$, use the property of determinants:</p>\n<p>If we interchange any two rows of a determinant, its sign changes.</p>\n<p>So, if a determinant has value $1$, then after interchanging two rows, its value becomes $-1$.</p>\n<p>For example, if</p>\n<p>$$ \\Delta = 1 $$</p>\n<p>then after interchanging two rows,</p>\n<p>$$ \\Delta' = -1 $$</p>\n<p>Also, since the determinant value is non-zero, no two rows are identical. So interchanging two rows gives a different determinant.</p>\n<p>This gives a one-one pairing between determinants of value $1$ and determinants of value $-1$.</p>\n<p>Hence,</p>\n<p>$$ n(B)=n(C) $$</p>\n<p>So, STATEMENT-1 is true.</p>\n<p>Now, since $B$ and $C$ are both subsets of $A$,</p>\n<p>$$ B \\cap C \\subseteq A $$</p>\n<p>So, STATEMENT-2 is also true.</p>\n<p>But STATEMENT-2 only says that the common elements of $B$ and $C$ lie in $A$. It does not explain why $n(B)=n(C)$.</p>\n<p>Hence, STATEMENT-2 is not the correct explanation for STATEMENT-1.</p>\n<p>The correct option is:</p>\n<p>$$ \\boxed{\\text{Option B}} $$</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -219,7 +219,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>Using $Y=SX$ and $Z=tX$, the first determinant is</p>\n<p>$$ \\begin{vmatrix} X & Y & Z\\\\ X_1 & Y_1 & Z_1\\\\ X_2 & Y_2 & Z_2 \\end{vmatrix} = \\begin{vmatrix} X & SX & tX\\\\ X_1 & S_1X+SX_1 & t_1X+tX_1\\\\ X_2 & S_2X+2S_1X_1+SX_2 & t_2X+2t_1X_1+tX_2 \\end{vmatrix}. $$</p>\n<p>Now use column operations:</p>\n<p>$$ C_2 \\to C_2-SC_1,\\qquad C_3 \\to C_3-tC_1. $$</p>\n<p>Then the determinant becomes</p>\n<p>$$ \\begin{vmatrix} X & 0 & 0\\\\ X_1 & XS_1 & Xt_1\\\\ X_2 & XS_2+2X_1S_1 & Xt_2+2X_1t_1 \\end{vmatrix}. $$</p>\n<p>Expanding along the first row,</p>\n<p>$$ =X \\begin{vmatrix} XS_1 & Xt_1\\\\ XS_2+2X_1S_1 & Xt_2+2X_1t_1 \\end{vmatrix}. $$</p>\n<p>So,</p>\n<p>$$ =X\\left[X^2(S_1t_2-S_2t_1)\\right] $$</p>\n<p>because the terms containing $2X_1S_1t_1$ cancel.</p>\n<p>Hence,</p>\n<p>$$ \\begin{vmatrix} X & Y & Z\\\\ X_1 & Y_1 & Z_1\\\\ X_2 & Y_2 & Z_2 \\end{vmatrix} = X^3 \\begin{vmatrix} S_1 & t_1\\\\ S_2 & t_2 \\end{vmatrix}. $$</p>\n<p>So the power of $X$ is</p>\n<p>$$ n=3. $$</p>\n<p>Correct option: C.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -243,7 +243,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>First, multiply the three columns by $a$, $b$, and $c$ respectively.</p>\n<p>That means we apply $C_1 \\rightarrow a C_1, C_2 \\rightarrow b C_2$ and $C_3 \\rightarrow c C_3$.</p>\n<p>When columns are multiplied by $a$, $b$, and $c$, the determinant gets multiplied by $abc$. So we take out the factor $\\frac{1}{abc}$.</p>\n<p>$$ \\Delta=\\frac{1}{a b c}\\left|\\begin{array}{ccc} \\frac{a}{c} & \\frac{b}{c} & -\\frac{a+b}{c} \\\\ -\\frac{b+c}{a} & \\frac{b}{a} & \\frac{c}{a} \\\\ -\\frac{b(b+c)}{a c} & \\frac{b(a+2 b+c)}{a c} & -\\frac{b(a+b)}{a c} \\end{array}\\right| $$</p>\n<p>Now add the three columns inside the determinant.</p>\n<p>For the first row,</p>\n<p>$$\\frac{a}{c}+\\frac{b}{c}-\\frac{a+b}{c}=0$$</p>\n<p>For the second row,</p>\n<p>$$-\\frac{b+c}{a}+\\frac{b}{a}+\\frac{c}{a}=0$$</p>\n<p>For the third row,</p>\n<p>$$-\\frac{b(b+c)}{ac}+\\frac{b(a+2b+c)}{ac}-\\frac{b(a+b)}{ac}=0$$</p>\n<p>So, $C_1+C_2+C_3$ gives a zero column.</p>\n<p>Applying $C_1 \\rightarrow C_1+C_2+C_3$, one column becomes zero, so the determinant becomes $0$.</p>\n<p>Hence,</p>\n<p>$$\\Delta=0$$</p>\n<p>Since $\\Delta$ is $0$, it does not depend on $a$, $b$, or $c$.</p>\n<p>So both <b>S<sub>1</sub></b> and <b>S<sub>2</sub></b> are true.</p>",
       "section": "A",
       "instruction": "Select the correct option.",
       "examSource": "ultimate-series-2027"
@@ -262,7 +262,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>Given,</p>\n<p>$$ a=1+2+4+\\cdots \\text{ up to } n \\text{ terms} $$</p>\n<p>This is a G.P. with first term $1$ and common ratio $2$, so</p>\n<p>$$ a=\\frac{2^n-1}{2-1}=2^n-1 $$</p>\n<p>Similarly,</p>\n<p>$$ b=1+3+9+\\cdots \\text{ up to } n \\text{ terms} $$</p>\n<p>So,</p>\n<p>$$ b=\\frac{3^n-1}{3-1}=\\frac{3^n-1}{2} $$</p>\n<p>Hence,</p>\n<p>$$ 2b=3^n-1 $$</p>\n<p>Also,</p>\n<p>$$ c=1+5+25+\\cdots \\text{ up to } n \\text{ terms} $$</p>\n<p>So,</p>\n<p>$$ c=\\frac{5^n-1}{5-1}=\\frac{5^n-1}{4} $$</p>\n<p>Hence,</p>\n<p>$$ 4c=5^n-1 $$</p>\n<p>Now the determinant becomes</p>\n<p>$$ f(n)= \\begin{vmatrix} 2^n-1 & 3^n-1 & 5^n-1 \\\\ 2 & 2 & 2 \\\\ 2^n & 3^n & 5^n \\end{vmatrix} $$</p>\n<p>Apply the row operation</p>\n<p>$$ R_3 \\to R_3 - R_1 $$</p>\n<p>Then the third row becomes</p>\n<p>$$ (2^n-(2^n-1),\\ 3^n-(3^n-1),\\ 5^n-(5^n-1))=(1,1,1) $$</p>\n<p>So,</p>\n<p>$$ f(n)= \\begin{vmatrix} 2^n-1 & 3^n-1 & 5^n-1 \\\\ 2 & 2 & 2 \\\\ 1 & 1 & 1 \\end{vmatrix} $$</p>\n<p>Here the second row is twice the third row:</p>\n<p>$$ (2,2,2)=2(1,1,1) $$</p>\n<p>So two rows are proportional. Hence the determinant is $0$.</p>\n<p>Thus,</p>\n<p>$$ f(10)=0 $$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "ultimate-series-2027"
@@ -281,7 +281,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>The given determinant is</p>\n<p>$$ \\left|\\begin{array}{ccc} 1+x & 1 & 1 \\\\ 1+y & 1+2 y & 1 \\\\ 1+z & 1+z & 1+3 z \\end{array}\\right|=0 $$</p>\n<p>We apply column operations to make the determinant simpler. Replacing one column by the difference of two columns does not change the value of the determinant.</p>\n<p>Applying $C_1 \\rightarrow C_1-C_2, C_2 \\rightarrow C_2-C_3$, we get</p>\n<p>$$ \\begin{array}{rlcc}  & \\left|\\begin{array}{ccc} x & 0 & 1 \\\\ -y & 2 y & 1 \\\\ 0 & -2 z & 1+3 z \\end{array}\\right|=0 \\\\ \\therefore & 2 x y(1+3 z)+2 y z+2 z x=0 \\\\ \\Rightarrow & x y+3 x y z+y z+z x=0 \\\\ \\Rightarrow & \\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}=-3 \\end{array} $$</p>\n<p>Since $x, y, z$ are non-zero, division by $xyz$ is allowed.</p>\n<p>So,</p>\n<p>$$ \\left|\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}\\right|=|-3|=3 $$</p>\n<p>Hence, the value is $3$.</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "ultimate-series-2027"
@@ -300,7 +300,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Easy",
-      "solution": "",
+      "solution": "<p>Let</p>\n<p>$$ B=A-A^T $$</p>\n<p>Then take transpose:</p>\n<p>$$ B^T=(A-A^T)^T=A^T-A=-\\left(A-A^T\\right)=-B $$</p>\n<p>So $B$ is a skew-symmetric matrix.</p>\n<p>Now,</p>\n<p>$$ \\det(B)=\\det(B^T) $$</p>\n<p>But since $B^T=-B$,</p>\n<p>$$ \\det(B^T)=\\det(-B) $$</p>\n<p>For an $n \\times n$ matrix,</p>\n<p>$$ \\det(-B)=(-1)^n\\det(B) $$</p>\n<p>Given that $n$ is odd, we have $(-1)^n=-1$. Hence,</p>\n<p>$$ \\det(B)=-\\det(B) $$</p>\n<p>So,</p>\n<p>$$ 2\\det(B)=0 $$</p>\n<p>which gives</p>\n<p>$$ \\det(B)=0 $$</p>\n<p>Now,</p>\n<p>$$ \\det\\left((A-A^T)^{2009}\\right)=\\det(B^{2009}) $$</p>\n<p>Using $\\det(B^k)=(\\det B)^k$,</p>\n<p>$$ \\det(B^{2009})=(\\det B)^{2009}=0^{2009}=0 $$</p>\n<p>So,</p>\n<p>$$ \\boxed{0} $$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "ultimate-series-2027"
@@ -319,7 +319,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>Given</p>\n<p>$$ A=\\begin{bmatrix} a&0&0\\\\ 0&a&0\\\\ 0&0&a \\end{bmatrix}=aI_3 $$</p>\n<p>Since $A^{-1}$ is used, we take $a\\neq 0$.</p>\n<p>For a $3\\times 3$ matrix of the form $kI_3$, its adjoint is</p>\n<p>$$ \\operatorname{adj}(kI_3)=k^2I_3 $$</p>\n<p>So,</p>\n<p>$$ \\operatorname{adj}A=\\operatorname{adj}(aI_3)=a^2I_3 $$</p>\n<p>Again,</p>\n<p>$$ \\operatorname{adj}(\\operatorname{adj}A) =\\operatorname{adj}(a^2I_3) =(a^2)^2I_3=a^4I_3 $$</p>\n<p>And once more,</p>\n<p>$$ \\operatorname{adj}(\\operatorname{adj}(\\operatorname{adj}A)) =\\operatorname{adj}(a^4I_3) =(a^4)^2I_3=a^8I_3 $$</p>\n<p>Now its determinant is</p>\n<p>$$ \\left|\\operatorname{adj}(\\operatorname{adj}(\\operatorname{adj}A))\\right| = |a^8I_3| = (a^8)^3 = a^{24} $$</p>\n<p>Also,</p>\n<p>$$ A^{-1}=\\frac1a I_3 $$</p>\n<p>So,</p>\n<p>$$ \\operatorname{adj}(A^{-1}) = \\operatorname{adj}\\left(\\frac1a I_3\\right) = \\left(\\frac1a\\right)^2I_3 = a^{-2}I_3 $$</p>\n<p>Hence,</p>\n<p>$$ |\\operatorname{adj}(A^{-1})| = |a^{-2}I_3| = (a^{-2})^3 = a^{-6} $$</p>\n<p>Now multiply:</p>\n<p>$$ \\left|\\operatorname{adj}(\\operatorname{adj}(\\operatorname{adj}A))\\right| \\cdot |\\operatorname{adj}(A^{-1})| = a^{24}\\cdot a^{-6} = a^{18} $$</p>\n<p>Given this is equal to $a^\\lambda$, we get</p>\n<p>$$ \\lambda=18 $$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "ultimate-series-2027"
@@ -338,7 +338,7 @@
       "subject": "Mathematics",
       "topic": "matrices-and-determinants",
       "difficulty": "Medium",
-      "solution": "",
+      "solution": "<p>The given matrix $A$ has $0$ on the diagonal and $1$ everywhere else.</p>\n<p>So it can be written as</p>\n<p>$$ A=J-I $$</p>\n<p>where $J$ is the $n \\times n$ matrix whose every entry is $1$, and $I$ is the identity matrix.</p>\n<p>We know that for such a matrix,</p>\n<p>$$ A^{-1}=-I+\\frac{1}{n-1}J $$</p>\n<p>Now, the diagonal entries of $A^{-1}$ will come from the diagonal entries of both matrices.</p>\n<p>On the diagonal:</p>\n<ul>\n<li><p>diagonal entry of $-I$ is $-1$</p></li>\n<li><p>diagonal entry of $\\frac{1}{n-1}J$ is $\\frac{1}{n-1}$</p></li>\n</ul>\n<p>So each diagonal element of $A^{-1}$ is</p>\n<p>$$ -1+\\frac{1}{n-1} $$</p>\n<p>$$ =\\frac{-(n-1)+1}{n-1} $$</p>\n<p>$$ =\\frac{2-n}{n-1} $$</p>\n<p>But it is given that each diagonal element is</p>\n<p>$$ \\frac{k-n}{n-1} $$</p>\n<p>So,</p>\n<p>$$ \\frac{k-n}{n-1}=\\frac{2-n}{n-1} $$</p>\n<p>Hence,</p>\n<p>$$ k-n=2-n $$</p>\n<p>$$ k=2 $$</p>\n<p>So the value of $k$ is</p>\n<p>$$ \\boxed{2} $$</p>",
       "section": "B",
       "instruction": "Enter the correct numerical value.",
       "examSource": "ultimate-series-2027"
