@@ -23,7 +23,6 @@ function cleanHtmlLatex(text) {
           const filePath = path.join(TESTS_DIR, file);
           const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
           if (data.questions && data.questions.length > 0) {
-              // If the first question has no solution, we assume the test needs fixing
               if (!data.questions[0].solution || data.questions[0].solution.trim() === "") {
                   testsToFix.push({ file, testId: file.replace('.json', ''), data });
               }
@@ -54,58 +53,106 @@ function cleanHtmlLatex(text) {
   await new Promise(r => setTimeout(r, 2000));
   console.log('Logged in successfully!');
   
-  // We will process in batches of 10 to avoid overwhelming the browser
   for (let i = 0; i < testsToFix.length; i++) {
       const test = testsToFix[i];
-      console.log(`[${i+1}/${testsToFix.length}] Fetching solutions for ${test.testId}...`);
-      
-      const qIds = test.data.questions.map(q => q.id);
-      
-      const js_code = `
-        async (testId, qIds) => {
-            const sessionConfigRes = await fetch('/api/v1/test/user/session/' + testId);
-            const sessionConfig = await sessionConfigRes.json();
-            let sessionId = sessionConfig.data?.sessionId;
-            if (!sessionId) {
-                sessionId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-                    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-                    return v.toString(16);
-                });
-            }
-            
-            const nowIso = new Date().toISOString();
-            const savePayload = {
-                testId: testId, sessionId: sessionId, timeSpent: 5000, language: "en",
-                lastQuestionId: qIds[0],
-                state: { [qIds[0]]: { ir: false, si: [], ip: null, st: "seen", ts: 5000, ma: 0, nma: 0 } },
-                layout: 1, lastAttempted: nowIso, metadata: { options: { outOfSyllabus: false } }
-            };
-            
-            await fetch('/api/v1/test/user/session', {
-                method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(savePayload)
-            });
-            
-            await fetch('/api/v1/test/user/test', {
-                method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ testId: testId })
-            });
-            
-            const solutionsRes = await fetch('/api/v1/test/user/analysis/' + sessionId + '/questions', {
-                method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ questionIds: qIds })
-            });
-            const solutionsData = await solutionsRes.json();
-            
-            return solutionsData;
-        }
-      `;
+      console.log(`[${i+1}/${testsToFix.length}] Processing ${test.testId}...`);
       
       try {
+          // 1. Navigate to test preparation page
+          await page.goto(`https://room.examgoal.com/tests/${test.testId}/prepare`, { waitUntil: 'networkidle2' });
+          await new Promise(r => setTimeout(r, 2000));
+          
+          await page.keyboard.press("Escape");
+          await new Promise(r => setTimeout(r, 500));
+          
+          // Dismiss "Choose your exam" modal if present
+          try {
+              const bodyHTML = await page.evaluate(() => document.body.innerHTML);
+              if (bodyHTML.includes("Choose your exam")) {
+                  await page.evaluate(() => {
+                      const btns = Array.from(document.querySelectorAll('button'));
+                      const btn = btns.find(b => b.textContent.includes('JEE Main'));
+                      if (btn) btn.click();
+                  });
+                  await new Promise(r => setTimeout(r, 500));
+                  await page.keyboard.press("Escape");
+              }
+          } catch(e) {}
+          
+          // Check if test is already attempted
+          const content = await page.evaluate(() => document.body.innerHTML);
+          if (content.includes("View Solutions") || page.url().includes("analysis")) {
+              console.log(`  -> Test already attempted. Extracting solutions directly.`);
+          } else {
+              // Click Start Test
+              const startedClick = await page.evaluate(() => {
+                  const btns = Array.from(document.querySelectorAll('button'));
+                  const start = btns.find(b => b.textContent.includes('Start Test'));
+                  if (start) {
+                      start.click();
+                      return true;
+                  }
+                  return false;
+              });
+              
+              if (startedClick) {
+                  // Wait for NTA layout to load (test is active)
+                  let started = false;
+                  for (let w = 0; w < 10; w++) {
+                      await new Promise(r => setTimeout(r, 1000));
+                      if (page.url().includes("layouts/nta")) {
+                          started = true;
+                          break;
+                      }
+                  }
+                  if (!started) throw new Error("Could not start test");
+              } else {
+                  throw new Error("Start Test button not found");
+              }
+          }
+
+          const qIds = test.data.questions.map(q => q.id);
+          const js_code = `
+            async (testId, qIds) => {
+                const sessionConfigRes = await fetch('/api/v1/test/user/session/' + testId);
+                const sessionConfig = await sessionConfigRes.json();
+                let sessionId = sessionConfig.data?.sessionId;
+                if (!sessionId) {
+                    sessionId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                        return v.toString(16);
+                    });
+                }
+                
+                const nowIso = new Date().toISOString();
+                const savePayload = {
+                    testId: testId, sessionId: sessionId, timeSpent: 5000, language: "en",
+                    lastQuestionId: qIds[0],
+                    state: { [qIds[0]]: { ir: false, si: [], ip: null, st: "seen", ts: 5000, ma: 0, nma: 0 } },
+                    layout: 1, lastAttempted: nowIso, metadata: { options: { outOfSyllabus: false } }
+                };
+                
+                await fetch('/api/v1/test/user/session', {
+                    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(savePayload)
+                });
+                
+                await fetch('/api/v1/test/user/test', {
+                    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ testId: testId })
+                });
+                
+                const solutionsRes = await fetch('/api/v1/test/user/analysis/' + sessionId + '/questions', {
+                    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ questionIds: qIds })
+                });
+                return await solutionsRes.json();
+            }
+          `;
+          
           const solData = await page.evaluate(js_code, test.testId, qIds);
           
-          // Map solutions
           let updatedCount = 0;
-          if (solData && solData.results) {
+          if (solData && solData.data && solData.data.results) {
               const solMap = {};
-              for (const section of solData.results) {
+              for (const section of solData.data.results) {
                   for (const q of (section.questions || [])) {
                       solMap[q.questionId] = q.question?.en?.explanation || "";
                   }
@@ -120,18 +167,18 @@ function cleanHtmlLatex(text) {
               
               if (updatedCount > 0) {
                   fs.writeFileSync(path.join(TESTS_DIR, test.file), JSON.stringify(test.data, null, 2));
-                  console.log(`  -> Saved ${updatedCount} solutions for ${test.testId}`);
+                  console.log(`  -> Saved ${updatedCount} solutions!`);
               } else {
-                  console.log(`  -> No solutions found for ${test.testId}`);
+                  console.log(`  -> API returned empty solutions.`);
               }
+          } else {
+              console.log(`  -> Error parsing solutions data.`);
           }
       } catch(e) {
           console.error(`  -> Failed: ${e.message}`);
       }
-      
-      await new Promise(r => setTimeout(r, 1000));
   }
   
   await browser.close();
-  console.log('All missing solutions fetched!');
+  console.log('Finished processing mock tests.');
 })();

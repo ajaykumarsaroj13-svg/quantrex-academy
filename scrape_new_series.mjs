@@ -15,10 +15,10 @@ async function main() {
   let capturedData = {};
 
   page.on('response', async res => {
-    if (res.url().includes('test-series') || res.url().includes('api/v1/test')) {
+    if (res.url().includes('api/v1')) {
        try {
          const json = await res.json();
-         console.log('Intercepted:', res.url());
+         console.log('Intercepted:', res.url(), 'Size:', JSON.stringify(json).length);
          capturedData[res.url()] = json;
        } catch(e) {}
     }
