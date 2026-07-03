@@ -1,0 +1,50 @@
+name: Daily ExamGoal Sync
+
+on:
+  schedule:
+    - cron: '13 30 * * *' # Runs at 13:30 UTC everyday (7:00 PM IST)
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  sync_and_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          pip install playwright pymongo requests
+          playwright install chromium
+          
+      - name: Run Daily Scraper
+        run: python scripts/daily_scraper_cron.py
+        
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync ExamGoal mock tests & solutions" && git push)
+          
+      - name: Send Notification Email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Quantrex Academy - Daily Test Sync Complete"
+          to: ajaykumarsaroj13@gmail.com
+          from: Quantrex Academy Bot
+          body: "The daily sync for ExamGoal mock tests has completed successfully at 7:00 PM IST. The website has been updated with the latest questions and solutions!"
