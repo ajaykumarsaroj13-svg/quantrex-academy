@@ -1,571 +1,468 @@
-import React, { useState, useEffect, useRef } from 'react';
-import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
-import XCircle from 'lucide-react/dist/esm/icons/x-circle';
-import Eye from 'lucide-react/dist/esm/icons/eye';
-import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
-import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
-import Clock from 'lucide-react/dist/esm/icons/clock';
-import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
-import BookOpen from 'lucide-react/dist/esm/icons/book-open';
-import CloudOff from 'lucide-react/dist/esm/icons/cloud-off';
-import Cloud from 'lucide-react/dist/esm/icons/cloud';
-import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
-import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
-import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
-import { fetchBlackBookQuestions, fetchBlackBookProgress, saveBlackBookProgress, resetBlackBookProgress } from '../utils/blackBookApi';
-import MathRenderer from '../utils/MathRenderer';
-import TeacherSolution from '../components/TeacherSolution';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
+import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye } from 'lucide-react';
+import { bookData } from '../data/bookData';
 
-const OPTION_LABELS = ['A', 'B', 'C', 'D', 'E'];
+const BookPractice = () => {
+  const { chapterId } = useParams();
+  const navigate = useNavigate();
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  
+  // State for ExamGoal style practice
+  // For each question, track selected option and if it has been checked
+  const [userAnswers, setUserAnswers] = useState({}); // { 0: { selected: 1, checked: true, isCorrect: false } }
 
-export default function BookPractice({ chapter, setActivePage, theme, user }) {
-  const isLight = theme === 'light';
-  const chapterId = chapter?.id || 'function';
-  const userId = user?._id || user?.id || null;
-  const storageKey = `blackbook_progress_${chapterId}`;
-
-  // ─── State ────────────────────────────────────────────────────────────────
-  const [activeExercise, setActiveExercise] = useState(null);
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [showSolutionModal, setShowSolutionModal] = useState(false);
-  const [syncStatus, setSyncStatus] = useState('idle');
-  const scrollRef = useRef(null);
-
-  const [progress, setProgress] = useState(() => {
-    try {
-      const saved = localStorage.getItem(storageKey);
-      return saved ? JSON.parse(saved) : {};
-    } catch { return {}; }
-  });
+  const [showPaletteMobile, setShowPaletteMobile] = useState(false);
 
   useEffect(() => {
-    if (!userId) return;
-    setSyncStatus('syncing');
-    fetchBlackBookProgress(chapterId, userId)
-      .then(mongoProgress => {
-        if (Object.keys(mongoProgress).length > 0) {
-          setProgress(prev => {
-            const merged = { ...prev };
-            Object.entries(mongoProgress).forEach(([ex, qMap]) => {
-              if (!merged[ex]) merged[ex] = {};
-              Object.entries(qMap).forEach(([qi, state]) => {
-                const localState = merged[ex][qi];
-                if (state.status && (!localState || !localState.status)) {
-                  merged[ex][qi] = state;
-                }
-              });
-            });
-            return merged;
-          });
-        }
-        setSyncStatus('synced');
-      })
-      .catch(() => setSyncStatus('offline'));
-  }, [userId, chapterId]);
-
-  const [seenMap, setSeenMap] = useState(() => {
-    try {
-      const saved = localStorage.getItem(storageKey + '_seen');
-      return saved ? JSON.parse(saved) : {};
-    } catch { return {}; }
-  });
-
-  const [timeSpent, setTimeSpent] = useState(0);
-  const [fontSize, setFontSize] = useState(17);
-
-  // Temporary selection before saving
-  const [tempSelection, setTempSelection] = useState(null);
-
-  // ─── Data ────────────────────────────────────────────────────────────────
-  const [allQuestions, setAllQuestions] = useState(chapter?.questions || []);
-  const [loadingQuestions, setLoadingQuestions] = useState(!chapter?.questions?.length);
-  const exerciseGroups = allQuestions.reduce((acc, q) => {
-    const ex = q.exerciseName || 'Exercise 1';
-    if (!acc[ex]) acc[ex] = [];
-    acc[ex].push(q);
-    return acc;
-  }, {});
-  const exercisesList = Object.keys(exerciseGroups).sort();
-
-  useEffect(() => {
-    if (!allQuestions.length) {
-      setLoadingQuestions(true);
-      fetchBlackBookQuestions(chapterId)
-        .then(data => {
-          setAllQuestions(data || []);
-          setLoadingQuestions(false);
-        })
-        .catch(err => {
-          console.error("Failed to fetch questions:", err);
-          setLoadingQuestions(false);
+    const fetchQuestions = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`/data/blackbook/${chapterId}.json`);
+        if (!response.ok) throw new Error("Failed to load questions");
+        const data = await response.json();
+        setQuestions(data);
+        
+        // Initialize state
+        const initialAnswers = {};
+        data.forEach((q, idx) => {
+          initialAnswers[idx] = { selected: null, checked: false, isCorrect: null };
         });
-    }
+        setUserAnswers(initialAnswers);
+      } catch (error) {
+        console.error("Error loading chapter data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchQuestions();
   }, [chapterId]);
 
-  useEffect(() => {
-    if (!activeExercise && exercisesList.length > 0) {
-      setActiveExercise(exercisesList[0]);
-      setCurrentIdx(0);
+  // Extract chapter details
+  const chapterDetails = useMemo(() => {
+    if (!bookData || !bookData.length) return { name: 'Practice', id: '' };
+    for (const subject of bookData) {
+      const chapter = subject.chapters.find(c => c.id === chapterId);
+      if (chapter) return chapter;
     }
-  }, [exercisesList, activeExercise]);
+    return { name: 'Practice Session', id: '' };
+  }, [chapterId]);
 
-  const questions = activeExercise ? exerciseGroups[activeExercise] || [] : [];
-  const question = questions[currentIdx];
-  const globalKey = `${activeExercise}-${currentIdx}`;
-
-  // Sync tempSelection with progress when switching questions
-  useEffect(() => {
-    const qState = (progress[activeExercise] || {})[currentIdx];
-    setTempSelection(qState?.selectedIdx !== undefined ? qState.selectedIdx : null);
-  }, [activeExercise, currentIdx, progress]);
-
-  // Mark as visited/seen
-  useEffect(() => {
-    if (activeExercise && currentIdx !== undefined) {
-      setSeenMap(prev => {
-        if (!prev[globalKey]) {
-           return { ...prev, [globalKey]: true };
-        }
-        return prev;
-      });
-    }
-  }, [activeExercise, currentIdx]);
-
-  useEffect(() => {
-    localStorage.setItem(storageKey, JSON.stringify(progress));
-  }, [progress, storageKey]);
-
-  useEffect(() => {
-    localStorage.setItem(storageKey + '_seen', JSON.stringify(seenMap));
-  }, [seenMap, storageKey]);
-
-  useEffect(() => {
-    const timer = setInterval(() => setTimeSpent(t => t + 1), 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const isMatchingType = activeExercise?.includes('Exercise 4') || activeExercise?.includes('Exercise-4');
-  const isSubjective = activeExercise?.includes('Exercise 5') || activeExercise?.includes('Exercise-5');
-  const t = (question?.type || question?.questionType || '').toUpperCase().trim();
-  const isMultiCorrect = activeExercise?.includes('Exercise 2') || activeExercise?.includes('Exercise-2') || t === 'MULTI_CORRECT' || t === 'MULTIPLE_CORRECT' || t === 'MCQM';
-
-  const handleTabChange = (ex) => {
-    setActiveExercise(ex);
-    setCurrentIdx(0);
-  };
-
-  const handleSelectOption = (optIdx) => {
-    if (isMultiCorrect) {
-      setTempSelection(prev => {
-        const arr = Array.isArray(prev) ? prev : (prev !== undefined && prev !== null && prev !== -1 ? [prev] : []);
-        if (arr.includes(optIdx)) return arr.filter(i => i !== optIdx);
-        return [...arr, optIdx].sort((a, b) => a - b);
-      });
-    } else {
-      setTempSelection(optIdx);
-    }
-  };
-
-  const updateProgressState = (statusType) => {
-    const isAnswered = tempSelection !== null && (Array.isArray(tempSelection) ? tempSelection.length > 0 : tempSelection !== -1);
-    
-    let finalStatus = 'not_visited';
-    if (statusType === 'save_next') finalStatus = isAnswered ? 'answered' : 'not_answered';
-    else if (statusType === 'mark_review') finalStatus = isAnswered ? 'answered_marked' : 'marked';
-    else if (statusType === 'clear') finalStatus = 'not_answered';
-    
-    if (statusType === 'clear') setTempSelection(null);
-
-    const selectionToSave = statusType === 'clear' ? -1 : tempSelection;
-    let correct = null;
-    
-    if (isAnswered && statusType !== 'clear') {
-       if (isMultiCorrect) {
-          const correctArr = question.correctOptionsArray || [];
-          const selArr = Array.isArray(tempSelection) ? tempSelection : [tempSelection];
-          correct = correctArr.length > 0 && correctArr.length === selArr.length && selArr.every(v => correctArr.includes(v));
-       } else {
-          correct = tempSelection === question.correctOption;
-       }
-    }
-
-    setProgress(prev => {
-      const copy = { ...prev };
-      if (!copy[activeExercise]) copy[activeExercise] = {};
-      copy[activeExercise][currentIdx] = {
-        selectedIdx: selectionToSave,
-        status: finalStatus,
-        isCorrect: correct
-      };
-      
-      saveBlackBookProgress(chapterId, userId, activeExercise, currentIdx, {
-        selectedIdx: selectionToSave,
-        status: finalStatus,
-        isCorrect: correct
-      });
-      return copy;
-    });
-
-    if (statusType !== 'clear') {
-      if (currentIdx < questions.length - 1) setCurrentIdx(currentIdx + 1);
-    }
-  };
-
-  const handleJumpTo = (idx) => {
-    // Save current as not_answered if not already saved and seen
-    const currState = (progress[activeExercise] || {})[currentIdx];
-    if (!currState?.status) {
-       setProgress(prev => {
-          const copy = { ...prev };
-          if (!copy[activeExercise]) copy[activeExercise] = {};
-          copy[activeExercise][currentIdx] = {
-             selectedIdx: tempSelection !== null ? tempSelection : -1,
-             status: tempSelection !== null && tempSelection !== -1 && (!Array.isArray(tempSelection) || tempSelection.length > 0) ? 'answered' : 'not_answered'
-          };
-          return copy;
-       });
-    }
-    setCurrentIdx(idx);
-  };
-
-  const getStats = () => {
-    const exP = progress[activeExercise] || {};
-    let answered = 0, notAnswered = 0, notVisited = 0, marked = 0, answeredMarked = 0;
-    
-    questions.forEach((_, idx) => {
-      const s = exP[idx];
-      const isSeen = seenMap[`${activeExercise}-${idx}`];
-      
-      if (!s?.status) {
-         if (isSeen) notAnswered++;
-         else notVisited++;
-      } else {
-         if (s.status === 'answered') answered++;
-         else if (s.status === 'not_answered') notAnswered++;
-         else if (s.status === 'marked') marked++;
-         else if (s.status === 'answered_marked') answeredMarked++;
+  // Render KaTeX with cleanup
+  const renderMath = (text) => {
+    if (!text) return '';
+    let renderedText = text;
+    // Basic cleanup for $ ... $ inline math
+    renderedText = renderedText.replace(/\$([^\$]+)\$/g, (match, p1) => {
+      try {
+        return katex.renderToString(p1, { throwOnError: false, displayMode: false });
+      } catch (e) {
+        console.warn("KaTeX Error:", e);
+        return match; // Return unrendered if error
       }
     });
-    return { answered, notAnswered, notVisited, marked, answeredMarked };
+    // Cleanup for $$ ... $$ display math
+    renderedText = renderedText.replace(/\$\$([^\$]+)\$\$/g, (match, p1) => {
+      try {
+        return katex.renderToString(p1, { throwOnError: false, displayMode: true });
+      } catch (e) {
+        console.warn("KaTeX Error:", e);
+        return match;
+      }
+    });
+    return renderedText;
   };
 
-  const getBubbleClass = (idx) => {
-    const s = (progress[activeExercise] || {})[idx];
-    const isSeen = seenMap[`${activeExercise}-${idx}`];
-    
-    let base = "w-10 h-10 flex items-center justify-center font-bold text-[14px] cursor-pointer shrink-0 transition-all shadow-sm mx-auto ";
-    let status = s?.status;
-    if (!status) status = isSeen ? 'not_answered' : 'not_visited';
-    
-    // NTA Shapes
-    if (status === 'answered') return base + "bg-[#27ae60] text-white rounded-t-lg rounded-bl-none rounded-br-lg";
-    if (status === 'not_answered') return base + "bg-[#eb3b5a] text-white rounded-t-lg rounded-bl-lg rounded-br-none";
-    if (status === 'not_visited') return base + "bg-[#f1f2f6] text-[#2f3640] border border-[#dcdde1] rounded";
-    if (status === 'marked') return base + "bg-[#8e44ad] text-white rounded-full";
-    if (status === 'answered_marked') return base + "bg-[#8e44ad] text-white rounded-full relative"; // Will add green dot in render
-    
-    return base + "bg-[#f1f2f6] text-[#2f3640] rounded";
+  const handleOptionSelect = (optionIndex) => {
+    // If already checked, don't allow changing answer in this practice mode
+    if (userAnswers[currentQuestionIndex]?.checked) return;
+
+    setUserAnswers(prev => ({
+      ...prev,
+      [currentQuestionIndex]: {
+        ...prev[currentQuestionIndex],
+        selected: optionIndex
+      }
+    }));
   };
 
-  if (loadingQuestions) {
+  const handleCheckAnswer = () => {
+    const currentQ = questions[currentQuestionIndex];
+    const currentA = userAnswers[currentQuestionIndex];
+    
+    if (currentA.selected === null) return; // Must select an option first
+
+    // Usually correctOption is 1-indexed in our JSON (1, 2, 3, 4)
+    const isCorrect = (currentA.selected + 1) === currentQ.correctOption;
+
+    setUserAnswers(prev => ({
+      ...prev,
+      [currentQuestionIndex]: {
+        ...prev[currentQuestionIndex],
+        checked: true,
+        isCorrect: isCorrect
+      }
+    }));
+  };
+
+  const handleClearResponse = () => {
+    if (userAnswers[currentQuestionIndex]?.checked) return; // Cannot clear if already checked
+    setUserAnswers(prev => ({
+      ...prev,
+      [currentQuestionIndex]: {
+        ...prev[currentQuestionIndex],
+        selected: null
+      }
+    }));
+  };
+
+  const handleNext = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(prev => prev + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1);
+    }
+  };
+
+  if (loading) {
     return (
-      <div className={`min-h-screen flex flex-col items-center justify-center ${isLight ? 'bg-gray-50 text-gray-900' : 'bg-gray-950 text-white'}`}>
-        <RefreshCw className="w-16 h-16 mb-4 opacity-50 animate-spin text-[#2962ff]" />
-        <p className="text-lg font-medium mb-4">Loading questions...</p>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="flex flex-col items-center">
+          <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          <p className="mt-4 text-gray-600 font-medium">Loading practice session...</p>
+        </div>
       </div>
     );
   }
 
-  if (!allQuestions.length || !question) {
+  if (!questions || questions.length === 0) {
     return (
-      <div className={`min-h-screen flex flex-col items-center justify-center ${isLight ? 'bg-gray-50 text-gray-900' : 'bg-gray-950 text-white'}`}>
-        <BookOpen className="w-16 h-16 mb-4 opacity-30" />
-        <p className="text-lg font-medium mb-4">No questions available.</p>
-        <button onClick={() => setActivePage('book-chapters')} className="px-6 py-2 bg-blue-600 text-white rounded-lg font-bold">Go Back</button>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center p-8 bg-white rounded-xl shadow-sm">
+          <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
+          <h2 className="text-xl font-bold text-gray-800">Questions Not Found</h2>
+          <p className="text-gray-500 mt-2">Could not load questions for this chapter.</p>
+          <button 
+            onClick={() => navigate('/book')}
+            className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+          >
+            Go Back
+          </button>
+        </div>
       </div>
     );
   }
 
-  const stats = getStats();
-  const formatTime = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+  const currentQuestion = questions[currentQuestionIndex];
+  const currentState = userAnswers[currentQuestionIndex] || { selected: null, checked: false };
+
+  // Calculate stats for the palette
+  let attemptedCount = 0;
+  let correctCount = 0;
+  let incorrectCount = 0;
+  
+  Object.values(userAnswers).forEach(ans => {
+    if (ans.checked) {
+      attemptedCount++;
+      if (ans.isCorrect) correctCount++;
+      else incorrectCount++;
+    }
+  });
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col font-sans bg-[#eef2f5] overflow-hidden">
-      
-      {/* ── ALLEN/NTA Header ─────────────────────────────────────────── */}
-      <div className="h-[60px] bg-[#2962ff] text-white flex items-center px-4 sm:px-6 shadow-md justify-between shrink-0 z-20">
+    <div className="min-h-screen flex flex-col bg-[#f0f2f5] font-sans">
+      {/* Top Header - ExamGoal Style */}
+      <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 lg:px-8 shrink-0 shadow-sm sticky top-0 z-20">
         <div className="flex items-center gap-4">
-          <button onClick={() => setActivePage('book-chapters')} className="p-2 hover:bg-white/10 rounded-full transition-colors">
+          <button 
+            onClick={() => navigate(-1)}
+            className="p-2 hover:bg-gray-100 rounded-full text-gray-600 transition-colors"
+          >
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <div className="flex flex-col">
-            <span className="text-[18px] font-bold tracking-wide">{chapter?.title || 'Practice Paper'}</span>
-            <span className="text-[12px] text-white/80 uppercase font-semibold tracking-wider">CBT Format Practice</span>
+          <div>
+            <h1 className="font-bold text-gray-800 text-lg hidden sm:block">{chapterDetails.name}</h1>
+            <h1 className="font-bold text-gray-800 text-base sm:hidden line-clamp-1">{chapterDetails.name}</h1>
+            <p className="text-xs text-gray-500">Practice Mode</p>
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <div className="hidden sm:flex flex-col items-end mr-4 border-r border-white/20 pr-4">
-             <span className="text-[12px] text-white/80 uppercase tracking-widest font-bold">Time Spent</span>
-             <span className="text-[18px] font-bold font-mono">{formatTime(timeSpent)}</span>
+          <div className="hidden md:flex items-center gap-4 text-sm font-medium">
+            <div className="flex items-center gap-1 text-green-600">
+              <CheckCircle className="w-4 h-4" /> <span>{correctCount} Correct</span>
+            </div>
+            <div className="flex items-center gap-1 text-red-500">
+              <XCircle className="w-4 h-4" /> <span>{incorrectCount} Incorrect</span>
+            </div>
           </div>
           <button 
-             onClick={() => {
-                if(window.confirm("Are you sure you want to view solutions?")) {
-                   setShowSolutionModal(true);
-                }
-             }}
-             className="hidden sm:flex px-4 py-1.5 bg-white text-[#2962ff] hover:bg-blue-50 rounded font-bold text-[13px] uppercase tracking-wide shadow-sm items-center gap-2"
+            className="lg:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+            onClick={() => setShowPaletteMobile(!showPaletteMobile)}
           >
-             <Eye size={16}/> View Solution
+            <LayoutGrid className="w-5 h-5" />
           </button>
         </div>
-      </div>
+      </header>
 
-      {/* ── Sub Header Bar ─────────────────────────────────────── */}
-      <div className="bg-[#1e4fc2] border-b border-white/10 px-3 flex items-center overflow-x-auto shrink-0 shadow-inner" style={{minHeight:'44px'}}>
-        {exercisesList.map(ex => (
-          <button
-            key={ex}
-            onClick={() => handleTabChange(ex)}
-            className={`whitespace-nowrap px-6 py-2.5 text-[13px] font-bold transition-all shrink-0 border-r border-white/10 ${
-              activeExercise === ex
-                ? 'bg-[#eef2f5] text-[#2962ff] shadow-inner rounded-t-md border-r-0'
-                : 'text-white/80 hover:text-white hover:bg-white/5'
-            }`}
-          >
-            {ex.toUpperCase()}
-          </button>
-        ))}
+      {/* Main Content Area */}
+      <div className="flex flex-1 overflow-hidden relative">
         
-        <div className="ml-auto flex items-center gap-1 text-white/80 pr-2">
-           <button onClick={() => setFontSize(prev => Math.max(12, prev - 1))} className="p-1 hover:bg-white/10 rounded"><ZoomOut size={16}/></button>
-           <button onClick={() => setFontSize(prev => Math.min(30, prev + 1))} className="p-1 hover:bg-white/10 rounded"><ZoomIn size={16}/></button>
-        </div>
-      </div>
+        {/* Left Pane - Question Area */}
+        <div className="flex-1 flex flex-col h-full overflow-y-auto w-full lg:w-auto relative scroll-smooth p-4 lg:p-6 pb-24 lg:pb-6">
+          <div className="max-w-4xl mx-auto w-full">
+            
+            {/* Question Card */}
+            <div className="bg-white rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden mb-6">
+              
+              {/* Question Header */}
+              <div className="bg-gray-50/80 border-b border-gray-100 px-6 py-4 flex items-center justify-between">
+                <span className="font-bold text-gray-800 text-lg">Question {currentQuestion.questionNumber || (currentQuestionIndex + 1)}</span>
+                <span className="text-xs font-semibold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md uppercase tracking-wider">
+                  Single Correct
+                </span>
+              </div>
+              
+              {/* Question Body */}
+              <div className="p-6">
+                <div 
+                  className="text-gray-800 text-base lg:text-lg leading-relaxed mb-8 select-text math-content"
+                  dangerouslySetInnerHTML={{ __html: renderMath(currentQuestion.text) }}
+                />
 
-      {/* ── Main Layout: Left + Right ────────────────────────── */}
-      <div className="flex-1 flex overflow-hidden">
+                {/* Options */}
+                <div className="space-y-3">
+                  {currentQuestion.options.map((option, idx) => {
+                    // Determine option styling based on state
+                    const isSelected = currentState.selected === idx;
+                    const isCorrectOption = (idx + 1) === currentQuestion.correctOption;
+                    
+                    let optionStyle = "border-gray-200 bg-white hover:bg-gray-50 hover:border-blue-300";
+                    let radioStyle = "border-gray-300";
+                    let labelStyle = "text-gray-700";
 
-        {/* ───── LEFT: Question Panel ───────────────────────── */}
-        <div className="flex-1 flex flex-col bg-white overflow-hidden shadow-sm m-2 sm:m-3 rounded-lg border border-gray-200">
-          
-          {/* Question Info Bar */}
-          <div className="px-5 py-3 border-b border-gray-200 flex items-center justify-between bg-gray-50 shrink-0">
-             <div className="font-bold text-[18px] text-[#2f3640]">Question No. {currentIdx + 1}</div>
-             <div className="flex gap-4 font-bold text-[13px]">
-                <div className="text-gray-500">Marks</div>
-                <div className="text-green-600 bg-green-100 px-2 rounded">+4</div>
-                <div className="text-red-600 bg-red-100 px-2 rounded">-1</div>
-             </div>
-          </div>
+                    if (isSelected && !currentState.checked) {
+                      optionStyle = "border-blue-500 bg-blue-50/50 shadow-[0_0_0_1px_#3b82f6]";
+                      radioStyle = "border-blue-500 bg-blue-500 ring-2 ring-blue-200";
+                      labelStyle = "text-blue-900 font-medium";
+                    } else if (currentState.checked) {
+                      if (isCorrectOption) {
+                        // Correct option always highlights green if checked
+                        optionStyle = "border-green-500 bg-green-50 shadow-[0_0_0_1px_#22c55e]";
+                        radioStyle = "border-green-500 bg-green-500";
+                        labelStyle = "text-green-900 font-medium";
+                      } else if (isSelected && !isCorrectOption) {
+                        // Incorrect selected option highlights red
+                        optionStyle = "border-red-500 bg-red-50 shadow-[0_0_0_1px_#ef4444]";
+                        radioStyle = "border-red-500 bg-red-500";
+                        labelStyle = "text-red-900 font-medium";
+                      } else {
+                        // Other non-selected, non-correct options dim
+                        optionStyle = "border-gray-100 bg-gray-50/50 opacity-60";
+                        radioStyle = "border-gray-200";
+                        labelStyle = "text-gray-400";
+                      }
+                    }
 
-          {/* Question Area */}
-          <div className="flex-1 overflow-y-auto p-6" ref={scrollRef}>
-             {/* Question Text */}
-             <div className="leading-[1.8] text-[#2f3640] mb-8 font-semibold whitespace-pre-wrap" style={{ fontSize: `${fontSize}px` }}>
-                <MathRenderer text={question.text} />
-             </div>
-
-             {/* Graph/Image if any */}
-             {question.has_graph && question.imageUrl && !question.text?.includes(question.imageUrl) && (
-                <div className="mb-8 flex flex-col gap-4">
-                  <img src={question.imageUrl} alt="Graph" className="max-w-md w-full rounded border border-gray-200" />
-                  {question.imageUrl2 && <img src={question.imageUrl2} alt="Graph 2" className="max-w-md w-full rounded border border-gray-200" />}
+                    return (
+                      <div 
+                        key={idx}
+                        onClick={() => handleOptionSelect(idx)}
+                        className={`flex items-start gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all duration-200 ${optionStyle} ${currentState.checked ? 'cursor-default' : ''}`}
+                      >
+                        <div className={`mt-0.5 shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${radioStyle}`}>
+                          {(isSelected || (currentState.checked && isCorrectOption)) && (
+                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                          )}
+                        </div>
+                        <div 
+                          className={`flex-1 math-content select-none ${labelStyle}`}
+                          dangerouslySetInnerHTML={{ __html: renderMath(option) }}
+                        />
+                        {currentState.checked && isCorrectOption && (
+                          <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
+                        )}
+                        {currentState.checked && isSelected && !isCorrectOption && (
+                          <XCircle className="w-5 h-5 text-red-500 shrink-0" />
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
-             )}
+              </div>
 
-             {/* Options */}
-             {!isMatchingType && !isSubjective && (!question.type || question.type !== 'NUMERICAL') && (
-                <div className="flex flex-col gap-4 max-w-3xl">
-                   {(question.options || []).map((opt, i) => {
-                      const isSelected = isMultiCorrect 
-                           ? (Array.isArray(tempSelection) ? tempSelection.includes(i) : tempSelection === i)
-                           : tempSelection === i;
-                      
-                      return (
-                         <label key={i} className="flex items-start gap-3 cursor-pointer group">
-                            <div className="pt-1">
-                               <input 
-                                  type={isMultiCorrect ? "checkbox" : "radio"}
-                                  name="options"
-                                  checked={isSelected}
-                                  onChange={() => handleSelectOption(i)}
-                                  className="w-4 h-4 cursor-pointer accent-[#2962ff]"
-                               />
-                            </div>
-                            <div className="font-semibold text-[#2f3640] group-hover:text-black leading-relaxed" style={{ fontSize: `${Math.max(14, fontSize - 1)}px` }}>
-                               <span className="font-bold mr-2 text-gray-500">{OPTION_LABELS[i]}.</span> 
-                               <MathRenderer text={opt} />
-                            </div>
-                         </label>
-                      );
-                   })}
-                </div>
-             )}
-
-             {/* Matching / Subjective Placeholder */}
-             {(isMatchingType || isSubjective || question.type === 'NUMERICAL') && (
-                <div className="p-4 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 font-semibold text-sm">
-                   This is a {isMatchingType ? 'Matching Type' : isSubjective ? 'Subjective' : 'Numerical'} question. 
-                   <br/><br/>
-                   <button 
-                      onClick={() => setShowSolutionModal(true)}
-                      className="px-4 py-2 bg-[#2962ff] text-white rounded shadow"
-                   >
-                      View Solution
-                   </button>
-                </div>
-             )}
-          </div>
-
-          {/* Bottom Action Bar */}
-          <div className="bg-[#f5f6fa] border-t border-gray-200 px-4 py-3 flex items-center justify-between shrink-0 shadow-inner flex-wrap gap-3">
-             <div className="flex gap-3">
-                <button 
-                   onClick={() => updateProgressState('save_next')}
-                   className="px-5 py-2.5 bg-[#27ae60] hover:bg-[#219653] text-white text-[13px] font-bold uppercase rounded shadow-sm border border-[#1e8449] transition-colors"
-                >
-                   Save & Next
-                </button>
-                <button 
-                   onClick={() => updateProgressState('clear')}
-                   className="px-5 py-2.5 bg-white hover:bg-gray-50 text-[#2f3640] text-[13px] font-bold uppercase rounded shadow-sm border border-gray-300 transition-colors"
-                >
-                   Clear Response
-                </button>
-                <button 
-                   onClick={() => updateProgressState('mark_review')}
-                   className="hidden sm:block px-5 py-2.5 bg-[#e67e22] hover:bg-[#d35400] text-white text-[13px] font-bold uppercase rounded shadow-sm border border-[#ca6f1e] transition-colors"
-                >
-                   Save & Mark For Review
-                </button>
-             </div>
-             <div className="flex gap-3 ml-auto">
-                <button 
-                   onClick={() => updateProgressState('mark_review')}
-                   className="px-5 py-2.5 bg-[#8e44ad] hover:bg-[#732d91] text-white text-[13px] font-bold uppercase rounded shadow-sm border border-[#71368a] transition-colors"
-                >
-                   Mark For Review & Next
-                </button>
-             </div>
-          </div>
-        </div>
-
-        {/* ───── RIGHT: Question Palette ─────────────────────── */}
-        <div className="hidden md:flex w-[300px] bg-[#f8f9fa] flex-col shrink-0 border-l border-gray-300">
-          
-          {/* User Profile Block */}
-          <div className="p-4 bg-white border-b border-gray-300 flex items-center gap-3">
-             <div className="w-14 h-14 bg-gray-200 rounded overflow-hidden border border-gray-300 flex items-center justify-center shrink-0">
-                <img src="https://ui-avatars.com/api/?name=Student&background=random" alt="Profile" className="w-full h-full object-cover" />
-             </div>
-             <div className="flex flex-col">
-                <span className="font-bold text-[14px] text-gray-800">CBT Practice User</span>
-                <span className="text-[12px] text-gray-500 font-semibold mt-0.5">Black Book Series</span>
-             </div>
-          </div>
-
-          {/* Legend Grid */}
-          <div className="p-3 bg-white border-b border-gray-300 grid grid-cols-2 gap-y-3 gap-x-2 shrink-0">
-             <div className="flex items-center gap-2">
-                <div className="w-6 h-6 flex items-center justify-center font-bold text-[10px] bg-[#27ae60] text-white rounded-t-lg rounded-bl-none rounded-br-lg">{stats.answered}</div>
-                <span className="text-[11px] font-semibold text-gray-700 leading-tight">Answered</span>
-             </div>
-             <div className="flex items-center gap-2">
-                <div className="w-6 h-6 flex items-center justify-center font-bold text-[10px] bg-[#eb3b5a] text-white rounded-t-lg rounded-bl-lg rounded-br-none">{stats.notAnswered}</div>
-                <span className="text-[11px] font-semibold text-gray-700 leading-tight">Not Answered</span>
-             </div>
-             <div className="flex items-center gap-2">
-                <div className="w-6 h-6 flex items-center justify-center font-bold text-[10px] bg-[#f1f2f6] text-[#2f3640] border border-gray-300 rounded">{stats.notVisited}</div>
-                <span className="text-[11px] font-semibold text-gray-700 leading-tight">Not Visited</span>
-             </div>
-             <div className="flex items-center gap-2">
-                <div className="w-6 h-6 flex items-center justify-center font-bold text-[10px] bg-[#8e44ad] text-white rounded-full">{stats.marked}</div>
-                <span className="text-[11px] font-semibold text-gray-700 leading-tight">Marked for Review</span>
-             </div>
-             <div className="flex items-center gap-2 col-span-2 mt-1">
-                <div className="w-6 h-6 flex items-center justify-center font-bold text-[10px] bg-[#8e44ad] text-white rounded-full relative">
-                   {stats.answeredMarked}
-                   <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#27ae60] rounded-full border border-white"></div>
-                </div>
-                <span className="text-[11px] font-semibold text-gray-700 leading-tight">Answered & Marked for Review (will be considered for evaluation)</span>
-             </div>
-          </div>
-
-          {/* Section Header */}
-          <div className="px-4 py-2 bg-[#eef2f5] border-b border-gray-300">
-             <span className="text-[13px] font-bold text-[#2962ff] uppercase">{activeExercise}</span>
-          </div>
-
-          {/* Palette Grid */}
-          <div className="flex-1 overflow-y-auto p-4 bg-[#eef2f5]">
-             <div className="grid grid-cols-5 gap-3">
-               {questions.map((_, idx) => {
-                  const s = (progress[activeExercise] || {})[idx];
-                  const isSeen = seenMap[`${activeExercise}-${idx}`];
-                  let status = s?.status;
-                  if (!status) status = isSeen ? 'not_answered' : 'not_visited';
-                  const isAnsMarked = status === 'answered_marked';
-
-                  return (
-                    <div key={idx} className="relative" onClick={() => handleJumpTo(idx)}>
-                       <div className={getBubbleClass(idx)}>
-                          {idx + 1}
-                       </div>
-                       {isAnsMarked && <div className="absolute bottom-0 right-1 w-2.5 h-2.5 bg-[#27ae60] rounded-full border border-white pointer-events-none"></div>}
-                    </div>
-                  );
-               })}
-             </div>
-          </div>
-          
-          <div className="p-4 bg-white border-t border-gray-300">
-             <button 
-                className="w-full py-3 bg-[#3498db] hover:bg-[#2980b9] text-white rounded font-bold uppercase tracking-wider text-[14px] shadow-sm transition-colors"
-                onClick={() => {
-                   if(window.confirm("Submit test? You can still review solutions afterwards.")) {
-                      setShowSolutionModal(true);
-                   }
-                }}
-             >
-                Submit
-             </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Solution Modal Overlay */}
-      {showSolutionModal && (
-         <div className="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4 sm:p-6 backdrop-blur-sm">
-            <div className="bg-white w-full max-w-4xl max-h-full rounded-xl shadow-2xl flex flex-col overflow-hidden">
-               <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gray-50">
-                  <h2 className="text-lg font-bold text-gray-800">Solution: Q{currentIdx + 1}</h2>
-                  <button onClick={() => setShowSolutionModal(false)} className="p-2 bg-gray-200 hover:bg-gray-300 rounded-full text-gray-600 transition-colors">
-                     <XCircle className="w-5 h-5"/>
-                  </button>
-               </div>
-               <div className="flex-1 overflow-y-auto p-6 bg-white">
-                  {question.solution ? (
-                     <TeacherSolution html={question.solution} isLight={true} />
+              {/* Action Bar (Check Answer / Next) */}
+              <div className="bg-gray-50 p-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  {!currentState.checked ? (
+                    <button
+                      onClick={handleCheckAnswer}
+                      disabled={currentState.selected === null}
+                      className={`px-6 py-2.5 rounded-lg font-semibold transition-all ${
+                        currentState.selected !== null 
+                        ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm hover:shadow' 
+                        : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                      }`}
+                    >
+                      Check Answer
+                    </button>
                   ) : (
-                     <div className="text-center p-8 text-gray-500 font-medium text-lg">Solution not available for this question.</div>
+                    <div className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold ${currentState.isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                      {currentState.isCorrect ? (
+                         <><CheckCircle className="w-5 h-5" /> Correct Answer!</>
+                      ) : (
+                         <><XCircle className="w-5 h-5" /> Incorrect Answer</>
+                      )}
+                    </div>
                   )}
-                  {question.correctAnswer && (
-                     <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                        <span className="font-bold text-green-800">Correct Answer Key: </span>
-                        <span className="font-mono font-bold text-green-700">{question.correctAnswer}</span>
-                     </div>
+
+                  {!currentState.checked && currentState.selected !== null && (
+                    <button
+                      onClick={handleClearResponse}
+                      className="px-4 py-2.5 text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded-lg font-medium transition"
+                    >
+                      Clear
+                    </button>
                   )}
-               </div>
-               <div className="p-4 border-t border-gray-200 bg-gray-50 flex justify-end">
-                  <button onClick={() => setShowSolutionModal(false)} className="px-6 py-2.5 bg-gray-800 hover:bg-black text-white font-bold rounded shadow transition-colors">
-                     Close
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={handlePrev}
+                    disabled={currentQuestionIndex === 0}
+                    className="flex items-center gap-1 px-4 py-2.5 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed font-medium transition"
+                  >
+                    <ChevronLeft className="w-4 h-4" /> Prev
                   </button>
-               </div>
+                  <button
+                    onClick={handleNext}
+                    disabled={currentQuestionIndex === questions.length - 1}
+                    className="flex items-center gap-1 px-5 py-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed font-medium transition shadow-sm hover:shadow"
+                  >
+                    Next <ChevronRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
             </div>
-         </div>
-      )}
+
+            {/* Solution Box (Only visible after checking answer) */}
+            {currentState.checked && (
+              <div className="bg-white rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-blue-100 overflow-hidden mb-12 animate-fade-in-up">
+                <div className="bg-blue-50/50 border-b border-blue-100 px-6 py-4 flex items-center gap-2">
+                  <Eye className="w-5 h-5 text-blue-600" />
+                  <span className="font-bold text-blue-900">Solution & Explanation</span>
+                </div>
+                <div className="p-6">
+                  {currentQuestion.solution ? (
+                    <div 
+                      className="text-gray-800 leading-relaxed math-content"
+                      dangerouslySetInnerHTML={{ __html: renderMath(currentQuestion.solution) }}
+                    />
+                  ) : (
+                    <div className="text-gray-500 italic flex flex-col items-center justify-center py-6">
+                      <p>Detailed solution is not available for this question yet.</p>
+                      <p className="text-sm mt-2">The correct option is <strong className="text-gray-700">Option {currentQuestion.correctOption}</strong>.</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+            
+          </div>
+        </div>
+
+        {/* Right Pane - Question Palette (Desktop) */}
+        <div className={`fixed lg:relative top-16 lg:top-0 right-0 w-80 h-[calc(100vh-4rem)] lg:h-full bg-white border-l border-gray-200 shadow-xl lg:shadow-none transition-transform duration-300 z-10 flex flex-col ${showPaletteMobile ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}`}>
+          
+          <div className="p-4 border-b border-gray-100 bg-gray-50/50 flex justify-between items-center shrink-0">
+            <h3 className="font-bold text-gray-800">Question Palette</h3>
+            <button className="lg:hidden p-1 text-gray-500 hover:bg-gray-200 rounded" onClick={() => setShowPaletteMobile(false)}>
+              <XCircle className="w-5 h-5" />
+            </button>
+          </div>
+
+          <div className="p-4 grid grid-cols-2 gap-3 text-sm font-medium border-b border-gray-100 shrink-0">
+             <div className="flex items-center gap-2">
+               <div className="w-3 h-3 rounded-full bg-green-500"></div>
+               <span className="text-gray-600">Correct ({correctCount})</span>
+             </div>
+             <div className="flex items-center gap-2">
+               <div className="w-3 h-3 rounded-full bg-red-500"></div>
+               <span className="text-gray-600">Incorrect ({incorrectCount})</span>
+             </div>
+             <div className="flex items-center gap-2">
+               <div className="w-3 h-3 rounded-full bg-gray-200"></div>
+               <span className="text-gray-600">Unattempted ({questions.length - attemptedCount})</span>
+             </div>
+          </div>
+
+          <div className="flex-1 overflow-y-auto p-4 content-start">
+            <div className="grid grid-cols-5 gap-2">
+              {questions.map((_, idx) => {
+                const qState = userAnswers[idx];
+                const isActive = currentQuestionIndex === idx;
+                
+                let btnClass = "border-gray-200 text-gray-600 hover:bg-gray-50"; // Unattempted
+                
+                if (qState?.checked) {
+                  if (qState.isCorrect) {
+                    btnClass = "bg-green-100 border-green-200 text-green-800 font-bold";
+                  } else {
+                    btnClass = "bg-red-100 border-red-200 text-red-800 font-bold";
+                  }
+                }
+
+                if (isActive) {
+                  btnClass += " ring-2 ring-blue-500 ring-offset-1";
+                }
+
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => {
+                      setCurrentQuestionIndex(idx);
+                      if (window.innerWidth < 1024) setShowPaletteMobile(false);
+                    }}
+                    className={`h-10 w-full rounded-md border flex items-center justify-center text-sm transition-all shadow-sm ${btnClass}`}
+                  >
+                    {idx + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile overlay */}
+        {showPaletteMobile && (
+          <div 
+            className="fixed inset-0 bg-black/20 z-0 lg:hidden"
+            onClick={() => setShowPaletteMobile(false)}
+          ></div>
+        )}
+
+      </div>
+
+      <style jsx global>{`
+        .math-content .katex { font-size: 1.1em; }
+        .math-content .katex-display { margin: 0.5em 0; overflow-x: auto; overflow-y: hidden; padding: 0.2em 0; }
+        .animate-fade-in-up {
+          animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </div>
   );
-}
+};
+
+export default BookPractice;
