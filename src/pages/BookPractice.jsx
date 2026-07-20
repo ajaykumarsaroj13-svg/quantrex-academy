@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye } from 'lucide-react';
-import { bookData } from '../data/bookData';
 
 const BookPractice = () => {
   const { chapterId } = useParams();
@@ -42,14 +41,9 @@ const BookPractice = () => {
     fetchQuestions();
   }, [chapterId]);
 
-  // Extract chapter details
+  // Extract chapter details (simplified since bookData is not globally imported here)
   const chapterDetails = useMemo(() => {
-    if (!bookData || !bookData.length) return { name: 'Practice', id: '' };
-    for (const subject of bookData) {
-      const chapter = subject.chapters.find(c => c.id === chapterId);
-      if (chapter) return chapter;
-    }
-    return { name: 'Practice Session', id: '' };
+    return { name: 'Practice Session', id: chapterId };
   }, [chapterId]);
 
   // Render KaTeX with cleanup
