@@ -3,6 +3,8 @@ import Book from 'lucide-react/dist/esm/icons/book';
 import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import PlayCircle from 'lucide-react/dist/esm/icons/play-circle';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import ChevronUp from 'lucide-react/dist/esm/icons/chevron-up';
 
 export default function BookChapterList({ book, setActivePage, setPracticeChapter, theme }) {
   const isLight = theme === 'light';
@@ -13,6 +15,15 @@ export default function BookChapterList({ book, setActivePage, setPracticeChapte
     chapters: []
   });
   const [loading, setLoading] = useState(true);
+  const [expandedChapter, setExpandedChapter] = useState(null);
+
+  const EXERCISES = [
+    { id: 'single-choice', name: 'Exercise 1: Single Choice Problems' },
+    { id: 'multiple-choice', name: 'Exercise 2: Multiple Choice Problems' },
+    { id: 'comprehension', name: 'Exercise 3: Comprehension Type Problems' },
+    { id: 'matrix-match', name: 'Exercise 4: Matrix Match Type Problems' },
+    { id: 'integer', name: 'Exercise 5: Integer Type Problems' }
+  ];
 
   useEffect(() => {
     if (book.id === 'black-book-maths') {
@@ -117,40 +128,63 @@ export default function BookChapterList({ book, setActivePage, setPracticeChapte
         
         <div className="space-y-4">
           {bookData.chapters.map((chapter) => (
-            <div 
-              key={chapter.id}
-              onClick={() => {
-                if (chapter.totalQuestions > 0) {
-                  setPracticeChapter(chapter);
-                  setActivePage('book-practice');
-                }
-              }}
-              className={`group flex items-center justify-between p-5 rounded-xl border transition-all duration-300 ${
-                chapter.totalQuestions > 0
-                  ? isLight 
-                    ? 'bg-white border-gray-200 hover:border-electric hover:shadow-md cursor-pointer' 
-                    : 'bg-cyberdark border-white/5 hover:border-electric/50 hover:bg-cyberdark/80 cursor-pointer'
-                  : isLight
-                    ? 'bg-gray-100 border-gray-200 opacity-60 cursor-not-allowed'
-                    : 'bg-obsidian border-white/5 opacity-50 cursor-not-allowed'
-              }`}
-            >
-              <div>
-                <h4 className={`text-lg font-bold ${isLight ? 'text-black' : 'text-white'} group-hover:text-electric transition-colors`}>
-                  {chapter.title}
-                </h4>
-                <p className={`text-sm mt-1 font-mono ${isLight ? 'text-gray-500' : 'text-gray-400'}`}>
-                  {chapter.totalQuestions > 0 
-                    ? `${chapter.totalQuestions} Practice Questions Available` 
-                    : 'Questions being updated...'}
-                </p>
+            <div key={chapter.id} className="border rounded-xl overflow-hidden mb-4 transition-all duration-300">
+              <div 
+                onClick={() => {
+                  if (chapter.totalQuestions > 0) {
+                    setExpandedChapter(expandedChapter === chapter.id ? null : chapter.id);
+                  }
+                }}
+                className={`group flex items-center justify-between p-5 transition-all duration-300 ${
+                  chapter.totalQuestions > 0
+                    ? isLight 
+                      ? 'bg-white hover:bg-gray-50 cursor-pointer' 
+                      : 'bg-cyberdark hover:bg-cyberdark/80 cursor-pointer'
+                    : isLight
+                      ? 'bg-gray-100 opacity-60 cursor-not-allowed'
+                      : 'bg-obsidian opacity-50 cursor-not-allowed'
+                }`}
+              >
+                <div>
+                  <h4 className={`text-lg font-bold ${isLight ? 'text-black' : 'text-white'} group-hover:text-electric transition-colors`}>
+                    {chapter.title}
+                  </h4>
+                  <p className={`text-sm mt-1 font-mono ${isLight ? 'text-gray-500' : 'text-gray-400'}`}>
+                    {chapter.totalQuestions > 0 
+                      ? `5 Exercises Available` 
+                      : 'Questions being updated...'}
+                  </p>
+                </div>
+                
+                {chapter.totalQuestions > 0 && (
+                  <div className={`h-10 w-10 rounded-full flex items-center justify-center transition-transform group-hover:scale-110 ${
+                    isLight ? 'bg-blue-50 text-electric' : 'bg-electric/20 text-electric'
+                  }`}>
+                    {expandedChapter === chapter.id ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                  </div>
+                )}
               </div>
               
-              {chapter.totalQuestions > 0 && (
-                <div className={`h-10 w-10 rounded-full flex items-center justify-center transition-transform group-hover:scale-110 ${
-                  isLight ? 'bg-blue-50 text-electric' : 'bg-electric/20 text-electric'
-                }`}>
-                  <PlayCircle className="h-5 w-5" />
+              {/* Accordion Content */}
+              {expandedChapter === chapter.id && (
+                <div className={`border-t ${isLight ? 'border-gray-100 bg-gray-50/50' : 'border-white/5 bg-obsidian/50'}`}>
+                  {EXERCISES.map((exercise) => (
+                    <div 
+                      key={exercise.id}
+                      onClick={() => {
+                        setPracticeChapter({ ...chapter, exerciseId: exercise.id, exerciseName: exercise.name });
+                        setActivePage('book-practice');
+                      }}
+                      className={`flex items-center justify-between p-4 pl-8 border-b last:border-b-0 cursor-pointer transition-colors ${
+                        isLight ? 'border-gray-100 hover:bg-white' : 'border-white/5 hover:bg-cyberdark'
+                      }`}
+                    >
+                      <span className={`text-sm font-semibold ${isLight ? 'text-gray-700' : 'text-gray-300'}`}>
+                        {exercise.name}
+                      </span>
+                      <PlayCircle className="h-4 w-4 text-electric opacity-70" />
+                    </div>
+                  ))}
                 </div>
               )}
             </div>

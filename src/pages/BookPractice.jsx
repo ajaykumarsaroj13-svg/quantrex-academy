@@ -5,6 +5,8 @@ import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid,
 
 const BookPractice = ({ chapter, setActivePage }) => {
   const chapterId = chapter?.id || 'default';
+  const exerciseId = chapter?.exerciseId || 'single-choice';
+  const exerciseName = chapter?.exerciseName || 'Exercise 1: Single Choice Problems';
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -19,7 +21,7 @@ const BookPractice = ({ chapter, setActivePage }) => {
     const fetchQuestions = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/data/blackbook/${chapterId}.json`);
+        const response = await fetch(`/data/blackbook/${chapterId}_${exerciseId}.json`);
         if (!response.ok) throw new Error("Failed to load questions");
         const data = await response.json();
         setQuestions(data);
@@ -41,8 +43,8 @@ const BookPractice = ({ chapter, setActivePage }) => {
 
   // Extract chapter details (simplified since bookData is not globally imported here)
   const chapterDetails = useMemo(() => {
-    return { name: chapter?.title || chapter?.name || 'Practice Session', id: chapterId };
-  }, [chapterId, chapter]);
+    return { name: chapter?.title ? `${chapter.title} - ${exerciseName}` : 'Practice Session', id: chapterId };
+  }, [chapterId, chapter, exerciseName]);
 
   // Render KaTeX with cleanup
   const renderMath = (text) => {
