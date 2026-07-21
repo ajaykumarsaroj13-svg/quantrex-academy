@@ -8,15 +8,6 @@ export const DEFAULT_TESTS = {
 
 export const DEFAULT_BOOKS = [
   {
-    id: 'allen-maths-handbook',
-    title: 'Allen Maths Handbook',
-    description: 'Complete mathematics formulas and quick revision handbook for JEE Main and Advanced.',
-    coverColor: 'from-orange-500 to-red-600',
-    tag: 'Mathematics',
-    pages: '200+',
-    file: '/books/Allen-Maths-Handbook.pdf'
-  },
-  {
     id: 'black-book-maths',
     title: 'Advanced Problems in Mathematics',
     description: 'Vikas Gupta & Pankaj Joshi (Black Book) - Chapter-wise Interactive Practice.',
