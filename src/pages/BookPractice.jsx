@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
-import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye, ZoomIn, ZoomOut } from 'lucide-react';
 
 const BookPractice = ({ chapter, setActivePage }) => {
   const chapterId = chapter?.id || 'default';
@@ -16,6 +16,10 @@ const BookPractice = ({ chapter, setActivePage }) => {
   const [userAnswers, setUserAnswers] = useState({}); // { 0: { selected: 1, checked: true, isCorrect: false } }
 
   const [showPaletteMobile, setShowPaletteMobile] = useState(false);
+  const [zoomLevel, setZoomLevel] = useState(1);
+
+  const handleZoomIn = () => setZoomLevel(prev => Math.min(prev + 0.1, 1.5));
+  const handleZoomOut = () => setZoomLevel(prev => Math.max(prev - 0.1, 0.7));
 
   useEffect(() => {
     const fetchQuestions = async () => {
@@ -188,7 +192,16 @@ const BookPractice = ({ chapter, setActivePage }) => {
             <p className="text-xs text-gray-500">Practice Mode</p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1 mr-2">
+            <button onClick={handleZoomOut} className="p-1.5 hover:bg-white rounded-md text-gray-600 transition shadow-sm" title="Zoom Out">
+              <ZoomOut className="w-4 h-4" />
+            </button>
+            <span className="text-xs font-medium text-gray-500 w-10 text-center">{Math.round(zoomLevel * 100)}%</span>
+            <button onClick={handleZoomIn} className="p-1.5 hover:bg-white rounded-md text-gray-600 transition shadow-sm" title="Zoom In">
+              <ZoomIn className="w-4 h-4" />
+            </button>
+          </div>
           <div className="hidden md:flex items-center gap-4 text-sm font-medium">
             <div className="flex items-center gap-1 text-green-600">
               <CheckCircle className="w-4 h-4" /> <span>{correctCount} Correct</span>
@@ -211,7 +224,10 @@ const BookPractice = ({ chapter, setActivePage }) => {
         
         {/* Left Pane - Question Area */}
         <div className="flex-1 flex flex-col h-full overflow-y-auto w-full lg:w-auto relative scroll-smooth p-4 lg:p-6 pb-24 lg:pb-6">
-          <div className="max-w-4xl mx-auto w-full">
+          <div 
+            className="max-w-4xl mx-auto w-full transition-transform duration-200"
+            style={{ transform: `scale(${zoomLevel})`, transformOrigin: 'top center' }}
+          >
             
             {/* Question Card */}
             <div className="bg-white rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden mb-6">
