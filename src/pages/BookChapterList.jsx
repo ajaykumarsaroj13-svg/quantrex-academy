@@ -50,7 +50,7 @@ export default function BookChapterList({ book, setActivePage, setPracticeChapte
         {
           id: 'sequence-and-series',
           title: 'Sequence and Series',
-          totalQuestions: 142
+          totalQuestions: 10
         },
         {
           id: 'determinants',

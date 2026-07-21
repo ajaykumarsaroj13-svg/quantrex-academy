@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye } from 'lucide-react';
 
-const BookPractice = () => {
-  const { chapterId } = useParams();
-  const navigate = useNavigate();
+const BookPractice = ({ chapter, setActivePage }) => {
+  const chapterId = chapter?.id || 'default';
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -43,8 +41,8 @@ const BookPractice = () => {
 
   // Extract chapter details (simplified since bookData is not globally imported here)
   const chapterDetails = useMemo(() => {
-    return { name: 'Practice Session', id: chapterId };
-  }, [chapterId]);
+    return { name: chapter?.title || chapter?.name || 'Practice Session', id: chapterId };
+  }, [chapterId, chapter]);
 
   // Render KaTeX with cleanup
   const renderMath = (text) => {
@@ -145,7 +143,7 @@ const BookPractice = () => {
           <h2 className="text-xl font-bold text-gray-800">Questions Not Found</h2>
           <p className="text-gray-500 mt-2">Could not load questions for this chapter.</p>
           <button 
-            onClick={() => navigate('/book')}
+            onClick={() => setActivePage('books')}
             className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
           >
             Go Back
@@ -177,7 +175,7 @@ const BookPractice = () => {
       <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 lg:px-8 shrink-0 shadow-sm sticky top-0 z-20">
         <div className="flex items-center gap-4">
           <button 
-            onClick={() => navigate(-1)}
+            onClick={() => setActivePage('book-chapters')}
             className="p-2 hover:bg-gray-100 rounded-full text-gray-600 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
