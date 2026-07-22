@@ -4,6 +4,25 @@ import TeacherSolution from '../components/TeacherSolution';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
 
+import logoMainsImg from '../assets/logo_mains.png';
+import logoAdvancedImg from '../assets/logo_advanced.png';
+import logoNdaImg from '../assets/logo_nda.png';
+import logoImg from '../assets/logo.png';
+
+const getExamLogo = (testData) => {
+  const type = (testData?.examType || testData?.exam || testData?.category || testData?.title || testData?.id || '').toLowerCase();
+  if (type.includes('advanced')) {
+    return <img src={logoAdvancedImg} alt="JEE Advanced" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
+  }
+  if (type.includes('main')) {
+    return <img src={logoMainsImg} alt="JEE Main" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
+  }
+  if (type.includes('nda')) {
+    return <img src={logoNdaImg} alt="NDA" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
+  }
+  return <img src={logoImg} alt="Quantrex" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
+};
+
 // ─── Constants ────────────────────────────────────────────────
 const STATUS = {
   NOT_VISITED:     'not-visited',
@@ -612,13 +631,15 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
       {/* ─── HEADER ─── */}
       <div className="nta-header">
-        <div className="nta-header-left">
+        <div className="nta-header-left flex items-center gap-3">
           <button className="nta-exit-btn" onClick={onExit}>✕ Exit</button>
-          <div className="nta-logo">
-            <span className="nta-logo-icon">⚡</span>
+          <div className="nta-logo flex items-center gap-2">
+            {getExamLogo(testData)}
             <span className="nta-logo-text">Quantrex Academy</span>
           </div>
-          <div className="nta-exam-title">{testData?.title || 'Test Paper'}</div>
+          <div className="nta-exam-title flex items-center gap-2">
+            <span>{testData?.title || 'Test Paper'}</span>
+          </div>
           {mode === 'practice' && <span className="nta-practice-badge">PRACTICE MODE</span>}
         </div>
         <div className="nta-header-right">

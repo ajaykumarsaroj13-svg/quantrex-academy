@@ -3,6 +3,19 @@ import MistakeBooster from '../components/MistakeBooster';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
 
+import logoMainsImg from '../assets/logo_mains.png';
+import logoAdvancedImg from '../assets/logo_advanced.png';
+import logoNdaImg from '../assets/logo_nda.png';
+import logoImg from '../assets/logo.png';
+
+const getExamLogo = (test) => {
+  const type = (test?.examType || test?.exam || test?.category || test?.title || test?.id || '').toLowerCase();
+  if (type.includes('advanced')) return <img src={logoAdvancedImg} alt="JEE Advanced" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5" />;
+  if (type.includes('main')) return <img src={logoMainsImg} alt="JEE Main" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5" />;
+  if (type.includes('nda')) return <img src={logoNdaImg} alt="NDA" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5" />;
+  return <img src={logoImg} alt="Logo" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5" />;
+};
+
 export default function NtaTestInterface({ test, user, onBackToDashboard, setActivePage, mode = 'test', isLight = true }) {
   useWatermarkRemover();
 
@@ -533,7 +546,10 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
           >
             Submit Test
           </button>
-          <span>JEE MAIN 2026 - COMPUTER BASED TEST {mode === 'practice' && '(PRACTICE MODE)'}</span>
+          <div className="flex items-center gap-2">
+            {getExamLogo(test)}
+            <span>{test?.title || 'JEE MAIN 2026 - COMPUTER BASED TEST'} {mode === 'practice' && '(PRACTICE MODE)'}</span>
+          </div>
         </div>
         <div className="flex items-center gap-6 font-semibold">
           <div className="bg-white/10 px-3 py-1.5 rounded border border-white/20 shadow-inner flex items-center gap-2">
