@@ -249,36 +249,37 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
                 />
 
                 {/* Options */}
-                <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {currentQuestion.options.map((option, idx) => {
                     // Determine option styling based on state
                     const isSelected = currentState.selected === idx;
                     const isCorrectOption = (idx + 1) === currentQuestion.correctOption;
+                    const letter = String.fromCharCode(65 + idx);
                     
-                    let optionStyle = isLight ? "border-gray-200 bg-white hover:bg-gray-50 hover:border-blue-300" : "border-white/10 bg-[#121A2F] hover:bg-white/5 hover:border-blue-500";
-                    let radioStyle = isLight ? "border-gray-300" : "border-white/20";
+                    let optionStyle = isLight ? "border-gray-200 bg-white hover:border-blue-300" : "border-white/10 bg-[#121A2F] hover:border-blue-500";
+                    let letterStyle = "bg-blue-600 text-white";
                     let labelStyle = isLight ? "text-gray-700" : "text-gray-300";
 
                     if (isSelected && !currentState.checked) {
-                      optionStyle = isLight ? "border-blue-500 bg-blue-50/50 shadow-[0_0_0_1px_#3b82f6]" : "border-blue-500 bg-blue-900/20 shadow-[0_0_0_1px_#3b82f6]";
-                      radioStyle = isLight ? "border-blue-500 bg-blue-500 ring-2 ring-blue-200" : "border-blue-500 bg-blue-500 ring-2 ring-blue-900";
-                      labelStyle = isLight ? "text-blue-900 font-medium" : "text-blue-100 font-medium";
+                      optionStyle = isLight ? "border-blue-500 bg-blue-50/30" : "border-blue-500 bg-blue-900/10";
+                      letterStyle = "bg-blue-700 text-white ring-2 ring-blue-300 ring-offset-1 ring-offset-white";
+                      labelStyle = isLight ? "text-gray-900 font-medium" : "text-gray-100 font-medium";
                     } else if (currentState.checked) {
                       if (isCorrectOption) {
                         // Correct option always highlights green if checked
-                        optionStyle = isLight ? "border-green-500 bg-green-50 shadow-[0_0_0_1px_#22c55e]" : "border-green-500 bg-green-900/20 shadow-[0_0_0_1px_#22c55e]";
-                        radioStyle = "border-green-500 bg-green-500";
+                        optionStyle = isLight ? "border-green-500 bg-green-50/50" : "border-green-500 bg-green-900/10";
+                        letterStyle = "bg-green-500 text-white";
                         labelStyle = isLight ? "text-green-900 font-medium" : "text-green-100 font-medium";
                       } else if (isSelected && !isCorrectOption) {
                         // Incorrect selected option highlights red
-                        optionStyle = isLight ? "border-red-500 bg-red-50 shadow-[0_0_0_1px_#ef4444]" : "border-red-500 bg-red-900/20 shadow-[0_0_0_1px_#ef4444]";
-                        radioStyle = "border-red-500 bg-red-500";
+                        optionStyle = isLight ? "border-red-500 bg-red-50/50" : "border-red-500 bg-red-900/10";
+                        letterStyle = "bg-red-500 text-white";
                         labelStyle = isLight ? "text-red-900 font-medium" : "text-red-100 font-medium";
                       } else {
                         // Other non-selected, non-correct options dim
-                        optionStyle = isLight ? "border-gray-100 bg-gray-50/50 opacity-60" : "border-white/5 bg-black/20 opacity-60";
-                        radioStyle = isLight ? "border-gray-200" : "border-white/10";
-                        labelStyle = isLight ? "text-gray-400" : "text-gray-500";
+                        optionStyle = isLight ? "border-gray-200 bg-white opacity-60" : "border-white/5 bg-[#121A2F] opacity-60";
+                        letterStyle = "bg-gray-400 text-white";
+                        labelStyle = isLight ? "text-gray-500" : "text-gray-500";
                       }
                     }
 
@@ -286,23 +287,23 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
                       <div 
                         key={idx}
                         onClick={() => handleOptionSelect(idx)}
-                        className={`flex items-start gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all duration-200 ${optionStyle} ${currentState.checked ? 'cursor-default' : ''}`}
+                        className={`flex flex-col gap-3 p-4 rounded-xl border cursor-pointer transition-all duration-200 ${optionStyle} ${currentState.checked ? 'cursor-default' : ''}`}
                       >
-                        <div className={`mt-0.5 shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${radioStyle}`}>
-                          {(isSelected || (currentState.checked && isCorrectOption)) && (
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                        <div className="flex items-center justify-between">
+                          <div className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold shadow-sm transition-all ${letterStyle}`}>
+                            {letter}
+                          </div>
+                          {currentState.checked && isCorrectOption && (
+                            <CheckCircle className="w-5 h-5 text-green-500" />
+                          )}
+                          {currentState.checked && isSelected && !isCorrectOption && (
+                            <XCircle className="w-5 h-5 text-red-500" />
                           )}
                         </div>
                         <div 
-                          className={`flex-1 math-content select-none ${labelStyle}`}
+                          className={`math-content select-none overflow-x-auto ${labelStyle}`}
                           dangerouslySetInnerHTML={{ __html: renderMath(option) }}
                         />
-                        {currentState.checked && isCorrectOption && (
-                          <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
-                        )}
-                        {currentState.checked && isSelected && !isCorrectOption && (
-                          <XCircle className="w-5 h-5 text-red-500 shrink-0" />
-                        )}
                       </div>
                     );
                   })}
