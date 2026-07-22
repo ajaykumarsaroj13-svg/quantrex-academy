@@ -58,7 +58,7 @@ export default function App() {
     }
     return null;
   });
-  const [isLight, setIsLight] = useState(() => localStorage.getItem('quantrex_theme') === 'light');
+  const [isLight, setIsLight] = useState(false);
   const [readingBook, setReadingBook] = useState(() => {
     const saved = localStorage.getItem('quantrex_reading_book');
     if (saved) {
@@ -370,9 +370,10 @@ export default function App() {
   }, [activePage, token]);
 
   useEffect(() => {
-    localStorage.setItem('quantrex_theme', isLight ? 'light' : 'dark');
-    document.documentElement.classList.toggle('light', isLight);
-  }, [isLight]);
+    localStorage.setItem('quantrex_theme', 'dark');
+    document.documentElement.classList.remove('light');
+    document.documentElement.classList.add('dark');
+  }, []);
 
 
 

@@ -60,10 +60,11 @@ export const useWatermarkRemover = (dependencies = []) => {
              // Average brightness
              const avg = (r + g + b) / 3;
              
-             // The watermark is a light grey. Threshold at ~180.
-             // If it's lighter than 180, force it to pure white (removes watermark).
-             // If it's darker than 180, force it to pure black (keeps text/lines crisp).
-             if (avg > 180) { 
+             // The watermark is typically a light grey.
+             // If average is > 150 (light), turn it pure white.
+             // If average is < 150 (dark text/lines), turn it pure black.
+             // This aggressively removes any light watermarks.
+             if (avg > 150) { 
                  data[i] = 255;
                  data[i+1] = 255;
                  data[i+2] = 255;

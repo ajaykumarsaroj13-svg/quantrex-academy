@@ -90,6 +90,10 @@
 
   --border-light:      #334155;
   --border-medium:     #475569;
+
+  --bg-sidebar:        #0f172a;
+  --bg-sidebar-dark:   #020617;
+  --bg-sidebar-card:   #1e293b;
 }
 
 /* ─── Exam Wrapper ───────────────────────────────────────── */
@@ -595,9 +599,9 @@
   border-radius: 50%;
   font-size: 13px;
   font-weight: 700;
-  background: var(--border-light);
-  color: var(--text-secondary);
-  border: 2px solid var(--border-medium);
+  background: #2563eb;
+  color: #ffffff;
+  border: 2px solid #2563eb;
   transition:
     background var(--transition-smooth),
     color var(--transition-smooth),
@@ -608,9 +612,9 @@
 }
 
 .nta-option.selected .nta-option-label {
-  background: linear-gradient(135deg, var(--nta-navy), var(--nta-navy-light));
+  background: #1d4ed8;
   color: #fff;
-  border-color: transparent;
+  border-color: #1d4ed8;
   transform: scale(1.1);
   box-shadow: 0 3px 10px rgba(26,35,126,0.35);
 }

@@ -193,7 +193,7 @@ export default function NTAExamInterface({ testData, onSubmit, onExit }) {
   const isLowTime = timeLeft < 300;
 
   return (
-    <div className="nta-exam-wrapper">
+    <div className="nta-exam-wrapper dark-theme allen-cbt">
       {/* TOP HEADER */}
       <div className="nta-header">
         <div className="nta-header-left">
