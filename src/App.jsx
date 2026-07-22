@@ -26,11 +26,11 @@ const StudentProgressDashboard = React.lazy(() => import('./pages/StudentProgres
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 import { DEFAULT_TESTS, DEFAULT_BOOKS, DEFAULT_HOME_CONTENT } from './utils/defaultData';
 import { generateCustomTest } from './utils/testGenerator';
-
-
-
+import { useWatermarkRemover } from './hooks/useWatermarkRemover';
 
 export default function App() {
+  useWatermarkRemover();
+
   const [activePage, setActivePage] = useState(() => localStorage.getItem('quantrex_active_page') || 'home');
   const [token, setToken] = useState(localStorage.getItem('token') || null);
   const [user, setUser] = useState(() => {

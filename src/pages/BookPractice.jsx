@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye, ZoomIn, ZoomOut } from 'lucide-react';
+import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
 
 const BookPractice = ({ chapter, setActivePage, theme }) => {
   const isLight = theme === 'light';
@@ -15,6 +16,8 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
   // State for ExamGoal style practice
   // For each question, track selected option and if it has been checked
   const [userAnswers, setUserAnswers] = useState({}); // { 0: { selected: 1, checked: true, isCorrect: false } }
+
+  useWatermarkRemover([currentQuestionIndex, questions]);
 
   const [showPaletteMobile, setShowPaletteMobile] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);

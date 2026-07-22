@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import '../components/NTAExamInterface.css';
 import TeacherSolution from '../components/TeacherSolution';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
+import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
 
 // ─── Constants ────────────────────────────────────────────────
 const STATUS = {
@@ -17,6 +18,8 @@ const ADV_SUBJECT_ORDER = ['Mathematics', 'Physics', 'Chemistry'];
 
 // ─── Main Component ───────────────────────────────────────────
 export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, onExit, isLight, onToggleTheme }) {
+  useWatermarkRemover();
+
   const [testData, setTestData]         = useState(null);
   const [loading, setLoading]           = useState(true);
   const [error, setError]               = useState(null);

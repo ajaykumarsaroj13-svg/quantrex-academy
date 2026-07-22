@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import MistakeBooster from '../components/MistakeBooster';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
+import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
 
 export default function NtaTestInterface({ test, user, onBackToDashboard, setActivePage, mode = 'test', isLight = true }) {
+  useWatermarkRemover();
+
   const [questions, setQuestions] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState({}); // { qIdx: selectedOptionIdx }
