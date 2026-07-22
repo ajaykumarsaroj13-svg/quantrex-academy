@@ -3,7 +3,8 @@ import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye, ZoomIn, ZoomOut } from 'lucide-react';
 
-const BookPractice = ({ chapter, setActivePage }) => {
+const BookPractice = ({ chapter, setActivePage, theme }) => {
+  const isLight = theme === 'light';
   const chapterId = chapter?.id || 'default';
   const exerciseId = chapter?.exerciseId || 'single-choice';
   const exerciseName = chapter?.exerciseName || 'Exercise 1: Single Choice Problems';
@@ -176,29 +177,29 @@ const BookPractice = ({ chapter, setActivePage }) => {
   });
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f2f5] font-sans">
+    <div className={`min-h-screen flex flex-col font-sans ${isLight ? 'bg-[#f0f2f5]' : 'bg-obsidian'}`}>
       {/* Top Header - ExamGoal Style */}
-      <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 lg:px-8 shrink-0 shadow-sm sticky top-0 z-20">
+      <header className={`border-b h-16 flex items-center justify-between px-4 lg:px-8 shrink-0 shadow-sm sticky top-0 z-20 ${isLight ? 'bg-white border-gray-200' : 'bg-cyberdark border-white/5'}`}>
         <div className="flex items-center gap-4">
           <button 
             onClick={() => setActivePage('book-chapters')}
-            className="p-2 hover:bg-gray-100 rounded-full text-gray-600 transition-colors"
+            className={`p-2 rounded-full transition-colors ${isLight ? 'hover:bg-gray-100 text-gray-600' : 'hover:bg-white/10 text-gray-300'}`}
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
           <div>
-            <h1 className="font-bold text-gray-800 text-lg hidden sm:block">{chapterDetails.name}</h1>
-            <h1 className="font-bold text-gray-800 text-base sm:hidden line-clamp-1">{chapterDetails.name}</h1>
-            <p className="text-xs text-gray-500">Practice Mode</p>
+            <h1 className={`font-bold text-lg hidden sm:block ${isLight ? 'text-gray-800' : 'text-white'}`}>{chapterDetails.name}</h1>
+            <h1 className={`font-bold text-base sm:hidden line-clamp-1 ${isLight ? 'text-gray-800' : 'text-white'}`}>{chapterDetails.name}</h1>
+            <p className={`text-xs ${isLight ? 'text-gray-500' : 'text-gray-400'}`}>Practice Mode</p>
           </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-4">
-          <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1 mr-2">
-            <button onClick={handleZoomOut} className="p-1.5 hover:bg-white rounded-md text-gray-600 transition shadow-sm" title="Zoom Out">
+          <div className={`flex items-center gap-1 rounded-lg p-1 mr-2 ${isLight ? 'bg-gray-100' : 'bg-white/10'}`}>
+            <button onClick={handleZoomOut} className={`p-1.5 rounded-md transition shadow-sm ${isLight ? 'hover:bg-white text-gray-600' : 'hover:bg-white/20 text-gray-300'}`} title="Zoom Out">
               <ZoomOut className="w-4 h-4" />
             </button>
-            <span className="text-xs font-medium text-gray-500 w-10 text-center">{Math.round(zoomLevel * 100)}%</span>
-            <button onClick={handleZoomIn} className="p-1.5 hover:bg-white rounded-md text-gray-600 transition shadow-sm" title="Zoom In">
+            <span className={`text-xs font-medium w-10 text-center ${isLight ? 'text-gray-500' : 'text-gray-300'}`}>{Math.round(zoomLevel * 100)}%</span>
+            <button onClick={handleZoomIn} className={`p-1.5 rounded-md transition shadow-sm ${isLight ? 'hover:bg-white text-gray-600' : 'hover:bg-white/20 text-gray-300'}`} title="Zoom In">
               <ZoomIn className="w-4 h-4" />
             </button>
           </div>
@@ -211,7 +212,7 @@ const BookPractice = ({ chapter, setActivePage }) => {
             </div>
           </div>
           <button 
-            className="lg:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+            className={`lg:hidden p-2 rounded-lg ${isLight ? 'text-gray-600 hover:bg-gray-100' : 'text-gray-300 hover:bg-white/10'}`}
             onClick={() => setShowPaletteMobile(!showPaletteMobile)}
           >
             <LayoutGrid className="w-5 h-5" />
@@ -230,12 +231,12 @@ const BookPractice = ({ chapter, setActivePage }) => {
           >
             
             {/* Question Card */}
-            <div className="bg-white rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden mb-6">
+            <div className={`rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border overflow-hidden mb-6 ${isLight ? 'bg-white border-gray-100' : 'bg-cyberdark border-white/5'}`}>
               
               {/* Question Header */}
-              <div className="bg-gray-50/80 border-b border-gray-100 px-6 py-4 flex items-center justify-between">
-                <span className="font-bold text-gray-800 text-lg">Question {currentQuestion.questionNumber || (currentQuestionIndex + 1)}</span>
-                <span className="text-xs font-semibold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md uppercase tracking-wider">
+              <div className={`border-b px-6 py-4 flex items-center justify-between ${isLight ? 'bg-gray-50/80 border-gray-100' : 'bg-white/5 border-white/5'}`}>
+                <span className={`font-bold text-lg ${isLight ? 'text-gray-800' : 'text-white'}`}>Question {currentQuestion.questionNumber || (currentQuestionIndex + 1)}</span>
+                <span className={`text-xs font-semibold px-2.5 py-1 rounded-md uppercase tracking-wider ${isLight ? 'bg-blue-50 text-blue-700' : 'bg-blue-900/30 text-blue-400'}`}>
                   Single Correct
                 </span>
               </div>
@@ -243,7 +244,7 @@ const BookPractice = ({ chapter, setActivePage }) => {
               {/* Question Body */}
               <div className="p-6">
                 <div 
-                  className="text-gray-800 text-base lg:text-lg leading-relaxed mb-8 select-text math-content"
+                  className={`text-base lg:text-lg leading-relaxed mb-8 select-text math-content ${isLight ? 'text-gray-800' : 'text-gray-200'}`}
                   dangerouslySetInnerHTML={{ __html: renderMath(currentQuestion.text) }}
                 />
 
@@ -254,30 +255,30 @@ const BookPractice = ({ chapter, setActivePage }) => {
                     const isSelected = currentState.selected === idx;
                     const isCorrectOption = (idx + 1) === currentQuestion.correctOption;
                     
-                    let optionStyle = "border-gray-200 bg-white hover:bg-gray-50 hover:border-blue-300";
-                    let radioStyle = "border-gray-300";
-                    let labelStyle = "text-gray-700";
+                    let optionStyle = isLight ? "border-gray-200 bg-white hover:bg-gray-50 hover:border-blue-300" : "border-white/10 bg-[#121A2F] hover:bg-white/5 hover:border-blue-500";
+                    let radioStyle = isLight ? "border-gray-300" : "border-white/20";
+                    let labelStyle = isLight ? "text-gray-700" : "text-gray-300";
 
                     if (isSelected && !currentState.checked) {
-                      optionStyle = "border-blue-500 bg-blue-50/50 shadow-[0_0_0_1px_#3b82f6]";
-                      radioStyle = "border-blue-500 bg-blue-500 ring-2 ring-blue-200";
-                      labelStyle = "text-blue-900 font-medium";
+                      optionStyle = isLight ? "border-blue-500 bg-blue-50/50 shadow-[0_0_0_1px_#3b82f6]" : "border-blue-500 bg-blue-900/20 shadow-[0_0_0_1px_#3b82f6]";
+                      radioStyle = isLight ? "border-blue-500 bg-blue-500 ring-2 ring-blue-200" : "border-blue-500 bg-blue-500 ring-2 ring-blue-900";
+                      labelStyle = isLight ? "text-blue-900 font-medium" : "text-blue-100 font-medium";
                     } else if (currentState.checked) {
                       if (isCorrectOption) {
                         // Correct option always highlights green if checked
-                        optionStyle = "border-green-500 bg-green-50 shadow-[0_0_0_1px_#22c55e]";
+                        optionStyle = isLight ? "border-green-500 bg-green-50 shadow-[0_0_0_1px_#22c55e]" : "border-green-500 bg-green-900/20 shadow-[0_0_0_1px_#22c55e]";
                         radioStyle = "border-green-500 bg-green-500";
-                        labelStyle = "text-green-900 font-medium";
+                        labelStyle = isLight ? "text-green-900 font-medium" : "text-green-100 font-medium";
                       } else if (isSelected && !isCorrectOption) {
                         // Incorrect selected option highlights red
-                        optionStyle = "border-red-500 bg-red-50 shadow-[0_0_0_1px_#ef4444]";
+                        optionStyle = isLight ? "border-red-500 bg-red-50 shadow-[0_0_0_1px_#ef4444]" : "border-red-500 bg-red-900/20 shadow-[0_0_0_1px_#ef4444]";
                         radioStyle = "border-red-500 bg-red-500";
-                        labelStyle = "text-red-900 font-medium";
+                        labelStyle = isLight ? "text-red-900 font-medium" : "text-red-100 font-medium";
                       } else {
                         // Other non-selected, non-correct options dim
-                        optionStyle = "border-gray-100 bg-gray-50/50 opacity-60";
-                        radioStyle = "border-gray-200";
-                        labelStyle = "text-gray-400";
+                        optionStyle = isLight ? "border-gray-100 bg-gray-50/50 opacity-60" : "border-white/5 bg-black/20 opacity-60";
+                        radioStyle = isLight ? "border-gray-200" : "border-white/10";
+                        labelStyle = isLight ? "text-gray-400" : "text-gray-500";
                       }
                     }
 
@@ -309,7 +310,7 @@ const BookPractice = ({ chapter, setActivePage }) => {
               </div>
 
               {/* Action Bar (Check Answer / Next) */}
-              <div className="bg-gray-50 p-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-4">
+              <div className={`p-4 border-t flex flex-wrap items-center justify-between gap-4 ${isLight ? 'bg-gray-50 border-gray-100' : 'bg-[#121A2F] border-white/5'}`}>
                 <div className="flex items-center gap-3">
                   {!currentState.checked ? (
                     <button
@@ -318,13 +319,13 @@ const BookPractice = ({ chapter, setActivePage }) => {
                       className={`px-6 py-2.5 rounded-lg font-semibold transition-all ${
                         currentState.selected !== null 
                         ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm hover:shadow' 
-                        : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                        : (isLight ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-white/5 text-gray-500 cursor-not-allowed')
                       }`}
                     >
                       Check Answer
                     </button>
                   ) : (
-                    <div className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold ${currentState.isCorrect ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                    <div className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold ${currentState.isCorrect ? (isLight ? 'bg-green-100 text-green-800' : 'bg-green-900/30 text-green-400') : (isLight ? 'bg-red-100 text-red-800' : 'bg-red-900/30 text-red-400')}`}>
                       {currentState.isCorrect ? (
                          <><CheckCircle className="w-5 h-5" /> Correct Answer!</>
                       ) : (
@@ -336,7 +337,7 @@ const BookPractice = ({ chapter, setActivePage }) => {
                   {!currentState.checked && currentState.selected !== null && (
                     <button
                       onClick={handleClearResponse}
-                      className="px-4 py-2.5 text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded-lg font-medium transition"
+                      className={`px-4 py-2.5 rounded-lg font-medium transition ${isLight ? 'text-gray-500 hover:text-gray-700 hover:bg-gray-200' : 'text-gray-400 hover:text-gray-200 hover:bg-white/10'}`}
                     >
                       Clear
                     </button>
@@ -347,14 +348,14 @@ const BookPractice = ({ chapter, setActivePage }) => {
                   <button
                     onClick={handlePrev}
                     disabled={currentQuestionIndex === 0}
-                    className="flex items-center gap-1 px-4 py-2.5 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed font-medium transition"
+                    className={`flex items-center gap-1 px-4 py-2.5 border rounded-lg disabled:opacity-50 disabled:cursor-not-allowed font-medium transition ${isLight ? 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50' : 'bg-[#1F2833] border-white/10 text-gray-300 hover:bg-white/10'}`}
                   >
                     <ChevronLeft className="w-4 h-4" /> Prev
                   </button>
                   <button
                     onClick={handleNext}
                     disabled={currentQuestionIndex === questions.length - 1}
-                    className="flex items-center gap-1 px-5 py-2.5 bg-gray-800 text-white rounded-lg hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed font-medium transition shadow-sm hover:shadow"
+                    className={`flex items-center gap-1 px-5 py-2.5 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed font-medium transition shadow-sm hover:shadow ${isLight ? 'bg-gray-800 text-white hover:bg-gray-900' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
                   >
                     Next <ChevronRight className="w-4 h-4" />
                   </button>
@@ -364,21 +365,21 @@ const BookPractice = ({ chapter, setActivePage }) => {
 
             {/* Solution Box (Only visible after checking answer) */}
             {currentState.checked && (
-              <div className="bg-white rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-blue-100 overflow-hidden mb-12 animate-fade-in-up">
-                <div className="bg-blue-50/50 border-b border-blue-100 px-6 py-4 flex items-center gap-2">
-                  <Eye className="w-5 h-5 text-blue-600" />
-                  <span className="font-bold text-blue-900">Solution & Explanation</span>
+              <div className={`rounded-xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border overflow-hidden mb-12 animate-fade-in-up ${isLight ? 'bg-white border-blue-100' : 'bg-[#1F2833] border-blue-900/30'}`}>
+                <div className={`border-b px-6 py-4 flex items-center gap-2 ${isLight ? 'bg-blue-50/50 border-blue-100' : 'bg-blue-900/10 border-blue-900/30'}`}>
+                  <Eye className={`w-5 h-5 ${isLight ? 'text-blue-600' : 'text-blue-400'}`} />
+                  <span className={`font-bold ${isLight ? 'text-blue-900' : 'text-blue-200'}`}>Solution & Explanation</span>
                 </div>
                 <div className="p-6">
                   {currentQuestion.solution ? (
                     <div 
-                      className="text-gray-800 leading-relaxed math-content"
+                      className={`leading-relaxed math-content ${isLight ? 'text-gray-800' : 'text-gray-200'}`}
                       dangerouslySetInnerHTML={{ __html: renderMath(currentQuestion.solution) }}
                     />
                   ) : (
                     <div className="text-gray-500 italic flex flex-col items-center justify-center py-6">
                       <p>Detailed solution is not available for this question yet.</p>
-                      <p className="text-sm mt-2">The correct option is <strong className="text-gray-700">Option {currentQuestion.correctOption}</strong>.</p>
+                      <p className="text-sm mt-2">The correct option is <strong className={isLight ? 'text-gray-700' : 'text-gray-300'}>Option {currentQuestion.correctOption}</strong>.</p>
                     </div>
                   )}
                 </div>
@@ -389,27 +390,27 @@ const BookPractice = ({ chapter, setActivePage }) => {
         </div>
 
         {/* Right Pane - Question Palette (Desktop) */}
-        <div className={`fixed lg:relative top-16 lg:top-0 right-0 w-80 h-[calc(100vh-4rem)] lg:h-full bg-white border-l border-gray-200 shadow-xl lg:shadow-none transition-transform duration-300 z-10 flex flex-col ${showPaletteMobile ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'}`}>
+        <div className={`fixed lg:relative top-16 lg:top-0 right-0 w-80 h-[calc(100vh-4rem)] lg:h-full border-l shadow-xl lg:shadow-none transition-transform duration-300 z-10 flex flex-col ${showPaletteMobile ? 'translate-x-0' : 'translate-x-full lg:translate-x-0'} ${isLight ? 'bg-white border-gray-200' : 'bg-cyberdark border-white/5'}`}>
           
-          <div className="p-4 border-b border-gray-100 bg-gray-50/50 flex justify-between items-center shrink-0">
-            <h3 className="font-bold text-gray-800">Question Palette</h3>
-            <button className="lg:hidden p-1 text-gray-500 hover:bg-gray-200 rounded" onClick={() => setShowPaletteMobile(false)}>
+          <div className={`p-4 border-b flex justify-between items-center shrink-0 ${isLight ? 'border-gray-100 bg-gray-50/50' : 'border-white/5 bg-black/20'}`}>
+            <h3 className={`font-bold ${isLight ? 'text-gray-800' : 'text-white'}`}>Question Palette</h3>
+            <button className={`lg:hidden p-1 rounded ${isLight ? 'text-gray-500 hover:bg-gray-200' : 'text-gray-400 hover:bg-white/10'}`} onClick={() => setShowPaletteMobile(false)}>
               <XCircle className="w-5 h-5" />
             </button>
           </div>
 
-          <div className="p-4 grid grid-cols-2 gap-3 text-sm font-medium border-b border-gray-100 shrink-0">
+          <div className={`p-4 grid grid-cols-2 gap-3 text-sm font-medium border-b shrink-0 ${isLight ? 'border-gray-100' : 'border-white/5'}`}>
              <div className="flex items-center gap-2">
                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-               <span className="text-gray-600">Correct ({correctCount})</span>
+               <span className={isLight ? 'text-gray-600' : 'text-gray-300'}>Correct ({correctCount})</span>
              </div>
              <div className="flex items-center gap-2">
                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-               <span className="text-gray-600">Incorrect ({incorrectCount})</span>
+               <span className={isLight ? 'text-gray-600' : 'text-gray-300'}>Incorrect ({incorrectCount})</span>
              </div>
              <div className="flex items-center gap-2">
                <div className="w-3 h-3 rounded-full bg-gray-200"></div>
-               <span className="text-gray-600">Unattempted ({questions.length - attemptedCount})</span>
+               <span className={isLight ? 'text-gray-600' : 'text-gray-300'}>Unattempted ({questions.length - attemptedCount})</span>
              </div>
           </div>
 
@@ -419,13 +420,13 @@ const BookPractice = ({ chapter, setActivePage }) => {
                 const qState = userAnswers[idx];
                 const isActive = currentQuestionIndex === idx;
                 
-                let btnClass = "border-gray-200 text-gray-600 hover:bg-gray-50"; // Unattempted
+                let btnClass = isLight ? "border-gray-200 text-gray-600 hover:bg-gray-50" : "border-white/10 text-gray-400 hover:bg-white/5"; // Unattempted
                 
                 if (qState?.checked) {
                   if (qState.isCorrect) {
-                    btnClass = "bg-green-100 border-green-200 text-green-800 font-bold";
+                    btnClass = isLight ? "bg-green-100 border-green-200 text-green-800 font-bold" : "bg-green-900/30 border-green-800 text-green-400 font-bold";
                   } else {
-                    btnClass = "bg-red-100 border-red-200 text-red-800 font-bold";
+                    btnClass = isLight ? "bg-red-100 border-red-200 text-red-800 font-bold" : "bg-red-900/30 border-red-800 text-red-400 font-bold";
                   }
                 }
 
@@ -460,9 +461,14 @@ const BookPractice = ({ chapter, setActivePage }) => {
 
       </div>
 
-      <style jsx global>{`
-        .math-content .katex { font-size: 1.1em; }
+      <style dangerouslySetInnerHTML={{ __html: `
+        .math-content .katex { font-size: 1.15em; }
         .math-content .katex-display { margin: 0.5em 0; overflow-x: auto; overflow-y: hidden; padding: 0.2em 0; }
+        .math-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 8px 0; filter: grayscale(100%) brightness(130%) contrast(500%); mix-blend-mode: multiply; }
+        ${!isLight ? `
+          .math-content { color: #e5e7eb; }
+          .math-content img { background-color: white; padding: 8px; box-shadow: 0 0 10px rgba(255,255,255,0.1); filter: grayscale(100%) brightness(130%) contrast(500%); mix-blend-mode: normal; }
+        ` : ''}
         .animate-fade-in-up {
           animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
@@ -470,7 +476,7 @@ const BookPractice = ({ chapter, setActivePage }) => {
           from { opacity: 0; transform: translateY(10px); }
           to { opacity: 1; transform: translateY(0); }
         }
-      `}</style>
+      `}} />
     </div>
   );
 };

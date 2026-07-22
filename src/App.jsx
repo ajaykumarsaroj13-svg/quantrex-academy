@@ -493,10 +493,10 @@ export default function App() {
 
   const renderPage = () => {
     switch (activePage) {
-      case 'books': return <BooksLibrary setActivePage={setActivePage} setReadingBook={setReadingBook} user={user} theme="dark" booksData={booksData} />;
-      case 'book-reader': return <BookReader book={readingBook} setActivePage={setActivePage} theme="dark" />;
-      case 'book-chapters': return <BookChapterList book={readingBook} setActivePage={setActivePage} setPracticeChapter={setPracticeChapter} theme="dark" />;
-      case 'book-practice': return <BookPractice chapter={practiceChapter} setActivePage={setActivePage} theme="dark" />;
+      case 'books': return <BooksLibrary setActivePage={setActivePage} setReadingBook={setReadingBook} user={user} theme={isLight ? 'light' : 'dark'} booksData={booksData} />;
+      case 'book-reader': return <BookReader book={readingBook} setActivePage={setActivePage} theme={isLight ? 'light' : 'dark'} />;
+      case 'book-chapters': return <BookChapterList book={readingBook} setActivePage={setActivePage} setPracticeChapter={setPracticeChapter} theme={isLight ? 'light' : 'dark'} />;
+      case 'book-practice': return <BookPractice chapter={practiceChapter} setActivePage={setActivePage} theme={isLight ? 'light' : 'dark'} />;
       case 'home': return <Home setActivePage={setActivePage} user={user} courses={courses} setCourses={setCourses} onEnrollSuccess={handleEnrollSuccess} onStartLearning={handleStartLearning} toppers={toppers} homeData={homeData} isLight={isLight} />;
       case 'login': return <Auth onLoginSuccess={handleLoginSuccess} setActivePage={setActivePage} isLight={isLight} />;
       case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
