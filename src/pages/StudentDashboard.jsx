@@ -2367,9 +2367,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   
                   return (
                     <div className="flex flex-col items-center justify-center text-center py-6 mb-6 border-b border-white/5">
-                      <div className={`relative h-20 w-20 rounded-full overflow-hidden border shadow-lg flex items-center justify-center p-1 mb-2 ${
-                        isLight ? 'border-slate-200 shadow-slate-100/50' : 'border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.05)] bg-[#0a0a0c]'
-                      }`}>
+                      <div className="relative h-20 w-20 rounded-full overflow-hidden border-2 border-white/20 shadow-lg flex items-center justify-center p-2 mb-2 bg-white">
                         <img src={bannerLogo} alt={titleText} className="h-full w-full object-contain" />
                       </div>
                       <div>
