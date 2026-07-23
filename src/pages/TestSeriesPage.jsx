@@ -424,7 +424,9 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10">
                   {/* Card 1: JEE MAIN */}
-                  <div className="bg-cyberdark/80 border border-[#0d3b66]/30 hover:border-[#0d3b66]/60 rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1">
+                  <div className={`folder-card rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
+                    isLight ? 'bg-white border-blue-100 text-slate-900 shadow-slate-200/60' : 'bg-cyberdark/80 border-[#0d3b66]/30 text-white'
+                  }`}>
                     <div className="bg-gradient-to-r from-[#0d3b66] to-[#001f3f] py-4 text-center border-b border-[#0d3b66]/30">
                       <h4 className="text-white font-black text-sm uppercase tracking-widest leading-none m-0">JEE MAIN</h4>
                     </div>
@@ -432,15 +434,17 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <div className="bg-white rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(255,255,255,0.15)] border-2 border-blue-400/40 flex items-center justify-center p-2.5">
                         <img src={logoMainsImg} alt="JEE Main" className="w-full h-full object-contain" />
                       </div>
-                      <span className="text-white font-bold text-sm tracking-wide text-center">राष्ट्रीय परीक्षा एजेंसी</span>
-                      <span className="bg-white/10 text-white text-[11px] font-extrabold px-4 py-1.5 rounded mt-2 tracking-wide text-center border border-white/10">National Testing Agency</span>
-                      <span className="text-blue-400 text-xs font-bold text-center mt-2">Actual Papers & PYQs</span>
-                      <div className="w-full border-t border-white/5 my-5"></div>
+                      <span className={`font-bold text-sm tracking-wide text-center ${isLight ? 'text-slate-900' : 'text-white'}`}>राष्ट्रीय परीक्षा एजेंसी</span>
+                      <span className={`text-[11px] font-extrabold px-4 py-1.5 rounded mt-2 tracking-wide text-center border ${
+                        isLight ? 'bg-blue-50 text-blue-800 border-blue-200' : 'bg-white/10 text-white border-white/10'
+                      }`}>National Testing Agency</span>
+                      <span className="text-blue-500 text-xs font-bold text-center mt-2">Actual Papers & PYQs</span>
+                      <div className={`w-full border-t my-5 ${isLight ? 'border-slate-200' : 'border-white/5'}`}></div>
                       <div className="flex flex-col gap-2 w-full text-center">
-                        <span className="text-sm font-bold text-gray-300 flex items-center justify-center gap-1.5">
+                        <span className={`text-sm font-bold flex items-center justify-center gap-1.5 ${isLight ? 'text-slate-700' : 'text-gray-300'}`}>
                           📅 2002 - 2026
                         </span>
-                        <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">
+                        <span className={`text-[10px] font-bold uppercase tracking-wider ${isLight ? 'text-slate-500' : 'text-gray-500'}`}>
                           24+ Years of Papers
                         </span>
                       </div>
@@ -454,7 +458,9 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                   </div>
 
                   {/* Card 2: JEE ADVANCED */}
-                  <div className="bg-cyberdark/80 border border-[#b8860b]/30 hover:border-[#b8860b]/60 rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1">
+                  <div className={`folder-card rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
+                    isLight ? 'bg-white border-amber-100 text-slate-900 shadow-slate-200/60' : 'bg-cyberdark/80 border-[#b8860b]/30 text-white'
+                  }`}>
                     <div className="bg-gradient-to-r from-[#b8860b] to-[#1e1b4b] py-4 text-center border-b border-[#b8860b]/30">
                       <h4 className="text-white font-black text-sm uppercase tracking-widest leading-none m-0">JEE ADVANCED</h4>
                     </div>
@@ -462,16 +468,16 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <div className="bg-white rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(234,179,8,0.2)] border-2 border-amber-400/40 flex items-center justify-center p-2.5">
                         <img src={logoAdvancedImg} alt="JEE Advanced" className="w-full h-full object-contain" />
                       </div>
-                      <span className="text-gray-400 text-[11px] font-semibold text-center">भारतीय प्रौद्योगिकी संस्थान</span>
-                      <span className="text-white font-bold text-sm tracking-wide text-center mt-0.5">Indian Institutes of Technology</span>
-                      <span className="text-white font-extrabold text-base tracking-wide text-center mt-1">JEE ADVANCED</span>
+                      <span className={`text-[11px] font-semibold text-center ${isLight ? 'text-slate-600' : 'text-gray-400'}`}>भारतीय प्रौद्योगिकी संस्थान</span>
+                      <span className={`font-bold text-sm tracking-wide text-center mt-0.5 ${isLight ? 'text-slate-900' : 'text-white'}`}>Indian Institutes of Technology</span>
+                      <span className={`font-extrabold text-base tracking-wide text-center mt-1 ${isLight ? 'text-slate-900' : 'text-white'}`}>JEE ADVANCED</span>
                       <span className="text-[#d97706] text-xs font-bold text-center mt-0.5">Actual Papers & PYQs</span>
-                      <div className="w-full border-t border-white/5 my-5"></div>
+                      <div className={`w-full border-t my-5 ${isLight ? 'border-slate-200' : 'border-white/5'}`}></div>
                       <div className="flex flex-col gap-2 w-full text-center">
-                        <span className="text-sm font-bold text-gray-300 flex items-center justify-center gap-1.5">
+                        <span className={`text-sm font-bold flex items-center justify-center gap-1.5 ${isLight ? 'text-slate-700' : 'text-gray-300'}`}>
                           📅 2005 - 2026
                         </span>
-                        <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">
+                        <span className={`text-[10px] font-bold uppercase tracking-wider ${isLight ? 'text-slate-500' : 'text-gray-500'}`}>
                           22+ Years of Papers
                         </span>
                       </div>
@@ -485,7 +491,9 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                   </div>
 
                   {/* Card 3: NDA */}
-                  <div className="bg-cyberdark/80 border border-[#1b4332]/30 hover:border-[#1b4332]/60 rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1">
+                  <div className={`folder-card rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
+                    isLight ? 'bg-white border-emerald-100 text-slate-900 shadow-slate-200/60' : 'bg-cyberdark/80 border-[#1b4332]/30 text-white'
+                  }`}>
                     <div className="bg-gradient-to-r from-[#1b4332] to-[#081c15] py-4 text-center border-b border-[#1b4332]/30">
                       <h4 className="text-white font-black text-sm uppercase tracking-widest leading-none m-0">NDA</h4>
                     </div>
@@ -493,17 +501,17 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                       <div className="bg-white rounded-full overflow-hidden w-24 h-24 mb-4 shadow-[0_0_20px_rgba(34,197,94,0.2)] border-2 border-emerald-400/40 flex items-center justify-center p-2.5">
                         <img src={logoNdaImg} alt="NDA" className="w-full h-full object-contain" />
                       </div>
-                      <span className="text-gray-400 text-[11px] font-semibold text-center">सत्यमेव जयते</span>
-                      <span className="text-white font-bold text-sm tracking-wide text-center">UPSC</span>
-                      <span className="text-gray-500 text-[10px] font-semibold text-center mt-0.5">Union Public Service Commission</span>
-                      <span className="text-white font-extrabold text-base tracking-wide text-center mt-1">NDA</span>
-                      <span className="text-emerald-400 text-xs font-bold text-center mt-0.5">Actual Papers & PYQs</span>
-                      <div className="w-full border-t border-white/5 my-5"></div>
+                      <span className={`text-[11px] font-semibold text-center ${isLight ? 'text-slate-600' : 'text-gray-400'}`}>सत्यमेव जयते</span>
+                      <span className={`font-bold text-sm tracking-wide text-center ${isLight ? 'text-slate-900' : 'text-white'}`}>UPSC</span>
+                      <span className={`text-[10px] font-semibold text-center mt-0.5 ${isLight ? 'text-slate-600' : 'text-gray-500'}`}>Union Public Service Commission</span>
+                      <span className={`font-extrabold text-base tracking-wide text-center mt-1 ${isLight ? 'text-slate-900' : 'text-white'}`}>NDA</span>
+                      <span className="text-emerald-500 text-xs font-bold text-center mt-0.5">Actual Papers & PYQs</span>
+                      <div className={`w-full border-t my-5 ${isLight ? 'border-slate-200' : 'border-white/5'}`}></div>
                       <div className="flex flex-col gap-2 w-full text-center">
-                        <span className="text-sm font-bold text-gray-300 flex items-center justify-center gap-1.5">
+                        <span className={`text-sm font-bold flex items-center justify-center gap-1.5 ${isLight ? 'text-slate-700' : 'text-gray-300'}`}>
                           📅 2021 – 2025
                         </span>
-                        <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">
+                        <span className={`text-[10px] font-bold uppercase tracking-wider ${isLight ? 'text-slate-500' : 'text-gray-500'}`}>
                           5+ Years of Papers
                         </span>
                       </div>

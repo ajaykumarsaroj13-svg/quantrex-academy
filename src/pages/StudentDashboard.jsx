@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { BarChart, BookOpen, Clock, PlayCircle, LogOut, CheckCircle, Lock, ShieldCheck, Trophy, Sparkles, Target, ArrowRight, BrainCircuit, FileText, Download, Flame, Send, Globe, ListOrdered, RotateCcw, X, Play, Bookmark } from 'lucide-react';
 import { loadDbFromBlob } from '../blob';
+import { getChapterIcon } from '../utils/chapterIcons';
 import logoImg from '../assets/logo.png';
 import logoMainsImg from '../assets/logo_mains.png';
 import logoAdvancedImg from '../assets/logo_advanced.png';
@@ -27,7 +28,6 @@ import StudentAnalyticsDashboard from '../components/StudentAnalyticsDashboard';
 
 
 import chapterQuestionCounts from '../utils/chapterQuestionCounts.json';
-import { getChapterIcon } from '../utils/chapterIcons';
 
 export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass = 'jee-mains',
   initialTab = 'courses',
@@ -791,48 +791,26 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                           const chNumber = String(index + 1).padStart(2, '0');
                           
                           let icon = "➗";
-                          let lowerTitle = String(ch.title || '').toLowerCase();
-                          if (lowerTitle.includes("sets") || lowerTitle.includes("relations")) icon = "∪";
-                          else if (lowerTitle.includes("function")) icon = "ƒ(x)";
-                          else if (lowerTitle.includes("logarithm")) icon = "㏒";
-                          else if (lowerTitle.includes("trigonometr") || lowerTitle.includes("heights") || lowerTitle.includes("inverse")) icon = "θ";
-                          else if (lowerTitle.includes("quadratic")) icon = "x²";
-                          else if (lowerTitle.includes("complex")) icon = "𝑖";
-                          else if (lowerTitle.includes("permutation") || lowerTitle.includes("combination")) icon = "ⁿCₖ";
-                          else if (lowerTitle.includes("binomial")) icon = "(x+y)ⁿ";
-                          else if (lowerTitle.includes("sequence") || lowerTitle.includes("progression") || lowerTitle.includes("series")) icon = "∑";
-                          else if (lowerTitle.includes("straight line")) icon = "y=mx";
-                          else if (lowerTitle.includes("circle") || lowerTitle.includes("conic") || lowerTitle.includes("parabola") || lowerTitle.includes("ellipse") || lowerTitle.includes("hyperbola")) icon = "⦾";
-                          else if (lowerTitle.includes("limit") || lowerTitle.includes("continuity") || lowerTitle.includes("differentiability")) icon = "lim";
-                          else if (lowerTitle.includes("derivative") || lowerTitle.includes("differentiation")) icon = "dy/dx";
-                          else if (lowerTitle.includes("integral") || lowerTitle.includes("integration") || lowerTitle.includes("area")) icon = "∫";
-                          else if (lowerTitle.includes("differential equation")) icon = "∇";
-                          else if (lowerTitle.includes("vector") || lowerTitle.includes("3d")) icon = "v⃗";
-                          else if (lowerTitle.includes("matri") || lowerTitle.includes("determinant")) icon = "[ ]";
-                          else if (lowerTitle.includes("probability")) icon = "P(E)";
-                          else if (lowerTitle.includes("statistics")) icon = "σ";
-                          else if (lowerTitle.includes("mathematical reasoning")) icon = "p→q";
-
                           return (
                             <button
                               key={ch.id}
                               onClick={() => {
                                 setSelectedSyllabusChapterId(ch.id);
                               }}
-                              className={`relative w-full p-3.5 pl-4 rounded-2xl text-[12.5px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border hover:-translate-y-0.5 ${
+                              className={`relative folder-card w-full p-3.5 pl-4 rounded-2xl text-[12.5px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border hover:-translate-y-0.5 ${
                                 isActive 
                                   ? 'bg-gradient-to-r from-amber-500/10 to-yellow-600/5 text-amber-500 border-amber-500/50 shadow-md shadow-amber-500/5' 
-                                  : `${isLight ? 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50' : 'bg-[#0f111a] text-gray-300 border-white/5 hover:bg-[#151826]'}`
+                                  : `${isLight ? 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50' : 'bg-[#0f111a] text-gray-300 border-white/5 hover:bg-[#151826]'}`
                               }`}
                             >
                               <div className={`absolute left-0 top-0 bottom-0 w-1 transition-all duration-300 ${isActive ? 'bg-gradient-to-b from-amber-500 to-yellow-600' : 'bg-transparent'}`} />
                               
-                              <span className={`flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black font-mono transition-all duration-300 ${
+                              <span className={`flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black transition-all duration-300 ${
                                 isActive 
                                   ? 'bg-gradient-to-br from-amber-500 to-yellow-600 text-white shadow-md' 
-                                  : `${isLight ? 'bg-slate-100 text-slate-500 border border-slate-200' : 'bg-white/5 text-gray-400 border border-white/5'}`
+                                  : `${isLight ? 'bg-slate-100 text-slate-700 border border-slate-200' : 'bg-white/5 text-gray-300 border border-white/5'}`
                               }`}>
-                                {icon}
+                                {getChapterIcon(ch.title, "w-4 h-4")}
                               </span>
                               <span className={`truncate flex-1 tracking-wide ${isActive ? 'font-extrabold' : ''}`}>
                                 {chNumber} {ch.title}

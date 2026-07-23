@@ -3,6 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Sparkles, BookOpen, Star, HelpCircle, PhoneCall, Gift, MessageCircle, Bot, FileText, Flame, Award, Layers, ChevronRight, Zap, Target, TrendingUp, Rocket, Trophy, CheckCircle } from 'lucide-react';
 import PremiumBanner from '../components/PremiumBanner';
 import ContactSection from '../components/ContactSection';
+
+import logoMainsImg from '../assets/logo_mains.png';
+import logoAdvancedImg from '../assets/logo_advanced.png';
+import logoNdaImg from '../assets/logo_nda.png';
 export default function Home({ user, setActivePage, courses, setCourses, toppers, onStartLearning, homeData, isLight }) {
   const [activeFaq, setActiveFaq] = useState(null);
 
@@ -417,7 +421,11 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                     onStartLearning(card.gradeId, card.tab, card.chapterTab);
                   }
                 }}
-                className={`group folder-card relative bg-cyberdark/80 border ${card.border} p-6 text-left overflow-hidden shadow-xl hover:shadow-2xl ${card.glow} transition-all duration-300`}
+                className={`group folder-card relative p-6 text-left overflow-hidden shadow-xl hover:shadow-2xl ${card.glow} transition-all duration-300 ${
+                  isLight 
+                    ? 'bg-white border-slate-200 text-slate-900 shadow-slate-200/50' 
+                    : `bg-cyberdark/80 border ${card.border} text-white`
+                }`}
               >
                 <div className={`absolute top-0 right-0 h-32 w-32 bg-gradient-to-bl ${card.color} opacity-10 rounded-full blur-2xl group-hover:opacity-20 transition-opacity`} />
                 
@@ -427,9 +435,9 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                   </span>
                   {(card.id === 'jee-main' || card.id === 'jee-advanced' || card.id === 'nda') && (
                     <div className="transform group-hover:scale-110 transition-transform">
-                      {card.id === 'jee-main' && <img src="/src/assets/logo_mains.png" onError={(e) => { e.target.style.display = 'none'; }} alt="JEE Main" className="w-7 h-7 rounded-full object-contain" />}
-                      {card.id === 'jee-advanced' && <img src="/src/assets/logo_advanced.png" onError={(e) => { e.target.style.display = 'none'; }} alt="JEE Advanced" className="w-7 h-7 rounded-full object-contain" />}
-                      {card.id === 'nda' && <img src="/src/assets/logo_nda.png" onError={(e) => { e.target.style.display = 'none'; }} alt="NDA" className="w-7 h-7 rounded-full object-contain" />}
+                      {card.id === 'jee-main' && <img src={logoMainsImg} alt="JEE Main" className="w-7 h-7 rounded-full object-contain bg-white/20 p-0.5 border border-blue-400/40" />}
+                      {card.id === 'jee-advanced' && <img src={logoAdvancedImg} alt="JEE Advanced" className="w-7 h-7 rounded-full object-contain bg-white/20 p-0.5 border border-amber-400/40" />}
+                      {card.id === 'nda' && <img src={logoNdaImg} alt="NDA" className="w-7 h-7 rounded-full object-contain bg-white/20 p-0.5 border border-emerald-400/40" />}
                     </div>
                   )}
                 </div>
@@ -438,8 +446,8 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                   <Icon className="h-6 w-6" />
                 </div>
 
-                <h3 className="text-white font-bold text-base mb-2 leading-tight group-hover:text-electric transition-colors">{card.label}</h3>
-                <p className="text-gray-300 text-xs leading-relaxed mb-5 font-medium">{card.desc}</p>
+                <h3 className={`font-bold text-base mb-2 leading-tight transition-colors ${isLight ? 'text-slate-900 group-hover:text-blue-600' : 'text-white group-hover:text-electric'}`}>{card.label}</h3>
+                <p className={`text-xs leading-relaxed mb-5 font-medium ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{card.desc}</p>
 
                 <div className={`flex items-center gap-1.5 text-xs font-extrabold bg-gradient-to-r ${card.color} bg-clip-text text-transparent uppercase tracking-wider`}>
                   Start Now <ChevronRight className="h-4 w-4 text-electric group-hover:translate-x-1 transition-transform" />
