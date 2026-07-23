@@ -1,0 +1,307 @@
+[
+  {
+    "_id": "6a2bdc982762cf4b576a0b71",
+    "question_id": "lv7v4hb7",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>To find the resistance of the wire connecting the two plates of the capacitor, we need to apply the formula that relates the time constant $$\\tau$$ (in seconds) of a capacitor-resistor (CR) circuit to the capacitance C (in Farads) and resistance R (in Ohms). The time constant $$\\tau$$ is given by:</p>\n\n<p>$$\\tau = R \\times C$$</p>\n\n<p>The time constant also defines the time it takes for the voltage across the capacitor (and therefore the electric field between the plates, since they are directly related) to drop to approximately $$\\frac{1}{e}$$ (where $$e$$ is the base of natural logarithms, approximately equal to 2.718) of its initial value. However, the question states that the electric field drops to one-third of its initial value. Using the natural logarithm properties, we can relate this decay process to the concept of the time constant.</p>\n\n<p>The formula for the voltage (or electric field) across a discharging capacitor as a function of time $$t$$ is:</p>\n\n<p>$$V(t) = V_0 \\times e^{-\\frac{t}{RC}}$$</p>\n\n<p>where:</p>\n\n<ul>\n\n<li>$$V(t)$$ is the voltage across the capacitor at time $$t$$,</li>\n\n<li>$$V_0$$ is the initial voltage,</li>\n\n<li>$$R$$ is the resistance,</li>\n\n<li>$$C$$ is the capacitance, and</li>\n\n<li>$$t$$ is the time.</li>\n\n</ul>\n\n<p>Given that the electric field drops to one-third of its initial value in $$6.6 \\mu \\mathrm{s}$$, we can set $$V(t)$$ to $$\\frac{1}{3}V_0$$ and solve for $$R$$:</p>\n\n<p>$$\\frac{1}{3}V_0 = V_0 \\times e^{-\\frac{6.6 \\mu s}{R \\times 1.5 \\mu F}}$$</p>\n\n<p>By dividing both sides by $$V_0$$, we simplify to:</p>\n\n<p>$$\\frac{1}{3} = e^{-\\frac{6.6}{R \\times 1.5}}$$</p>\n\n<p>Taking the natural logarithm of both sides to solve for $$R$$:</p>\n\n<p>$$\\ln\\left(\\frac{1}{3}\\right) = -\\frac{6.6}{R \\times 1.5}$$</p>\n\n<p>Given that $$\\ln\\left(\\frac{1}{3}\\right) = \\ln(3^{-1}) = -\\ln(3) = -1.1$$ (since $$\\log 3 = 1.1$$ and using the natural log instead of common log), we have:</p>\n\n<p>$$-1.1 = -\\frac{6.6}{R \\times 1.5}$$</p>\n\n<p>Solving for $$R$$:</p>\n\n<p>$$R = \\frac{6.6}{1.5 \\times 1.1}$$</p>\n\n<p>Now, calculate the value of $$R$$:</p>\n\n<p>$$R = \\frac{6.6}{1.65} = 4\\, \\Omega$$</p>\n\n<p>Therefore, the resistance of the wire connecting the two plates of the capacitor is $$4 \\, \\Omega$$.</p>",
+    "__v": 0,
+    "title": "JEE Main 2024 (Online) 5th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b73",
+    "question_id": "1lgozzkb4",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "10.3 $$\\mu$$C",
+      "7.2 $$\\mu$$C",
+      "4.8 $$\\mu$$C",
+      "12 $$\\mu$$C"
+    ],
+    "solution": "In steady state, capacitor behaves as open circuit.<br/><br/>\n$$\n\\begin{aligned}\n\\Rightarrow \\Delta V_C & =i \\times 6 \\Omega \\\\\\\\\n& =\\frac{3}{10} \\times 6 \\mathrm{~V} \\\\\\\\\n& =1.8 \\mathrm{~V} \\\\\\\\\n\\Rightarrow Q= & C V=7.2 \\mu \\mathrm{C}\n\\end{aligned}\n$$",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 13th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b74",
+    "question_id": "1lh02cuxe",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\frac{5}{4}$$",
+      "$$\\frac{3}{4}$$",
+      "1",
+      "$$\\frac{4}{5}$$"
+    ],
+    "solution": "At a steady state, no current would be flowing in capacitor circuit.<br/><br/>\nRequired $=6+2+8=16 \\Omega$<br/><br/>\nFrom Ohm's law<br/><br/>\n$$\ni=\\frac{\\mathrm{V}}{\\mathrm{R}}=\\frac{4}{16}=\\frac{1}{4} \\mathrm{~A}\n$$<br/><br/>\nVoltage across AC<br/><br/>\n$$\n\\mathrm{V}_{\\mathrm{AC}}=i(6+2)=\\frac{1}{4} \\times 8=2 \\mathrm{~V}\n$$<br/><br/>\nVoltage across BD<br/><br/>\n$$\n\\mathrm{V}_{\\mathrm{BD}}=i(2+8)=\\frac{1}{4} \\times 10=2.5 \\mathrm{~V}\n$$<br/><br/>\nNow $\\frac{\\mathrm{V}_{\\mathrm{AC}}}{\\mathrm{V}_{\\mathrm{BD}}}=\\frac{2}{2.5}=\\frac{4}{5}$",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 8th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b75",
+    "question_id": "1l6kobob9",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>At steady state potential difference across capacitor</p>\n<p>$${V_c} = {{10 \\times 100} \\over {110}}\\,V$$</p>\n<p>$$Q = C{V_c}$$</p>\n<p>$$ = {{1.1 \\times {{10}^{ - 6}} \\times 10 \\times 100} \\over {110}}\\,C = 10\\,\\mu C$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 27th July Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b76",
+    "question_id": "1l54uvv2l",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/6"
+    ],
+    "solution": "<p>For a discharging capacitor when energy reduces to half the charge would become $${1 \\over {\\sqrt 2 }}$$ times the initial value.</p>\n<p>$$ \\Rightarrow {\\left( {{1 \\over 2}} \\right)^{1/2}} = {e^{ - {t_1}/\\tau }}$$</p>\n<p>Similarly, $${\\left( {{1 \\over 2}} \\right)^3} = {e^{ - {t_2}/\\tau }}$$</p>\n<p>$$ \\Rightarrow {{{t_1}} \\over {{t_2}}} = {1 \\over 6}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 29th June Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b77",
+    "question_id": "EReEWAwXNFUGzLHWQn1kmkrpisf",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<img src=\"https://imagex.cdn.examgoal.net/1kqbfiarg/05466504-1ce4-4be4-bd56-47b7c2095084/b920ead0-d534-11eb-9dd8-1b2c1167abad/file-1kqbfiarh.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 18th March Morning Shift Physics - Capacitor Question 102 English Explanation\">\n<br><br>At time t\n<br><br>$$q = Q{e^{ - t/RC}}$$<br><br>$$I =$$ $${{dq} \\over {dt}}$$ = $${Q \\over {RC}}{e^{ - t/RC}}$$<br><br>at $$t = 0,I = {Q \\over {RC}}{e^{ - 0/RC}}$$<br><br>$$I = {Q \\over {RC}} = {{30} \\over {5 \\times {{10}^6} \\times 3}} = 2 \\times {10^{ - 6}}$$ A<br><br>$$ \\Rightarrow $$ I = 2$$\\mu$$A",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 18th March Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b78",
+    "question_id": "1ktmpgub8",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "9.52",
+      "0.95",
+      "0.105",
+      "1.85"
+    ],
+    "solution": "Given, the peak voltage of the battery, V<sub>0</sub> = 20V<br/><br/>The voltage of the battery, V = 2V<br/><br/>Time, t = 1 $$\\mu$$s = 1 $$\\times$$ 10<sup>$$-$$6</sup>s<br/><br/>Resistance of the capacitor, R = 10 $$\\Omega$$<br/><br/>As we know that, <br/><br/>V = V<sub>0</sub>(1 $$-$$ e<sup>$$-$$t/RC</sup>)<br/><br/>Substituting the values in the above equation, we get<br/><br/>2 = 20(1 $$-$$ e<sup>$$-$$t/RC</sup>)<br/><br/>$$ \\Rightarrow {t \\over {RC}} = \\ln \\left( {{{10} \\over 9}} \\right)$$<br/><br/>$$ \\Rightarrow C = {t \\over {R\\ln (10/9)}} = {{{{10}^{ - 6}}} \\over {10 \\times \\ln (10/9)}} = 0.95$$ $$\\mu$$F<br/><br/>$$\\therefore$$ The capacitance of the capacitor is 0.95 $$\\mu$$F.",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 1st September Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b79",
+    "question_id": "1ktafge1u",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "9.0 $$\\mu$$A",
+      "9.0 mA",
+      "0.9 mA",
+      "0.9 $$\\mu$$A"
+    ],
+    "solution": "$$\\rho$$ = 200 $$\\Omega$$m<br><br>C = 2 $$\\times$$ 10<sup>$$-$$12</sup> F<br><br>V = 40 V<br><br>K = 56<br><br>$$i = {q \\over {\\rho k{\\varepsilon _0}}} = {{{q_0}} \\over {\\rho k{\\varepsilon _0}}}{e^{ - {t \\over {\\rho k{\\varepsilon _0}}}}}$$<br><br>$${i_{\\max }} = {{2 \\times {{10}^{ - 12}} \\times 40} \\over {200 \\times 50 \\times 8.85 \\times {{10}^{ - 12}}}}$$<br><br>$$ = {{80} \\over {{{10}^4} \\times 8.85}}$$ = 903 $$\\mu$$A = 0.9 mA",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 26th August Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b7a",
+    "question_id": "1kte0dvz3",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "8 $$\\mu$$C",
+      "zero",
+      "16 $$\\mu$$C",
+      "4 $$\\mu$$C"
+    ],
+    "solution": "On simplifying circuit we get<br><br><img src=\"https://imagex.cdn.examgoal.net/1ktp1ez4z/d99df131-3732-4aea-ad56-70ed32971b0d/3c243b30-1815-11ec-872b-bb20e4927270/file-1ktp1ez50.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2021 (Online) 27th August Morning Shift Physics - Capacitor Question 92 English Explanation\"><br>No current in upper wire.<br><br>$$\\therefore$$ $${V_{AB}} = {5 \\over {4 + 1}} \\times 4 = 4$$ v<br><br>$$\\therefore$$ $$\\theta$$ = (C<sub>eq</sub>)v<br><br>$$\\Rightarrow$$ 2 $$\\times$$ 4 = 8 $$\\mu$$C",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 27th August Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b7b",
+    "question_id": "1kryupm2e",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "1.44 $$\\times$$ 10<sup>$$-$$4</sup> s",
+      "3.33 $$\\times$$ 10<sup>$$-$$4</sup> s",
+      "0.69 $$\\times$$ 10<sup>$$-$$4</sup> s",
+      "0.30 $$\\times$$ 10<sup>$$-$$4</sup> s"
+    ],
+    "solution": "$$V = {V_0}\\left( {1 - {e^{ - {t \\over {RC}}}}} \\right)$$<br><br>$$50 = 100\\left( {1 - {e^{ - {t \\over {RC}}}}} \\right)$$<br><br>$$ = t = 0.69 \\times {10^{ - 4}}$$ sec.",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 27th July Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b7c",
+    "question_id": "YAwwgDdVolx3D60sDCjgy2xukfrn3nim",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukfrmz3ya/4f04579c-142a-426e-977f-583512f0f675/15bfda20-0458-11eb-8293-3b6cc591631c/file-jgy2xukfrmz3yb-464w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Morning Slot Physics - Capacitor Question 112 English Option 1\">",
+      "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukfrmzzbr/d5a4dadf-aca1-427c-aaf1-c3d800420e43/2dfc3a70-0458-11eb-8293-3b6cc591631c/file-jgy2xukfrmzzbs-443w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Morning Slot Physics - Capacitor Question 112 English Option 2\">",
+      "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukfrn0tb0/ee514909-ae2e-49aa-b0e5-ac04b557565f/4524b9c0-0458-11eb-8293-3b6cc591631c/file-jgy2xukfrn0tb2-442w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Morning Slot Physics - Capacitor Question 112 English Option 3\">",
+      "<img src=\"https://imagex.cdn.examgoal.net/jgy2xukfrn1x4s/574b2949-4ffd-463e-83ff-1640cd45d215/63e8b3c0-0458-11eb-8293-3b6cc591631c/file-jgy2xukfrn1x4t-451w.png\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2020 (Online) 6th September Morning Slot Physics - Capacitor Question 112 English Option 4\">"
+    ],
+    "solution": "$$\\tau $$ = RC = 10$$\\mu $$s\n<br><br>For 0 &lt; t &lt; 5 $$\\mu $$s, capacitor is charging. <br><br>For\n5 &lt; t &lt; 10 $$\\mu $$s potential is constant so capacitor is discharging but during discharging not possible to discharge 100%.\n<br><br>After that capacitor again\ngets charged.",
+    "__v": 0,
+    "title": "JEE Main 2020 (Online) 6th September Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b7d",
+    "question_id": "KK0gyQH82W8shqIoykYob",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "200μC",
+      "2μC",
+      "10μC",
+      "60μC"
+    ],
+    "solution": "<picture><source media=\"(max-width: 320px)\" srcset=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-320w.jpg\"><source media=\"(max-width: 500px)\" srcset=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-500w.jpg\"><source media=\"(max-width: 680px)\" srcset=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-680w.jpg\"><source media=\"(max-width: 860px)\" srcset=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-860w.jpg\"><source media=\"(max-width: 1040px)\" srcset=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-1040w.jpg\"><source media=\"(max-width: 1220px)\" srcset=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-1220w.jpg\"><img src=\"https://imagex.cdn.examgoal.net/1da9i2ynkdpl17sp/e1feeb99-d190-42ec-a035-487ffe68d5de/7e05da90-db9e-11ea-b796-4745b429ed6f/file-1da9i2ynkdpl17sq-1400w.jpg\" style=\"max-width: 100%;height: auto;display: block;margin: 0 auto;\" loading=\"lazy\" alt=\"JEE Main 2019 (Online) 9th April Morning Slot Physics - Capacitor Question 132 English Explanation\"></picture>\n<br><br> Assuming\npotential x and y at the top junctions A and B respectively and zero potential\nat lower junctions.\n<br><br>At the junction A applying KCL,\n<br><br>i<sub>1</sub>\n+ i<sub>2</sub>\n + i<sub>3</sub>\n = 0\n<br><br>$${{x - 72} \\over 6} + {x \\over 4} + {{x - y} \\over 2} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{2x - 144 + 6x - 6y + 3x} \\over {12}} = 0$$\n<br><br>$$ \\Rightarrow $$ 11x - 6y = 144  ......(1)\n<br><br>At the junction B applying KCL,\n<br><br>i<sub>4</sub> + i<sub>5</sub> = 0\n<br><br>$${{y - x} \\over 2} + {y \\over {10}} = 0$$\n<br><br>$$ \\Rightarrow $$ $${{5y - 5x + y} \\over {10}}$$ = 0\n<br><br>$$ \\Rightarrow $$ 6y = 5x ......(2)\n<br><br>Solving (1) and (2)\n<br><br>11x - 5x = 144\n<br><br>$$ \\Rightarrow $$ x = 24 V\n<br><br>$$ \\therefore $$ y = 20 V\n<br><br>The charge on the capacitor, q = CV<br>\n<br>$$ \\Rightarrow $$ q = 10$$\\mu $$F × 20 = 200 $$\\mu $$C",
+    "__v": 0,
+    "title": "JEE Main 2019 (Online) 9th April Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b7e",
+    "question_id": "yg2gJJrfgloNTeGbeAnEh",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${C_1}E\\left[ {1 - \\exp \\left( { - tR/{C_1}} \\right)} \\right]$$ ",
+      "$${C_2}E\\left[ {1 - \\exp \\left( { - t/R{C_2}} \\right)} \\right]$$ ",
+      "$${C_{eq}}E\\left[ {1 - \\exp \\left( { - t/R{C_{eq}}} \\right)} \\right]$$ ",
+      "$${C_{eq}}E\\,\\,\\exp \\left( { - t/R{C_{eq}}} \\right)$$ "
+    ],
+    "solution": "Charge on capacitor at time t, \n<br><br>q = q<sub>0</sub> [ 1 $$-$$ e<sup>$$-$$t/RC<sub>eq</sub></sup>]\n<br><br>= C<sub>eq</sub> E [ 1 $$-$$ e<sup>$$-$$t/RC<sub>eq</sub></sup>]\n<br><br>[ as $$\\,\\,\\,\\,\\,\\,$$ q<sub>0</sub> = C<sub>eq</sub> E]\n<br><br>this charge q will be on both capacitor C<sub>1</sub> and C<sub>2</sub>, as both are in series. ",
+    "__v": 0,
+    "title": "JEE Main 2018 (Online) 16th April Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b80",
+    "question_id": "vCQT6Zfy0CzhYiVu",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$CE{{{r_1}} \\over {({r_1} + r)}}$$ ",
+      "CE",
+      "$$CE{{{r_1}} \\over {({r_2} + r)}}$$ ",
+      "$$CE{{{r_2}} \\over {(r + {r_2})}}$$ "
+    ],
+    "solution": "In steady state, flow of current through capacitor will\nbe zero.\n<br><br>Current through the circuit,\n<br><br>i = $${E \\over {r + {r_2}}}$$\n<br><br>Potential difference through capacitor\n<br><br>V<sub>c</sub> = $${Q \\over C}$$ = E - ir = E - $$\\left( {{E \\over {r + {r_2}}}} \\right)r$$\n<br><br>$$ \\therefore $$ Q = $$CE{{{r_2}} \\over {(r + {r_2})}}$$",
+    "__v": 0,
+    "title": "JEE Main 2017 (Offline)",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b81",
+    "question_id": "C9HGa3gABDwNQm4vob1qpqahkk8fhkhtw",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "100 sec and 150 sec",
+      "0 and 50 sec",
+      "50 sec and 100 sec",
+      "150 sec and 200 sec "
+    ],
+    "solution": "During discharging of a capacitor, V = V<sub>0</sub>$${e^{ - {t \\over \\tau }}}$$\n<br><br>At t = $$\\tau $$,\n<br><br>V = $${{{V_0}} \\over e}$$ = 0.37V<sub>0</sub>\n<br><br>From the graph, t = 0, V<sub>0</sub> = 25 V\n<br><br>$$ \\therefore $$ V = 0.37 $$ \\times $$ 25 = 9.25 V\n<br><br>This voltage will occur at time between 100 sec and 150 sec. Hence, time constant $$\\tau $$ of this circuit lies between 100 sec and 150 sec. ",
+    "__v": 0,
+    "title": "AIEEE 2012",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdc982762cf4b576a0b83",
+    "question_id": "HtWT6Zb6CiRWcsU2",
+    "chapterId": "rc-circuit",
+    "subject": "Physics",
+    "topic": "rc-circuit",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$1$$ ",
+      "$${1 \\over 2}$$ ",
+      "$${1 \\over 4}$$ ",
+      "$$2$$ "
+    ],
+    "solution": "Initial energy of capacitor, $${E_1} = {{q_1^2} \\over {2C}}$$\n<br><br>Final energy of capacitor, $${E_2} = {1 \\over 2}{E_1} = {{q_1^2} \\over {4C}} = {\\left( {{{{{{q_1}} \\over {\\sqrt 2 }}} \\over {2C}}} \\right)^2}$$\n<br><br>$$\\therefore$$ $${t_1}=$$  time for the charge to reduce to $${1 \\over {\\sqrt 2 }}$$ of its initial value \n<br><br>and $${t_2} = $$ time for the charge to reduce to $${1 \\over 4}$$ of its initial value\n<br><br>We have, $${q_2} = {q_1}{e^{ - t/CR}}$$\n<br><br>$$ \\Rightarrow \\ln \\left( {{{{q_2}} \\over {{q_1}}}} \\right) =  - {t \\over {CR}}$$ \n<br><br>$$\\therefore$$$$\\ln \\left( {{1 \\over {\\sqrt 2 }}} \\right) = {{ - {t_1}} \\over {CR}}...\\left( 1 \\right)$$\n<br><br>and $$\\ln \\left( {{1 \\over 4}} \\right) = {{ - {t_2}} \\over {CR}}\\,\\,...\\left( 2 \\right)$$\n<br><br>By $$(1)$$ and $$(2),$$ $${{{t_1}} \\over {{t_2}}} = {{\\ln \\left( {{1 \\over {\\sqrt 2 }}} \\right)} \\over {\\ln \\left( {{1 \\over 4}} \\right)}}$$\n<br><br>$$ = {1 \\over 2}{{\\ln \\left( {{1 \\over 2}} \\right)} \\over {2\\ln \\left( {{1 \\over 2}} \\right)}} = {1 \\over 4}$$",
+    "__v": 0,
+    "title": "AIEEE 2010",
+    "exam": "JEE Main"
+  }
+]
