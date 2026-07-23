@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import ZoomIn from 'lucide-react/dist/esm/icons/zoom-in';
 import ZoomOut from 'lucide-react/dist/esm/icons/zoom-out';
+import CountdownOverlay from './CountdownOverlay';
 
 import logoMainsImg from '../assets/logo_mains.png';
 import logoAdvancedImg from '../assets/logo_advanced.png';
@@ -27,6 +28,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
   const [qStatus, setQStatus] = useState({});
   const [showRestoreModal, setShowRestoreModal] = useState(false);
   const [showInstructionsModal, setShowInstructionsModal] = useState(false);
+  const [showCountdown, setShowCountdown] = useState(false);
   const [hasAcceptedInstructions, setHasAcceptedInstructions] = useState(false);
   const [hasReadInstructions, setHasReadInstructions] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
@@ -859,8 +861,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
                 <button
                   disabled={!hasReadInstructions}
                   onClick={() => {
-                    setHasAcceptedInstructions(true);
-                    setIsInitialized(true);
+                    setShowCountdown(true);
                   }}
                   className={`px-8 py-2.5 rounded-xl font-extrabold text-xs uppercase tracking-wider transition-all duration-200 shadow-md ${
                     hasReadInstructions
@@ -885,6 +886,18 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
           </div>
         </div>
       )}
+
+      {/* ── 3... 2... 1... GO! Countdown Overlay ── */}
+      {showCountdown && (
+        <CountdownOverlay
+          examTitle={topic?.name || pyqData?.title || 'Official Exam Starting'}
+          onComplete={() => {
+            setShowCountdown(false);
+            setHasAcceptedInstructions(true);
+            setIsInitialized(true);
+          }}
+        />
+      )}
     </div>
   );
-};
+}

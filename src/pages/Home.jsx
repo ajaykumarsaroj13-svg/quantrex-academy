@@ -412,28 +412,37 @@ export default function Home({ user, setActivePage, courses, setCourses, toppers
                 key={card.id}
                 onClick={() => {
                   if (card.id === 'test-series') {
-                    setActivePage('tests');
+                    setActivePage('test-series');
                   } else {
                     onStartLearning(card.gradeId, card.tab, card.chapterTab);
                   }
                 }}
-                className={`group relative bg-cyberdark/50 border ${card.border} rounded-2xl p-6 text-left overflow-hidden hover:shadow-lg ${card.glow} hover:scale-[1.02] transition-all duration-300`}
+                className={`group folder-card relative bg-cyberdark/80 border ${card.border} p-6 text-left overflow-hidden shadow-xl hover:shadow-2xl ${card.glow} transition-all duration-300`}
               >
-                <div className={`absolute top-0 right-0 h-32 w-32 bg-gradient-to-bl ${card.color} opacity-5 rounded-full blur-2xl group-hover:opacity-10 transition-opacity`} />
+                <div className={`absolute top-0 right-0 h-32 w-32 bg-gradient-to-bl ${card.color} opacity-10 rounded-full blur-2xl group-hover:opacity-20 transition-opacity`} />
                 
-                <span className={`inline-block text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded mb-4 border ${card.border} ${card.iconBg}`}>
-                  {card.tag}
-                </span>
+                <div className="flex items-center justify-between mb-4">
+                  <span className={`inline-block text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border ${card.border} ${card.iconBg}`}>
+                    {card.tag}
+                  </span>
+                  {(card.id === 'jee-main' || card.id === 'jee-advanced' || card.id === 'nda') && (
+                    <div className="transform group-hover:scale-110 transition-transform">
+                      {card.id === 'jee-main' && <img src="/src/assets/logo_mains.png" onError={(e) => { e.target.style.display = 'none'; }} alt="JEE Main" className="w-7 h-7 rounded-full object-contain" />}
+                      {card.id === 'jee-advanced' && <img src="/src/assets/logo_advanced.png" onError={(e) => { e.target.style.display = 'none'; }} alt="JEE Advanced" className="w-7 h-7 rounded-full object-contain" />}
+                      {card.id === 'nda' && <img src="/src/assets/logo_nda.png" onError={(e) => { e.target.style.display = 'none'; }} alt="NDA" className="w-7 h-7 rounded-full object-contain" />}
+                    </div>
+                  )}
+                </div>
 
-                <div className={`h-12 w-12 rounded-xl ${card.iconBg} flex items-center justify-center mb-4 border ${card.border}`}>
+                <div className={`h-12 w-12 rounded-xl ${card.iconBg} flex items-center justify-center mb-4 border ${card.border} shadow-inner`}>
                   <Icon className="h-6 w-6" />
                 </div>
 
-                <h3 className="text-white font-bold text-base mb-2 leading-tight">{card.label}</h3>
-                <p className="text-gray-400 text-xs font-mono leading-relaxed mb-4">{card.desc}</p>
+                <h3 className="text-white font-bold text-base mb-2 leading-tight group-hover:text-electric transition-colors">{card.label}</h3>
+                <p className="text-gray-300 text-xs leading-relaxed mb-5 font-medium">{card.desc}</p>
 
-                <div className={`flex items-center gap-1 text-xs font-bold bg-gradient-to-r ${card.color} bg-clip-text text-transparent`}>
-                  Start Now <ChevronRight className="h-3.5 w-3.5 text-current opacity-70 group-hover:translate-x-1 transition-transform" />
+                <div className={`flex items-center gap-1.5 text-xs font-extrabold bg-gradient-to-r ${card.color} bg-clip-text text-transparent uppercase tracking-wider`}>
+                  Start Now <ChevronRight className="h-4 w-4 text-electric group-hover:translate-x-1 transition-transform" />
                 </div>
               </button>
             );

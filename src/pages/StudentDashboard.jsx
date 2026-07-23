@@ -27,6 +27,7 @@ import StudentAnalyticsDashboard from '../components/StudentAnalyticsDashboard';
 
 
 import chapterQuestionCounts from '../utils/chapterQuestionCounts.json';
+import { getChapterIcon } from '../utils/chapterIcons';
 
 export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass = 'jee-mains',
   initialTab = 'courses',
@@ -1904,7 +1905,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                   setExamGoalOverviewConfig({ id: ch.id, title: ch.title, startTab: 'topic' });
                                 }} 
                                 className={
-                                  "relative w-full p-3.5 pl-4 rounded-2xl text-[13px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border shadow-sm hover:-translate-y-0.5 " +
+                                  "relative folder-card w-full p-3.5 pl-4 rounded-2xl text-[13px] text-left font-bold transition-all duration-300 flex items-center gap-3.5 overflow-hidden group border shadow-sm hover:-translate-y-0.5 " +
                                   (isActive 
                                     ? (isLight ? "bg-blue-600 text-white border-transparent shadow-[0_4px_15px_rgba(37,99,235,0.25)]" : "bg-[#13162b] text-white border-transparent shadow-[0_4px_20px_rgba(0,0,0,0.5)]") 
                                     : (isLight ? "bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300" : "bg-[#0b0c10] bg-opacity-40 text-gray-300 border-white border-opacity-5 hover:bg-[#1a1f3c] hover:border-white border-opacity-10 hover:shadow-lg"))
@@ -1927,7 +1928,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                                         ? "bg-slate-100 text-slate-500 border border-slate-200"
                                         : "bg-black bg-opacity-50 text-gray-400 border border-white border-opacity-5"))
                                 }>
-                                  {icon}
+                                  {getChapterIcon(ch.title, "w-4 h-4")}
                                 </span>
                                 <span className={"truncate flex-1 tracking-wide " + (isActive ? "drop-shadow-sm font-extrabold text-[13.5px]" : "")}>{ch.title}</span>
                                 

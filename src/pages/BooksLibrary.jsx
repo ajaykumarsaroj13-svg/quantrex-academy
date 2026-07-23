@@ -42,7 +42,7 @@ export default function BooksLibrary({ setActivePage, theme, setReadingBook, use
               setReadingBook(book);
               setActivePage(book.type === 'interactive' ? 'book-chapters' : 'book-reader');
             }}
-            className={`group relative rounded-2xl p-1 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] ${
+            className={`group folder-card relative rounded-2xl p-1 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] ${
               isLight ? 'bg-white shadow-lg border border-gray-100 hover:shadow-xl' : 'bg-obsidian border border-white/10 hover:border-gold/50 hover:shadow-[0_0_30px_rgba(255,215,0,0.15)]'
             }`}
           >

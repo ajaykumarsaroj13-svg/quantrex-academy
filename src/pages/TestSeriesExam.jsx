@@ -3,6 +3,7 @@ import '../components/NTAExamInterface.css';
 import TeacherSolution from '../components/TeacherSolution';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
+import CountdownOverlay from '../components/CountdownOverlay';
 
 import logoMainsImg from '../assets/logo_mains.png';
 import logoAdvancedImg from '../assets/logo_advanced.png';
@@ -52,6 +53,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const [timeLeft, setTimeLeft]         = useState(180 * 60);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [showInstructionsModal, setShowInstructionsModal] = useState(false);
+  const [showCountdown, setShowCountdown] = useState(false);
   const [hasAcceptedInstructions, setHasAcceptedInstructions] = useState(() => {
     if (mode === 'practice') return true;
     const savedStateJson = localStorage.getItem(`quantrex_exam_state_${testId}`);
@@ -1216,8 +1218,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
                     id="start-test-btn"
                     disabled
                     onClick={() => {
-                      setHasAcceptedInstructions(true);
-                      setShowInstructionsModal(false);
+                      setShowCountdown(true);
                     }}
                     className="w-full sm:w-auto px-8 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-extrabold text-xs uppercase rounded-xl transition-all shadow-md disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                   >
@@ -1236,6 +1237,18 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
           </div>
         </div>
+      )}
+
+      {/* ── 3... 2... 1... GO! Countdown Animation Overlay ── */}
+      {showCountdown && (
+        <CountdownOverlay
+          examTitle={testData?.title || 'Examination Starting'}
+          onComplete={() => {
+            setShowCountdown(false);
+            setHasAcceptedInstructions(true);
+            setShowInstructionsModal(false);
+          }}
+        />
       )}
     </div>
   );

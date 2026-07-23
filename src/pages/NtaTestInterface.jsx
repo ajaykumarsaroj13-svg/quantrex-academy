@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import MistakeBooster from '../components/MistakeBooster';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
+import CountdownOverlay from '../components/CountdownOverlay';
 
 import logoMainsImg from '../assets/logo_mains.png';
 import logoAdvancedImg from '../assets/logo_advanced.png';

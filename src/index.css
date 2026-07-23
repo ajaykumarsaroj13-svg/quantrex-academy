@@ -808,3 +808,32 @@ html:not(.light) .premium-solution-wrapper .solution-body b {
   background-color: rgba(251, 191, 36, 0.1) !important;
 }
 
+/* ─── FOLDER CARD & THEME UTILITIES ─── */
+.folder-card {
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.folder-card:hover {
+  transform: translateY(-4px);
+}
+
+html.light {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+html.light body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html.dark {
+  background-color: #0a0f1c !important;
+  color: #f8fafc !important;
+}
+html.dark body {
+  background-color: #0a0f1c !important;
+  color: #f8fafc !important;
+}
+
+
