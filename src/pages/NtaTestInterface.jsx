@@ -880,7 +880,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                     {test?.title || 'Examination Instructions'}
                   </h3>
                   <span className="text-xs font-semibold" style={{ color: isLight ? '#64748b' : '#94a3b8' }}>
-                    Duration: {test?.durationMinutes || 180} Mins | Total Questions: {questions?.length || 75}
+                    Duration: {test?.durationMinutes || test?.duration || (timeLeft ? Math.round(timeLeft / 60) : 180)} Mins | Total Questions: {questions?.length || 75}
                   </span>
                 </div>
               </div>
@@ -912,7 +912,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                   1. General Instructions:
                 </h4>
                 <ol className="list-decimal list-inside space-y-2 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
-                  <li>Total duration of examination is <strong>{test?.durationMinutes || 180} minutes</strong>.</li>
+                  <li>Total duration of examination is <strong>{test?.durationMinutes || test?.duration || (timeLeft ? Math.round(timeLeft / 60) : 180)} minutes</strong>.</li>
                   <li>The clock countdown is displayed on top right corner.</li>
                   <li>When timer reaches zero, test will submit automatically.</li>
                 </ol>

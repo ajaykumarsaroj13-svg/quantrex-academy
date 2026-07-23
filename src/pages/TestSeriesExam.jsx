@@ -1070,7 +1070,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
                     {testData?.title || 'Examination Instructions'}
                   </h3>
                   <span className="text-xs font-semibold" style={{ color: isLight ? '#64748b' : '#94a3b8' }}>
-                    Duration: {testData?.durationMinutes || 180} Mins | Total Questions: {testData?.questions?.length || 75}
+                    Duration: {testData?.durationMinutes || testData?.duration || (timeLeft ? Math.round(timeLeft / 60) : 180)} Mins | Total Questions: {testData?.questions?.length || 75}
                   </span>
                 </div>
               </div>
@@ -1119,7 +1119,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
                   1. General Instructions:
                 </h4>
                 <ol className="list-decimal list-inside space-y-2 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
-                  <li>Total duration of examination is <strong>{testData?.durationMinutes || 180} minutes</strong>.</li>
+                  <li>Total duration of examination is <strong>{testData?.durationMinutes || testData?.duration || (timeLeft ? Math.round(timeLeft / 60) : 180)} minutes</strong>.</li>
                   <li>The clock will be set at the server. The countdown timer in the top right corner of screen will display the remaining time available for you to complete the examination.</li>
                   <li>When the timer reaches zero, the examination will end automatically. You will not be required to end or submit your examination.</li>
                 </ol>
