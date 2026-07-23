@@ -1587,13 +1587,50 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                         );
                       })()
                     ) : (
-                      <div className={`flex flex-col items-center justify-center p-12 rounded-3xl min-h-[40vh] text-center space-y-3 border ${
-                        isLight ? 'bg-white border-slate-200 shadow-sm' : 'bg-[#0f111a] border-white/5'
+                      <div className={`folder-card flex flex-col items-center justify-center p-10 sm:p-14 rounded-3xl min-h-[50vh] text-center space-y-6 border relative overflow-hidden transition-all duration-300 ${
+                        isLight 
+                          ? 'bg-white border-slate-200 shadow-xl text-slate-900' 
+                          : 'bg-[#181C24] border-white/10 shadow-2xl text-white'
                       }`}>
-                        <div className="h-12 w-12 rounded-full flex items-center justify-center bg-amber-500/10 text-amber-500">
-                          <BookOpen className="h-5 w-5" />
+                        {/* Background radial glow */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-gradient-to-tr from-amber-500/10 via-blue-500/10 to-emerald-500/10 rounded-full blur-[90px] pointer-events-none" />
+
+                        {/* Centered Glowing Logo Seal */}
+                        <div className="relative">
+                          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-500/20 to-blue-600/20 border border-amber-500/40 flex items-center justify-center p-3 shadow-[0_0_30px_rgba(245,158,11,0.25)] animate-pulse">
+                            <img src={logoImg} alt="Quantrex" className="w-full h-full object-contain" />
+                          </div>
                         </div>
-                        <p className="text-xs font-bold text-gray-500">Select a chapter from the left menu to explore the study dashboard.</p>
+
+                        <div className="max-w-md space-y-2 relative z-10">
+                          <span className="inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-amber-500/10 text-amber-500 border border-amber-500/20">
+                            Quantrex Academy &bull; Study Portal
+                          </span>
+                          <h3 className={`text-xl sm:text-2xl font-black uppercase tracking-tight ${isLight ? 'text-slate-900' : 'text-white'}`}>
+                            Select a Chapter to Begin
+                          </h3>
+                          <p className={`text-xs leading-relaxed font-medium ${isLight ? 'text-slate-600' : 'text-gray-400'}`}>
+                            Choose any chapter from the left menu to access video lectures, class notes, DPP handouts, formula sheets, and chapter-wise PYQs.
+                          </p>
+                        </div>
+
+                        {/* Quick Chapter Shortcuts */}
+                        <div className="flex flex-wrap justify-center gap-2 max-w-lg relative z-10">
+                          {syllabus[selectedSyllabusClass === 'jee-mains' ? 'mains' : selectedSyllabusClass === 'jee-advanced' ? 'advanced' : selectedSyllabusClass]?.subjects?.[selectedSyllabusSubject]?.chapters?.slice(0, 4).map(ch => (
+                            <button
+                              key={ch.id}
+                              onClick={() => setSelectedSyllabusChapterId(ch.id)}
+                              className={`px-3 py-1.5 rounded-xl text-[11px] font-bold border transition-all flex items-center gap-1.5 cursor-pointer hover:scale-105 ${
+                                isLight 
+                                  ? 'bg-slate-100 border-slate-200 text-slate-800 hover:bg-amber-50 hover:border-amber-300 hover:text-amber-700' 
+                                  : 'bg-white/5 border-white/10 text-gray-300 hover:bg-amber-500/10 hover:border-amber-500/30 hover:text-amber-400'
+                              }`}
+                            >
+                              <span>⚡</span>
+                              <span className="truncate max-w-[140px]">{ch.title}</span>
+                            </button>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>

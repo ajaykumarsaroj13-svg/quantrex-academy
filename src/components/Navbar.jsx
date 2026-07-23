@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Shield from 'lucide-react/dist/esm/icons/shield';
 import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
 import LogOut from 'lucide-react/dist/esm/icons/log-out';
@@ -156,13 +157,24 @@ export default function Navbar({ activePage, setActivePage, user, onLogout, cust
               : 'bg-slate-800 border-slate-600 justify-start shadow-inner'
           }`}
         >
-          <span className={`absolute inset-y-0.5 w-7 rounded-full transition-all duration-300 flex items-center justify-center text-xs shadow-md ${
-            isLight
-              ? 'right-0.5 bg-white text-amber-500'
-              : 'left-0.5 bg-obsidian text-blue-400 border border-slate-600'
-          }`}>
-            {isLight ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
-          </span>
+          <motion.span 
+            layout
+            transition={{ type: "spring", stiffness: 500, damping: 30 }}
+            className={`absolute inset-y-0.5 w-7 rounded-full transition-colors duration-300 flex items-center justify-center text-xs shadow-md ${
+              isLight
+                ? 'right-0.5 bg-white text-amber-500'
+                : 'left-0.5 bg-obsidian text-blue-400 border border-slate-600'
+            }`}
+          >
+            <motion.div
+              key={isLight ? 'sun' : 'moon'}
+              initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
+              animate={{ rotate: 0, opacity: 1, scale: 1 }}
+              transition={{ duration: 0.25 }}
+            >
+              {isLight ? <Sun className="h-3.5 w-3.5" /> : <Moon className="h-3.5 w-3.5" />}
+            </motion.div>
+          </motion.span>
         </button>
 
 

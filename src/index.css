@@ -808,7 +808,16 @@ html:not(.light) .premium-solution-wrapper .solution-body b {
   background-color: rgba(251, 191, 36, 0.1) !important;
 }
 
-/* ─── FOLDER CARD & THEME UTILITIES ─── */
+/* ─── EXAM ACCENT TOKENS & FOLDER CARDS ─── */
+:root {
+  --brand-navy: #0d3b66;
+  --brand-navy-accent: #2563eb;
+  --brand-gold: #b8860b;
+  --brand-gold-accent: #f59e0b;
+  --brand-green: #1b4332;
+  --brand-green-accent: #22c55e;
+}
+
 .folder-card {
   border-radius: 1.25rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -816,6 +825,36 @@ html:not(.light) .premium-solution-wrapper .solution-body b {
 }
 .folder-card:hover {
   transform: translateY(-4px);
+}
+
+.card-top-accent-navy::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.card-top-accent-gold::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #b8860b, #f59e0b);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.card-top-accent-green::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1b4332, #22c55e);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 
 html.light {
@@ -828,11 +867,11 @@ html.light body {
 }
 
 html.dark {
-  background-color: #0a0f1c !important;
+  background-color: #0b0e14 !important;
   color: #f8fafc !important;
 }
 html.dark body {
-  background-color: #0a0f1c !important;
+  background-color: #0b0e14 !important;
   color: #f8fafc !important;
 }
 

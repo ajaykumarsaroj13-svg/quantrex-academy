@@ -424,7 +424,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10">
                   {/* Card 1: JEE MAIN */}
-                  <div className={`folder-card rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
+                  <div className={`folder-card card-top-accent-navy rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
                     isLight ? 'bg-white border-blue-100 text-slate-900 shadow-slate-200/60' : 'bg-cyberdark/80 border-[#0d3b66]/30 text-white'
                   }`}>
                     <div className="bg-gradient-to-r from-[#0d3b66] to-[#001f3f] py-4 text-center border-b border-[#0d3b66]/30">
@@ -458,7 +458,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                   </div>
 
                   {/* Card 2: JEE ADVANCED */}
-                  <div className={`folder-card rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
+                  <div className={`folder-card card-top-accent-gold rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
                     isLight ? 'bg-white border-amber-100 text-slate-900 shadow-slate-200/60' : 'bg-cyberdark/80 border-[#b8860b]/30 text-white'
                   }`}>
                     <div className="bg-gradient-to-r from-[#b8860b] to-[#1e1b4b] py-4 text-center border-b border-[#b8860b]/30">
@@ -491,7 +491,7 @@ const TestSeriesPage = ({ user, onStartTest, onBack, testsData, mode }) => {
                   </div>
 
                   {/* Card 3: NDA */}
-                  <div className={`folder-card rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
+                  <div className={`folder-card card-top-accent-green rounded-3xl overflow-hidden shadow-2xl flex flex-col group transition-all duration-300 hover:-translate-y-1 border ${
                     isLight ? 'bg-white border-emerald-100 text-slate-900 shadow-slate-200/60' : 'bg-cyberdark/80 border-[#1b4332]/30 text-white'
                   }`}>
                     <div className="bg-gradient-to-r from-[#1b4332] to-[#081c15] py-4 text-center border-b border-[#1b4332]/30">

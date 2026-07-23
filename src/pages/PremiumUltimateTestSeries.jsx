@@ -284,7 +284,7 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
                                                 const isBookmarked = bookmarkedIds.includes(tid);
                                                 
                                                 return (
-                                                <div key={tid} className={`${isLight ? 'bg-white' : 'bg-[#22273b]'} border ${theme.border} rounded-lg p-4 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-500/50 transition-all shadow-sm group relative overflow-hidden`}>
+                                                <div key={tid} className={`folder-card ${isLight ? 'bg-white shadow-sm hover:shadow-md' : 'bg-[#22273b]'} border ${theme.border} rounded-2xl p-4 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-500/50 transition-all group relative overflow-hidden`}>
                                                    {/* Lock overlay visual hint */}
                                                    {isLocked && !test.isUpcoming && (
                                                      <div className="absolute top-0 right-0 p-2 opacity-5 pointer-events-none">
@@ -298,9 +298,18 @@ const PremiumUltimateTestSeries = ({ user, onStartTest, onViewResult, onBack, is
                                                         {test.title}
                                                       </div>
                                                       
-                                                      {/* Syllabus / Section Tag */}
-                                                      <div className={`text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-2.5 sm:py-1 w-fit rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
-                                                        Syllabus: {test.sectionName || sectionName}
+                                                      {/* Syllabus / Section Tag & Pill Badges */}
+                                                      <div className="flex flex-wrap items-center gap-2">
+                                                        <div className={`text-[10px] sm:text-xs font-medium px-2.5 py-0.5 rounded-md ${isLight ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-gray-400'}`}>
+                                                          Syllabus: {test.sectionName || sectionName}
+                                                        </div>
+                                                        {test.isUpcoming ? (
+                                                          <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase bg-amber-500/10 text-amber-500 border border-amber-500/20">Upcoming</span>
+                                                        ) : index === 0 ? (
+                                                          <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase bg-blue-500/10 text-blue-500 border border-blue-500/20">Free Demo</span>
+                                                        ) : (
+                                                          <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">Available</span>
+                                                        )}
                                                       </div>
 
                                                       <div className={`flex flex-wrap items-center gap-3 sm:gap-4 text-xs sm:text-sm ${theme.textMuted} font-medium mt-1`}>
