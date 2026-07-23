@@ -51,6 +51,12 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
   const [timeSpentMap, setTimeSpentMap] = useState({});
   const [timeLeft, setTimeLeft]         = useState(180 * 60);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
+  const [showInstructionsModal, setShowInstructionsModal] = useState(false);
+  const [hasAcceptedInstructions, setHasAcceptedInstructions] = useState(() => {
+    if (mode === 'practice') return true;
+    const savedStateJson = localStorage.getItem(`quantrex_exam_state_${testId}`);
+    return !!savedStateJson;
+  });
   const [numericalInput, setNumericalInput]   = useState('');
   const [showSolution, setShowSolution] = useState(false);
   const [answerChecked, setAnswerChecked] = useState(false); // practice mode: show answer after clicking button
@@ -181,7 +187,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
 
   // ── Timer ────────────────────────────────────────────────────
   useEffect(() => {
-    if (!testData || loading || mode === 'practice') return;
+    if (!testData || loading || mode === 'practice' || !hasAcceptedInstructions) return;
     timerRef.current = setInterval(() => {
       setTimeLeft(prev => {
         if (prev <= 1) { clearInterval(timerRef.current); handleAutoSubmit(); return 0; }
@@ -642,7 +648,19 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           </div>
           {mode === 'practice' && <span className="nta-practice-badge">PRACTICE MODE</span>}
         </div>
-        <div className="nta-header-right">
+        <div className="nta-header-right flex items-center">
+          <button
+            onClick={() => setShowInstructionsModal(true)}
+            title="View Exam Instructions"
+            className="px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm mr-3 cursor-pointer"
+            style={{
+              color: isLight ? '#1e293b' : '#f8fafc',
+              backgroundColor: isLight ? '#e2e8f0' : 'rgba(255,255,255,0.1)',
+              border: isLight ? '1px solid #cbd5e1' : '1px solid rgba(255,255,255,0.15)'
+            }}
+          >
+            <span className="text-blue-500 font-extrabold">ℹ</span> Instructions
+          </button>
           <div className="nta-candidate-info">
             <div className="nta-candidate-avatar">{(user?.name || 'A')[0].toUpperCase()}</div>
             <div className="nta-candidate-name">{user?.name || 'Candidate'}</div>
@@ -1024,6 +1042,198 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
                 Yes, Submit ✓
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* ─── INSTRUCTIONS MODAL / OVERLAY ─── */}
+      {(!hasAcceptedInstructions || showInstructionsModal) && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto"
+             style={{ backgroundColor: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(4px)' }}>
+          <div className="relative w-full max-w-4xl max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden border transition-all duration-300"
+               style={{
+                 backgroundColor: isLight ? '#ffffff' : '#0f172a',
+                 borderColor: isLight ? '#cbd5e1' : '#334155',
+                 color: isLight ? '#0f172a' : '#f8fafc'
+               }}>
+            
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b flex items-center justify-between"
+                 style={{
+                   backgroundColor: isLight ? '#f8fafc' : '#1e293b',
+                   borderColor: isLight ? '#e2e8f0' : '#334155'
+                 }}>
+              <div className="flex items-center gap-3">
+                {getExamLogo(testData)}
+                <div>
+                  <h3 className="font-extrabold text-base uppercase tracking-wide" style={{ color: isLight ? '#0f172a' : '#ffffff' }}>
+                    {testData?.title || 'Examination Instructions'}
+                  </h3>
+                  <span className="text-xs font-semibold" style={{ color: isLight ? '#64748b' : '#94a3b8' }}>
+                    Duration: {testData?.durationMinutes || 180} Mins | Total Questions: {testData?.questions?.length || 75}
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={onToggleTheme}
+                  title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+                  className="px-3 py-1 rounded-full text-xs font-bold border transition-all flex items-center gap-1 cursor-pointer"
+                  style={{
+                    backgroundColor: isLight ? '#eff6ff' : '#1e293b',
+                    borderColor: isLight ? '#bfdbfe' : '#334155',
+                    color: isLight ? '#1e3a8a' : '#93c5fd'
+                  }}
+                >
+                  {isLight ? '☀ Light' : '☾ Dark'}
+                </button>
+                {hasAcceptedInstructions && (
+                  <button 
+                    onClick={() => setShowInstructionsModal(false)}
+                    className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm hover:bg-red-500 hover:text-white transition-colors cursor-pointer"
+                    style={{ backgroundColor: isLight ? '#f1f5f9' : '#334155' }}
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Modal Content Scroll Area */}
+            <div className="p-6 overflow-y-auto space-y-6 text-sm leading-relaxed" style={{ maxHeight: 'calc(90vh - 140px)' }}>
+              
+              <div className="p-4 rounded-xl border font-medium text-xs flex items-center gap-3"
+                   style={{
+                     backgroundColor: isLight ? '#eff6ff' : 'rgba(30, 58, 138, 0.25)',
+                     borderColor: isLight ? '#bfdbfe' : 'rgba(59, 130, 246, 0.3)',
+                     color: isLight ? '#1e40af' : '#93c5fd'
+                   }}>
+                <span className="text-base">ℹ</span>
+                <span>Please read the instructions carefully before starting the test. The clock is set at the top right of your screen.</span>
+              </div>
+
+              {/* General Instructions */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1"
+                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  1. General Instructions:
+                </h4>
+                <ol className="list-decimal list-inside space-y-2 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                  <li>Total duration of examination is <strong>{testData?.durationMinutes || 180} minutes</strong>.</li>
+                  <li>The clock will be set at the server. The countdown timer in the top right corner of screen will display the remaining time available for you to complete the examination.</li>
+                  <li>When the timer reaches zero, the examination will end automatically. You will not be required to end or submit your examination.</li>
+                </ol>
+              </div>
+
+              {/* Question Palette Symbols */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-3 border-b pb-1"
+                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  2. Question Status Symbols:
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border"
+                       style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-gray-200 text-gray-700 border border-gray-300">1</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>You have not visited the question yet.</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border"
+                       style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-red-500 text-white">2</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>You have not answered the question.</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border"
+                       style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-emerald-500 text-white">3</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>You have answered the question.</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border"
+                       style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-purple-600 text-white">4</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>You have marked the question for review.</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border md:col-span-2"
+                       style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-purple-600 text-white relative">
+                      5 <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white"></span>
+                    </div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Answered & Marked for Review (will be considered for evaluation).</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Marking Scheme */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1"
+                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  3. Marking Scheme:
+                </h4>
+                <ul className="list-disc list-inside space-y-1.5 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                  <li><strong>Correct Answer:</strong> +4 Marks</li>
+                  <li><strong>Incorrect Answer:</strong> -1 Mark (for MCQs)</li>
+                  <li><strong>Unattempted / Left:</strong> 0 Marks</li>
+                  <li>For Numerical value questions, enter digits or decimal numbers correctly.</li>
+                </ul>
+              </div>
+
+              {/* Navigating & Answering */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1"
+                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  4. Navigating to a Question & Answering:
+                </h4>
+                <ul className="list-disc list-inside space-y-1.5 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                  <li>Click on option / radio button or type in numerical box to choose your answer.</li>
+                  <li>Click <strong>Save & Next</strong> to save your answer and move to the next question.</li>
+                  <li>Click <strong>Mark for Review & Next</strong> to save and flag for later review.</li>
+                  <li>Click <strong>Clear Response</strong> to deselect your answer.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            {/* Modal Footer / Acceptance */}
+            <div className="px-6 py-4 border-t flex flex-col sm:flex-row items-center justify-between gap-4"
+                 style={{
+                   backgroundColor: isLight ? '#f8fafc' : '#1e293b',
+                   borderColor: isLight ? '#e2e8f0' : '#334155'
+                 }}>
+              {!hasAcceptedInstructions ? (
+                <>
+                  <label className="flex items-center gap-2 text-xs font-bold cursor-pointer" style={{ color: isLight ? '#0f172a' : '#f8fafc' }}>
+                    <input 
+                      type="checkbox"
+                      id="accept-instr-check"
+                      className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 cursor-pointer"
+                      onChange={(e) => {
+                        const btn = document.getElementById('start-test-btn');
+                        if (btn) btn.disabled = !e.target.checked;
+                      }}
+                    />
+                    I have read and understood all the instructions.
+                  </label>
+                  <button
+                    id="start-test-btn"
+                    disabled
+                    onClick={() => {
+                      setHasAcceptedInstructions(true);
+                      setShowInstructionsModal(false);
+                    }}
+                    className="w-full sm:w-auto px-8 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-extrabold text-xs uppercase rounded-xl transition-all shadow-md disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    PROCEED TO TEST →
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => setShowInstructionsModal(false)}
+                  className="w-full sm:w-auto px-8 py-2 bg-gray-600 hover:bg-gray-700 text-white font-bold text-xs uppercase rounded-xl transition-all ml-auto cursor-pointer"
+                >
+                  Close Instructions ✕
+                </button>
+              )}
+            </div>
+
           </div>
         </div>
       )}

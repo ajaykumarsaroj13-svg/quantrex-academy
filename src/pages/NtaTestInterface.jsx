@@ -25,6 +25,7 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
   const [statusMap, setStatusMap] = useState({}); // { qIdx: 'not_visited' | 'not_answered' | 'answered' | 'marked' | 'answered_marked' }
   const [timeSpentMap, setTimeSpentMap] = useState({}); // { qIdx: secondsSpent }
   const [timeLeft, setTimeLeft] = useState(180 * 60); // 3 hours default
+  const [showInstructionsModal, setShowInstructionsModal] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [questionResults, setQuestionResults] = useState([]);
@@ -546,6 +547,12 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
           >
             Submit Test
           </button>
+          <button 
+            onClick={() => setShowInstructionsModal(true)} 
+            className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors shadow flex items-center gap-1 cursor-pointer"
+          >
+            ℹ Instructions
+          </button>
           <div className="flex items-center gap-2">
             {getExamLogo(test)}
             <span>{test?.title || 'JEE MAIN 2026 - COMPUTER BASED TEST'} {mode === 'practice' && '(PRACTICE MODE)'}</span>
@@ -845,6 +852,121 @@ export default function NtaTestInterface({ test, user, onBackToDashboard, setAct
                 Login / Register
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* ─── INSTRUCTIONS MODAL OVERLAY ─── */}
+      {showInstructionsModal && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto"
+             style={{ backgroundColor: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(4px)' }}>
+          <div className="relative w-full max-w-4xl max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden border transition-all duration-300"
+               style={{
+                 backgroundColor: isLight ? '#ffffff' : '#0f172a',
+                 borderColor: isLight ? '#cbd5e1' : '#334155',
+                 color: isLight ? '#0f172a' : '#f8fafc'
+               }}>
+            
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b flex items-center justify-between"
+                 style={{
+                   backgroundColor: isLight ? '#f8fafc' : '#1e293b',
+                   borderColor: isLight ? '#e2e8f0' : '#334155'
+                 }}>
+              <div className="flex items-center gap-3">
+                {getExamLogo(test)}
+                <div>
+                  <h3 className="font-extrabold text-base uppercase tracking-wide" style={{ color: isLight ? '#0f172a' : '#ffffff' }}>
+                    {test?.title || 'Examination Instructions'}
+                  </h3>
+                  <span className="text-xs font-semibold" style={{ color: isLight ? '#64748b' : '#94a3b8' }}>
+                    Duration: {test?.durationMinutes || 180} Mins | Total Questions: {questions?.length || 75}
+                  </span>
+                </div>
+              </div>
+              <button 
+                onClick={() => setShowInstructionsModal(false)}
+                className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm hover:bg-red-500 hover:text-white transition-colors cursor-pointer"
+                style={{ backgroundColor: isLight ? '#f1f5f9' : '#334155' }}
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Modal Content Scroll Area */}
+            <div className="p-6 overflow-y-auto space-y-6 text-sm leading-relaxed" style={{ maxHeight: 'calc(90vh - 140px)' }}>
+              <div className="p-4 rounded-xl border font-medium text-xs flex items-center gap-3"
+                   style={{
+                     backgroundColor: isLight ? '#eff6ff' : 'rgba(30, 58, 138, 0.25)',
+                     borderColor: isLight ? '#bfdbfe' : 'rgba(59, 130, 246, 0.3)',
+                     color: isLight ? '#1e40af' : '#93c5fd'
+                   }}>
+                <span className="text-base">ℹ</span>
+                <span>Please read the instructions carefully. The clock is set at the top right of your screen.</span>
+              </div>
+
+              {/* General Instructions */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1"
+                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  1. General Instructions:
+                </h4>
+                <ol className="list-decimal list-inside space-y-2 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                  <li>Total duration of examination is <strong>{test?.durationMinutes || 180} minutes</strong>.</li>
+                  <li>The clock countdown is displayed on top right corner.</li>
+                  <li>When timer reaches zero, test will submit automatically.</li>
+                </ol>
+              </div>
+
+              {/* Question Status Symbols */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-3 border-b pb-1"
+                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  2. Question Status Symbols:
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-gray-200 text-gray-700 border border-gray-300">1</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Not Visited</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-red-500 text-white">2</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Not Answered</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-emerald-500 text-white">3</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Answered</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-purple-600 text-white">4</div>
+                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Marked for Review</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Marking Scheme */}
+              <div>
+                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1" style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                  3. Marking Scheme:
+                </h4>
+                <ul className="list-disc list-inside space-y-1.5 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                  <li><strong>Correct Answer:</strong> +4 Marks</li>
+                  <li><strong>Incorrect Answer:</strong> -1 Mark</li>
+                  <li><strong>Unattempted:</strong> 0 Marks</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-4 border-t flex justify-end" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+              <button
+                onClick={() => setShowInstructionsModal(false)}
+                className="px-8 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase rounded-xl transition-all cursor-pointer"
+              >
+                Close Instructions ✕
+              </button>
+            </div>
+
           </div>
         </div>
       )}
