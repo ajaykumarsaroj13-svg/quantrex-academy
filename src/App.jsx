@@ -11,7 +11,7 @@ import Auth from './views/Auth';
 import Shield from 'lucide-react/dist/esm/icons/shield';
 import { loadDbFromBlob } from './blob';
 import { AIAssistantProvider } from './contexts/AIAssistantContext';
-import FloatingAIAssistant from './components/AIAssistant/FloatingAIAssistant';
+import JoviChatWidget from './components/AIAssistant/JoviChatWidget';
 
 const StudentDashboard = React.lazy(() => import('./views/StudentDashboard'));
 const AdminDashboard = React.lazy(() => import('./views/AdminDashboard'));
@@ -595,7 +595,7 @@ export default function App() {
       )}
 
       {/* Global AI Assistant */}
-      {!isExamMode && <FloatingAIAssistant theme={isLight ? 'light' : 'dark'} />}
+      {!isExamMode && <JoviChatWidget theme={isLight ? 'light' : 'dark'} />}
     </div>
     </AIAssistantProvider>
   );
