@@ -1,41 +1,33 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Settings, Trophy, RotateCcw, User, Loader2, Database, ChevronRight } from "lucide-react";
+import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 
-// ---------- Mock Database for Offline AI ----------
-const MOCK_QUESTION_BANK = {
-  "calculus": [
-    { q: "What is the derivative of $\\sin(x)$ with respect to $x$?", options: ["$\\cos(x)$", "$-\\cos(x)$", "$\\sin(x)$", "$\\sec^2(x)$"], correct: 0, explanation: "The derivative of sin(x) is a fundamental trigonometric limit resulting in cos(x)." },
-    { q: "Evaluate the integral $\\int 2x dx$.", options: ["$x^2 + C$", "$2x^2 + C$", "$x + C$", "$\\frac{x^2}{2} + C$"], correct: 0, explanation: "Using the power rule for integration: $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$." },
-    { q: "What is the limit of $\\frac{\\sin(x)}{x}$ as $x \\to 0$?", options: ["$0$", "$1$", "$\\infty$", "undefined"], correct: 1, explanation: "This is a standard limit proven using the squeeze theorem." },
-    { q: "Find the local maximum of $f(x) = -x^2 + 4x$.", options: ["$x=0$", "$x=2$", "$x=4$", "$x=-2$"], correct: 1, explanation: "Set derivative $f'(x) = -2x + 4 = 0$, giving $x = 2$." },
-    { q: "Which of these is the product rule?", options: ["$(fg)' = f'g'$", "$(fg)' = f'g + fg'$", "$(f/g)' = (f'g - fg')/g^2$", "$(f(g))' = f'(g)g'$"], correct: 1, explanation: "The product rule states that the derivative of $f(x)g(x)$ is $f'(x)g(x) + f(x)g'(x)$." }
-  ],
-  "sets": [
-    { q: "If A = {1, 2, 3} and B = {3, 4, 5}, what is A ∩ B?", options: ["{1, 2}", "{3}", "{4, 5}", "∅"], correct: 1, explanation: "Intersection means elements common to both sets." },
-    { q: "A relation R on set A is called reflexive if for every $a \\in A$...", options: ["$(a, a) \\in R$", "$(a, b) \\in R \\implies (b, a) \\in R$", "R is empty", "None of the above"], correct: 0, explanation: "Reflexive property requires every element to be related to itself." },
-    { q: "If a set has $n$ elements, how many subsets does it have?", options: ["$n$", "$2n$", "$n^2$", "$2^n$"], correct: 3, explanation: "The power set of a set with $n$ elements has $2^n$ elements." },
-    { q: "What is $A \\cup A'$ (where $A'$ is the complement of A)?", options: ["$A$", "$A'$", "$\\emptyset$", "Universal Set (U)"], correct: 3, explanation: "A set and its complement together make up the entire Universal Set." },
-    { q: "Which of the following is an empty set?", options: ["{x : x is an even prime number}", "{x : x is a real number and $x^2 < 0$}", "{0}", "{$\\emptyset$}"], correct: 1, explanation: "The square of any real number is non-negative, so no such real number exists." }
-  ],
-  "physics": [
-    { q: "What is the SI unit of Force?", options: ["Joule", "Newton", "Watt", "Pascal"], correct: 1, explanation: "Force is measured in Newtons ($N = kg \\cdot m/s^2$)." },
-    { q: "According to Newton's Second Law...", options: ["$F = m/a$", "$F = ma$", "$F = m - a$", "$F = m^2a$"], correct: 1, explanation: "Force equals mass times acceleration." },
-    { q: "What is the escape velocity from Earth?", options: ["$11.2 \\text{ km/s}$", "$9.8 \\text{ m/s}$", "$3 \\times 10^8 \\text{ m/s}$", "$11.2 \\text{ m/s}$"], correct: 0, explanation: "Escape velocity $v_e = \\sqrt{2gR}$, which is approx 11.2 km/s for Earth." },
-    { q: "Which of these is a scalar quantity?", options: ["Velocity", "Acceleration", "Work", "Force"], correct: 2, explanation: "Work has magnitude but no direction, so it is a scalar." },
-    { q: "What is the dimensional formula of Energy?", options: ["$[MLT^{-1}]$", "$[ML^2T^{-2}]$", "$[ML^{-1}T^{-2}]$", "$[M^0L^2T^{-2}]$"], correct: 1, explanation: "Energy has the same dimensions as Work, which is Force $\\times$ Distance = $[MLT^{-2}][L] = [ML^2T^{-2}]$." }
-  ]
+// Helper to get slug for test engine
+const getFetchSlug = (examKey, ch) => {
+  const slug = (ch.url && ch.url !== '#') ? ch.url.split('/').pop() : (ch.id || '');
+  let fetchSlug = String(slug || ch.id || 'unknown');
+  if (examKey === 'jee-advanced') {
+    if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
+    else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
+    else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
+
+    if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
+      fetchSlug = 'adv-' + fetchSlug;
+    }
+  }
+  return fetchSlug;
 };
 
 // Initial Guided Options
-const EXAM_OPTIONS = ["JEE Main", "JEE Advanced", "NDA", "BITSAT"];
-const SUBJECT_OPTIONS = ["Mathematics", "Physics", "Chemistry"];
-const MATH_CHAPTERS = ["Calculus", "Sets & Relations", "Algebra", "Coordinate Geometry", "Trigonometry"];
-const ACTION_OPTIONS = ["Generate Test", "View Formulas", "Important Questions", "PYQs"];
+const EXAM_OPTIONS = [
+  { label: "JEE Main", value: "jee-mains" },
+  { label: "JEE Advanced", value: "jee-advanced" },
+  { label: "NDA", value: "nda" }
+];
 
-const GREETING = "Welcome to Quantrex AI! Select your target exam to begin your preparation:";
+const GREETING = "Welcome to Quantrex AI! Let's generate a real test for you. Please select your target exam:";
 
 // Simple Markdown + Math Renderer
 function MessageContent({ text }) {
@@ -65,141 +57,154 @@ export default function JoviChatWidget() {
   const setOpen = (val) => val ? openAssistant() : closeAssistant();
 
   const [messages, setMessages] = useState([
-    { id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS },
+    { id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS.map(e => e.label) },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [activeQuiz, setActiveQuiz] = useState(null); 
-  const [chatContext, setChatContext] = useState({ exam: null, subject: null, chapter: null });
+  
+  // State machine context
+  const [chatContext, setChatContext] = useState({ 
+    step: 'exam', // exam -> subject -> chapter -> count -> time -> ready
+    examKey: null, 
+    subjectKey: null, 
+    chapterSlug: null,
+    chapterTitle: null,
+    qCount: null,
+    duration: null
+  });
+  
+  const [currentChapterPage, setCurrentChapterPage] = useState(0);
+
   const scrollRef = useRef(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-  }, [messages, isLoading, activeQuiz, open]);
+  }, [messages, isLoading, open, currentChapterPage]);
 
-  // quiz countdown
-  useEffect(() => {
-    if (!activeQuiz || activeQuiz.finished) return;
-    const t = setInterval(() => {
-      setActiveQuiz((q) => {
-        if (!q || q.finished) return q;
-        if (q.secondsLeft <= 1) {
-          clearInterval(t);
-          return finishQuiz(q);
-        }
-        return { ...q, secondsLeft: q.secondsLeft - 1 };
-      });
-    }, 1000);
-    return () => clearInterval(t);
-  }, [activeQuiz?.idx, !!activeQuiz]);
-
-  function addMsg(from, content, options = null) {
-    setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content, options }]);
+  function addMsg(from, content, options = null, customData = null) {
+    setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content, options, customData }]);
   }
 
   async function handleSend(textOverride = null) {
     const text = textOverride ?? input.trim();
     if (!text) return;
     
-    if (!textOverride) setInput(""); // Only clear input if it was typed
+    if (!textOverride) setInput("");
     addMsg("user", text);
     setIsLoading(true);
 
     const lowerText = text.toLowerCase();
-    
-    // Simulate network delay for natural feel
     await new Promise(resolve => setTimeout(resolve, 600));
     setIsLoading(false);
-
-    // --- Guided Wizard Flow ---
-    if (EXAM_OPTIONS.some(o => o.toLowerCase() === lowerText)) {
-      setChatContext(prev => ({ ...prev, exam: text }));
-      addMsg("bot", `Great choice! Which subject do you want to study for **${text}**?`, SUBJECT_OPTIONS);
-      return;
-    }
     
-    if (SUBJECT_OPTIONS.some(o => o.toLowerCase() === lowerText)) {
-      setChatContext(prev => ({ ...prev, subject: text }));
-      // Currently mocking Mathematics chapters, you can expand for physics/chem
-      const chapters = text.toLowerCase() === "physics" ? ["Mechanics", "Thermodynamics", "Optics"] : MATH_CHAPTERS;
-      addMsg("bot", `Select a chapter from **${text}**:`, chapters);
-      return;
+    const syllabus = window.DEFAULT_SYLLABUS || {};
+
+    // Step 1: Select Exam
+    if (chatContext.step === 'exam') {
+      const match = EXAM_OPTIONS.find(e => e.label.toLowerCase() === lowerText);
+      if (match) {
+        const examData = syllabus[match.value];
+        if (!examData || !examData.subjects) {
+           addMsg("bot", `Syllabus data for **${match.label}** is currently unavailable. Please try another exam.`, EXAM_OPTIONS.map(e => e.label));
+           return;
+        }
+        setChatContext(prev => ({ ...prev, step: 'subject', examKey: match.value }));
+        const subjects = Object.keys(examData.subjects).map(k => examData.subjects[k].label || k);
+        addMsg("bot", `Great choice! Which subject do you want to practice for **${match.label}**?`, subjects);
+        return;
+      }
     }
 
-    if (MATH_CHAPTERS.some(o => o.toLowerCase() === lowerText) || lowerText.includes("mechanics") || lowerText.includes("optics")) {
-      setChatContext(prev => ({ ...prev, chapter: text }));
-      addMsg("bot", `What would you like to do in **${text}**?`, ACTION_OPTIONS);
-      return;
-    }
-
-    if (lowerText === "generate test" || lowerText.includes("create a test") || lowerText.includes("test")) {
-      const topic = chatContext.chapter || "general";
-      let matchedTopic = "general";
+    // Step 2: Select Subject
+    if (chatContext.step === 'subject') {
+      const examData = syllabus[chatContext.examKey];
+      const subjKey = Object.keys(examData.subjects).find(k => (examData.subjects[k].label || k).toLowerCase() === lowerText);
       
-      if (topic.toLowerCase().includes("calculus")) matchedTopic = "calculus";
-      else if (topic.toLowerCase().includes("sets")) matchedTopic = "sets";
-      else if (chatContext.subject?.toLowerCase() === "physics" || topic.toLowerCase().includes("mechanics")) matchedTopic = "physics";
+      if (subjKey) {
+        setChatContext(prev => ({ ...prev, step: 'chapter', subjectKey: subjKey }));
+        setCurrentChapterPage(0);
+        
+        const chapters = examData.subjects[subjKey].chapters || [];
+        if (chapters.length === 0) {
+          addMsg("bot", `No chapters found for this subject. Try another one.`, Object.keys(examData.subjects).map(k => examData.subjects[k].label || k));
+          setChatContext(prev => ({ ...prev, step: 'subject' }));
+          return;
+        }
+        
+        addMsg("bot", `Awesome! Now select a chapter to practice:`, null, { type: 'chapter_select', chapters, subjectKey: subjKey, examKey: chatContext.examKey });
+        return;
+      }
+    }
 
-      const questions = MOCK_QUESTION_BANK[matchedTopic] || MOCK_QUESTION_BANK["general"];
+    // Step 3: Select Chapter (handled via custom button clicks, but fallback text matching)
+    if (chatContext.step === 'chapter') {
+      const examData = syllabus[chatContext.examKey];
+      const chapters = examData.subjects[chatContext.subjectKey].chapters || [];
+      const match = chapters.find(c => c.title.toLowerCase() === lowerText);
       
-      addMsg("bot", `Generating a personalized mock test for **${topic}**... Good luck!`);
-      setActiveQuiz({
-        topic: topic.toUpperCase(), 
-        timeLimit: 15,
-        questions, 
-        idx: 0, 
-        answers: Array(questions.length).fill(null),
-        secondsLeft: 15 * 60, 
-        finished: false,
-      });
-      return;
+      if (match) {
+        const fetchSlug = getFetchSlug(chatContext.examKey, match);
+        setChatContext(prev => ({ ...prev, step: 'count', chapterSlug: fetchSlug, chapterTitle: match.title }));
+        
+        addMsg("bot", `You selected **${match.title}**. How many questions would you like in this test?`, ["10 Questions", "15 Questions", "20 Questions", "30 Questions"]);
+        return;
+      }
     }
 
-    if (lowerText === "view formulas") {
-      addMsg("bot", `Here are some key formulas for **${chatContext.chapter || "your topic"}**:\n\n1. $\\sin^2(x) + \\cos^2(x) = 1$\n2. $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$\n3. $e^{i\\pi} + 1 = 0$\n\n*Check the Library section for the complete PDF formula sheet.*`);
-      return;
+    // Step 4: Question Count
+    if (chatContext.step === 'count') {
+      if (lowerText.includes("10") || lowerText.includes("15") || lowerText.includes("20") || lowerText.includes("30")) {
+        const count = parseInt(lowerText.match(/\d+/)[0]);
+        setChatContext(prev => ({ ...prev, step: 'time', qCount: count }));
+        
+        addMsg("bot", `Got it, **${count} questions**. How much time do you need?`, ["15 Mins", "30 Mins", "60 Mins"]);
+        return;
+      }
     }
 
-    if (lowerText === "important questions" || lowerText === "pyqs") {
-      addMsg("bot", `I found 45 previous year questions (PYQs) for **${chatContext.chapter || "your topic"}** in our database. Would you like to practice them in test format?`, ["Generate Test", "Show as PDF"]);
-      return;
+    // Step 5: Time Limit & Generate
+    if (chatContext.step === 'time') {
+      if (lowerText.includes("15") || lowerText.includes("30") || lowerText.includes("60") || lowerText.includes("45")) {
+        const duration = parseInt(lowerText.match(/\d+/)[0]);
+        
+        // Build real test payload
+        const isAdv = chatContext.examKey === 'jee-advanced';
+        
+        // Distribute question counts based on total requested
+        let typesCount = {};
+        if (isAdv) {
+          const base = Math.floor(chatContext.qCount / 4);
+          typesCount = { MCQ: base*2 || 5, MULTI_CORRECT: base || 5, COMPREHENSION: 0, MATCHING: 0 };
+        } else {
+          const num = Math.floor(chatContext.qCount * 0.25);
+          const mcq = chatContext.qCount - num;
+          typesCount = { MCQ: mcq, NUMERICAL: num };
+        }
+
+        const params = {
+          exam: chatContext.examKey,
+          chapters: [chatContext.chapterSlug],
+          types: typesCount,
+          count: chatContext.qCount,
+          duration: duration,
+          years: 'All',
+          seed: Math.floor(Math.random() * 1000000)
+        };
+        
+        const encodedParams = encodeURIComponent(JSON.stringify(params));
+        const testUrl = `/?custom_test=${encodedParams}`;
+        
+        addMsg("bot", `Your test on **${chatContext.chapterTitle}** is ready!`, null, { type: 'launch_test', url: testUrl });
+        
+        // Reset state so user can create another
+        setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, qCount: null, duration: null });
+        return;
+      }
     }
-    
-    if (lowerText === "show as pdf") {
-      addMsg("bot", "Opening the PDF viewer module is currently restricted in this mode. Please use 'Generate Test' instead.");
-      return;
-    }
 
-    // --- Free Text Fallback ---
-    if (lowerText.includes("hello") || lowerText.includes("hi")) {
-      addMsg("bot", "Hello! Let me help you navigate. What exam are you preparing for?", EXAM_OPTIONS);
-      return;
-    }
-    
-    addMsg("bot", `I am currently operating in **Internal Database Mode**. For best results, please select from the guided options below or type "Generate a test for Calculus".`, ["JEE Main", "JEE Advanced", "Test Series"]);
-  }
-
-  function finishQuiz(q) {
-    const score = q.answers.reduce((s, a, i) => s + (a === q.questions[i].correct ? 1 : 0), 0);
-    setTimeout(() => {
-      addMsg("bot", `Test completed! You scored **${score}/${q.questions.length}**. Would you like to try another topic?`, EXAM_OPTIONS);
-    }, 500);
-    return { ...q, finished: true, score };
-  }
-
-  function selectAnswer(optIdx) {
-    setActiveQuiz((q) => {
-      const answers = [...q.answers];
-      answers[q.idx] = optIdx;
-      return { ...q, answers };
-    });
-  }
-
-  function nextQuestion() {
-    setActiveQuiz((q) => {
-      if (q.idx + 1 >= q.questions.length) return finishQuiz(q);
-      return { ...q, idx: q.idx + 1 };
-    });
+    // Free Text Fallback / Restart
+    addMsg("bot", `I'm an AI test generator. Let's restart the setup process. Which exam are you targeting?`, EXAM_OPTIONS.map(e => e.label));
+    setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, qCount: null, duration: null });
   }
 
   // ---------- render ----------
@@ -253,15 +258,13 @@ export default function JoviChatWidget() {
           </div>
           <div style={{ color: "#94a3b8", fontSize: 12, display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#34d399" }} />
-            Internal Database Mode
+            Connected to Test Engine
           </div>
         </div>
         <button onClick={() => {
-          // Reset chat helper
-          setMessages([{ id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS }]);
-          setChatContext({ exam: null, subject: null, chapter: null });
-          setActiveQuiz(null);
-        }} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6, display: "flex", alignItems: "center" }} title="Reset Chat">
+          setMessages([{ id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS.map(e => e.label) }]);
+          setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, qCount: null, duration: null });
+        }} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6, display: "flex", alignItems: "center" }} title="Restart Generator">
           <RotateCcw size={18} />
         </button>
         <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
@@ -296,14 +299,14 @@ export default function JoviChatWidget() {
                 <MessageContent text={m.text} />
               </div>
               
-              {/* Quick Reply Options */}
+              {/* Standard Options */}
               {m.options && m.options.length > 0 && (
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 4 }}>
                   {m.options.map((opt, idx) => (
                     <button 
                       key={idx} 
                       onClick={() => handleSend(opt)}
-                      disabled={isLoading || m.id !== messages[messages.length-1].id} // Disable older buttons
+                      disabled={isLoading || m.id !== messages[messages.length-1].id}
                       style={{
                         background: "rgba(56,189,248,0.1)", border: "1px solid rgba(56,189,248,0.3)", 
                         color: "#38bdf8", borderRadius: 20, padding: "8px 14px", fontSize: 13, 
@@ -317,6 +320,63 @@ export default function JoviChatWidget() {
                   ))}
                 </div>
               )}
+
+              {/* Custom Component Renders (Chapter List / Launch Button) */}
+              {m.customData && m.id === messages[messages.length-1].id && (
+                <div style={{ marginTop: 8 }}>
+                  {m.customData.type === 'chapter_select' && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                      {m.customData.chapters.slice(currentChapterPage * 5, (currentChapterPage + 1) * 5).map((ch, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => handleSend(ch.title)}
+                          style={{
+                            background: "#0f172a", border: "1px solid #334155", color: "#e2e8f0",
+                            padding: "10px 14px", borderRadius: 10, fontSize: 13, textAlign: "left",
+                            cursor: "pointer", transition: "all 0.2s"
+                          }}
+                          onMouseEnter={e => e.currentTarget.style.borderColor = "#38bdf8"}
+                          onMouseLeave={e => e.currentTarget.style.borderColor = "#334155"}
+                        >
+                          {ch.title}
+                        </button>
+                      ))}
+                      
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 4 }}>
+                        <button 
+                          disabled={currentChapterPage === 0}
+                          onClick={() => setCurrentChapterPage(p => p - 1)}
+                          style={{ background: "transparent", border: "none", color: currentChapterPage === 0 ? "#475569" : "#38bdf8", cursor: currentChapterPage === 0 ? "default" : "pointer", fontSize: 13 }}
+                        >
+                          &larr; Prev
+                        </button>
+                        <span style={{ fontSize: 12, color: "#64748b" }}>Page {currentChapterPage + 1} of {Math.ceil(m.customData.chapters.length / 5)}</span>
+                        <button 
+                          disabled={(currentChapterPage + 1) * 5 >= m.customData.chapters.length}
+                          onClick={() => setCurrentChapterPage(p => p + 1)}
+                          style={{ background: "transparent", border: "none", color: (currentChapterPage + 1) * 5 >= m.customData.chapters.length ? "#475569" : "#38bdf8", cursor: (currentChapterPage + 1) * 5 >= m.customData.chapters.length ? "default" : "pointer", fontSize: 13 }}
+                        >
+                          Next &rarr;
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {m.customData.type === 'launch_test' && (
+                    <button
+                      onClick={() => window.location.href = m.customData.url}
+                      style={{
+                        background: "linear-gradient(135deg, #38bdf8, #3b82f6)", border: "none", color: "#fff",
+                        padding: "12px 20px", borderRadius: 12, fontSize: 15, fontWeight: "bold",
+                        cursor: "pointer", display: "flex", alignItems: "center", gap: 8, width: "100%", justifyContent: "center",
+                        boxShadow: "0 4px 15px rgba(56,189,248,0.4)"
+                      }}
+                    >
+                      <ExternalLink size={18} /> Open Test Interface
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -327,17 +387,9 @@ export default function JoviChatWidget() {
                 <Bot size={20} color="#38bdf8" />
               </div>
             <div style={{ background: "#1e293b", borderRadius: 16, padding: "12px 16px", color: "#94a3b8", display: "flex", alignItems: "center", gap: 8 }}>
-              <Loader2 size={16} className="animate-spin" /> Thinking...
+              <Loader2 size={16} className="animate-spin" /> Processing...
             </div>
           </div>
-        )}
-
-        {/* active quiz card */}
-        {activeQuiz && !activeQuiz.finished && (
-          <QuizCard quiz={activeQuiz} onSelect={selectAnswer} onNext={nextQuestion} />
-        )}
-        {activeQuiz && activeQuiz.finished && (
-          <ResultsCard quiz={activeQuiz} onClose={() => setActiveQuiz(null)} />
         )}
       </div>
 
@@ -348,7 +400,7 @@ export default function JoviChatWidget() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
-            placeholder="Type your answer or selection..."
+            placeholder="Type your selection..."
             style={{
               flex: 1, background: "transparent", border: "none",
               color: "#fff", fontSize: 14, outline: "none", width: "100%"
@@ -367,85 +419,9 @@ export default function JoviChatWidget() {
           </button>
         </div>
         <div style={{ textAlign: "center", color: "#64748b", fontSize: 10, marginTop: 8, display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
-          <Database size={10} /> Quantrex Offline Question Bank Active
+          <Database size={10} /> Integrated with Quantrex Test Engine
         </div>
       </div>
-    </div>
-  );
-}
-
-function QuizCard({ quiz, onSelect, onNext }) {
-  const q = quiz.questions[quiz.idx];
-  const chosen = quiz.answers[quiz.idx];
-  return (
-    <div style={{ background: "#1e293b", border: "1px solid rgba(56,189,248,0.3)", borderRadius: 16, padding: 16, marginLeft: 40, marginTop: 8 }}>
-      <div style={{ color: "#94a3b8", fontSize: 12, marginBottom: 12, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ background: "#0f172a", padding: "4px 8px", borderRadius: 6 }}>{quiz.topic}</span>
-        <span style={{ fontWeight: "bold", color: "#38bdf8" }}>Question {quiz.idx + 1} of {quiz.questions.length}</span>
-      </div>
-      <div style={{ color: "#f8fafc", fontSize: 15, marginBottom: 16, fontWeight: 500 }}>
-        <MessageContent text={q.q} />
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-        {q.options.map((opt, i) => (
-          <button key={i} onClick={() => onSelect(i)} style={{
-            textAlign: "left", padding: "12px 16px", borderRadius: 12, fontSize: 14,
-            border: chosen === i ? "2px solid #38bdf8" : "1px solid #334155",
-            background: chosen === i ? "#38bdf815" : "#0f172a",
-            color: "#e2e8f0", cursor: "pointer", transition: "all 0.2s"
-          }}>
-            <span style={{ fontWeight: "bold", marginRight: 8, color: chosen === i ? "#38bdf8" : "#94a3b8" }}>{String.fromCharCode(65 + i)}.</span>
-            <MessageContent text={opt} />
-          </button>
-        ))}
-      </div>
-      
-      {/* Show explanation if answer is selected but before moving next (optional, but let's keep it simple for now) */}
-      {chosen !== null && (
-        <div style={{ marginTop: 12, padding: 12, background: chosen === q.correct ? "#34d39922" : "#f8717122", borderRadius: 8, border: `1px solid ${chosen === q.correct ? "#34d39955" : "#f8717155"}` }}>
-          <div style={{ color: chosen === q.correct ? "#34d399" : "#f87171", fontWeight: "bold", marginBottom: 4, fontSize: 13 }}>
-            {chosen === q.correct ? "✅ Correct!" : "❌ Incorrect (Correct is " + String.fromCharCode(65 + q.correct) + ")"}
-          </div>
-          <div style={{ color: "#cbd5e1", fontSize: 13 }}>
-            <MessageContent text={q.explanation || "No explanation provided."} />
-          </div>
-        </div>
-      )}
-
-      <button onClick={onNext} disabled={chosen === null} style={{
-        marginTop: 16, width: "100%", padding: "12px 0", borderRadius: 12, border: "none",
-        background: chosen === null ? "#334155" : "#38bdf8",
-        color: chosen === null ? "#64748b" : "#0f172a", fontWeight: "bold", fontSize: 14,
-        cursor: chosen === null ? "not-allowed" : "pointer", transition: "background 0.2s"
-      }}>
-        {quiz.idx + 1 === quiz.questions.length ? "Submit Test" : "Next Question"}
-      </button>
-    </div>
-  );
-}
-
-function ResultsCard({ quiz, onClose }) {
-  const score = quiz.score ?? quiz.answers.reduce((s, a, i) => s + (a === quiz.questions[i].correct ? 1 : 0), 0);
-  const pct = Math.round((score / quiz.questions.length) * 100);
-  const color = pct >= 75 ? "#34d399" : pct >= 45 ? "#fbbf24" : "#f87171";
-  
-  return (
-    <div style={{ background: "#1e293b", border: `1px solid ${color}55`, borderRadius: 16, padding: 24, marginLeft: 40, marginTop: 8, textAlign: "center" }}>
-      <div style={{ background: `${color}15`, width: 60, height: 60, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
-        <Trophy size={32} color={color} />
-      </div>
-      <div style={{ color: "#fff", fontWeight: 800, fontSize: 24, marginBottom: 4 }}>{score} / {quiz.questions.length}</div>
-      <div style={{ color, fontSize: 14, fontWeight: 600, marginBottom: 20 }}>{pct}% Score • {quiz.topic}</div>
-      <button onClick={onClose} style={{
-        background: "#0f172a", border: "1px solid #334155",
-        color: "#e2e8f0", borderRadius: 24, padding: "10px 20px", fontSize: 14, fontWeight: 500, cursor: "pointer",
-        display: "inline-flex", alignItems: "center", gap: 8, transition: "background 0.2s"
-      }}
-      onMouseEnter={e => e.currentTarget.style.background = "#334155"}
-      onMouseLeave={e => e.currentTarget.style.background = "#0f172a"}
-      >
-        <RotateCcw size={16} /> Close Results
-      </button>
     </div>
   );
 }
