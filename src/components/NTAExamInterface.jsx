@@ -198,7 +198,7 @@ export default function NTAExamInterface({ testData, onSubmit, onExit }) {
       <div className="nta-header">
         <div className="nta-header-left">
           <div className="nta-logo">
-            <span className="nta-logo-text">Official Paper</span>
+            <span className="nta-logo-text">Quantrex Academy</span>
           </div>
           <div className="nta-exam-title">{testData?.title || 'JEE Main Mock Test'}</div>
         </div>

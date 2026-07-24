@@ -21,7 +21,7 @@ const getExamLogo = (testData) => {
   if (type.includes('nda')) {
     return <img src={logoNdaImg} alt="NDA" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
   }
-  return <img src={logoImg} alt="Quantrex" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
+  return null;
 };
 
 // ─── Constants ────────────────────────────────────────────────
@@ -643,7 +643,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           <button className="nta-exit-btn" onClick={onExit}>✕ Exit</button>
           <div className="nta-logo flex items-center gap-2">
             {getExamLogo(testData)}
-            <span className="nta-logo-text">Official Paper</span>
+            <span className="nta-logo-text">National Testing Agency</span>
           </div>
           <div className="nta-exam-title flex items-center gap-2">
             <span>{testData?.title || 'Test Paper'}</span>

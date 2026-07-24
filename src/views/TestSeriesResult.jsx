@@ -433,8 +433,8 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
       {/* Navbar Placeholder if needed, but normally embedded in layout */}
       <div className="px-8 py-4 bg-white border-b flex justify-between items-center shadow-sm">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-lg font-bold">PA</div>
-          <span className="font-bold text-lg text-slate-800">Performance Analysis</span>
+          <div className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-lg font-bold">QA</div>
+          <span className="font-bold text-lg text-slate-800">Quantrex Academy Analysis</span>
         </div>
         <div className="flex gap-4">
           <button onClick={onBack} className="px-4 py-2 border border-slate-300 rounded-md text-sm font-medium hover:bg-slate-50 transition-colors">
@@ -563,10 +563,10 @@ export default function TestSeriesResult({ result, user, onBack, onRetake }) {
                  </div>
               </div>
 
-              {/* Overall Percentile Card */}
+              {/* Quantrex Percentile Card */}
               <div className="bg-[#f0fdf4] rounded-xl p-6 border border-green-100 shadow-sm flex flex-col items-center justify-center text-center h-[280px]">
                  <div className="flex items-center gap-2 text-slate-700 font-bold mb-4">
-                   <Trophy className="w-5 h-5 text-green-600"/> Overall Percentile
+                   <Trophy className="w-5 h-5 text-green-600"/> Quantrex Percentile
                  </div>
                  
                  <div className="relative w-32 h-32 flex items-center justify-center mb-4">
