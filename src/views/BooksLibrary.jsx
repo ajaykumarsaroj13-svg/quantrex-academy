@@ -1,0 +1,91 @@
+import React from 'react';
+import Book from 'lucide-react/dist/esm/icons/book';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import Download from 'lucide-react/dist/esm/icons/download';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+
+export default function BooksLibrary({ setActivePage, theme, setReadingBook, user, booksData }) {
+  const isLight = theme === 'light';
+
+  const books = booksData && booksData.length > 0 ? booksData : [];
+
+  return (
+    <div className="w-full max-w-7xl mx-auto space-y-6 animate-fade-in pb-20">
+      <button 
+        onClick={() => setActivePage(user ? 'student-dashboard' : 'home')}
+        className={`flex items-center gap-2 text-sm font-semibold mb-6 hover:opacity-70 transition-opacity text-text-secondary hover:text-text-primary`}
+      >
+        <ArrowLeft className="h-4 w-4" /> Back to Dashboard
+      </button>
+
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2 text-accent-primary mb-2">
+            <Book className="h-5 w-5" />
+            <span className="text-xs font-bold tracking-widest uppercase">Digital Library</span>
+          </div>
+          <h1 className={`text-3xl md:text-4xl font-bold text-text-primary`}>
+            Premium Books
+          </h1>
+          <p className={`mt-2 text-sm text-text-secondary max-w-2xl`}>
+            Access high-quality study materials, handbooks, and modules. 
+            All math symbols and formatting are perfectly preserved.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+        {books.map(book => (
+          <div 
+            key={book.id}
+            onClick={() => {
+              setReadingBook(book);
+              setActivePage(book.type === 'interactive' ? 'book-chapters' : 'book-reader');
+            }}
+            className={`group folder-card relative rounded-[var(--radius-card)] p-1 overflow-hidden cursor-pointer transition-all duration-[var(--transition-normal)] hover:scale-[1.02] bg-surface-secondary shadow-sm hover:shadow-md border border-border-default hover:border-accent-primary`}
+          >
+            <div className={`aspect-[3/4] rounded-xl overflow-hidden bg-gradient-to-br ${book.coverColor} p-6 flex flex-col justify-between relative`}>
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-black/20 rounded-full blur-xl -ml-10 -mb-10"></div>
+              
+              <div className="relative z-10">
+                <span className="inline-block px-2.5 py-1 bg-white/20 backdrop-blur-md rounded-lg text-[10px] font-bold text-white uppercase tracking-wider mb-3">
+                  {book.tag}
+                </span>
+                <h3 className="text-2xl font-black text-white leading-tight drop-shadow-md">
+                  {book.title}
+                </h3>
+              </div>
+              
+              <div className="relative z-10 flex items-center justify-between">
+                <span className="text-white/80 text-xs font-medium bg-black/20 px-2 py-1 rounded">
+                  {book.pages} Pages
+                </span>
+                <div className="h-8 w-8 rounded-full bg-white text-gray-900 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <ChevronRight className="h-5 w-5" />
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4">
+              <h4 className={`font-bold text-sm text-text-primary`}>
+                {book.title}
+              </h4>
+              <p className={`text-xs mt-1 line-clamp-2 text-text-secondary`}>
+                {book.description}
+              </p>
+            </div>
+          </div>
+        ))}
+
+        {/* Coming Soon Placeholder */}
+        <div className={`rounded-[var(--radius-card)] border-2 border-dashed flex flex-col items-center justify-center p-8 text-center h-full min-h-[300px] border-border-default bg-surface-primary/30`}>
+          <Book className={`h-8 w-8 mb-3 opacity-20 text-text-primary`} />
+          <h4 className={`font-bold text-sm text-text-muted`}>More Books Coming Soon</h4>
+          <p className={`text-xs mt-1 text-text-muted`}>Physics and Chemistry handbooks are being processed.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
