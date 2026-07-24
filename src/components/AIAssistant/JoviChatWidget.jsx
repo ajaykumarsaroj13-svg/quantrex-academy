@@ -1,17 +1,52 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Clock, BookOpen, Settings, Trophy, RotateCcw, User, Loader2, Key } from "lucide-react";
+import { Bot, X, Send, Sparkles, Settings, Trophy, RotateCcw, User, Loader2, Database } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 
-// ---------- Quantrex Academy Data ----------
-const SUBJECTS = {
-  Mathematics: ["Sets and Relations", "Logarithm", "Quadratic Equations", "Calculus", "Coordinate Geometry", "Algebra", "Trigonometry"],
-  Physics: ["Mechanics", "Thermodynamics", "Electromagnetism", "Optics", "Modern Physics"],
-  Chemistry: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry"],
+// ---------- Mock Database for Offline AI ----------
+const MOCK_QUESTION_BANK = {
+  "calculus": [
+    { q: "What is the derivative of $\\sin(x)$ with respect to $x$?", options: ["$\\cos(x)$", "$-\\cos(x)$", "$\\sin(x)$", "$\\sec^2(x)$"], correct: 0, explanation: "The derivative of sin(x) is a fundamental trigonometric limit resulting in cos(x)." },
+    { q: "Evaluate the integral $\\int 2x dx$.", options: ["$x^2 + C$", "$2x^2 + C$", "$x + C$", "$\\frac{x^2}{2} + C$"], correct: 0, explanation: "Using the power rule for integration: $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$." },
+    { q: "What is the limit of $\\frac{\\sin(x)}{x}$ as $x \\to 0$?", options: ["$0$", "$1$", "$\\infty$", "undefined"], correct: 1, explanation: "This is a standard limit proven using the squeeze theorem." },
+    { q: "Find the local maximum of $f(x) = -x^2 + 4x$.", options: ["$x=0$", "$x=2$", "$x=4$", "$x=-2$"], correct: 1, explanation: "Set derivative $f'(x) = -2x + 4 = 0$, giving $x = 2$." },
+    { q: "Which of these is the product rule?", options: ["$(fg)' = f'g'$", "$(fg)' = f'g + fg'$", "$(f/g)' = (f'g - fg')/g^2$", "$(f(g))' = f'(g)g'$"], correct: 1, explanation: "The product rule states that the derivative of $f(x)g(x)$ is $f'(x)g(x) + f(x)g'(x)$." }
+  ],
+  "sets": [
+    { q: "If A = {1, 2, 3} and B = {3, 4, 5}, what is A ∩ B?", options: ["{1, 2}", "{3}", "{4, 5}", "∅"], correct: 1, explanation: "Intersection means elements common to both sets." },
+    { q: "A relation R on set A is called reflexive if for every $a \\in A$...", options: ["$(a, a) \\in R$", "$(a, b) \\in R \\implies (b, a) \\in R$", "R is empty", "None of the above"], correct: 0, explanation: "Reflexive property requires every element to be related to itself." },
+    { q: "If a set has $n$ elements, how many subsets does it have?", options: ["$n$", "$2n$", "$n^2$", "$2^n$"], correct: 3, explanation: "The power set of a set with $n$ elements has $2^n$ elements." },
+    { q: "What is $A \\cup A'$ (where $A'$ is the complement of A)?", options: ["$A$", "$A'$", "$\\emptyset$", "Universal Set (U)"], correct: 3, explanation: "A set and its complement together make up the entire Universal Set." },
+    { q: "Which of the following is an empty set?", options: ["{x : x is an even prime number}", "{x : x is a real number and $x^2 < 0$}", "{0}", "{$\\emptyset$}"], correct: 1, explanation: "The square of any real number is non-negative, so no such real number exists." }
+  ],
+  "physics": [
+    { q: "What is the SI unit of Force?", options: ["Joule", "Newton", "Watt", "Pascal"], correct: 1, explanation: "Force is measured in Newtons ($N = kg \\cdot m/s^2$)." },
+    { q: "According to Newton's Second Law...", options: ["$F = m/a$", "$F = ma$", "$F = m - a$", "$F = m^2a$"], correct: 1, explanation: "Force equals mass times acceleration." },
+    { q: "What is the escape velocity from Earth?", options: ["$11.2 \\text{ km/s}$", "$9.8 \\text{ m/s}$", "$3 \\times 10^8 \\text{ m/s}$", "$11.2 \\text{ m/s}$"], correct: 0, explanation: "Escape velocity $v_e = \\sqrt{2gR}$, which is approx 11.2 km/s for Earth." },
+    { q: "Which of these is a scalar quantity?", options: ["Velocity", "Acceleration", "Work", "Force"], correct: 2, explanation: "Work has magnitude but no direction, so it is a scalar." },
+    { q: "What is the dimensional formula of Energy?", options: ["$[MLT^{-1}]$", "$[ML^2T^{-2}]$", "$[ML^{-1}T^{-2}]$", "$[M^0L^2T^{-2}]$"], correct: 1, explanation: "Energy has the same dimensions as Work, which is Force $\\times$ Distance = $[MLT^{-2}][L] = [ML^2T^{-2}]$." }
+  ],
+  "general": [
+    { q: "Sample Question 1 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 0, explanation: "Explanation for option A." },
+    { q: "Sample Question 2 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 1, explanation: "Explanation for option B." },
+    { q: "Sample Question 3 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 2, explanation: "Explanation for option C." },
+    { q: "Sample Question 4 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 3, explanation: "Explanation for option D." },
+    { q: "Sample Question 5 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 0, explanation: "Explanation for option A." }
+  ]
 };
 
-const GREETING = "Hello! I am Quantrex AI, the ultimate intelligent assistant for Quantrex Academy. I can solve mathematics problems step-by-step, generate mock tests, explain concepts, and analyze your performance. How can I assist you today?";
+const GREETING = "Hello! I am Quantrex AI. I am currently running in **Offline Database Mode**. I can generate tests instantly from our internal question bank and assist you with website navigation. Try saying *'Create a test for Calculus'*!";
+
+function getMockChatResponse(text) {
+  const lower = text.toLowerCase();
+  if (lower.includes("hello") || lower.includes("hi")) return "Hello! How can I help you with your studies today?";
+  if (lower.includes("syllabus") || lower.includes("chapters") || lower.includes("topic")) return "We cover all major chapters for JEE Main & Advanced including Calculus, Algebra, Mechanics, and Electromagnetism. Check the 'Library' section on the left sidebar for details.";
+  if (lower.includes("price") || lower.includes("fee") || lower.includes("pay")) return "Great news! All our premium test series and AI features are currently available for **Free** during the beta period!";
+  if (lower.includes("admin")) return "As an admin, you can use the Admin Dashboard to manage questions, view student progress, and update the curriculum.";
+  if (lower.includes("who are you") || lower.includes("your name")) return "I am Quantrex AI, the intelligent assistant for Quantrex Academy, designed to help you crack JEE and NDA.";
+  return `I am currently operating in **Internal Database Mode**. While I cannot provide live AI chat answers without an API key, I am fully connected to the Quantrex Academy question bank! Try asking me to **generate a test** for topics like *Calculus*, *Sets*, or *Physics*.`;
+}
 
 // Simple Markdown + Math Renderer
 function MessageContent({ text }) {
@@ -24,7 +59,6 @@ function MessageContent({ text }) {
         } else if (part.startsWith('$') && part.endsWith('$')) {
           return <InlineMath key={i} math={part.slice(1, -1)} />;
         }
-        // Basic bold markdown
         let htmlText = part
           .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
           .replace(/\*(.*?)\*/g, '<em>$1</em>')
@@ -46,16 +80,12 @@ export default function JoviChatWidget() {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [apiKey, setApiKey] = useState(() => localStorage.getItem("quantrex_openai_key") || "");
-  const [showSettings, setShowSettings] = useState(false);
-  
-  // Test flow state
   const [activeQuiz, setActiveQuiz] = useState(null); 
   const scrollRef = useRef(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-  }, [messages, isLoading, activeQuiz, open, showSettings]);
+  }, [messages, isLoading, activeQuiz, open]);
 
   // quiz countdown
   useEffect(() => {
@@ -77,110 +107,45 @@ export default function JoviChatWidget() {
     setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content }]);
   }
 
-  const saveApiKey = (key) => {
-    setApiKey(key);
-    localStorage.setItem("quantrex_openai_key", key);
-    setShowSettings(false);
-    addMsg("bot", "API Key saved successfully! I am now fully connected and ready to assist you.");
-  };
-
-  async function generateTestQuestions(topic, count) {
-    const prompt = `You are the Ultimate AI Agent for Quantrex Academy. Generate exactly ${count} multiple-choice questions for the topic "${topic}" at IIT JEE Advanced difficulty level. 
-    Respond strictly with a JSON array format only, with no markdown fences or other text.
-    Format: [{"q": "Question text here (use $ for inline math and $$ for block math)", "options": ["Option A", "Option B", "Option C", "Option D"], "correct": 0, "explanation": "Detailed explanation with math"}]`;
-    
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({
-        model: "gpt-4o",
-        messages: [{ role: "system", content: prompt }],
-        temperature: 0.7
-      })
-    });
-
-    if (!response.ok) throw new Error("API call failed");
-    const data = await response.json();
-    let content = data.choices[0].message.content.trim();
-    content = content.replace(/```json/g, "").replace(/```/g, "").trim();
-    return JSON.parse(content);
-  }
-
   async function handleSend() {
     const text = input.trim();
     if (!text) return;
     setInput("");
     addMsg("user", text);
+    setIsLoading(true);
 
-    if (!apiKey) {
-      setTimeout(() => {
-        addMsg("bot", "Please provide your OpenAI API Key in the settings to unlock my full capabilities (test generation, problem solving, etc.).");
-        setShowSettings(true);
-      }, 500);
+    const lowerText = text.toLowerCase();
+    
+    // Simulate network delay
+    await new Promise(resolve => setTimeout(resolve, 800));
+
+    // Intent detection for test creation
+    if (lowerText.includes("test") || lowerText.includes("quiz") || lowerText.includes("questions")) {
+      let matchedTopic = "general";
+      if (lowerText.includes("calculus")) matchedTopic = "calculus";
+      else if (lowerText.includes("sets") || lowerText.includes("relation")) matchedTopic = "sets";
+      else if (lowerText.includes("physics")) matchedTopic = "physics";
+
+      const questions = MOCK_QUESTION_BANK[matchedTopic];
+      
+      setIsLoading(false);
+      addMsg("bot", `I have generated a high-quality test on **${matchedTopic.toUpperCase()}** from our internal database. Good luck!`);
+      setActiveQuiz({
+        topic: matchedTopic.toUpperCase(), 
+        timeLimit: 15,
+        questions, 
+        idx: 0, 
+        answers: Array(questions.length).fill(null),
+        secondsLeft: 15 * 60, 
+        finished: false,
+      });
       return;
     }
 
-    setIsLoading(true);
-
-    // Basic intent detection for test creation
-    const lowerText = text.toLowerCase();
-    if (lowerText.includes("test") || lowerText.includes("quiz") || lowerText.includes("questions")) {
-      try {
-        const questions = await generateTestQuestions(text, 5); // Default to 5 for speed
-        setIsLoading(false);
-        addMsg("bot", `I have generated a high-quality test based on your request. Good luck!`);
-        setActiveQuiz({
-          topic: "Custom Test", timeLimit: 15,
-          questions, idx: 0, answers: Array(questions.length).fill(null),
-          secondsLeft: 15 * 60, finished: false,
-        });
-        return;
-      } catch (e) {
-        setIsLoading(false);
-        addMsg("bot", "I encountered an error while generating the test. Please ensure your API key is correct and has available quota.");
-        return;
-      }
-    }
-
-    // Standard Chat with Streaming Simulation (or direct API call)
-    try {
-      const systemPrompt = `You are the Ultimate AI Agent for Quantrex Academy, founded by A.K. Sir. 
-      You are an expert in JEE Main, JEE Advanced, NDA, and BITSAT.
-      Always respond in highly professional English. Never say 'I don't know'. Provide step-by-step mathematical solutions using LaTeX formatting ($ for inline, $$ for block).
-      Prioritize logical reasoning and highlight shortcuts or tricks when solving problems.`;
-
-      // Pass conversation history
-      const apiMessages = [
-        { role: "system", content: systemPrompt },
-        ...messages.slice(-6).map(m => ({ role: m.from === "bot" ? "assistant" : "user", content: m.text })),
-        { role: "user", content: text }
-      ];
-
-      const response = await fetch("https://api.openai.com/v1/chat/completions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${apiKey}`
-        },
-        body: JSON.stringify({
-          model: "gpt-4o",
-          messages: apiMessages,
-          temperature: 0.7
-        })
-      });
-
-      if (!response.ok) throw new Error("API call failed");
-      const data = await response.json();
-      setIsLoading(false);
-      addMsg("bot", data.choices[0].message.content);
-
-    } catch (e) {
-      setIsLoading(false);
-      addMsg("bot", "Connection error. Please check your OpenAI API key in settings or try again later.");
-    }
+    // Standard Chat Fallback
+    const response = getMockChatResponse(text);
+    setIsLoading(false);
+    addMsg("bot", response);
   }
 
   function finishQuiz(q) {
@@ -257,12 +222,9 @@ export default function JoviChatWidget() {
           </div>
           <div style={{ color: "#94a3b8", fontSize: 12, display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#34d399" }} />
-            Ultimate Assistant
+            Internal Database Mode
           </div>
         </div>
-        <button onClick={() => setShowSettings(!showSettings)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
-          <Settings size={20} />
-        </button>
         <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
           <X size={22} />
         </button>
@@ -270,30 +232,7 @@ export default function JoviChatWidget() {
 
       {/* body */}
       <div ref={scrollRef} style={{ flex: 1, overflowY: "auto", padding: "16px", display: "flex", flexDirection: "column", gap: 16 }}>
-        {showSettings ? (
-          <div style={{ background: "#1e293b", padding: 16, borderRadius: 12, border: "1px solid #334155" }}>
-            <h3 style={{ color: "#fff", marginTop: 0, fontSize: 15, display: "flex", alignItems: "center", gap: 6 }}>
-              <Key size={16} color="#38bdf8" /> AI Configuration
-            </h3>
-            <p style={{ color: "#94a3b8", fontSize: 13, marginBottom: 12 }}>Enter your OpenAI API Key to enable test generation and advanced problem solving.</p>
-            <input 
-              type="password" 
-              placeholder="sk-..." 
-              defaultValue={apiKey}
-              onKeyDown={(e) => {
-                if(e.key === 'Enter') saveApiKey(e.target.value);
-              }}
-              style={{ width: "100%", padding: "10px", borderRadius: 8, background: "#0f172a", border: "1px solid #475569", color: "#fff", outline: "none", boxSizing: "border-box" }}
-            />
-            <button 
-              onClick={(e) => saveApiKey(e.target.previousSibling.value)}
-              style={{ marginTop: 12, width: "100%", padding: "10px", background: "#38bdf8", color: "#0f172a", fontWeight: "bold", border: "none", borderRadius: 8, cursor: "pointer" }}>
-              Save API Key
-            </button>
-          </div>
-        ) : null}
-
-        {!showSettings && messages.map((m) => (
+        {messages.map((m) => (
           <div key={m.id} style={{ display: "flex", gap: 12, alignItems: "flex-start", flexDirection: m.from === "user" ? "row-reverse" : "row" }}>
             {m.from === "bot" ? (
               <div style={{ background: "#38bdf822", padding: 6, borderRadius: "50%", flexShrink: 0 }}>
@@ -325,7 +264,7 @@ export default function JoviChatWidget() {
                 <Bot size={20} color="#38bdf8" />
               </div>
             <div style={{ background: "#1e293b", borderRadius: 16, padding: "12px 16px", color: "#94a3b8", display: "flex", alignItems: "center", gap: 8 }}>
-              <Loader2 size={16} className="animate-spin" /> Thinking...
+              <Loader2 size={16} className="animate-spin" /> Fetching from Internal DB...
             </div>
           </div>
         )}
@@ -346,7 +285,7 @@ export default function JoviChatWidget() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
-            placeholder="Ask a question or generate a test..."
+            placeholder="E.g. Create a test for Calculus..."
             style={{
               flex: 1, background: "transparent", border: "none",
               color: "#fff", fontSize: 14, outline: "none", width: "100%"
@@ -364,8 +303,8 @@ export default function JoviChatWidget() {
             <Send size={18} color={input.trim() && !isLoading ? "#0f172a" : "#94a3b8"} style={{ marginLeft: -2 }} />
           </button>
         </div>
-        <div style={{ textAlign: "center", color: "#64748b", fontSize: 10, marginTop: 8 }}>
-          Quantrex AI can make mistakes. Consider verifying important information.
+        <div style={{ textAlign: "center", color: "#64748b", fontSize: 10, marginTop: 8, display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
+          <Database size={10} /> Quantrex Offline Question Bank Active
         </div>
       </div>
     </div>
@@ -397,6 +336,19 @@ function QuizCard({ quiz, onSelect, onNext }) {
           </button>
         ))}
       </div>
+      
+      {/* Show explanation if answer is selected but before moving next (optional, but let's keep it simple for now) */}
+      {chosen !== null && (
+        <div style={{ marginTop: 12, padding: 12, background: chosen === q.correct ? "#34d39922" : "#f8717122", borderRadius: 8, border: `1px solid ${chosen === q.correct ? "#34d39955" : "#f8717155"}` }}>
+          <div style={{ color: chosen === q.correct ? "#34d399" : "#f87171", fontWeight: "bold", marginBottom: 4, fontSize: 13 }}>
+            {chosen === q.correct ? "✅ Correct!" : "❌ Incorrect (Correct is " + String.fromCharCode(65 + q.correct) + ")"}
+          </div>
+          <div style={{ color: "#cbd5e1", fontSize: 13 }}>
+            <MessageContent text={q.explanation || "No explanation provided."} />
+          </div>
+        </div>
+      )}
+
       <button onClick={onNext} disabled={chosen === null} style={{
         marginTop: 16, width: "100%", padding: "12px 0", borderRadius: 12, border: "none",
         background: chosen === null ? "#334155" : "#38bdf8",
