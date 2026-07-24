@@ -1,0 +1,307 @@
+[
+  {
+    "_id": "6a2bdbf42762cf4b5769ac21",
+    "question_id": "ml8t8l13",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<p>$\\frac{5}{64}$</p>\n",
+      "<p>$\\frac{1}{16}$</p>\n",
+      "<p>$\\frac{7}{64}$</p>\n",
+      "<p>$\\frac{3}{16}$</p>"
+    ],
+    "solution": "<p>$$ 4 z^2=\\bar{z}=0 $$</p>\n<p>Let $z=x+i y$</p>\n<p>$$ \\begin{aligned} & 4(x+i y)^2+x-i y=0 \\\\ & 4 x^2-4 y^2+8 x y i+x-i y=0 \\\\ & 4 x^2-4 y^2+x=0 \\& y(8 x-1)=0 \\\\ & \\Rightarrow y=0 \\text { or } x=\\frac{1}{8} \\end{aligned} $$</p>\n<p>If $y=0,4 x^2+x=0$</p>\n<p>$$ \\begin{array}{ll} x=0, \\frac{-1}{4} & \\\\ \\therefore z_1=0+0 . i & \\left|z_1\\right|^2=0 \\\\ z_2=-\\frac{1}{4}+0 i & \\left|z_2\\right|^2=\\frac{1}{16} \\end{array} $$</p>\n<p>If $x=\\frac{1}{8}$</p>\n<p>$$ \\begin{aligned} & 4 \\times \\frac{1}{64}-4 y^2+\\frac{1}{8}=0 \\Rightarrow 4 y^2=\\frac{3}{16} \\Rightarrow y= \\pm \\frac{\\sqrt{3}}{8} \\\\ & \\therefore z_3=\\frac{1}{8}+\\frac{\\sqrt{3}}{8} i \\quad\\left|z_3\\right|^2=\\frac{1}{64}+\\frac{3}{64}=\\frac{1}{16} \\\\ & z_4=\\frac{1}{8}-\\frac{\\sqrt{3}}{8} i \\quad\\left|z_4\\right|^2=\\frac{1}{64}+\\frac{3}{64}=\\frac{1}{16} \\\\ & \\therefore \\sum_{i=1}^n\\left|z_i\\right|^2=0+\\frac{1}{16}+\\frac{1}{16}+\\frac{1}{16}=\\frac{3}{16} \\end{aligned} $$</p>",
+    "__v": 0,
+    "title": "JEE Main 2026 (Online) 22nd January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac22",
+    "question_id": "mnswhvmn",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "hard",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "<p>-10</p>",
+      "<p>-8</p>",
+      "<p>$$ 10 \\sqrt{13} $$</p>",
+      "<p>$$ 8\\sqrt{13} $$</p>"
+    ],
+    "solution": "<p>Let</p>\n<p>$$ z = x+iy \\qquad \\text{where } x,y \\in \\mathbb{R}. $$</p>\n<p>Then</p>\n<p>$$ \\bar z = x-iy. $$</p>\n<p>The given equation is</p>\n<p>$$ z(\\bar z+2+i)+k(2+3i)=0. $$</p>\n<p>We have to find all real values of $k$ for which this equation has at least one complex solution $z$.</p>\n\n<p>First, simplify $z(\\bar z+2+i)$:</p>\n<p>$$ z(\\bar z+2+i)=z\\bar z+z(2+i). $$</p>\n<p>Now,</p>\n<p>$$ z\\bar z = |z|^2 = x^2+y^2 $$</p>\n<p>and</p>\n<p>$$ z(2+i)=(x+iy)(2+i). $$</p>\n<p>Let us multiply:</p>\n<p>$$ (x+iy)(2+i)=2x+ix+2iy+i^2y $$</p>\n<p>Since $i^2=-1$,</p>\n<p>$$ (x+iy)(2+i)=(2x-y)+i(x+2y). $$</p>\n<p>So,</p>\n<p>$$ z(\\bar z+2+i)=x^2+y^2+(2x-y)+i(x+2y). $$</p>\n<p>Hence the given equation becomes</p>\n<p>$$ \\left(x^2+y^2+2x-y\\right)+i(x+2y)+k(2+3i)=0. $$</p>\n<p>Now separate real and imaginary parts:</p>\n<p>$$ \\left(x^2+y^2+2x-y+2k\\right)+i\\left(x+2y+3k\\right)=0. $$</p>\n<p>Therefore,</p>\n<p>$$ x^2+y^2+2x-y+2k=0 \\qquad \\text{and} \\qquad x+2y+3k=0. $$</p>\n\n<p>From the second equation,</p>\n<p>$$ 3k=-(x+2y) $$</p>\n<p>so</p>\n<p>$$ k=-\\frac{x+2y}{3}. $$</p>\n<p>Substitute this into the first equation:</p>\n<p>$$ x^2+y^2+2x-y+2\\left(-\\frac{x+2y}{3}\\right)=0. $$</p>\n<p>Multiply by $3$:</p>\n<p>$$ 3x^2+3y^2+6x-3y-2x-4y=0 $$</p>\n<p>$$ 3x^2+3y^2+4x-7y=0. $$</p>\n<p>Now complete squares:</p>\n<p>$$ 3\\left(x^2+\\frac{4}{3}x\\right)+3\\left(y^2-\\frac{7}{3}y\\right)=0. $$</p>\n<p>$$ 3\\left[\\left(x+\\frac{2}{3}\\right)^2-\\frac{4}{9}\\right] +3\\left[\\left(y-\\frac{7}{6}\\right)^2-\\frac{49}{36}\\right]=0. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2-\\frac{4}{3} +3\\left(y-\\frac{7}{6}\\right)^2-\\frac{49}{12}=0. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2+3\\left(y-\\frac{7}{6}\\right)^2 =\\frac{4}{3}+\\frac{49}{12}. $$</p>\n<p>$$ 3\\left(x+\\frac{2}{3}\\right)^2+3\\left(y-\\frac{7}{6}\\right)^2 =\\frac{16+49}{12}=\\frac{65}{12}. $$</p>\n<p>So,</p>\n<p>$$ \\left(x+\\frac{2}{3}\\right)^2+\\left(y-\\frac{7}{6}\\right)^2=\\frac{65}{36}. $$</p>\n<p>This is a circle with centre</p>\n<p>$$ \\left(-\\frac{2}{3},\\frac{7}{6}\\right) $$</p>\n<p>and radius</p>\n<p>$$ \\frac{\\sqrt{65}}{6}. $$</p>\n\n<p>Now,</p>\n<p>$$ k=-\\frac{x+2y}{3}. $$</p>\n<p>So we need the range of the linear expression $x+2y$ on this circle.</p>\n<p>Let</p>\n<p>$$ S=x+2y. $$</p>\n<p>For a circle, maximum and minimum of a linear expression occur at the extreme points in the direction of its normal vector.</p>\n<p>At the centre,</p>\n<p>$$ S_c=-\\frac{2}{3}+2\\cdot\\frac{7}{6} =-\\frac{2}{3}+\\frac{7}{3} =\\frac{5}{3}. $$</p>\n<p>The vector corresponding to $x+2y$ is $(1,2)$, whose magnitude is</p>\n<p>$$ \\sqrt{1^2+2^2}=\\sqrt{5}. $$</p>\n<p>Hence the maximum variation from the centre is</p>\n<p>$$ \\text{radius} \\times \\sqrt{5} =\\frac{\\sqrt{65}}{6}\\cdot\\sqrt{5} =\\frac{\\sqrt{325}}{6} =\\frac{5\\sqrt{13}}{6}. $$</p>\n<p>Therefore,</p>\n<p>$$ S_{\\min}=\\frac{5}{3}-\\frac{5\\sqrt{13}}{6}, \\qquad S_{\\max}=\\frac{5}{3}+\\frac{5\\sqrt{13}}{6}. $$</p>\n<p>Since</p>\n<p>$$ k=-\\frac{S}{3}, $$</p>\n<p>the interval for $k$ is</p>\n<p>$$ \\left[-\\frac{S_{\\max}}{3},-\\frac{S_{\\min}}{3}\\right]. $$</p>\n<p>So if this interval is $[\\alpha,\\beta]$, then</p>\n<p>$$ \\alpha+\\beta = -\\frac{S_{\\max}+S_{\\min}}{3} = -\\frac{2\\cdot \\frac{5}{3}}{3} = -\\frac{10}{9}. $$</p>\n<p>Hence,</p>\n<p>$$ 9(\\alpha+\\beta)=9\\left(-\\frac{10}{9}\\right)=-10. $$</p>\n<p>Therefore, the correct answer is</p>\n<p>$$ \\boxed{-10}. $$</p>\n<p>So, Option A is correct.</p>",
+    "__v": 0,
+    "title": "JEE Main 2026 (Online) 6th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac23",
+    "question_id": "1lgsugbnn",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "both are false",
+      "only (S1) is true",
+      "only (S2) is true",
+      "both are true"
+    ],
+    "solution": "We are given that $a \\in \\mathbb{C}$ and $z \\in \\mathbb{C}$.\n\n<br/><br/>Let $a = x_1 + iy_1$ and $z = x_2 + iy_2$ where $x_1, y_1, x_2, y_2 \\in \\mathbb{R}$\n\n<br/><br/>We are also given two sets A and B defined as follows :\n<br/><br/>- A is the set of all complex numbers $z$ for which the real part of $(a + \\overline{z})$ is greater than the imaginary part of $(\\overline{a} + z)$.\n<br/><br/>- B is the set of all complex numbers $z$ for which the real part of $(a + \\overline{z})$ is less than the imaginary part of $(\\overline{a} + z)$.\n\n<br/><br/>Statement (S1) says : If the real part and imaginary part of $a$ are both positive, then the set A contains all the real numbers. \n<br/><br/>Statement (S2) says : If the real part and imaginary part of $a$ are both negative, then the set B contains all the real numbers.\n\n<br/><br/>We need to determine which of these statements are true.\n\n<br/><br/>Let's evaluate each statement.\n\n<br/><br/>1. Statement (S1) : For $z \\in A$,\n    \n   <br/><br/> $Re(a + \\overline{z}) > Im(\\overline{a} + z)$\n    \n  <br/><br/>  This can be re-written as $x_1 + x_2 > y_2 - y_1$\n    \n   <br/><br/> If we consider only real z (i.e. $y_2 = 0$) and given that $x_1, y_1 > 0$, then the condition simplifies to $x_2 > -(x_1 + y_1)$.\n    \n  <br/><br/>  This indicates that A covers a part of the negative real axis, but not the entire real axis. Therefore, Statement (S1) is false.\n\n<br/><br/>2. Statement (S2) : For $z \\in B$,\n    \n  <br/><br/>  $Re(a + \\overline{z}) < Im(\\overline{a} + z)$\n    \n   <br/><br/> This can be re-written as $x_1 + x_2 < y_2 - y_1$\n    \n   <br/><br/> If we consider only real z (i.e. $y_2 = 0$) and given that $x_1, y_1 < 0$, then the condition simplifies to $x_2 < -(x_1 + y_1)$.\n    \n   <br/><br/> This indicates that B covers a part of the positive real axis, but not the entire real axis. Therefore, Statement (S2) is false.\n\n<br/><br/>Therefore, both (S1) and (S2) are false, so the answer is Option A : both are false.\n",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 11th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac24",
+    "question_id": "1lgow71ev",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\frac{7}{2}$$",
+      "4",
+      "3",
+      "$$\\frac{5}{2}$$"
+    ],
+    "solution": "Let $z=x+i y$\n<br/><br/>$$\n\\begin{aligned}\n&\\bar{z}=i\\left(z^2+\\operatorname{Re}(\\bar{z})\\right) \\\\\\\\\n&\\Rightarrow x-i y=i\\left(x^2-y^2+2 i x y+x\\right) \\\\\\\\\n& x-i y=i\\left(x^2-y^2+x\\right)-2 x y \\\\\\\\\n &x=-2 x y \\Rightarrow x(2 y+1)=0 \\\\\\\\\n&\\Rightarrow x=0, y=\\frac{-1}{2}  ........(i)\\\\\\\\\n&-y=x^2-y^2+x ...........(ii)\n\\end{aligned}\n$$\n<br/><br/><b>Case (I)</b> $x=0$\n<br/><br/>$\\Rightarrow-y=-y^2 \\Rightarrow y^2-y=0 \\Rightarrow y=0,1$\n<br/><br/>$$ \\therefore $$ $z=0, i$\n<br/><br/><b>Case (II)</b> $y=\\frac{-1}{2}$\n<br/><br/>$\\Rightarrow \\frac{1}{2}=x^2-\\frac{1}{4}+x \\Rightarrow x^2+x-\\frac{3}{4}=0$ \n<br/><br/>$$ \\Rightarrow $$ $4 x+4 x-3=0 \\Rightarrow(2 x-1)(2 x+3)=0$ \n<br/><br/>$$ \\Rightarrow $$ $x=\\frac{1}{2}, \\frac{-3}{2}$\n<br/><br/>$$\n\\begin{aligned}\n& z=\\frac{1}{2}-\\frac{1}{2} i, \\frac{-3}{2}-\\frac{1}{2} i \\\\\\\\\n& \\sum|z|^2=0+1+\\frac{1}{2}+\\frac{5}{2}=4\n\\end{aligned}\n$$",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 13th April Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac25",
+    "question_id": "lgnyjdfm",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "36",
+      "27",
+      "42",
+      "30"
+    ],
+    "solution": "Let $z_1=\\left(\\frac{z-\\bar{z}+z \\bar{z}}{2-3 z+5 \\bar{z}}\\right)$<br/><br/>\nLet $\\mathrm{z}=3+\\mathrm{iy}$<br/><br/> $\\bar{z}=3-i y$<br/><br/>\n$$\n\\begin{aligned}\n& z_1=\\frac{2 i y+\\left(9+y^2\\right)}{2-3(3+i y)+5(3-i y)} \\\\\\\\\n& =\\frac{9+y^2+i(2 y)}{8-8 i y} \\\\\\\\\n& =\\frac{\\left(9+y^2\\right)+i(2 y)}{8(1-i y)} \\\\\\\\\n& \\operatorname{Re}\\left(z_1\\right)=\\frac{\\left(9+y^2\\right)-2 y^2}{8\\left(1+y^2\\right)}\n\\end{aligned}\n$$<br/><br/>\n$$\n\\begin{aligned}\n& =\\frac{9-y^2}{8\\left(1+y^2\\right)} \\\\\\\\\n& =\\frac{1}{8}\\left[\\frac{10-\\left(1+y^2\\right)}{\\left(1+y^2\\right)}\\right] \\\\\\\\\n& =\\frac{1}{8}\\left[\\frac{10}{1+y^2}-1\\right] \\\\\\\\\n& 1+y^2 \\in[1, \\infty] \\\\\\\\\n& \\frac{1}{1+y^2} \\in(0,1] \\\\\\\\\n& \\frac{10}{1+y^2} \\in(0,10] \\\\\\\\\n& \\frac{10}{1+y^2}-1 \\in(-1,9] \\\\\\\\\n& \\operatorname{Re}\\left(\\mathrm{z}_1\\right) \\in\\left(\\frac{-1}{8}, \\frac{9}{8}\\right] \\\\\\\\\n& \\alpha=\\frac{-1}{8}, \\beta=\\frac{9}{8} \\\\\\\\\n& 24(\\beta-\\alpha)=24\\left(\\frac{9}{8}+\\frac{1}{8}\\right)=30\n\\end{aligned}\n$$",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 15th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac28",
+    "question_id": "1l6jennth",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>$$\\because$$ $${z^2} + \\overline z  = 0$$</p>\n<p>Let $$z = x + iy$$</p>\n<p>$$\\therefore$$ $${x^2} - {y^2} + 2ixy + x - iy = 0$$</p>\n<p>$$({x^2} - {y^2} + x) + i(2xy - y) = 0$$</p>\n<p>$$\\therefore$$ $${x^2} + {y^2} = 0$$ and $$(2x - 1)y = 0$$</p>\n<p>if $$x = \\, + \\,{1 \\over 2}$$ then $$y = \\, \\pm \\,{{\\sqrt 3 } \\over 2}$$</p>\n<p>And if $$y = 0$$ then $$x = 0, - 1$$</p>\n<p>$$\\therefore$$ $$z = 0 + 0i, - 1 + 0i,{1 \\over 2} + {{\\sqrt 3 } \\over 2}i,{1 \\over 2} - {{\\sqrt 3 } \\over 2}i$$</p>\n<p>$$\\therefore$$ $$\\sum {\\left( {{R_e}(z) + m(z)} \\right) = 0} $$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 27th July Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac29",
+    "question_id": "1l57ntha9",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${{3\\sqrt 3 } \\over 4}$$",
+      "$${{3\\sqrt 3 } \\over 2}$$",
+      "$${3 \\over 2}$$",
+      "$${3 \\over 4}$$"
+    ],
+    "solution": "<p>$$\\overline z  = i{z^2}$$</p>\n<p>Let $$z = x + iy$$</p>\n<p>$$x - iy = i({x^2} - {y^2} + 2xiy)$$</p>\n<p>$$x - iy = i({x^2} - {y^2}) - 2xy$$</p>\n<p>$$\\therefore$$ $$x =  - 2yx$$ or $${x^2} - {y^2} =  - y$$</p>\n<p>$$x = 0$$ or $$y =  - {1 \\over 2}$$</p>\n<p>Case - I</p>\n<p>$$x = 0$$</p>\n<p>$$ - {y^2} =  - y$$</p>\n<p>$$y = 0,\\,\\,1$$</p>\n<p>Case - II</p>\n<p>$$y =  - {1 \\over 2}$$</p>\n<p>$$ \\Rightarrow {x^2} - {1 \\over 4} = {1 \\over 2} \\Rightarrow x =  \\pm {{\\sqrt 3 } \\over 2}$$</p>\n<p>$$x = \\left\\{ {0,i,{{\\sqrt 3 } \\over 2} - {i \\over 2},{{ - \\sqrt 3 } \\over 2} - {i \\over 2}} \\right\\}$$</p>\n<p>Area of polygon $$ = {1 \\over 2}\\left| {\\matrix{\n   0 & 1 & 1  \\cr \n   {{{\\sqrt 3 } \\over 2}} & {{{ - 1} \\over 2}} & 1  \\cr \n   {{{ - \\sqrt 3 } \\over 2}} & {{{ - 1} \\over 2}} & 1  \\cr \n\n } } \\right|$$</p>\n<p>$$ = {1 \\over 2}\\left| { - \\sqrt 3 \\,\\,\\, - {{\\sqrt 3 } \\over 2}} \\right| = {{3\\sqrt 3 } \\over 4}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 27th June Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac2a",
+    "question_id": "1l55j8k9n",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "Let $z=x+i y$\n<br/><br/>\nSo $2 x=(1+i)\\left(x^{2}-y^{2}+2 x y i\\right)$\n<br/><br/>\n$\\Rightarrow 2 x=x^{2}-y^{2}-2 x y\\quad$ ...(i) and\n<br/><br/>\n$$\nx^{2}-y^{2}+2 x y=0\\quad\\dots(ii)\n$$\n<br/><br/>\nFrom (i) and (ii) we get\n<br/><br/>\n$$\nx=0 \\text { or } y=-\\frac{1}{2}\n$$\n<br/><br/>\nWhen $x=0$ we get $y=0$\n<br/><br/>\nWhen $y=-\\frac{1}{2}$ we get $x^{2}-x-\\frac{1}{4}=0$\n<br/><br/>\n$\\Rightarrow \\quad x=\\frac{-1 \\pm \\sqrt{2}}{2}$\n<br/><br/>\nSo there will be total 3 possible values of $z$, which are $0,\\left(\\frac{-1+\\sqrt{2}}{2}\\right)-\\frac{1}{2} i$ and $\\left(\\frac{-1-\\sqrt{2}}{2}\\right)-\\frac{1}{2} i$\n<br/><br/>\nSum of squares of modulus\n<br/><br/>\n$$\n\\begin{aligned}\n&=0+\\left(\\frac{\\sqrt{2}-1}{2}\\right)^{2}+\\frac{1}{4}+\\left(\\frac{\\sqrt{2}+1}{2}\\right)^{2}=+\\frac{1}{4} \\\\\\\\\n&=2\n\\end{aligned}\n$$",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 28th June Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac2b",
+    "question_id": "1l6p0k7zx",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "244",
+      "224",
+      "245",
+      "265"
+    ],
+    "solution": "<p>$$z = (2 + 3i)$$</p>\n<p>$$ \\Rightarrow {z^5} = (2 + 3i){\\left( {{{(2 + 3i)}^2}} \\right)^2}$$</p>\n<p>$$ = (2 + 3i){( - 5 + 12i)^2}$$</p>\n<p>$$ = (2 + 3i)( - 119 - 120i)$$</p>\n<p>$$ =  - 238 - 240i - 357i + 360$$</p>\n<p>$$ = 122 - 597i$$</p>\n<p>$${\\overline z ^5} = 122 + 597i$$</p>\n<p>$${z^5} + {\\overline z ^5} = 244$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 29th July Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac2c",
+    "question_id": "1l5vz2v9s",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${{500} \\over {13}}$$",
+      "$${{110} \\over {13}}$$",
+      "$${{55} \\over {6}}$$",
+      "$${{550} \\over {13}}$$"
+    ],
+    "solution": "<p>Given,</p>\n<p>$${{{{(1 + 2i)}^8}\\,.\\,{{(1 - 2i)}^2}} \\over {(3 + 2i)\\,.\\,\\overline {(4 - 6i)} }}$$</p>\n<p>$$ = {{{{(1 + 2i)}^2}{{(1 - 2i)}^2}{{(1 + 2i)}^6}} \\over {(3 + 2i)(4 + 6i)}}$$</p>\n<p>$$ = {{{{(1 - 4{i^2})}^2}{{(1 + 2i)}^6}} \\over {12 + 18i + 8i + 12{i^2}}}$$</p>\n<p>$$ = {{{{(1 + 5)}^2}{{\\left[ {{{(1 + 2i)}^2}} \\right]}^3}} \\over {12 + 26i - 12}}$$</p>\n<p>$$ = {{25{{(1 + 4{i^2} + 4i)}^3}} \\over {26i}}$$</p>\n<p>$$ = {{25{{(1 - 4 + 4i)}^3}} \\over {26i}}$$</p>\n<p>$$ = {{25{{( - 3 + 4i)}^3}} \\over {26i}}$$</p>\n<p>$$ = {{25} \\over {26i}}\\left[ {{{( - 3)}^3} + {{(4i)}^3} + 3\\,.\\,{{( - 3)}^2}\\,.\\,4i + 3( - 3)\\,.\\,{{(4i)}^2}} \\right]$$</p>\n<p>$$ = {{25} \\over {26i}}( - 27 - 64i + 108i + 144)$$</p>\n<p>$$ = {{25} \\over {26i}}(117 + 44i)$$</p>\n<p>$$ = {{25i} \\over {26{i^2}}}(117 + 44i)$$</p>\n<p>$$ = {{25i} \\over { - 26}}(117 + 44i)$$</p>\n<p>$$ = {{25 \\times 117i} \\over { - 26}} - {{25 \\times 44{i^2}} \\over {26}}$$</p>\n<p>$$ = {{25 \\times 117i} \\over { - 26}} + {{22 \\times 25} \\over {13}}$$</p>\n<p>$$ = {{25 \\times 117i} \\over { - 26}} + {{550} \\over {13}}$$</p>\n<p>$$\\therefore$$ Real part $$ = {{550} \\over {13}}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 30th June Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac2e",
+    "question_id": "LbJQB0EUlx4IaWnLwY1kmhzri06",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "Let z = x + iy<br><br>| z + i | = | z $$-$$ 3i |<br><br>$$ \\Rightarrow $$ y = 1<br><br>Now <br><br>$$\\omega$$ = x<sup>2</sup> + y<sup>2</sup> $$-$$ 2x $$-$$ 2iy + 2<br><br>$$\\omega$$ = x<sup>2</sup> + 1 $$-$$ 2x $$-$$ 2i + 2<br><br>Re($$\\omega$$) = x<sup>2</sup> $$-$$ 2x + 3<br><br>Re($$\\omega$$) = (x $$-$$ 1)<sup>2</sup> + 2<br><br>Re($$\\omega$$)<sub>min</sub> at x = 1 $$ \\Rightarrow $$ z = 1 + i<br><br>Now, <br><br>$$\\omega$$ = 1 + 1 $$-$$ 2 $$-$$ 2i + 2<br><br>$$\\omega$$ = 2(1 $$-$$ i) = 2$$\\sqrt 2 {e^{i\\left( {{{ - \\pi } \\over 4}} \\right)}}$$<br><br>$$\\omega$$<sup>n</sup> = 2$$\\sqrt 2 {e^{i\\left( {{{ - n\\pi } \\over 4}} \\right)}}$$<br><br>If $$\\omega$$<sup>n</sup> is real $$ \\Rightarrow $$ n = 4",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 16th March Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac2f",
+    "question_id": "1kru4nljk",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "1",
+      "$${4 \\over 3}$$",
+      "$${3 \\over 2}$$",
+      "2"
+    ],
+    "solution": "z<sup>2</sup> + 3$$\\overline z $$ = 0<br><br>Put z = x + iy<br><br>$$\\Rightarrow$$ x<sup>2</sup> $$-$$ y<sup>2</sup> + 2ixy + 3(x $$-$$ iy) = 0<br><br>$$\\Rightarrow$$ (x<sup>2</sup> $$-$$ y<sup>2</sup> + 3x) + i(2xy $$-$$ 3y) = 0 + i0<br><br>$$\\therefore$$ x<sup>2</sup> $$-$$ y<sup>2</sup> + 3x = 0 ..... (1)<br><br>2xy $$-$$ 3y = 0 ..... (2)<br><br>x = $${3 \\over 2}$$, y = 0<br><br>Put x = $${3 \\over 2}$$ in equation (1)<br><br>$${9 \\over 4} - {y^2} + {9 \\over 2} = 0$$<br><br>$${y^2} = {{27} \\over 4} \\Rightarrow y =  \\pm {{3\\sqrt 3 } \\over 2}$$<br><br>$$\\therefore$$ $$(x,y) = \\left( {{3 \\over 2},{{3\\sqrt 3 } \\over 2}} \\right),\\left( {{3 \\over 2},{{ - 3\\sqrt 3 } \\over 2}} \\right)$$<br><br>Put y = 0 $$\\Rightarrow$$ x<sup>2</sup> $$-$$ 0 + 3x = 0<br><br>x = 0, $$-$$3<br><br>$$\\therefore$$ (x, y) = (0, 0), ($$-$$3, 0)<br><br>$$\\therefore$$ No of solutions = n = 4<br><br>$$\\sum\\limits_{K = 0}^\\infty  {\\left( {{1 \\over {{n^k}}}} \\right)}  = \\sum\\limits_{K = 0}^\\infty  {\\left( {{1 \\over {4{n^k}}}} \\right)} $$<br><br>$$ = {1 \\over 1} + {1 \\over 4} + {1 \\over {16}} + {1 \\over {64}} + ......$$<br><br>$$ = {1 \\over {1 - {1 \\over 4}}} = {4 \\over 3}$$",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 22th July Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac30",
+    "question_id": "zRF8sEwtoachGxzvEr1klt7y6a1",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$-$$7",
+      "7",
+      "3",
+      "$$-$$3"
+    ],
+    "solution": "1 $$-$$ 2i is the root of the equation. So other root is 1 $$+$$ 2i\n<br><br>$$ \\therefore $$ Sum of roots = 1 $$-$$ 2i + 1 $$+$$ 2i = 2 = -$$\\alpha $$\n<br><br>Product of roots = (1 $$-$$ 2i)(1 $$+$$ 2i) = 1 - 4i<sup>2</sup> = 5 = $$\\beta $$\n<br><br>$$ \\therefore $$ $$\\alpha $$ - $$\\beta $$ = -2 - 5 = -7",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 25th February Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac31",
+    "question_id": "LNvcjihjOACPdCzciI7k9k2k5grsymq",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "b<sup>2</sup> – b = 42",
+      "b<sup>2</sup> + b = 12",
+      "b<sup>2</sup> + b = 72",
+      "b<sup>2</sup> – b = 30"
+    ],
+    "solution": "x<sup>2</sup>\n + bx = 45 = 0 (b $$ \\in $$ R)\n<br>has roots $$\\alpha $$ + i$$\\beta $$, $$\\alpha $$ – i$$\\beta $$\n<br>sum of roots = – b = 2$$\\alpha $$\n<br>product of roots = 45 = \n$$\\alpha $$<sup>2</sup>\n + $$\\beta $$<sup>2</sup>\n<br><br>Let z = x + iy\n<br><br>$$ \\therefore $$ |x + iy +1| = 2$$\\sqrt {10} $$\n<br><br>$${\\left| {x + iy + 1} \\right|^2} = {\\left( {2\\sqrt {10} } \\right)^2}$$\n<br><br>$$ \\Rightarrow $$ (x + 1)<sup>2</sup> + y<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ ($$\\alpha $$ + 1)<sup>2</sup> + $$\\beta $$<sup>2</sup> = 40\n<br><br> [putting real part $$\\alpha $$ in place of x and imaginary part $$\\beta $$ in place of y]\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$<sup>2</sup> + 2$$\\alpha $$ + 1 + $$\\beta $$<sup>2</sup> = 40\n<br><br>$$ \\Rightarrow $$ 45 + 2$$\\alpha $$ + 1 = 40\n<br><br>$$ \\Rightarrow $$ $$\\alpha $$ = -3\n<br><br>$$ \\therefore $$ -b = 2$$\\alpha $$ = 2$$ \\times $$(-3) = -6\n<br><br>$$ \\Rightarrow $$ b = 6\n<br><br>By checking options we found b<sup>2</sup> – b = 30.",
+    "__v": 0,
+    "title": "JEE Main 2020 (Online) 8th January Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac32",
+    "question_id": "I5pK1RCzpUnmvnIyw53rsa0w2w9jwxjodf8",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$ - {1 \\over 5} + {3 \\over 5}i$$",
+      "$$ - {1 \\over 5} - {3 \\over 5}i$$",
+      "$${1 \\over 5} - {3 \\over 5}i$$",
+      "$$ - {3 \\over 5} - {1 \\over 5}i$$"
+    ],
+    "solution": "$$z = {{{{\\left( {1 + i} \\right)}^2}} \\over {a - i}} \\times {{a + i} \\over {a + i}}$$<br><br>\n$$ \\Rightarrow z = {{\\left( {1 - 1 + 2i} \\right)\\left( {a + i} \\right)} \\over {{a^2} + 1}} = {{2ai - 2} \\over {{a^2} + 1}}$$  <br><br>\n$$ \\Rightarrow \\left| z \\right| = \\sqrt {{{\\left( {{{ - 2} \\over {{a^2} + 1}}} \\right)}^2} + {{\\left( {{{2a} \\over {{a^2} + 1}}} \\right)}^2}}  = \\sqrt {{{4 + 4{a^2}} \\over {{{({a^2} + 1)}^2}}}} $$<br><br>\n$$ \\Rightarrow \\sqrt {{{4(1 + {a^2})} \\over {{{({a^2} + 1)}^2}}}}  = {2 \\over {\\sqrt {{a^2} + 1} }}$$.... (i)<br><br>\nNow given $$\\left| z \\right| = \\sqrt {{2 \\over 5}} $$<br><br>\nso $$\\sqrt {{2 \\over 5}}  = {2 \\over {\\sqrt {1 + {a^2}} }}$$ from equation (i)<br><br>\nBy squaring both sides<br><br>\n$$ \\Rightarrow {2 \\over 5} = {4 \\over {1 + {a^2}}}$$<br><br>\n$$ \\Rightarrow 1 + {a^2} = 10$$<br><br>\na<sup>2</sup> = 9<br><br>\n$$ \\Rightarrow $$ a = $$ \\pm $$ 3 \n<br><br>$$ \\because $$ (a &gt; 0) then a = 3\n<br><br>Now $$\\overline z  = {{{{\\left( {1 - i} \\right)}^2}} \\over {3 + i}}$$\n<br><br>= $${{\\left( {1 + {i^2} - 2i} \\right)} \\over {3 + i}}$$\n<br><br>= $${{\\left( {1 + {i^2} - 2i} \\right)\\left( {3 - i} \\right)} \\over {\\left( {3 + i} \\right)\\left( {3 - i} \\right)}}$$\n<br><br>= $${{\\left( { - 2i} \\right)\\left( {3 - i} \\right)} \\over {\\left( {9 - {i^2}} \\right)}}$$\n<br><br>= $${{\\left( { - 2i} \\right)\\left( {3 - i} \\right)} \\over {10}}$$\n<br><br>= $${{ - 6i + 2{i^2}} \\over {10}}$$\n<br><br>= $${{ - 6i - 2} \\over {10}}$$\n<br><br>= $$-{1 \\over 5} - {3 \\over 5}i$$",
+    "__v": 0,
+    "title": "JEE Main 2019 (Online) 10th April Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdbf42762cf4b5769ac36",
+    "question_id": "PM4qMlStSHAcQdgu",
+    "chapterId": "conjugate-of-complex-numbers",
+    "subject": "Mathematics",
+    "topic": "conjugate-of-complex-numbers",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$${{ - 1} \\over {i - 1}}$$ ",
+      "$${1 \\over {i + 1}}\\,$$ ",
+      "$${{ - 1} \\over {i + 1}}$$ ",
+      "$${1 \\over {i - 1}}$$ "
+    ],
+    "solution": "$$\\left( {{1 \\over {i - 1}}} \\right) = {1 \\over { - i - 1}} = {{ - 1} \\over {i + 1}}$$ ",
+    "__v": 0,
+    "title": "AIEEE 2008",
+    "exam": "JEE Main"
+  }
+]

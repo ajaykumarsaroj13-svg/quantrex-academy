@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "6a2bdca92762cf4b576a1eec",
+    "question_id": "m6w9nzvq",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "hard",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>$$\\left[\\begin{array}{lll}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33}\n\\end{array}\\right]$$</p>\n<p>No. of elements in $\\mathrm{S}_1: \\mathrm{A}=\\mathrm{A}^{\\mathrm{T}} \\Rightarrow 5^3 \\times 5^3$</p>\n<p>No. of elements in $S_2: A=-A^T \\Rightarrow 0$</p>\n<p>since no zero in $\\mathrm{S}_2$</p>\n<p>No. of elements in $\\mathrm{S}_3 \\Rightarrow$</p>\n<p>$\\left.\\begin{array}{c}a_{11}+a_{22}+a_{33}=0 \\Rightarrow(1,2,-3) \\Rightarrow 31 \\\\ \\text { or } \\\\ (1,1,-2) \\Rightarrow 3 \\\\ \\text { or } \\\\ (-1,-1,2) \\Rightarrow 3\\end{array}\\right\\} \\Rightarrow 12 \\times 5^6$</p>\n<p>$$\\begin{aligned}\n& \\mathrm{n}\\left(\\mathrm{~S}_1 \\cap \\mathrm{~S}_3\\right)=12 \\times 5^3 \\\\\n& \\mathrm{n}\\left(\\mathrm{~S}_1 \\cup \\mathrm{~S}_2 \\cup \\mathrm{~S}_3\\right)=5^6(1+12)-12 \\times 5^3 \\\\\n& \\quad \\Rightarrow 5^3 \\times\\left[13 \\times 5^3-12\\right]=125 \\alpha \\\\\n& \\quad \\alpha=1613\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 28th January Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1eed",
+    "question_id": "m9ghxm42",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>Note that $A$ is orthogonal:</p>\n<p>$$A A^T=A^T A=I \\text { and } A^T=A^{-1}$$</p>\n<p>Given $A^2=A^T$, then:</p>\n<p>$$\\begin{aligned}\n& A^3=I \\\\\n& \\operatorname{Tr}(A+I)^3+(A-l)^3-6 A=\\operatorname{Tr}\\left(2 A^3+6 A-6 A\\right) \\\\\n& =\\operatorname{Tr}\\left(2 A^3\\right)=\\operatorname{Tr}(2 I) \\\\\n& \\left(\\text { Using }(A+l)^3+(A-I)^3=2 A^3+6 A \\text { and } 2 A^3=2 I\\right)= \\\\\n& 6\n\\end{aligned}$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2025 (Online) 4th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1eef",
+    "question_id": "1lgq0m4hk",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$10^{9}$$",
+      "$$9^{10}$$",
+      "$$10^{6}$$",
+      "$$6^{10}$$"
+    ],
+    "solution": "<p>Sure! A symmetric matrix is a square matrix that is equal to its transpose. For a matrix to be symmetric, the element at row i and column j must be equal to the element at row j and column i. In other words, $$A_{ij} = A_{ji}$$. </p>\n<p>For a 3 $$ \\times $$ 3 symmetric matrix, it looks like this:</p>\n<p>$$\n\\begin{pmatrix}\na & b & c \\\\\nb & d & e \\\\\nc & e & f \\\\\n\\end{pmatrix}\n$$\n</p>\n<p>Notice that there are only 6 unique elements we need to fill because of the symmetry:</p>\n<ol>\n<li>$$a$$ in the (1,1) position</li>\n<li>$$b$$ in the (1,2) and (2,1) positions</li>\n<li>$$c$$ in the (1,3) and (3,1) positions</li>\n<li>$$d$$ in the (2,2) position</li>\n<li>$$e$$ in the (2,3) and (3,2) positions</li>\n<li>$$f$$ in the (3,3) position</li>\n</ol>\n<p>Each of these unique elements can take a value from the set $${0,1,2,3,4,5,6,7,8,9}$$, which has 10 elements. </p>\n<p>We have 10 choices for each of the 6 unique elements, so the total number of symmetric matrices can be calculated as:</p>\n<p>$$10 \\times 10 \\times 10 \\times 10 \\times 10 \\times 10 = 10^{6}$$</p>\n<p>Thus, the total number of symmetric matrices of order 3 with entries from this set is $$10^{6}$$.</p>\n",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 13th April Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef0",
+    "question_id": "1ldu4mkm0",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "Only S2 is true",
+      "Only S1 is true",
+      "Both S1 and S2 are false",
+      "Both S1 and S2 are true"
+    ],
+    "solution": "$A^{T}=A, B^{T}=-B, C^{T}=-C$\n<br/><br/>\n$$\n\\begin{aligned}\nP & =A^{13} B^{26}-B^{26} A^{13} \\\\\\\\\nP^{T} & =\\left(A^{13} B^{26}-B^{26} A^{13}\\right)^{T}=\\left(A^{13} B^{26}\\right)^{T}-\\left(B^{26} A^{B}\\right)^{T} \\\\\\\\\n& =\\left(B^{26}\\right)^{T}\\left(A^{13}\\right)^{T}-\\left(A^{13}\\right)^{T}\\left(B^{26}\\right)^{T} \\\\\\\\\n& =\\left(B^{T}\\right)^{26}\\left(A^{T}\\right)^{13}-\\left(A^{T}\\right)^{13}\\left(A^{T}\\right)^{26} \\\\\\\\\n& =B^{26} A^{13}-A^{13} B^{26}=-\\left(A^{13} B^{26}-B^{26} A^{13}\\right)=-P\n\\end{aligned}\n$$\n<br/><br/>\n$P$ is skew-symmetric matrix $\\Rightarrow S_{1}$ is false\n<br/><br/>\n$Q=A^{26} C^{13}-C^{13} A^{26}=Q^{T}=\\left(A^{26} C^{13}-C^{13} A^{26}\\right)^{T}$\n<br/><br/>\n$Q=\\left(A^{26} C^{13}\\right)^{T}-\\left(C^{13} A^{26}\\right)^{T}=\\left(C^{13}\\right)^{T}\\left(A^{26}\\right)^{T}-\\left(A^{26}\\right)^{T}\\left(C^{13}\\right)^{T}$\n<br/><br/>\n$=\\left(C^{T}\\right)^{13}\\left(A^{T}\\right)^{26}-\\left(A^{T}\\right)^{26}\\left(C^{T}\\right)^{13}=-C^{13} A^{26}+A^{26} C^{13}$\n<br/><br/>\n$=A^{26} C^{13}+C^{13} A^{26}$\n<br/><br/>\n$\\Rightarrow Q^{T}=Q \\Rightarrow Q$ is symmetric matrix $\\Rightarrow S_{2}$ is true.",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 25th January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef1",
+    "question_id": "1ldsgfp13",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [],
+    "solution": "<p>$$A = \\left( {\\matrix{\n   a & c  \\cr \n   c & b  \\cr \n\n } } \\right)$$</p>\n<p>$$|A| = ab - {c^2} = 2$$ ...... (1)</p>\n<p>$$\\left( {\\matrix{\n   2 & 1  \\cr \n   3 & {{3 \\over 2}}  \\cr \n\n } } \\right)\\left( {\\matrix{\n   a & c  \\cr \n   c & b  \\cr \n\n } } \\right) = \\left( {\\matrix{\n   1 & 2  \\cr \n   \\alpha  & \\beta   \\cr \n\n } } \\right)$$</p>\n<p>$$2a + c = 1$$ ..... (2)</p>\n<p>$$2c + b = 2$$ ..... (3)</p>\n<p>$$3a + {3 \\over 2}c = \\alpha $$ .... (4)</p>\n<p>$$3c + {3 \\over 2}b = \\beta $$ ..... (5)</p>\n<p>From (1), (2) and (3)</p>\n<p>$$a = {3 \\over 4},b = 3,c =  - {1 \\over 2}$$</p>\n<p>$$\\Rightarrow$$ Now $$\\alpha  = {6 \\over 4}$$</p>\n<p>$$\\beta  = 3$$</p>\n<p>$$s = {{15} \\over 4}$$</p>\n<p>$${{\\beta s} \\over {{\\alpha ^2}}} = {{3 \\times {{15} \\over 4}} \\over {{{\\left( {{6 \\over 4}} \\right)}^2}}} = {{{{45} \\over 4}} \\over {{9 \\over 4}}} = 5$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2023 (Online) 29th January Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef2",
+    "question_id": "1l5aifh9z",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "hard",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "a non-identity symmetric matrix",
+      "a skew-symmetric matrix",
+      "neither symmetric nor skew-symmetric matrix",
+      "an identity matrix"
+    ],
+    "solution": "<p>$$A = \\left[ {\\matrix{\n   0 & { - 2}  \\cr \n   2 & 0  \\cr \n\n } } \\right]$$</p>\n<p>$${A^2} = \\left[ {\\matrix{\n   0 & { - 2}  \\cr \n   2 & 0  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   0 & { - 2}  \\cr \n   2 & 0  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   { - 4} & 0  \\cr \n   0 & { - 4}  \\cr \n\n } } \\right] =  - 4I$$</p>\n<p>$$M = {A^2} + {A^4} + {A^6} + \\,\\,.....\\,\\, + \\,\\,{A^{20}}$$</p>\n<p>$$ =  - 4I + 16I - 64I\\,\\, + $$ ..... upto 10 terms</p>\n<p>$$ =  - I$$ [$$4 - 16 + 64$$ .... + upto 10 terms]</p>\n<p>$$ =  - I\\,.\\,4\\left[ {{{{{( - 4)}^{10}} - 1} \\over { - 4 - 1}}} \\right] = {4 \\over 5}({2^{20}} - 1)I$$</p>\n<p>$$N = {A^1} + {A^3} + {A^5} + \\,\\,....\\,\\, + \\,\\,{A^{19}}$$</p>\n<p>$$ = A - 4A + 16A\\,\\, + $$ ..... upto 10 terms</p>\n<p>$$ = A\\left( {{{{{( - 4)}^{10}} - 1} \\over { - 4 - 1}}} \\right) =  - \\left( {{{{2^{20}} - 1} \\over 5}} \\right)A$$</p>\n<p>$${N^2} = {{{{({2^{20}} - 1)}^2}} \\over {{2^5}}}{A^2} = {{ - 4} \\over {24}}{({2^{20}} - 1)^2}I$$</p>\n<p>$$M{N^2} = {{ - 16} \\over {125}}{({2^{20}} - 1)^3}I = KI\\,\\,\\,\\,\\,(K \\ne  \\pm \\,1)$$</p>\n<p>$${(M{N^2})^T} = {(KI)^T} = KI$$</p>\n<p>$$\\therefore$$ A is correct</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 25th June Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef3",
+    "question_id": "1l6nl9px1",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\mathrm{A}^{4}-\\mathrm{B}^{4}$$ is a smmetric matrix",
+      "$$\\mathrm{AB}-\\mathrm{BA}$$ is a symmetric matrix",
+      "$$\\mathrm{B}^{5}-\\mathrm{A}^{5}$$ is a skew-symmetric matrix",
+      "$$\\mathrm{AB}+\\mathrm{BA}$$ is a skew-symmetric matrix"
+    ],
+    "solution": "<p>(A) $$M = {A^4} - {B^4}$$</p>\n<p>$${M^T} = {({A^4} - {B^4})^T} = {({A^T})^4} - {({B^T})^4}$$</p>\n<p>$$ = {A^4} - {( - B)^4} = {A^4} - {B^4} = M$$</p>\n<p>(B) $$M = AB - BA$$</p>\n<p>$${M^T} = {(AB - BA)^T} = {(AB)^T} - {(BA)^T}$$</p>\n<p>$$ = {B^T}{A^T} - {A^T}{B^T}$$</p>\n<p>$$ =  - BA - A( - B)$$</p>\n<p>$$ = AB - BA = M$$</p>\n<p>(C) $$M = {B^5} - {A^5}$$</p>\n<p>$${M^T} = {({B^T})^5} - {({A^T})^5} =  - ({B^5} + {A^5}) \\ne  - M$$</p>\n<p>(D) $$M = AB + BA$$</p>\n<p>$${M^T} = {(AB)^T} + {(BA)^T}$$</p>\n<p>$$ = {B^T}{A^T} + {A^T}{B^T} =  - BA - AB =  - M$$</p>",
+    "__v": 0,
+    "title": "JEE Main 2022 (Online) 28th July Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef4",
+    "question_id": "1krptnjcb",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "36",
+      "24",
+      "45",
+      "18"
+    ],
+    "solution": "$$A = \\left[ {\\matrix{\n   2 & 3  \\cr \n   a & 0  \\cr \n\n } } \\right]$$, $${A^T} = \\left[ {\\matrix{\n   2 & a  \\cr \n   3 & 0  \\cr \n\n } } \\right]$$<br/><br/>$$A = {{A + {A^T}} \\over 2} + {{A - {A^T}} \\over 2}$$<br/><br/>Let $$P = {{A + {A^T}} \\over 2}$$ and $$Q = {{A - {A^T}} \\over 2}$$<br/><br/>$$Q = \\left( {\\matrix{\n   0 & {{{3 - a} \\over 2}}  \\cr \n   {{{a - 3} \\over 2}} & 0  \\cr \n\n } } \\right)$$<br/><br/>Det (Q) = 9<br/><br/>$$0 - \\left( {{{3 - a} \\over 2}} \\right)\\left( {{{a - 3} \\over 2}} \\right) = 9$$<br/><br/>$$ \\Rightarrow {\\left( {{{a - 3} \\over 2}} \\right)^2} = 9 \\Rightarrow {(a - 3)^2} = 36$$<br/><br/>$$a - 3 =  \\pm \\,6 \\Rightarrow a = 9, - 3$$<br/><br/>$$P = \\left[ {\\matrix{\n   2 & {{{a + 3} \\over 2}}  \\cr \n   {{{a + 3} \\over 2}} & 0  \\cr \n\n } } \\right]$$<br/><br/>$$P = \\left[ {\\matrix{\n   2 & 6  \\cr \n   6 & 0  \\cr \n\n } } \\right]$$ or $$\\left[ {\\matrix{\n   2 & 0  \\cr \n   0 & 0  \\cr \n\n } } \\right]$$\n<br/><br/> | P | = - 36 or 0\n<br/><br/>$$\\therefore$$ | $$-$$36 + 0 | = 36",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 20th July Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef5",
+    "question_id": "0EINDVkT81wWvriaR41klrkbb9t",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "no solution",
+      "exactly two solutions",
+      "infinitely many solutions",
+      "a unique solution"
+    ],
+    "solution": "A<sup>T</sup> = A, B<sup>T</sup> = $$-$$B<br><br>Let A<sup>2</sup>B<sup>2</sup> $$-$$ B<sup>2</sup>A<sup>2</sup> = P<br><br>P<sup>T</sup> = (A<sup>2</sup>B<sup>2</sup> $$-$$ B<sup>2</sup>A<sup>2</sup>)<sup>T</sup> = (A<sup>2</sup>B<sup>2</sup>)<sup>T</sup> $$-$$ (B<sup>2</sup>A<sup>2</sup>)<sup>T</sup><br><br>= (B<sup>2</sup>)<sup>T</sup> (A<sup>2</sup>)<sup>T</sup> $$-$$ (A<sup>2</sup>)<sup>T</sup> (B<sup>2</sup>)<sup>T</sup><br><br>= B<sup>2</sup>A<sup>2</sup> $$-$$ A<sup>2</sup>B<sup>2</sup><br><br>$$ \\Rightarrow $$ P is skew-symmetric matrix<br><br>$$\\left[ {\\matrix{\n   0 &amp; a &amp; b  \\cr \n   { - a} &amp; 0 &amp; c  \\cr \n   { - b} &amp; { - c} &amp; 0  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   x  \\cr \n   y  \\cr \n   z  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   0  \\cr \n   0  \\cr \n   0  \\cr \n\n } } \\right]$$<br><br>$$ \\therefore $$ ay + bz = 0 ..... (1)<br><br>$$-$$ax + cz = 0 .... (2)<br><br>$$-$$bx $$-$$cy = 0 ..... (3)<br><br>From equation 1, 2, 3<br><br>$$\\Delta$$ = 0 &amp; $$\\Delta$$<sub>1</sub> = $$\\Delta$$<sub>2</sub> = $$\\Delta$$<sub>3</sub> = 0<br><br>$$ \\therefore $$ equation have infinite number of solution",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 24th February Evening Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef6",
+    "question_id": "BTVrgRhS5ZberuUFEM1klug7r15",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "easy",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "6",
+      "4",
+      "1",
+      "12"
+    ],
+    "solution": "Let $$A = \\left[ {\\matrix{\n   a &amp; b  \\cr \n   b &amp; c  \\cr \n\n } } \\right]$$<br><br>$${A^2} = \\left[ {\\matrix{\n   a &amp; b  \\cr \n   b &amp; c  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   a &amp; b  \\cr \n   b &amp; c  \\cr \n\n } } \\right] = \\left[ {\\matrix{\n   {{a^2} + {b^2}} &amp; {ab + bc}  \\cr \n   {ab + bc} &amp; {{c^2} + {b^2}}  \\cr \n\n } } \\right]$$<br><br>$$ = {a^2} + 2{b^2} + {c^2} = 1$$<br><br>$$a = 1,b = 0,c = 0$$<br><br>$$a = 0,b = 0,c = 1$$<br><br>$$a =  - 1,b = 0,c = 0$$<br><br>$$c =  - 1,b = 0,a = 0$$",
+    "__v": 0,
+    "title": "JEE Main 2021 (Online) 26th February Morning Shift",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1ef8",
+    "question_id": "rfc0afjOYGFlvHdYbD3rsa0w2w9jx6595rt",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "$$\\left[ {\\matrix{\n   4 &amp; { - 2}  \\cr \n   1 &amp; { - 4}  \\cr \n\n } } \\right]$$",
+      "$$\\left[ {\\matrix{\n   { - 4} &amp; { - 2}  \\cr \n   { - 1} &amp; 4  \\cr \n\n } } \\right]$$",
+      "$$\\left[ {\\matrix{\n   { - 4} &amp; 2  \\cr \n   1 &amp; 4  \\cr \n\n } } \\right]$$",
+      "$$\\left[ {\\matrix{\n   4 &amp; { - 2}  \\cr \n   { - 1} &amp; { - 4}  \\cr \n\n } } \\right]$$"
+    ],
+    "solution": "$$A + B = \\left[ {\\matrix{\n   2 &amp; 3  \\cr \n   5 &amp; { - 1}  \\cr \n\n } } \\right] = P(say)$$<br><br>\nNow $$A = {{P + {P^T}} \\over 2}\\&amp; B = {{P - {P^T}} \\over 2}$$<br><br>\nSo $$A = {1 \\over 2}\\left( {\\left[ {\\matrix{\n   2 &amp; 3  \\cr \n   5 &amp; { - 1}  \\cr \n\n } } \\right] + \\left[ {\\matrix{\n   2 &amp; 5  \\cr \n   3 &amp; { - 1}  \\cr \n\n } } \\right]} \\right) = \\left[ {\\matrix{\n   2 &amp; 4  \\cr \n   4 &amp; { - 1}  \\cr \n\n } } \\right]$$<br><br>\n$$B = {1 \\over 2}\\left( {\\left[ {\\matrix{\n   2 &amp; 3  \\cr \n   5 &amp; { - 1}  \\cr \n\n } } \\right] - \\left[ {\\matrix{\n   2 &amp; 5  \\cr \n   3 &amp; { - 1}  \\cr \n\n } } \\right]} \\right) = \\left[ {\\matrix{\n   0 &amp; { - 1}  \\cr \n   1 &amp; 0  \\cr \n\n } } \\right]$$<br><br>\nSo $$AB = \\left( {\\left[ {\\matrix{\n   2 &amp; 4  \\cr \n   4 &amp; { - 1}  \\cr \n\n } } \\right]\\left[ {\\matrix{\n   0 &amp; { - 1}  \\cr \n   1 &amp; 0  \\cr \n\n } } \\right]} \\right) = \\left[ {\\matrix{\n   4 &amp; { - 2}  \\cr \n   { - 1} &amp; { - 4}  \\cr \n\n } } \\right]$$",
+    "__v": 0,
+    "title": "JEE Main 2019 (Online) 12th April Morning Slot",
+    "exam": "JEE Main"
+  },
+  {
+    "_id": "6a2bdca92762cf4b576a1efc",
+    "question_id": "C0L4Ct0WYGS8JsmI",
+    "chapterId": "symmetric-and-skew-symmetric-matrices",
+    "subject": "Mathematics",
+    "topic": "symmetric-and-skew-symmetric-matrices",
+    "difficulty": "medium",
+    "marks": 4,
+    "tags": [],
+    "options": [
+      "statement - 1 is true, statement - 2 is true; statement - 2 is <b>not</b> a correct explanation for statement - 1. ",
+      "statement - 1 is true, statement - 2 is false. ",
+      "statement - 1 is false, statement -2 is true  ",
+      "statement -1 is true, statement - 2 is true; statement - 2 is a correct explanation for statement - 1. "
+    ],
+    "solution": "$$\\therefore$$ $$A' = A,B' = B$$ \n<br><br>Now $$\\,\\,\\,\\left( {A\\left( {BA} \\right)} \\right)' = \\left( {BA} \\right)'A'$$ \n<br><br>$$ = \\left( {A'B'} \\right)A' = \\left( {AB} \\right)A = A\\left( {BA} \\right)$$ \n<br><br>Similarly $$\\left( {\\left( {AB} \\right)A} \\right)' = \\left( {AB} \\right)A$$\n<br><br>So, $$A\\left( {BA} \\right)\\,\\,\\,\\,$$ and $$A\\left( {BA} \\right)\\,\\,\\,\\,$$ are symmetric matrices.\n<br><br>Again $$\\left( {AB} \\right)' = B'A' = BA$$\n<br><br>Now if $$BA=AB$$, then $$AB$$ is symmetric matrix.",
+    "__v": 0,
+    "title": "AIEEE 2011",
+    "exam": "JEE Main"
+  }
+]
