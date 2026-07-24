@@ -594,6 +594,39 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
     <div className={`nta-exam-wrapper ${!isLight ? 'dark-theme' : ''}`}>
       {/* FORCE STYLES FOR PRACTICE MODE CORRECT/WRONG OPTIONS AND SOLUTION TEXT */}
       <style>{`
+        /* FIX LIGHT MODE TEXT VISIBILITY */
+        .nta-q-content, .nta-q-content p, .nta-q-content span, .nta-q-content div, .nta-q-content *, .nta-q-content .MathJax, .nta-q-content mjx-container {
+          color: ${isLight ? '#0f172a' : '#f8fafc'} !important;
+          fill: ${isLight ? '#0f172a' : '#f8fafc'} !important;
+        }
+        .nta-option:not(.correct):not(.wrong) .nta-option-text, 
+        .nta-option:not(.correct):not(.wrong) .tex2jax_process, 
+        .nta-option:not(.correct):not(.wrong) *, 
+        .nta-option:not(.correct):not(.wrong) .MathJax, 
+        .nta-option:not(.correct):not(.wrong) mjx-container {
+          color: ${isLight ? '#1e293b' : '#f8fafc'} !important;
+          fill: ${isLight ? '#1e293b' : '#f8fafc'} !important;
+        }
+        .nta-legend-item, .nta-section-info, .nta-section-tab {
+          color: ${isLight ? '#334155' : '#cbd5e1'} !important;
+        }
+        .nta-dot.not-visited {
+          color: ${isLight ? '#334155' : '#cbd5e1'} !important;
+        }
+        .nta-dot.not-answered, .nta-dot.answered, .nta-dot.marked, .nta-dot.answered-marked {
+          color: #ffffff !important;
+        }
+        .nta-numerical-input-label, .nta-timer-label {
+          color: ${isLight ? '#334155' : '#cbd5e1'} !important;
+        }
+        .nta-timer-value {
+          color: ${isLight ? '#0f172a' : '#ffffff'} !important;
+        }
+        .nta-question-type-badge {
+           color: ${isLight ? '#0f172a' : '#ffffff'} !important;
+        }
+        /* END FIX */
+        
         .nta-option.correct, .nta-option.correct .nta-option-text, .nta-option.correct .tex2jax_process, .nta-option.correct *, .nta-option.correct .MathJax, .nta-option.correct mjx-container {
           color: #064e3b !important;
           fill: #064e3b !important;

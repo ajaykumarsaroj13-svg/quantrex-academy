@@ -247,7 +247,7 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
               {/* Question Body */}
               <div className="p-6">
                 <div 
-                  className="text-base lg:text-lg leading-relaxed mb-8 select-text math-content text-gray-200"
+                  className={`text-base lg:text-lg leading-relaxed mb-8 select-text math-content ${isLight ? 'text-gray-800' : 'text-gray-200'}`}
                   dangerouslySetInnerHTML={{ __html: renderMath(currentQuestion.text) }}
                 />
 
@@ -259,14 +259,14 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
                     const isCorrectOption = (idx + 1) === currentQuestion.correctOption;
                     const letter = String.fromCharCode(65 + idx);
                     
-                    let optionStyle = "border-white/10 bg-[#121A2F] hover:border-blue-500";
-                    let letterStyle = "bg-blue-600 text-white";
-                    let labelStyle = "text-gray-300";
+                    let optionStyle = isLight ? "border-gray-200 bg-white hover:border-blue-400" : "border-white/10 bg-[#121A2F] hover:border-blue-500";
+                    let letterStyle = isLight ? "bg-blue-100 text-blue-700" : "bg-blue-600 text-white";
+                    let labelStyle = isLight ? "text-gray-700" : "text-gray-300";
 
                     if (isSelected && !currentState.checked) {
-                      optionStyle = "border-blue-500 bg-blue-900/10";
-                      letterStyle = "bg-blue-700 text-white ring-2 ring-blue-300 ring-offset-1 ring-offset-[#121A2F]";
-                      labelStyle = "text-gray-100 font-medium";
+                      optionStyle = isLight ? "border-blue-500 bg-blue-50" : "border-blue-500 bg-blue-900/10";
+                      letterStyle = isLight ? "bg-blue-600 text-white ring-2 ring-blue-200 ring-offset-1 ring-offset-white" : "bg-blue-700 text-white ring-2 ring-blue-300 ring-offset-1 ring-offset-[#121A2F]";
+                      labelStyle = isLight ? "text-blue-900 font-medium" : "text-gray-100 font-medium";
                     } else if (currentState.checked) {
                       if (isCorrectOption) {
                         // Correct option always highlights green if checked
@@ -281,7 +281,7 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
                       } else {
                         // Other non-selected, non-correct options dim
                         optionStyle = isLight ? "border-gray-200 bg-white opacity-60" : "border-white/5 bg-[#121A2F] opacity-60";
-                        letterStyle = "bg-gray-400 text-white";
+                        letterStyle = isLight ? "bg-gray-200 text-gray-500" : "bg-gray-400 text-white";
                         labelStyle = isLight ? "text-gray-500" : "text-gray-500";
                       }
                     }
@@ -468,16 +468,16 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
       <style dangerouslySetInnerHTML={{ __html: `
         .math-content .katex { font-size: 1.15em; }
         .math-content .katex-display { margin: 0.5em 0; overflow-x: auto; overflow-y: hidden; padding: 0.2em 0; }
-        .math-content { color: #e5e7eb; }
-        /* Hide images initially to prevent watermark flashing */
+        .math-content { color: ${isLight ? '#1f2937' : '#e5e7eb'} !important; }
+        .math-content .katex { color: ${isLight ? '#1f2937' : '#e5e7eb'} !important; }
         .math-content img, .exam-math-content img, .nta-q-content img { opacity: 0; transition: opacity 0.3s ease; }
         .math-content img[data-watermark-processed="true"], .exam-math-content img[data-watermark-processed="true"], .nta-q-content img[data-watermark-processed="true"] { 
           opacity: 1; 
-          background-color: white; 
-          padding: 8px; 
-          box-shadow: 0 0 10px rgba(255,255,255,0.1); 
-          filter: grayscale(100%) brightness(130%) contrast(500%); 
-          mix-blend-mode: normal; 
+          background-color: ${isLight ? 'transparent' : 'white'}; 
+          padding: ${isLight ? '0' : '8px'}; 
+          box-shadow: ${isLight ? 'none' : '0 0 10px rgba(255,255,255,0.1)'}; 
+          filter: grayscale(100%) brightness(130%) contrast(500%) ${isLight ? '' : 'invert(1)'}; 
+          mix-blend-mode: ${isLight ? 'multiply' : 'normal'}; 
         }
         .animate-fade-in-up {
           animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;

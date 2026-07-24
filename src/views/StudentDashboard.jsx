@@ -2331,7 +2331,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             {/* LIVE CLASSES TAB */}
             {activeTab === 'live' && (
               <div className="space-y-6">
-                <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">Upcoming Schedules</h3>
+                <h3 className={`text-xl font-bold uppercase tracking-wider font-display ${isLight ? 'text-slate-800' : 'text-white'}`}>Upcoming Schedules</h3>
                 <div className="space-y-4">
                   {[
                     { title: 'Calculus Advanced Problem Solving', time: 'Today at 6:00 PM', status: 'Live In 2 Hrs', instructor: 'Ajay Kumar Saroj' },
@@ -2339,7 +2339,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   ].map((c, idx) => (
                     <div key={idx} className="p-5 bg-cyberdark border border-white/5 rounded-xl flex flex-wrap items-center justify-between gap-4">
                       <div className="space-y-1">
-                        <h4 className="text-white font-bold text-sm">{c.title}</h4>
+                        <h4 className={`font-bold text-sm ${isLight ? 'text-slate-100' : 'text-white'}`}>{c.title}</h4>
                         <p className="text-xs text-gray-500 font-mono">Instructor: {c.instructor} • {c.time}</p>
                       </div>
                       <span className={`text-[10px] font-bold font-mono px-3 py-1 rounded ${idx === 0 ? 'bg-red-500/10 border border-red-500/30 text-red-400 animate-pulse' : 'bg-white/5 border border-white/10 text-gray-400'}`}>
@@ -2400,7 +2400,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                 })()}
 
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">{testCategory === 'nda' ? 'NDA' : 'JEE'} Official Paper Portal</h3>
+                  <h3 className={`text-xl font-bold uppercase tracking-wider font-display ${isLight ? 'text-slate-800' : 'text-white'}`}>{testCategory === 'nda' ? 'NDA' : 'JEE'} Official Paper Portal</h3>
                   <div className="flex bg-obsidian/60 p-1 border border-white/5 rounded-lg">
                     <button
                       onClick={() => setTestCategory('jee-mains')}
@@ -2430,7 +2430,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
                   {tests.map((test) => (
                     <div key={test.id} className="p-5 bg-cyberdark border border-white/5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
                       <div className="space-y-1">
-                        <h4 className="text-white font-bold text-base">{test.title}</h4>
+                        <h4 className={`font-bold text-base ${isLight ? 'text-slate-100' : 'text-white'}`}>{test.title}</h4>
                         <p className="text-xs text-gray-400 font-mono leading-relaxed max-w-md">{test.description}</p>
                         <div className="flex items-center gap-3 text-[10px] text-gray-500 font-mono pt-1">
                           <span>Duration: {test.durationMinutes} mins</span>
@@ -2458,7 +2458,7 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
             {activeTab === 'doubts' && (
               <div className="flex flex-col h-[55vh] justify-between">
                 <div className="border-b border-white/5 pb-3">
-                  <h3 className="text-xl font-bold text-white uppercase tracking-wider font-display">AI Mathematics Doubt Solver</h3>
+                  <h3 className={`text-xl font-bold uppercase tracking-wider font-display ${isLight ? 'text-slate-800' : 'text-white'}`}>AI Mathematics Doubt Solver</h3>
                   <span className="text-[10px] text-gray-500 font-mono">Answers formatted in mathematical LaTeX layout</span>
                 </div>
 
