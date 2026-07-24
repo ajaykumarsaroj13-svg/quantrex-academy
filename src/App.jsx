@@ -10,6 +10,8 @@ import FloatingContact from './components/FloatingContact';
 import Auth from './views/Auth';
 import Shield from 'lucide-react/dist/esm/icons/shield';
 import { loadDbFromBlob } from './blob';
+import { AIAssistantProvider } from './contexts/AIAssistantContext';
+import FloatingAIAssistant from './components/AIAssistant/FloatingAIAssistant';
 
 const StudentDashboard = React.lazy(() => import('./views/StudentDashboard'));
 const AdminDashboard = React.lazy(() => import('./views/AdminDashboard'));
@@ -537,11 +539,12 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-between">
-      <MathCanvas />
-      {!isExamMode && <FloatingContact isLight={isLight} />}
+    <AIAssistantProvider>
+      <div className="relative min-h-screen flex flex-col justify-between">
+        <MathCanvas />
+        {!isExamMode && <FloatingContact isLight={isLight} />}
 
-      {!isExamMode && (
+        {!isExamMode && (
         <Navbar
           activePage={activePage}
           setActivePage={setActivePage}
@@ -590,7 +593,11 @@ export default function App() {
           </div>
         </footer>
       )}
+
+      {/* Global AI Assistant */}
+      {!isExamMode && <FloatingAIAssistant theme={isLight ? 'light' : 'dark'} />}
     </div>
+    </AIAssistantProvider>
   );
 }
 

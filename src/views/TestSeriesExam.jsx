@@ -4,6 +4,8 @@ import TeacherSolution from '../components/TeacherSolution';
 import { fixExamGoalHtml } from '../utils/htmlCleaner';
 import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
 import CountdownOverlay from '../components/CountdownOverlay';
+import { useAIAssistant } from '../contexts/AIAssistantContext';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
 
 import logoMainsImg from '../assets/logo_mains.png';
 import logoAdvancedImg from '../assets/logo_advanced.png';
@@ -39,6 +41,7 @@ const ADV_SUBJECT_ORDER = ['Mathematics', 'Physics', 'Chemistry'];
 // ─── Main Component ───────────────────────────────────────────
 export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, onExit, isLight, onToggleTheme }) {
   useWatermarkRemover();
+  const { openAssistant, sendMessage } = useAIAssistant();
 
   const [testData, setTestData]         = useState(null);
   const [loading, setLoading]           = useState(true);
@@ -809,9 +812,20 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
               })()}
               {question?.topic && <span className="nta-topic-tag">{question?.topic}</span>}
             </div>
-            <div className="nta-marks-info">
-              <span className="nta-marks-correct">+{question?.marks || 4}</span>
-              <span className="nta-marks-wrong">{question?.questionType === 'NUMERICAL' ? '0' : (question?.negativeMarks ?? -1)}</span>
+            <div className="flex items-center gap-2">
+              <div className="nta-marks-info">
+                <span className="nta-marks-correct">+{question?.marks || 4}</span>
+                <span className="nta-marks-wrong">{question?.questionType === 'NUMERICAL' ? '0' : (question?.negativeMarks ?? -1)}</span>
+              </div>
+              <button 
+                onClick={() => { 
+                  openAssistant(); 
+                  sendMessage(`Explain Question ${currentQIdx + 1} from Section ${currentSection} of ${currentSubject}`); 
+                }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all shadow-sm ${isLight ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-200 hover:shadow-md' : 'bg-gradient-to-r from-blue-900/40 to-[#0f172a] text-blue-300 border border-blue-500/30 hover:border-blue-500/60 hover:shadow-[0_0_10px_rgba(37,99,235,0.2)]'}`}
+              >
+                <Sparkles className="w-3.5 h-3.5 text-amber-500" /> Ask AI
+              </button>
             </div>
           </div>
 

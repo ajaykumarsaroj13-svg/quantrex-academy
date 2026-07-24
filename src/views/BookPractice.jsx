@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
-import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye, ZoomIn, ZoomOut } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, ChevronRight, ChevronLeft, LayoutGrid, AlertCircle, Eye, ZoomIn, ZoomOut, Sparkles } from 'lucide-react';
 import { useWatermarkRemover } from '../hooks/useWatermarkRemover';
+import { useAIAssistant } from '../contexts/AIAssistantContext';
 
 const BookPractice = ({ chapter, setActivePage, theme }) => {
   const isLight = theme === 'light';
@@ -18,6 +19,8 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
   const [userAnswers, setUserAnswers] = useState({}); // { 0: { selected: 1, checked: true, isCorrect: false } }
 
   useWatermarkRemover([currentQuestionIndex, questions]);
+
+  const { openAssistant, sendMessage } = useAIAssistant();
 
   const [showPaletteMobile, setShowPaletteMobile] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -238,10 +241,21 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
               
               {/* Question Header */}
               <div className={`border-b px-6 py-4 flex items-center justify-between ${isLight ? 'bg-gray-50/80 border-gray-100' : 'bg-white/5 border-white/5'}`}>
-                <span className={`font-bold text-lg ${isLight ? 'text-gray-800' : 'text-white'}`}>Question {currentQuestion.questionNumber || (currentQuestionIndex + 1)}</span>
-                <span className={`text-xs font-semibold px-2.5 py-1 rounded-md uppercase tracking-wider ${isLight ? 'bg-blue-50 text-blue-700' : 'bg-blue-900/30 text-blue-400'}`}>
-                  Single Correct
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className={`font-bold text-lg ${isLight ? 'text-gray-800' : 'text-white'}`}>Question {currentQuestion.questionNumber || (currentQuestionIndex + 1)}</span>
+                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-md uppercase tracking-wider ${isLight ? 'bg-blue-50 text-blue-700' : 'bg-blue-900/30 text-blue-400'}`}>
+                    Single Correct
+                  </span>
+                </div>
+                <button 
+                  onClick={() => { 
+                    openAssistant(); 
+                    sendMessage(`Explain Question ${currentQuestion.questionNumber || (currentQuestionIndex + 1)} from ${chapterDetails.name}`); 
+                  }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all shadow-sm ${isLight ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 border border-blue-200 hover:shadow-md' : 'bg-gradient-to-r from-blue-900/40 to-[#0f172a] text-blue-300 border border-blue-500/30 hover:border-blue-500/60 hover:shadow-[0_0_10px_rgba(37,99,235,0.2)]'}`}
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-amber-500" /> Ask AI
+                </button>
               </div>
               
               {/* Question Body */}
