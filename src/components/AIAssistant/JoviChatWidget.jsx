@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink, FileText, Settings2, Search } from "lucide-react";
+import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink, FileText, Settings2, Search, Mic, Share2 } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 import RobotAvatar from './RobotAvatar'; // We added this component
+import FullScreenRobot from './FullScreenRobot'; // Full screen voice mode
 
 // Helper to get slug for test engine
 const getFetchSlug = (examKey, ch) => {
@@ -65,6 +66,8 @@ export default function JoviChatWidget() {
   const [isLoading, setIsLoading] = useState(false);
   const [isVoiceEnabled, setIsVoiceEnabled] = useState(true);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [isVoiceMode, setIsVoiceMode] = useState(false);
+  const [lastRobotSpeech, setLastRobotSpeech] = useState(GREETING);
   
   // State machine context
   const [chatContext, setChatContext] = useState({ 
@@ -91,6 +94,7 @@ export default function JoviChatWidget() {
   }, [open]);
 
   function speakText(text) {
+    setLastRobotSpeech(text);
     if (!isVoiceEnabled || !window.speechSynthesis) return;
     
     window.speechSynthesis.cancel();
@@ -114,6 +118,64 @@ export default function JoviChatWidget() {
       speakText(content);
     }
   }
+
+  const handleVoiceCommand = (command) => {
+    const text = command.toLowerCase();
+    
+    // Quick keyword matching algorithm for Chapters
+    let foundChapterTitle = null;
+    let foundChapterSlug = null;
+    let foundSubject = null;
+    
+    for (const [subject, chapters] of Object.entries(SUBJECTS)) {
+       for (const chapter of chapters) {
+          if (text.includes(chapter.toLowerCase())) {
+             foundChapterTitle = chapter;
+             foundChapterSlug = `${subject.toLowerCase()}_${chapter.toLowerCase().replace(/ /g, '_')}`;
+             foundSubject = subject.toLowerCase();
+             break;
+          }
+       }
+       if (foundChapterTitle) break;
+    }
+    
+    if (foundChapterTitle) {
+      if (text.includes("test") || text.includes("exam") || text.includes("banao")) {
+         addMsg("bot", `Generating a standard test for ${foundChapterTitle}...`);
+         setTimeout(() => {
+            setIsVoiceMode(false);
+            const params = {
+              exam: 'jee-mains',
+              chapters: [foundChapterSlug],
+              types: { MCQ: 15 },
+              count: 15,
+              duration: 60,
+              years: 'All',
+              seed: Math.floor(Math.random() * 1000000)
+            };
+            window.location.href = `/?custom_test=${encodeURIComponent(JSON.stringify(params))}`;
+         }, 2000);
+         return;
+      }
+      
+      if (text.includes("notes") || text.includes("pdf") || text.includes("formula")) {
+         const tab = text.includes("formula") ? 'formulas' : 'pdfs';
+         window.location.href = `/?view_chapter=${foundChapterSlug}&tab=${tab}`;
+         return;
+      }
+      
+      setChatContext(prev => ({ ...prev, step: 'action', chapterTitle: foundChapterTitle, chapterSlug: foundChapterSlug, subjectKey: foundSubject }));
+      addMsg("bot", `I found ${foundChapterTitle}. What would you like to do?`, ["View Notes / PDFs", "View Formulas", "Start Standard Test", "Create Custom Test", "Search Similar Questions"]);
+      return;
+    }
+    
+    if (text.includes("hello") || text.includes("hi ") || text.includes("hey")) {
+       addMsg("bot", "Hello! I am Quantrex AI. Which chapter do you want to study? You can say things like 'Matrix ka test banao'.");
+       return;
+    }
+    
+    addMsg("bot", "I couldn't quite catch a specific chapter name. Please try saying the chapter name, like 'Integration' or 'Matrix'.");
+  };
 
   async function handleSend(textOverride = null) {
     const text = textOverride ?? input.trim();
@@ -300,38 +362,100 @@ export default function JoviChatWidget() {
           </div>
         </div>
 
-        <button
-          onClick={() => {
-            const types = chatContext.examKey === 'jee-advanced' 
-              ? { MCQ: chatContext.customTestConfig.count } 
-              : { MCQ: chatContext.customTestConfig.count };
-            const params = {
-              exam: chatContext.examKey,
-              chapters: [chatContext.chapterSlug],
-              types: types,
-              count: chatContext.customTestConfig.count,
-              duration: chatContext.customTestConfig.duration,
-              years: 'All',
-              seed: Math.floor(Math.random() * 1000000)
-            };
-            const encodedParams = encodeURIComponent(JSON.stringify(params));
-            window.location.href = `/?custom_test=${encodedParams}`;
-          }}
-          style={{
-            background: "linear-gradient(135deg, #38bdf8, #3b82f6)", border: "none", color: "#fff",
-            padding: "10px", borderRadius: 8, fontSize: 14, fontWeight: "bold",
-            cursor: "pointer", width: "100%", textAlign: "center"
-          }}
-        >
-          Start Custom Test
-        </button>
+        <div style={{ display: 'flex', gap: 10 }}>
+            <button
+              onClick={() => {
+                const types = chatContext.examKey === 'jee-advanced' 
+                  ? { MCQ: chatContext.customTestConfig.count } 
+                  : { MCQ: chatContext.customTestConfig.count };
+                const params = {
+                  exam: chatContext.examKey,
+                  chapters: [chatContext.chapterSlug],
+                  types: types,
+                  count: chatContext.customTestConfig.count,
+                  duration: chatContext.customTestConfig.duration,
+                  years: 'All',
+                  seed: Math.floor(Math.random() * 1000000)
+                };
+                const encodedParams = encodeURIComponent(JSON.stringify(params));
+                window.location.href = `/?custom_test=${encodedParams}`;
+              }}
+              style={{
+                background: "linear-gradient(135deg, #38bdf8, #3b82f6)", border: "none", color: "#fff",
+                padding: "10px", borderRadius: 8, fontSize: 14, fontWeight: "bold",
+                cursor: "pointer", flex: 1, textAlign: "center"
+              }}
+            >
+              Start Custom Test
+            </button>
+            <button
+              onClick={() => {
+                const types = chatContext.examKey === 'jee-advanced' 
+                  ? { MCQ: chatContext.customTestConfig.count } 
+                  : { MCQ: chatContext.customTestConfig.count };
+                const params = {
+                  exam: chatContext.examKey,
+                  chapters: [chatContext.chapterSlug],
+                  types: types,
+                  count: chatContext.customTestConfig.count,
+                  duration: chatContext.customTestConfig.duration,
+                  years: 'All',
+                  seed: Math.floor(Math.random() * 1000000)
+                };
+                // Base64 encode for sharing
+                const sharedPayload = btoa(JSON.stringify(params));
+                const shareLink = `${window.location.origin}/?shared_test=${sharedPayload}`;
+                navigator.clipboard.writeText(shareLink);
+                alert("Shareable Link copied to clipboard!");
+              }}
+              title="Copy Shareable Link"
+              style={{
+                background: "#1e293b", border: "1px solid #38bdf8", color: "#38bdf8",
+                padding: "10px", borderRadius: 8, cursor: "pointer",
+                display: "flex", alignItems: "center", justifyContent: "center"
+              }}
+            >
+              <Share2 size={18} />
+            </button>
+          </div>
       </div>
     );
   };
 
-  if (!open) return null;
+  if (!open) {
+    return (
+      <div style={{ position: "fixed", bottom: 24, right: 24, zIndex: 9999 }}>
+        <button
+          onClick={() => setOpen(true)}
+          style={{
+            display: "flex", alignItems: "center", gap: 10,
+            background: "linear-gradient(135deg, #0f172a, #1e293b)",
+            border: "1px solid #38bdf8", borderRadius: 30,
+            padding: "12px 20px", cursor: "pointer",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.5), 0 0 15px rgba(56,189,248,0.3)",
+            transition: "transform 0.2s"
+          }}
+          onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
+          onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+        >
+          <RobotAvatar isSpeaking={false} className="w-8 h-8" />
+          <span style={{ color: "#fff", fontWeight: 600, fontSize: 14, fontFamily: "system-ui" }}>Quantrex AI</span>
+          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#34d399", boxShadow: "0 0 8px #34d399" }} />
+        </button>
+      </div>
+    );
+  }
 
   return (
+    <>
+    {isVoiceMode && (
+      <FullScreenRobot 
+        onClose={() => setIsVoiceMode(false)}
+        onCommand={handleVoiceCommand}
+        isSpeakingAI={isSpeaking}
+        aiResponseText={lastRobotSpeech}
+      />
+    )}
     <div style={{
       position: "fixed", bottom: 20, right: 20, width: 380, height: 600,
       background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)",
@@ -356,17 +480,23 @@ export default function JoviChatWidget() {
             <p style={{ margin: 0, color: "#94a3b8", fontSize: 12 }}>Smart Assistant</p>
           </div>
         </div>
-        <div style={{ display: "flex", gap: 10 }}>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
           <button 
-            onClick={() => setIsVoiceEnabled(!isVoiceEnabled)}
-            style={{ background: isVoiceEnabled ? "#38bdf822" : "transparent", border: "none", color: isVoiceEnabled ? "#38bdf8" : "#94a3b8", cursor: "pointer", padding: 6, borderRadius: "50%" }}
-            title={isVoiceEnabled ? "Mute Voice" : "Enable Voice"}
+            onClick={() => setIsVoiceMode(true)} 
+            style={{ background: 'none', border: 'none', color: '#38bdf8', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            title="Open Voice Chat"
           >
-            {isVoiceEnabled ? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg> : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>}
+            <Mic size={20} className="animate-pulse" />
           </button>
-          <button onClick={() => setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, customTestConfig: { duration: 60, count: 15 } })} style={{ background: "transparent", border: "none", color: "#94a3b8", cursor: "pointer" }}>
-            <RotateCcw size={18} />
+          
+          <button 
+            onClick={() => setIsVoiceEnabled(!isVoiceEnabled)} 
+            style={{ background: 'none', border: 'none', color: isVoiceEnabled ? '#34d399' : '#94a3b8', cursor: 'pointer', display: 'flex', alignItems: 'center', fontSize: 20 }}
+            title="Toggle Voice (TTS)"
+          >
+            {isVoiceEnabled ? '🔊' : '🔇'}
           </button>
+          
           <button onClick={() => setOpen(false)} style={{ background: "transparent", border: "none", color: "#94a3b8", cursor: "pointer" }}>
             <X size={20} />
           </button>
@@ -527,12 +657,11 @@ export default function JoviChatWidget() {
       </div>
 
       {/* input */}
-      <div style={{ padding: "16px", borderTop: "1px solid rgba(255,255,255,0.1)", background: "#0f172a" }}>
+      <form onSubmit={(e) => { e.preventDefault(); handleSend(); }} style={{ padding: "16px", borderTop: "1px solid rgba(255,255,255,0.1)", background: "#0f172a" }}>
         <div style={{ display: "flex", gap: 10, background: "#1e293b", borderRadius: 24, padding: "6px 6px 6px 16px", border: "1px solid #334155" }}>
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleSend()}
             placeholder="Type your response..."
             style={{
               flex: 1, background: "transparent", border: "none",
@@ -540,7 +669,7 @@ export default function JoviChatWidget() {
             }}
           />
           <button 
-            onClick={() => handleSend()} 
+            type="submit"
             disabled={!input.trim() || isLoading}
             style={{
               background: input.trim() && !isLoading ? "#38bdf8" : "#334155", 
@@ -554,7 +683,8 @@ export default function JoviChatWidget() {
         <div style={{ textAlign: "center", color: "#64748b", fontSize: 10, marginTop: 8, display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
           <Database size={10} /> Local Semantic Search Engine Active
         </div>
-      </div>
+      </form>
     </div>
+    </>
   );
 }

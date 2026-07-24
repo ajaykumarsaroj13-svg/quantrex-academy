@@ -209,9 +209,13 @@ export default function App() {
     }
 
     const customTestParam = searchParams.get('custom_test');
-    if (customTestParam) {
+    const sharedTestParam = searchParams.get('shared_test');
+    
+    if (customTestParam || sharedTestParam) {
       try {
-        const params = JSON.parse(decodeURIComponent(customTestParam));
+        const params = customTestParam 
+           ? JSON.parse(decodeURIComponent(customTestParam)) 
+           : JSON.parse(atob(sharedTestParam));
         window.history.replaceState({path: newUrl}, '', newUrl);
 
         // Generate the test
@@ -219,7 +223,7 @@ export default function App() {
            if (questions && questions.length > 0) {
               const customTestObj = {
                  id: "custom_test_" + Date.now(),
-                 title: "Custom Practice Test",
+                 title: sharedTestParam ? "Shared Practice Test" : "Custom Practice Test",
                  duration: params.duration,
                  durationMinutes: params.duration,
                  questions: questions,
