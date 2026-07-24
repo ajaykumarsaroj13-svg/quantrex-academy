@@ -346,8 +346,20 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
                    {currentQuestionIndex + 1}
                  </div>
                  <div>
-                    <div className="text-xs text-gray-500 font-medium">Time Spent: 00:00 | <span className="text-green-600 font-bold">+4</span> <span className="text-red-500 font-bold">-1</span></div>
-                    
+                    <div className="text-xs text-gray-500 font-medium mb-0.5">Time Spent: 00:00 | <span className="text-green-600 font-bold">+4</span> <span className="text-red-500 font-bold">-1</span></div>
+                    {(() => {
+                      const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
+                      const hasOptions = currentQuestion.options && currentQuestion.options.length > 0;
+                      const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical' || !hasOptions;
+                      const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
+                      const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
+                      let label = isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
+                      return (
+                        <div className={`inline-block px-1.5 py-0.5 text-[10px] font-bold rounded uppercase tracking-wider border ${isMCQM ? 'bg-blue-500/10 text-blue-600 border-blue-500/20' : (isNum ? 'bg-orange-500/10 text-orange-600 border-orange-500/20' : (isSubj ? 'bg-purple-500/10 text-purple-600 border-purple-500/20' : 'bg-green-500/10 text-green-700 border-green-500/20'))}`}>
+                          {label}
+                        </div>
+                      );
+                    })()}
                  </div>
               </div>
               <div className="flex items-center gap-1">
