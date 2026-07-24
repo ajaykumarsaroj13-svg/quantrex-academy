@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { ThemeProvider } from './contexts/ThemeProvider.jsx'
 
 class GlobalErrorBoundary extends React.Component {
   constructor(props) {
@@ -23,14 +24,6 @@ class GlobalErrorBoundary extends React.Component {
   }
 }
 
-const loadScript = (src) => new Promise((resolve, reject) => {
-  const script = document.createElement('script');
-  script.src = src;
-  script.onload = resolve;
-  script.onerror = reject;
-  document.head.appendChild(script);
-});
-
 // Safely patch localStorage to prevent QuotaExceededError crashes
 const originalSetItem = localStorage.setItem;
 localStorage.setItem = function(key, value) {
@@ -41,11 +34,12 @@ localStorage.setItem = function(key, value) {
   }
 };
 
-// Removed massive data scripts since we now fetch from MongoDB backend
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalErrorBoundary>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </GlobalErrorBoundary>
   </React.StrictMode>
 )

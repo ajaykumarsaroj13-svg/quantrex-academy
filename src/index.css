@@ -1,878 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ================================================================
-   QUANTREX ACADEMY — GLOBAL DESIGN SYSTEM
-   Fonts: Poppins (headings) + Inter (body) + Roboto Mono (code)
-   Themes: Dark (default) + Light (via .light class on html)
-================================================================ */
-
 @layer base {
-  /* ── MULTI-COLOR THEMES ── */
-  
-  /* 1. Default (Cyan/Electric) */
-  :root, html[data-theme="cyan"] {
-    --bg-primary: #0A0F1C; /* Premium Midnight Obsidian */
-    --bg-secondary: #121A2F;
-    --bg-card: rgba(18, 26, 47, 0.70);
-    --text-primary: #F8FAFC;
+  :root {
+    /* Base configuration modified dynamically by ThemeProvider */
+    --font-scale: 1;
+    --radius-card: 16px;
+    --radius-button: 8px;
+    --radius-input: 6px;
+    --animation-multiplier: 1;
+    
+    --transition-fast: calc(0.15s * var(--animation-multiplier));
+    --transition-normal: calc(0.3s * var(--animation-multiplier));
+    --transition-slow: calc(0.5s * var(--animation-multiplier));
+
+    /* Default Accent (Blue) - Can be overridden by ThemeProvider */
+    --accent-primary: #3B82F6;
+    --accent-hover: #2563EB;
+    --accent-bg: rgba(59, 130, 246, 0.1);
+  }
+
+  html.light {
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #F8FAFC;
+    --surface-tertiary: #F1F5F9;
+    
+    --text-primary: #111827;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+    
+    --border-default: #E2E8F0;
+    --border-focus: #CBD5E1;
+    
+    background-color: var(--surface-secondary);
+    color: var(--text-primary);
+  }
+
+  html.dark, :root {
+    --surface-primary: #0B1120;
+    --surface-secondary: #111827;
+    --surface-tertiary: #1E293B;
+    
+    --text-primary: #FFFFFF;
     --text-secondary: #94A3B8;
     --text-muted: #64748B;
-    --border-subtle: rgba(255, 255, 255, 0.05);
-    --border-accent: rgba(0, 180, 216, 0.25);
-    --scrollbar-track: #0A0F1C;
-    --scrollbar-thumb: #1E293B;
-    --scrollbar-hover: #00B4D8;
-    --glass-bg: rgba(18, 26, 47, 0.65);
-    --glass-border: rgba(255, 255, 255, 0.08);
     
-    /* Dynamic Accent Colors */
-    --color-electric: #00B4D8;
-    --color-electric-dark: #0077B6;
-    --color-gold: #F59E0B;
+    --border-default: rgba(255, 255, 255, 0.08);
+    --border-focus: rgba(255, 255, 255, 0.15);
+    
+    background-color: var(--surface-primary);
+    color: var(--text-primary);
   }
-
-  /* 2. Emerald (Green) */
-  html[data-theme="emerald"] {
-    --color-electric: #10B981;
-    --color-electric-dark: #047857;
-    --color-gold: #F59E0B;
-    --border-accent: rgba(16, 185, 129, 0.30);
-  }
-
-  /* 3. Ruby (Red) */
-  html[data-theme="ruby"] {
-    --color-electric: #EF4444;
-    --color-electric-dark: #B91C1C;
-    --color-gold: #F59E0B;
-    --border-accent: rgba(239, 68, 68, 0.30);
-  }
-
-  /* 4. Amethyst (Purple) */
-  html[data-theme="amethyst"] {
-    --color-electric: #8B5CF6;
-    --color-electric-dark: #5B21B6;
-    --color-gold: #F59E0B;
-    --border-accent: rgba(139, 92, 246, 0.30);
-  }
-
-  /* ── BASE TYPOGRAPHY ── */
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
-  }
-
-  /* ─── GLOBAL WATERMARK PROTECTION ──────────────────────── */
-  /* Hide images that haven't been processed by useWatermarkRemover yet.
-     This guarantees the watermark never flashes on screen. */
-  img:not([data-watermark-processed="true"]) {
-    opacity: 0 !important;
-  }
-
-  img[data-watermark-processed="true"] {
-    opacity: 1 !important;
-  }
-  /* ──────────────────────────────────────────────────────── */
 
   body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
-    font-size: 0.9375rem;   /* 15px */
-    line-height: 1.65;
-    letter-spacing: 0.01em;
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
-
-  h1, h2, h3, h4, h5, h6, .font-display {
-    font-family: 'Poppins', system-ui, sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-    color: var(--text-primary);
-  }
-
-  h1 { font-size: clamp(2rem, 5vw, 4.5rem); font-weight: 800; }
-  h2 { font-size: clamp(1.5rem, 3vw, 2.75rem); font-weight: 700; }
-  h3 { font-size: clamp(1.125rem, 2vw, 1.75rem); font-weight: 600; }
-  h4 { font-size: clamp(1rem, 1.5vw, 1.25rem); font-weight: 600; }
-
-  p {
-    font-family: 'Outfit', sans-serif;
-    color: var(--text-secondary);
-    line-height: 1.75;
-  }
-
-  .font-logo {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-  }
-
-  .font-mono, code, pre {
-    font-family: 'Roboto Mono', 'Fira Code', monospace;
-    font-size: 0.875em;
+    font-size: calc(16px * var(--font-scale));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
   }
 }
 
-/* ================================================================
-   SCROLLBAR THEMING
-================================================================ */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
+/* ========================================================================= */
+/* PREMIUM COMPONENTS & UTILITIES                                            */
+/* ========================================================================= */
+
+@layer components {
+  .glass-panel {
+    @apply bg-surface-primary backdrop-blur-xl border border-border-default shadow-sm;
+    background-color: color-mix(in srgb, var(--surface-primary) 80%, transparent);
+  }
+  
+  .glass-panel-hover {
+    @apply hover:border-border-focus hover:shadow-md transition-all duration-[var(--transition-normal)];
+  }
+
+  /* CBT Exam Specific overrides */
+  .cbt-container {
+    @apply bg-surface-secondary min-h-screen text-text-primary;
+  }
+  
+  .cbt-header {
+    @apply bg-surface-primary border-b border-border-default flex items-center justify-between px-4 py-2;
+  }
+  
+  .cbt-panel {
+    @apply bg-surface-primary border border-border-default rounded-[var(--radius-card)] overflow-hidden;
+  }
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-secondary);
+}
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb);
-  border-radius: 99px;
+  background: var(--surface-tertiary);
+  border-radius: 4px;
 }
-::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
-
-/* ================================================================
-   SMOOTH GLOBAL TRANSITIONS
-================================================================ */
-*, *::before, *::after {
-  box-sizing: border-box;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
 }
 
-button, a, [role="button"] {
-  transition: opacity 0.15s ease, transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-button:active, [role="button"]:active {
-  transform: scale(0.97);
-}
-
-/* Smooth page-level transitions */
-.page-transition {
-  animation: fadeSlideIn 0.22s cubic-bezier(0.22, 1, 0.36, 1);
-}
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Smooth card hover lift */
-.card-hover {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
-}
-
-/* ================================================================
-   GLASS / PANEL SYSTEM
-================================================================ */
-.glass-panel {
-  background: var(--glass-bg);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--glass-border);
-}
-
-.glass-panel-glow {
-  background: var(--glass-bg);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--border-accent);
-  box-shadow: 0 0 24px rgba(0, 180, 216, 0.10);
-}
-
-/* ================================================================
-   GLOW EFFECTS
-================================================================ */
-.glow-blue {
-  box-shadow: 0 0 20px rgba(0, 180, 216, 0.25);
-}
-.glow-blue-hover:hover {
-  box-shadow: 0 0 32px rgba(0, 180, 216, 0.40);
-}
-.glow-gold {
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
-}
-.text-glow-blue {
-  text-shadow: 0 0 12px rgba(0, 180, 216, 0.70);
-}
-.text-glow-gold {
-  text-shadow: 0 0 12px rgba(245, 158, 11, 0.70);
-}
-
-/* ================================================================
-   FLOATING MATH ANIMATIONS
-================================================================ */
-.float-math-1 { animation: float 8s ease-in-out infinite; }
-.float-math-2 { animation: float 11s ease-in-out infinite 2s; }
-.float-math-3 { animation: float 9s ease-in-out infinite 1s; }
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-12px) rotate(1.5deg); }
-}
-
-/* ================================================================
-   SHIMMER SKELETON LOADER
-================================================================ */
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-.shimmer {
-  background: linear-gradient(90deg, #1F2833 25%, #2d3b4c 50%, #1F2833 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite linear;
-}
-
-@keyframes sweep {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-.animate-sweep {
-  animation: sweep 2s infinite linear;
-}
-
-/* ================================================================
-   FADE IN ANIMATION
-================================================================ */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-in { animation: fadeIn 0.3s ease-out both; }
-
-/* ================================================================
-   MARQUEE ANIMATION
-================================================================ */
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 30s linear infinite;
-}
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
-
-
-/* ================================================================
-   THEME TOGGLE BUTTON TRANSITION
-================================================================ */
-.theme-toggle-btn {
-  transition: all 0.2s ease;
-}
-.theme-toggle-btn:active {
-  transform: scale(0.92);
-}
-
-/* ================================================================
-   PDF / IMAGE VIEWER
-================================================================ */
-.pdf-viewer-frame {
-  width: 100%;
-  min-height: 560px;
-  border: none;
-  border-radius: 0.5rem;
-  background: white;
-}
-.image-viewer-frame {
-  max-width: 100%;
-  max-height: 640px;
-  object-fit: contain;
-  border-radius: 0.5rem;
-  display: block;
-  margin: 0 auto;
-}
-html:not(.light) .nta-question-text *, html:not(.light) .nta-option-text *, html:not(.light) .nta-solution-text *, html:not(.light) .nta-question-text, html:not(.light) .nta-option-text { color: #ffffff !important; }
-html:not(.light) .nta-exam-wrapper { --bg-body: #000000 !important; --bg-panel: #111111 !important; --text-primary: #ffffff !important; --bg-white: #111111 !important; --bg-sidebar: #1a1a1a !important; --bg-sidebar-dark: #000000 !important; --border-light: #333333 !important; --border-medium: #444444 !important; }
-
-
-
-/* ─── Solution Box Styling ─── */
-.nta-solution-box {
-  margin-top: 25px;
-  padding: 20px;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  border: 1px solid #d1d9e6;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2c3e50;
-  transition: all 0.3s ease;
-}
-
-.nta-solution-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #2980b9;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-bottom: 2px solid #e1e8ed;
-  padding-bottom: 8px;
-}
-
-.nta-solution-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #34495e;
-}
-
-.nta-solution-text p {
-  margin-bottom: 12px;
-}
-
-.nta-solution-text img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin: 15px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.nta-solution-text .MathJax {
-  font-size: 1.1em !important;
-}
-
-/* Ensure instructions are clearly visible */
-.nta-section-instruction {
-  color: #111827 !important;
-  line-height: 1.6;
-  font-family: 'Outfit', sans-serif;
-}
-.nta-section-instruction ul {
-  margin-top: 8px;
-  padding-left: 20px;
-}
-.nta-section-instruction li {
-  margin-bottom: 6px;
-}
-
-
-/* User Fixes */
-.nta-solution-text, .nta-solution-text * {
-  color: #0f172a !important;
-}
-.nta-solution-text img {
-  filter: contrast(1.1);
-  position: relative;
-}
-
-/* Watermark */
-.nta-solution-box {
-  position: relative;
-  overflow: hidden;
-}
-.nta-solution-box::before {
-  content: 'Quantrex Academy';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
-  font-size: 5rem;
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.04);
-  pointer-events: none;
-  z-index: 1;
-  white-space: nowrap;
-}
-
-.nta-check-answer-wrap {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100% !important;
-  margin-top: 20px;
-}
-.nta-check-answer-btn {
-  margin: 0 auto !important;
-}
-
-.nta-option.correct {
-  background-color: #d1fae5 !important;
-  border-color: #10b981 !important;
-  color: #064e3b !important;
-}
-.nta-option.correct * {
-  color: #064e3b !important;
-}
-.nta-option.wrong {
-  background-color: #fee2e2 !important;
-  border-color: #ef4444 !important;
-  color: #7f1d1d !important;
-}
-.nta-option.wrong * {
-  color: #7f1d1d !important;
-}
-
-
-/* Additional fixes for flex and mathjax */
-.nta-solution-box {
-  flex-shrink: 0 !important;
-  min-height: min-content !important;
-  padding-bottom: 40px !important; /* Ensure enough space at bottom */
-}
-
-.nta-question-panel {
-  padding-bottom: 50px !important; /* Extra scroll space */
-}
-
-.nta-option.correct, .nta-option.correct *, .nta-option.correct .MathJax, .nta-option.correct mjx-container {
-  color: #064e3b !important;
-  fill: #064e3b !important;
-}
-
-.nta-option.wrong, .nta-option.wrong *, .nta-option.wrong .MathJax, .nta-option.wrong mjx-container {
-  color: #7f1d1d !important;
-  fill: #7f1d1d !important;
-}
-
-.nta-solution-text, .nta-solution-text *, .nta-solution-text .MathJax, .nta-solution-text mjx-container {
-  color: #0f172a !important;
-  fill: #0f172a !important;
-}
-
-
-/* ========================================================================= */
-/* WATERMARK REMOVER (THRESHOLDING FILTER)                                   */
-/* ========================================================================= */
-/* Watermark remover filter removed */
-
-/* Normalize ExamGoal HTML Content */
-.exam-math-content :not(mjx-container):not(mjx-container *), 
-.dashboard-preview-html :not(mjx-container):not(mjx-container *) {
-  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
-  background-color: transparent !important;
-}
-
-/* Enforce dark black text for light mode Practice Interface */
-.bg-white .exam-math-content :not(mjx-container):not(mjx-container *), 
-.bg-gray-50 .exam-math-content :not(mjx-container):not(mjx-container *) {
-  color: #202124 !important;
-}
-
-/* Enforce light text for dark mode / Dashboard preview cards */
-.bg-\[\#1e1e24\] .exam-math-content :not(mjx-container):not(mjx-container *), 
-.bg-\[\#1e1e24\] .dashboard-preview-html :not(mjx-container):not(mjx-container *), 
-.bg-\[\#111115\] .dashboard-preview-html :not(mjx-container):not(mjx-container *) {
-  color: #e5e7eb !important; /* gray-200 */
-}
-
-
-/* Strip inline styles injected by third-party data (ExamGoal) */
-.exam-math-content :not(mjx-container):not(mjx-container *), 
-.dashboard-preview-html :not(mjx-container):not(mjx-container *),
-.nta-q-content :not(mjx-container):not(mjx-container *),
-.nta-option-text :not(mjx-container):not(mjx-container *) {
+/* MathJax Overrides */
+.MathJax, mjx-container {
   color: inherit !important;
-  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
-  background-color: transparent !important;
 }
 
-
-/* Fix MathJax rendering broken by global inherited properties */
-mjx-container, mjx-container * {
-  letter-spacing: normal !important;
-  line-height: normal !important;
-  box-sizing: content-box !important;
-  border-color: currentColor !important;
+/* Custom NTA Status Colors for Question Palette */
+.nta-status-not-visited {
+  @apply bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200;
 }
-mjx-container svg {
-  display: inline !important;
+.nta-status-not-answered {
+  @apply bg-red-500 text-white;
 }
-
-.math-renderer { white-space: pre-wrap; }
-span.inline-exam-p {
-  display: inline !important;
-  margin-right: 0.25rem;
+.nta-status-answered {
+  @apply bg-emerald-500 text-white;
 }
-
-
-/* ================================================================
-   SCROLL REVEAL ANIMATIONS
-================================================================ */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
+.nta-status-marked {
+  @apply bg-purple-500 text-white;
 }
-
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
+.nta-status-marked-answered {
+  @apply bg-purple-500 text-white relative;
 }
-
-.delay-100 { transition-delay: 100ms; }
-.nta-solution-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #2980b9;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-bottom: 2px solid #e1e8ed;
-  padding-bottom: 8px;
-}
-
-.nta-solution-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #34495e;
-}
-
-.nta-solution-text p {
-  margin-bottom: 12px;
-}
-
-.nta-solution-text img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin: 15px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.nta-solution-text .MathJax {
-  font-size: 1.1em !important;
-}
-
-/* Ensure instructions are clearly visible */
-.nta-section-instruction {
-  color: #111827 !important;
-  line-height: 1.6;
-  font-family: 'Outfit', sans-serif;
-}
-.nta-section-instruction ul {
-  margin-top: 8px;
-  padding-left: 20px;
-}
-.nta-section-instruction li {
-  margin-bottom: 6px;
-}
-
-
-/* User Fixes */
-.nta-solution-text, .nta-solution-text * {
-  color: #0f172a !important;
-}
-.nta-solution-text img {
-  filter: contrast(1.1);
-  position: relative;
-}
-
-/* Watermark */
-.nta-solution-box {
-  position: relative;
-  overflow: hidden;
-}
-.nta-solution-box::before {
-  content: 'Quantrex Academy';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
-  font-size: 5rem;
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.04);
-  pointer-events: none;
-  z-index: 1;
-  white-space: nowrap;
-}
-
-.nta-check-answer-wrap {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100% !important;
-  margin-top: 20px;
-}
-.nta-check-answer-btn {
-  margin: 0 auto !important;
-}
-
-.nta-option.correct {
-  background-color: #d1fae5 !important;
-  border-color: #10b981 !important;
-  color: #064e3b !important;
-}
-.nta-option.correct * {
-  color: #064e3b !important;
-}
-.nta-option.wrong {
-  background-color: #fee2e2 !important;
-  border-color: #ef4444 !important;
-  color: #7f1d1d !important;
-}
-.nta-option.wrong * {
-  color: #7f1d1d !important;
-}
-
-
-/* Additional fixes for flex and mathjax */
-.nta-solution-box {
-  flex-shrink: 0 !important;
-  min-height: min-content !important;
-  padding-bottom: 40px !important; /* Ensure enough space at bottom */
-}
-
-.nta-question-panel {
-  padding-bottom: 50px !important; /* Extra scroll space */
-}
-
-.nta-option.correct, .nta-option.correct *, .nta-option.correct .MathJax, .nta-option.correct mjx-container {
-  color: #064e3b !important;
-  fill: #064e3b !important;
-}
-
-.nta-option.wrong, .nta-option.wrong *, .nta-option.wrong .MathJax, .nta-option.wrong mjx-container {
-  color: #7f1d1d !important;
-  fill: #7f1d1d !important;
-}
-
-.nta-solution-text, .nta-solution-text *, .nta-solution-text .MathJax, .nta-solution-text mjx-container {
-  color: #0f172a !important;
-  fill: #0f172a !important;
-}
-
-
-/* ========================================================================= */
-/* WATERMARK REMOVER (THRESHOLDING FILTER)                                   */
-/* ========================================================================= */
-/* Watermark remover filter removed */
-
-/* Normalize ExamGoal HTML Content */
-.exam-math-content :not(mjx-container):not(mjx-container *), 
-.dashboard-preview-html :not(mjx-container):not(mjx-container *) {
-  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
-  background-color: transparent !important;
-}
-
-/* Enforce dark black text for light mode Practice Interface */
-.bg-white .exam-math-content :not(mjx-container):not(mjx-container *), 
-.bg-gray-50 .exam-math-content :not(mjx-container):not(mjx-container *) {
-  color: #202124 !important;
-}
-
-/* Enforce light text for dark mode / Dashboard preview cards */
-.bg-\[\#1e1e24\] .exam-math-content :not(mjx-container):not(mjx-container *), 
-.bg-\[\#1e1e24\] .dashboard-preview-html :not(mjx-container):not(mjx-container *), 
-.bg-\[\#111115\] .dashboard-preview-html :not(mjx-container):not(mjx-container *) {
-  color: #e5e7eb !important; /* gray-200 */
-}
-
-
-/* Strip inline styles injected by third-party data (ExamGoal) */
-.exam-math-content :not(mjx-container):not(mjx-container *), 
-.dashboard-preview-html :not(mjx-container):not(mjx-container *),
-.nta-q-content :not(mjx-container):not(mjx-container *),
-.nta-option-text :not(mjx-container):not(mjx-container *) {
-  color: inherit !important;
-  font-family: 'Outfit', system-ui, -apple-system, sans-serif !important; letter-spacing: 0.1px;
-  background-color: transparent !important;
-}
-
-
-/* ================================================================
-   SCROLL REVEAL ANIMATIONS
-================================================================ */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
-}
-
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-
-
-/* Global Exam Image Filter (Balanced to preserve diagrams) */
-.exam-math-content img,
-.nta-q-content img,
-.nta-option-text img,
-.nta-solution-text img {
-  max-width: 100%;
-  height: auto;
-  filter: grayscale(100%) contrast(1.2) brightness(1.05);
-  mix-blend-mode: multiply;
-  background-color: white !important;
-}
-
-/* Handle dark mode backgrounds for images safely */
-.bg-\[\#1e293b\] .exam-math-content img,
-.bg-\[\#0f172a\] .exam-math-content img,
-.dark-theme .nta-q-content img,
-.dark-theme .nta-option-text img,
-.dark-theme .nta-solution-text img {
-  filter: grayscale(100%) contrast(1.2) brightness(1.05) invert(100%);
-  mix-blend-mode: screen;
-  background-color: white !important;
-}
-
-
-/* ================================================================
-   PREMIUM SMOOTHNESS & GLOW EFFECTS
-================================================================ */
-
-/* Springy interactions for buttons and options */
-button, .nta-option, .glass-panel, .card-hover-effect {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-button:active, .nta-option:active {
-  transform: scale(0.97) !important;
-}
-
-/* Hover lift */
-.nta-option:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-}
-
-.dark-theme .nta-option:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
-}
-
-/* Glowing Active State for Test Series Options */
-.nta-option.selected {
-  position: relative;
-  border-color: var(--color-electric) !important;
-  box-shadow: 0 0 15px var(--border-accent), inset 0 0 10px var(--border-accent) !important;
-}
-
-.dark-theme .nta-option.selected {
-  background-color: rgba(0, 180, 216, 0.05) !important;
-}
-
-/* Deep Glassmorphism base update */
-.glass-panel {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 32px rgba(0, 0, 0, 0.15) !important;
-  backdrop-filter: blur(16px) saturate(180%) !important;
-}
-
-.dark-theme .glass-panel {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 8px 32px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* DARK MODE SOLUTION TEXT COLOR OVERRIDE */
-html:not(.light) .nta-solution-text,
-html:not(.light) .nta-solution-text *,
-html:not(.light) .premium-solution-wrapper .solution-body,
-html:not(.light) .premium-solution-wrapper .solution-body * {
-  color: #cbd5e1 !important; /* Premium light slate */
-}
-
-/* Ensure step badges text remains white in both modes */
-.nta-solution-text .step-badge,
-.premium-solution-wrapper .step-badge {
-  color: #ffffff !important;
-}
-html:not(.light) .nta-solution-text .connector-word,
-html:not(.light) .premium-solution-wrapper .connector-word {
-  color: #a5b4fc !important; /* Light indigo accent */
-}
-
-html:not(.light) .nta-solution-text .MathJax,
-html:not(.light) .nta-solution-text mjx-container,
-html:not(.light) .nta-solution-text .MathJax *,
-html:not(.light) .nta-solution-text mjx-container *,
-html:not(.light) .premium-solution-wrapper .solution-body .MathJax,
-html:not(.light) .premium-solution-wrapper .solution-body mjx-container,
-html:not(.light) .premium-solution-wrapper .solution-body .MathJax *,
-html:not(.light) .premium-solution-wrapper .solution-body mjx-container * {
-  color: #38bdf8 !important; /* Bright sky blue for formulas in dark mode */
-  fill: #38bdf8 !important;
-}
-html:not(.light) .nta-solution-text strong,
-html:not(.light) .nta-solution-text b,
-html:not(.light) .premium-solution-wrapper .solution-body strong,
-html:not(.light) .premium-solution-wrapper .solution-body b {
-  color: #fbbf24 !important; /* Bright amber accent */
-  background-color: rgba(251, 191, 36, 0.1) !important;
-}
-
-/* ─── EXAM ACCENT TOKENS & FOLDER CARDS ─── */
-:root {
-  --brand-navy: #0d3b66;
-  --brand-navy-accent: #2563eb;
-  --brand-gold: #b8860b;
-  --brand-gold-accent: #f59e0b;
-  --brand-green: #1b4332;
-  --brand-green-accent: #22c55e;
-}
-
-.folder-card {
-  border-radius: 1.25rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
-.folder-card:hover {
-  transform: translateY(-4px);
-}
-
-.card-top-accent-navy::before {
+.nta-status-marked-answered::after {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #2563eb, #3b82f6);
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
+  bottom: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10B981;
+  border: 1px solid white;
 }
-
-.card-top-accent-gold::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #b8860b, #f59e0b);
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
-}
-
-.card-top-accent-green::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #1b4332, #22c55e);
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
-}
-
-html.light {
-  background-color: #f8fafc !important;
-  color: #0f172a !important;
-}
-html.light body {
-  background-color: #f8fafc !important;
-  color: #0f172a !important;
-}
-
-html.dark {
-  background-color: #0b0e14 !important;
-  color: #f8fafc !important;
-}
-html.dark body {
-  background-color: #0b0e14 !important;
-  color: #f8fafc !important;
-}
-
-

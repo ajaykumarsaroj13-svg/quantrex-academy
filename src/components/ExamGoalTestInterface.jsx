@@ -32,7 +32,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
   const [hasAcceptedInstructions, setHasAcceptedInstructions] = useState(false);
   const [hasReadInstructions, setHasReadInstructions] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
-  const [fontSize, setFontSize] = useState(1.25); // Default font size in rem
+  const [fontSize, setFontSize] = useState(1.0); // Default font size in rem
 
   const rawQuestions = pyqData?.questions?.[topic?.id] || [];
   const questions = rawQuestions; // NTA doesn't sort by old-new during test, keeps native order
@@ -335,10 +335,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
         {/* Left Pane (Question Area) */}
         <div className="flex-1 flex flex-col relative border-r border-gray-300">
           
-          {/* Shift Details (Green background from ExamGoal) */}
-          <div className="px-4 py-2 bg-[#e8f5e9] border-b border-gray-200">
-             <span className="text-[#2e7d32] font-medium text-[15px]">{currentQuestion.shift || currentQuestion.title || currentQuestion.year}</span>
-          </div>
+          
 
           <div className="flex-1 overflow-y-auto pb-24">
             
@@ -350,18 +347,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
                  </div>
                  <div>
                     <div className="text-xs text-gray-500 font-medium">Time Spent: 00:00 | <span className="text-green-600 font-bold">+4</span> <span className="text-red-500 font-bold">-1</span></div>
-                    {(() => {
-                      const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
-                      const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
-                      const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
-                      const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical';
-                      let label = isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
-                      return (
-                        <div className={`mt-0.5 inline-block px-2 py-0.5 text-[11px] font-bold rounded-sm uppercase tracking-wider border ${isMCQM ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' : (isNum ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' : (isSubj ? 'bg-purple-500/10 text-purple-500 border-purple-500/20' : 'bg-green-500/10 text-green-600 border-green-500/20'))}`}>
-                          {label}
-                        </div>
-                      );
-                    })()}
+                    
                  </div>
               </div>
               <div className="flex items-center gap-1">
@@ -478,249 +464,47 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
               <div className="flex items-center gap-2 mt-3 pl-1">
                  <span className="w-7 h-7 flex items-center justify-center bg-[#5a3286] border border-[#4a296e] text-white rounded-full relative shadow-sm font-bold">
                     {summary.markedAnswered}
-  };
-
-  const getPaletteClass = (stat) => {
-    if (!stat || !stat.visited) return 'bg-gray-200 text-black border border-gray-300';
-    switch(stat.status) {
-      case 'answered': return 'bg-[#218838] text-white border border-[#1e7e34]'; // green
-      case 'not_answered': return 'bg-[#dc3545] text-white border border-[#bd2130]'; // red
-      case 'marked': return 'bg-[#5a3286] text-white border border-[#4a296e]'; // purple
-      case 'marked_answered': return 'bg-[#5a3286] text-white border border-[#4a296e] relative'; // purple with green dot
-      default: return 'bg-[#dc3545] text-white border border-[#bd2130]'; // red
-    }
-  };
-
-  const summary = {
-    notVisited: questions.filter(q => !qStatus[q.id]?.visited).length,
-    notAnswered: questions.filter(q => qStatus[q.id]?.status === 'not_answered').length,
-    answered: questions.filter(q => qStatus[q.id]?.status === 'answered').length,
-    marked: questions.filter(q => qStatus[q.id]?.status === 'marked').length,
-    markedAnswered: questions.filter(q => qStatus[q.id]?.status === 'marked_answered').length,
-  };
-
-  return (
-    <div className={`fixed inset-0 z-50 flex flex-col font-sans ${isLight ? 'bg-white' : 'bg-[#f4f5f8]'}`}>
-      
-      {/* Topmost Header (ExamGoal Style Blue) */}
-      <div className="h-14 bg-[#3f51b5] text-white flex items-center px-4 shadow-md justify-between">
-        <div className="flex items-center gap-3">
-          <button onClick={onClose} className="p-2 hover:bg-white/10 rounded-full transition-colors">
-            <ArrowLeft className="w-5 h-5" />
-          </button>
-          <span className="text-lg font-medium">{topic.name}</span>
-        </div>
-        <div className="flex items-center gap-4">
-           <button
-             onClick={() => setShowInstructionsModal(true)}
-             className="px-2.5 py-1 bg-white/10 hover:bg-white/20 text-white rounded text-xs font-bold transition-all flex items-center gap-1 border border-white/20 cursor-pointer"
-           >
-             ℹ Instructions
-           </button>
-           {/* Timer from NTA */}
-           <div className="font-bold font-mono tracking-wider text-lg">
-              Time Left: {formatTime(timeLeft)}
-           </div>
-        </div>
-      </div>
-
-      {/* Main Container */}
-      <div className="flex flex-1 overflow-hidden bg-white text-gray-900">
-        
-        {/* Left Pane (Question Area) */}
-        <div className="flex-1 flex flex-col relative border-r border-gray-300">
-          
-          {/* Shift Details (Green background from ExamGoal) */}
-          <div className="px-4 py-2 bg-[#e8f5e9] border-b border-gray-200">
-             <span className="text-[#2e7d32] font-medium text-[15px]">{currentQuestion.shift || currentQuestion.title || currentQuestion.year}</span>
-          </div>
-
-          <div className="flex-1 overflow-y-auto pb-24">
-            
-            {/* Question Info Header (Examgoal Mobile Style) */}
-            <div className="px-5 pt-4 pb-2 border-b border-gray-100 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                 <div className="w-8 h-8 rounded-full bg-[#3f51b5] text-white flex items-center justify-center font-bold">
-                   {currentQuestionIndex + 1}
-                 </div>
-                 <div>
-                    <div className="text-xs text-gray-500 font-medium">Time Spent: 00:00 | <span className="text-green-600 font-bold">+4</span> <span className="text-red-500 font-bold">-1</span></div>
-                    {(() => {
-                      const t = currentQuestion.type || currentQuestion.questionType || 'SCQ';
-                      const isMCQM = t === 'MULTI_CORRECT' || t === 'MCQM' || t === 'multi_correct' || t === 'multiple_correct' || t === 'mcqm' || (Array.isArray(currentQuestion.correctOptionIndex) && currentQuestion.correctOptionIndex.length > 1);
-                      const isSubj = t === 'SUBJECTIVE' || t === 'subjective';
-                      const isNum = t === 'NUMERICAL' || t === 'numerical' || currentQuestion.answerType === 'numerical';
-                      let label = isMCQM ? 'MCQM' : (isSubj ? 'SUBJECTIVE' : (isNum ? 'NUMERICAL' : 'SCQ'));
-                      return (
-                        <div className={`mt-0.5 inline-block px-2 py-0.5 text-[11px] font-bold rounded-sm uppercase tracking-wider border ${isMCQM ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' : (isNum ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' : (isSubj ? 'bg-purple-500/10 text-purple-500 border-purple-500/20' : 'bg-green-500/10 text-green-600 border-green-500/20'))}`}>
-                          {label}
-                        </div>
-                      );
-                    })()}
-                 </div>
-              </div>
-              <div className="flex items-center gap-1">
-                <button onClick={() => setFontSize(prev => Math.max(0.8, prev - 0.1))} className="p-1.5 text-gray-500 hover:text-black hover:bg-gray-100 rounded" title="Zoom Out">
-                  <ZoomOut size={18} />
-                </button>
-                <button onClick={() => setFontSize(prev => Math.min(2.5, prev + 0.1))} className="p-1.5 text-gray-500 hover:text-black hover:bg-gray-100 rounded" title="Zoom In">
-                  <ZoomIn size={18} />
-                </button>
-              </div>
-            </div>
-
-            {/* Question Text */}
-            <div className="p-6">
-              <div 
-                className="leading-relaxed text-gray-800"
-                style={{ fontSize: `${fontSize}rem` }}
-                dangerouslySetInnerHTML={{ __html: fixMathJax(currentQuestion.question) }}
-              />
-            </div>
-
-            {/* Options */}
-            <div className="px-6 pb-6 space-y-3">
-              
-              
-              {!isNumerical ? (
-                optionsToRender.map((opt, idx) => {
-                  const isSelected = isMultiCorrect 
-                      ? (Array.isArray(selectedAnswer) && selectedAnswer.includes(idx))
-                      : selectedAnswer === idx;
-                  const labelChar = String.fromCharCode(65 + idx); // A, B, C, D
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => handleOptionSelect(idx)}
-                      className={`w-full text-left p-3 flex items-start gap-3 border ${isSelected ? 'border-[#3f51b5] bg-[#f0f4f8]' : 'border-gray-200 bg-[#f9f9f9]'} hover:border-[#3f51b5] transition-colors rounded-sm`}
-                    >
-                      <div className={`w-7 h-7 shrink-0 flex items-center justify-center font-bold text-sm ${isMultiCorrect ? 'rounded-md' : 'rounded-full'} ${isSelected ? 'bg-[#3f51b5] text-white' : 'bg-[#3f51b5] text-white'}`}>
-                        {labelChar}
-                      </div>
-                      <div className="flex-1 mt-0.5" style={{ fontSize: `${Math.max(1, fontSize - 0.05)}rem` }} dangerouslySetInnerHTML={{ __html: fixMathJax(opt.content || opt) }} />
-                    </button>
-                  );
-                })
-              ) : (
-                <div className="p-4 border border-gray-200 bg-[#f9f9f9] rounded-sm max-w-sm">
-                  <label className="block text-sm font-bold text-gray-700 mb-2">Numerical Answer:</label>
-                  <input
-                    type="text"
-                    value={selectedAnswer || ''}
-                    onChange={(e) => handleOptionSelect(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded outline-none focus:border-[#3f51b5] text-lg font-mono"
-                    placeholder="Enter value"
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* NTA Bottom Action Bar */}
-          <div className="absolute bottom-0 w-full bg-white border-t border-gray-300 p-3 flex flex-wrap gap-2 justify-between text-sm shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
-            <div className="flex gap-2">
-              <button onClick={handleSaveAndNext} className="px-4 py-2 font-semibold text-white bg-[#28a745] hover:bg-[#218838] border border-[#218838] rounded-sm transition-colors shadow-sm">
-                SAVE & NEXT
-              </button>
-              <button onClick={handleClearResponse} className="px-4 py-2 font-semibold text-gray-700 bg-white hover:bg-gray-50 border border-gray-300 rounded-sm transition-colors shadow-sm">
-                CLEAR RESPONSE
-              </button>
-            </div>
-            <div className="flex gap-2">
-              <button onClick={handleSaveAndMarkForReview} className="px-4 py-2 font-semibold text-white bg-[#e06b00] hover:bg-[#cc6100] border border-[#cc6100] rounded-sm transition-colors shadow-sm hidden md:block">
-                SAVE & MARK FOR REVIEW
-              </button>
-              <button onClick={handleMarkForReviewAndNext} className="px-4 py-2 font-semibold text-white bg-[#007bff] hover:bg-[#0069d9] border border-[#0062cc] rounded-sm transition-colors shadow-sm">
-                MARK FOR REVIEW & NEXT
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-        {/* Right Pane (NTA Palette) */}
-        <div className="w-[320px] bg-[#e6edf4] flex flex-col h-full border-l border-gray-300 overflow-hidden shrink-0 hidden lg:flex">
-           
-           {/* Profile Section */}
-           <div className="p-4 bg-white flex items-center gap-3 border-b border-gray-300 shadow-sm">
-              <div className="w-14 h-14 bg-gray-200 border border-gray-400 p-1">
-                 <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v2c0-2.66-5.33-4-8-4z"/></svg>
-                 </div>
-              </div>
-              <div>
-                <div className="font-bold text-[#3f51b5]">Student Name</div>
-                <div className="text-xs font-semibold text-gray-600">John Doe</div>
-              </div>
-           </div>
-
-           {/* Legend grid */}
-           <div className="p-4 border-b border-gray-300 bg-white text-xs font-semibold text-gray-700 shadow-sm z-10">
-              <div className="grid grid-cols-2 gap-y-3 gap-x-2">
-                 <div className="flex items-center gap-2">
-                    <span className="w-7 h-7 flex items-center justify-center bg-gray-200 border border-gray-300 text-black shadow-sm font-bold">{summary.notVisited}</span> Not Visited
-                 </div>
-                 <div className="flex items-center gap-2">
-                    <span className="w-7 h-7 flex items-center justify-center bg-[#dc3545] border border-[#bd2130] text-white shadow-sm shape-not-answered font-bold" style={{clipPath: 'polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%)'}}>{summary.notAnswered}</span> Not Answered
-                 </div>
-                 <div className="flex items-center gap-2">
-                    <span className="w-7 h-7 flex items-center justify-center bg-[#28a745] border border-[#1e7e34] text-white shadow-sm shape-answered font-bold" style={{clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%)'}}>{summary.answered}</span> Answered
-                 </div>
-                 <div className="flex items-center gap-2">
-                    <span className="w-7 h-7 flex items-center justify-center bg-[#5a3286] border border-[#4a296e] text-white rounded-full shadow-sm font-bold">{summary.marked}</span> Marked for Review
-                 </div>
-              </div>
-              <div className="flex items-center gap-2 mt-3 pl-1">
-                 <span className="w-7 h-7 flex items-center justify-center bg-[#5a3286] border border-[#4a296e] text-white rounded-full relative shadow-sm font-bold">
-                    {summary.markedAnswered}
-                    <span className="absolute bottom-0.5 right-0.5 w-2 h-2 bg-[#28a745] rounded-full border border-white"></span>
+                    <span className="absolute bottom-0 right-0 w-2 h-2 bg-[#28a745] rounded-full border border-white"></span>
                  </span>
-                 <span className="leading-tight text-[11px]">Answered & Marked for Review (will be considered for evaluation)</span>
+                 Answered & Marked for Review
               </div>
            </div>
 
-           {/* Palette Grid */}
-           <div className="flex-1 overflow-y-auto p-4 bg-[#e6edf4]">
-              <div className="font-bold text-[#3f51b5] mb-3 border-b border-gray-300 pb-1">Question Palette</div>
-              <div className="grid grid-cols-4 gap-2 pb-20">
-                {questions.map((q, idx) => {
-                  const stat = qStatus[q.id];
-                  const colorClass = getPaletteClass(stat);
-                  
-                  let shapeStyle = {};
-                  let extraElement = null;
-                  
-                  if (stat?.status === 'not_answered') {
-                    shapeStyle = { clipPath: 'polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%)', borderRadius: '2px' };
-                  } else if (stat?.status === 'answered') {
-                    shapeStyle = { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%)', borderRadius: '2px' };
-                  } else if (stat?.status === 'marked' || stat?.status === 'marked_answered') {
-                    shapeStyle = { borderRadius: '50%' };
-                    if (stat?.status === 'marked_answered') {
-                      extraElement = <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-[#28a745] rounded-full border border-white"></span>;
-                    }
-                  } else {
-                    shapeStyle = { borderRadius: '2px' };
-                  }
-
-                  return (
-                    <button
-                      key={q.id || idx}
-                      onClick={() => {
-                        setQStatus(prev => ({ ...prev, [q.id]: { ...(prev[q.id] || {}), visited: true, status: prev[q.id]?.status || 'not_answered' } }));
-                        setCurrentQuestionIndex(idx);
-                      }}
-                      className={`w-11 h-11 flex items-center justify-center font-bold text-sm shadow-sm transition-transform relative
-                        ${colorClass} ${currentQuestionIndex === idx ? 'ring-2 ring-offset-1 ring-[#3f51b5] transform scale-110 z-10' : 'hover:scale-105'}
-                      `}
-                      style={shapeStyle}
-                    >
-                      {idx + 1}
-                      {extraElement}
-                    </button>
-                  );
-                })}
-              </div>
+           {/* Question Palette */}
+           <div className="flex-1 overflow-y-auto p-4">
+             <div className="grid grid-cols-5 gap-2">
+               {questions.map((q, idx) => {
+                 const stat = qStatus[q.id];
+                 const colorClass = getPaletteClass(stat);
+                 let shapeStyle = { borderRadius: '50%' };
+                 let extraElement = null;
+                 if (stat?.status === 'not_answered') {
+                   shapeStyle = { clipPath: 'polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%)' };
+                 } else if (stat?.status === 'answered') {
+                   shapeStyle = { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%)' };
+                 } else if (stat?.status === 'marked_answered') {
+                   extraElement = <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-[#2e7d32] rounded-full border border-white"></span>;
+                 } else {
+                   shapeStyle = { borderRadius: '2px' };
+                 }
+                 return (
+                   <button
+                     key={q.id || idx}
+                     onClick={() => {
+                       setQStatus(prev => ({ ...prev, [q.id]: { ...(prev[q.id] || {}), visited: true, status: prev[q.id]?.status || 'not_answered' } }));
+                       setCurrentQuestionIndex(idx);
+                     }}
+                     className={`w-11 h-11 flex items-center justify-center font-bold text-sm shadow-sm transition-transform relative
+                       ${colorClass} ${currentQuestionIndex === idx ? 'ring-2 ring-offset-1 ring-[#3f51b5] transform scale-110 z-10' : 'hover:scale-105'}
+                     `}
+                     style={shapeStyle}
+                   >
+                     {idx + 1}
+                     {extraElement}
+                   </button>
+                 );
+               })}
+             </div>
            </div>
 
            {/* Submit Button */}
@@ -741,28 +525,17 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
 
       {/* ─── INSTRUCTIONS MODAL / OVERLAY ─── */}
       {(!hasAcceptedInstructions || showInstructionsModal) && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto"
-             style={{ backgroundColor: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(6px)' }}>
-          <div className="relative w-full max-w-4xl max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden border transition-all duration-300"
-               style={{
-                 backgroundColor: isLight ? '#ffffff' : '#0f172a',
-                 borderColor: isLight ? '#cbd5e1' : '#334155',
-                 color: isLight ? '#0f172a' : '#f8fafc'
-               }}>
-            
+        <div className="fixed inset-0 z-[9999] flex flex-col bg-white overflow-hidden text-gray-900">
+          
             {/* Modal Header */}
-            <div className="px-6 py-4 border-b flex items-center justify-between"
-                 style={{
-                   backgroundColor: isLight ? '#f8fafc' : '#1e293b',
-                   borderColor: isLight ? '#e2e8f0' : '#334155'
-                 }}>
+            <div className="px-6 py-4 border-b flex items-center justify-between bg-[#3f51b5] text-white">
               <div className="flex items-center gap-3">
                 {getExamLogo(topic || pyqData)}
                 <div>
-                  <h3 className="font-extrabold text-base uppercase tracking-wide" style={{ color: isLight ? '#0f172a' : '#ffffff' }}>
+                  <h3 className="font-extrabold text-lg uppercase tracking-wide">
                     {topic?.name || pyqData?.title || 'Official Examination Instructions'}
                   </h3>
-                  <span className="text-xs font-semibold" style={{ color: isLight ? '#64748b' : '#94a3b8' }}>
+                  <span className="text-xs font-semibold text-white/80">
                     Duration: {durationMinutes} Mins | Total Questions: {questions?.length || 75}
                   </span>
                 </div>
@@ -770,8 +543,7 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
               {hasAcceptedInstructions && (
                 <button 
                   onClick={() => setShowInstructionsModal(false)}
-                  className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm hover:bg-red-500 hover:text-white transition-colors cursor-pointer"
-                  style={{ backgroundColor: isLight ? '#f1f5f9' : '#334155' }}
+                  className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm hover:bg-white/20 transition-colors"
                 >
                   ✕
                 </button>
@@ -779,24 +551,18 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
             </div>
 
             {/* Modal Content Scroll Area */}
-            <div className="p-6 overflow-y-auto space-y-6 text-sm leading-relaxed" style={{ maxHeight: 'calc(90vh - 140px)' }}>
-              <div className="p-4 rounded-xl border font-medium text-xs flex items-center gap-3"
-                   style={{
-                     backgroundColor: isLight ? '#eff6ff' : 'rgba(30, 58, 138, 0.25)',
-                     borderColor: isLight ? '#bfdbfe' : 'rgba(59, 130, 246, 0.3)',
-                     color: isLight ? '#1e40af' : '#93c5fd'
-                   }}>
-                <span className="text-base">ℹ</span>
+            <div className="flex-1 overflow-y-auto p-6 md:p-10 lg:px-32 space-y-8 text-base leading-relaxed bg-[#f8f9fa]">
+              <div className="p-4 rounded border font-medium flex items-start gap-3 bg-blue-50 border-blue-200 text-blue-900">
+                <span className="text-xl">ℹ</span>
                 <span>Please read the instructions carefully before starting the test. The clock is set at the top right of your screen.</span>
               </div>
 
               {/* General Instructions */}
               <div>
-                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1"
-                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                <h4 className="font-extrabold text-lg uppercase tracking-wider mb-4 border-b border-gray-300 pb-2 text-blue-800">
                   1. General Instructions:
                 </h4>
-                <ol className="list-decimal list-inside space-y-2 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                <ol className="list-decimal list-inside space-y-2 pl-1 text-gray-800">
                   <li>Total duration of examination is <strong>{durationMinutes} minutes</strong>.</li>
                   <li>The clock countdown is displayed on top right corner.</li>
                   <li>When timer reaches zero, test will submit automatically.</li>
@@ -805,36 +571,35 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
 
               {/* Question Status Symbols */}
               <div>
-                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-3 border-b pb-1"
-                    style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                <h4 className="font-extrabold text-lg uppercase tracking-wider mb-4 border-b border-gray-300 pb-2 text-blue-800">
                   2. Question Status Symbols:
                 </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
-                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-gray-200 text-gray-700 border border-gray-300">1</div>
-                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Not Visited</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-4 p-4 rounded border bg-white border-gray-200 shadow-sm">
+                    <div className="w-10 h-10 rounded flex items-center justify-center font-bold shadow-sm bg-gray-200 text-gray-700 border border-gray-300">1</div>
+                    <span className="text-gray-800 font-medium">Not Visited</span>
                   </div>
-                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
-                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-red-500 text-white">2</div>
-                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Not Answered</span>
+                  <div className="flex items-center gap-4 p-4 rounded border bg-white border-gray-200 shadow-sm">
+                    <div className="w-10 h-10 rounded flex items-center justify-center font-bold shadow-sm bg-[#dc3545] text-white">2</div>
+                    <span className="text-gray-800 font-medium">Not Answered</span>
                   </div>
-                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
-                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-emerald-500 text-white">3</div>
-                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Answered</span>
+                  <div className="flex items-center gap-4 p-4 rounded border bg-white border-gray-200 shadow-sm">
+                    <div className="w-10 h-10 rounded flex items-center justify-center font-bold shadow-sm bg-[#28a745] text-white">3</div>
+                    <span className="text-gray-800 font-medium">Answered</span>
                   </div>
-                  <div className="flex items-center gap-3 p-2.5 rounded-lg border" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
-                    <div className="w-8 h-8 rounded flex items-center justify-center font-bold text-xs shadow-sm bg-purple-600 text-white">4</div>
-                    <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>Marked for Review</span>
+                  <div className="flex items-center gap-4 p-4 rounded border bg-white border-gray-200 shadow-sm">
+                    <div className="w-10 h-10 rounded flex items-center justify-center font-bold shadow-sm bg-[#5a3286] text-white">4</div>
+                    <span className="text-gray-800 font-medium">Marked for Review</span>
                   </div>
                 </div>
               </div>
 
               {/* Marking Scheme */}
               <div>
-                <h4 className="font-extrabold text-sm uppercase tracking-wider mb-2 border-b pb-1" style={{ borderColor: isLight ? '#e2e8f0' : '#334155', color: isLight ? '#2563eb' : '#60a5fa' }}>
+                <h4 className="font-extrabold text-lg uppercase tracking-wider mb-4 border-b border-gray-300 pb-2 text-blue-800">
                   3. Marking Scheme:
                 </h4>
-                <ul className="list-disc list-inside space-y-1.5 pl-1" style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                <ul className="list-disc list-inside space-y-2 pl-1 text-gray-800">
                   <li><strong>Correct Answer:</strong> +4 Marks</li>
                   <li><strong>Incorrect Answer:</strong> -1 Mark</li>
                   <li><strong>Unattempted:</strong> 0 Marks</li>
@@ -844,16 +609,15 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
 
             {/* Modal Footer */}
             {!hasAcceptedInstructions ? (
-              <div className="px-6 py-4 border-t flex flex-col sm:flex-row items-center justify-between gap-4"
-                   style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
-                <label className="flex items-center gap-3 cursor-pointer text-xs font-semibold select-none">
+              <div className="px-6 md:px-10 lg:px-32 py-5 bg-white border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6">
+                <label className="flex items-center gap-3 cursor-pointer text-sm font-bold text-gray-800 select-none">
                   <input 
                     type="checkbox" 
                     checked={hasReadInstructions}
                     onChange={(e) => setHasReadInstructions(e.target.checked)}
-                    className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                    className="w-5 h-5 rounded border-gray-400 text-blue-600 focus:ring-blue-500 cursor-pointer"
                   />
-                  <span style={{ color: isLight ? '#334155' : '#cbd5e1' }}>
+                  <span>
                     I have read and understood all instructions and am ready to start.
                   </span>
                 </label>
@@ -863,27 +627,25 @@ export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight
                   onClick={() => {
                     setShowCountdown(true);
                   }}
-                  className={`px-8 py-2.5 rounded-xl font-extrabold text-xs uppercase tracking-wider transition-all duration-200 shadow-md ${
+                  className={`px-10 py-3.5 rounded-sm font-extrabold text-sm uppercase tracking-wider transition-all duration-200 shadow-md ${
                     hasReadInstructions
-                      ? 'bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white cursor-pointer transform hover:-translate-y-0.5'
-                      : 'bg-gray-400 text-gray-200 cursor-not-allowed opacity-60'
+                      ? 'bg-[#28a745] hover:bg-[#218838] text-white cursor-pointer'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
                 >
                   PROCEED TO TEST →
                 </button>
               </div>
             ) : (
-              <div className="px-6 py-4 border-t flex justify-end" style={{ backgroundColor: isLight ? '#f8fafc' : '#1e293b', borderColor: isLight ? '#e2e8f0' : '#334155' }}>
+              <div className="px-6 py-4 bg-white border-t border-gray-200 flex justify-end">
                 <button
                   onClick={() => setShowInstructionsModal(false)}
-                  className="px-8 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase rounded-xl transition-all cursor-pointer"
+                  className="px-8 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold text-sm uppercase rounded transition-all cursor-pointer"
                 >
                   Close Instructions ✕
                 </button>
               </div>
             )}
-
-          </div>
         </div>
       )}
 

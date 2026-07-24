@@ -15,11 +15,11 @@ export const initFirebase = (configStr) => {
   }
 };
 
-const savedConfig = localStorage.getItem('quantrex_firebase_config');
+const savedConfig = typeof window !== 'undefined' ? localStorage.getItem('quantrex_firebase_config') : null;
 export let firebaseInstance = savedConfig ? initFirebase(savedConfig) : null;
 
 export const updateFirebaseConfig = (configStr) => {
-  localStorage.setItem('quantrex_firebase_config', configStr);
+  if (typeof window !== 'undefined') localStorage.setItem('quantrex_firebase_config', configStr);
   firebaseInstance = initFirebase(configStr);
   return firebaseInstance;
 };

@@ -72,10 +72,6 @@
     {
       "source": "/api/admin/users/:id/courses",
       "destination": "/api/v2/admin?action=courses&id=:id"
-    },
-    {
-      "source": "/((?!api/).*)",
-      "destination": "/index.html"
     }
   ]
 }

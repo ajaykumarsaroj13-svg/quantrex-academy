@@ -1,28 +1,30 @@
+'use client';
+
 import React, { useState, useEffect, Suspense } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import MathCanvas from './components/MathCanvas';
-import Home from './pages/Home';
+import Home from './views/Home';
 import ErrorBoundary from './components/ErrorBoundary';
 import FloatingContact from './components/FloatingContact';
-import Auth from './pages/Auth';
+import Auth from './views/Auth';
 import Shield from 'lucide-react/dist/esm/icons/shield';
 import { loadDbFromBlob } from './blob';
 
-const StudentDashboard = React.lazy(() => import('./pages/StudentDashboard'));
-const AdminDashboard = React.lazy(() => import('./pages/AdminDashboard'));
-const NtaTestInterface = React.lazy(() => import('./pages/NtaTestInterface'));
-const TestSystem = React.lazy(() => import('./pages/TestSystem'));
-const TestSeriesPage = React.lazy(() => import('./pages/TestSeriesPage'));
-const PremiumUltimateTestSeries = React.lazy(() => import('./pages/PremiumUltimateTestSeries'));
-const TestSeriesExam = React.lazy(() => import('./pages/TestSeriesExam'));
-const TestSeriesResult = React.lazy(() => import('./pages/TestSeriesResult'));
-const BooksLibrary = React.lazy(() => import('./pages/BooksLibrary'));
-const BookReader = React.lazy(() => import('./pages/BookReader'));
-const BookChapterList = React.lazy(() => import('./pages/BookChapterList'));
-const BookPractice = React.lazy(() => import('./pages/BookPractice'));
-const StudentProgressDashboard = React.lazy(() => import('./pages/StudentProgressDashboard'));
-
+const StudentDashboard = React.lazy(() => import('./views/StudentDashboard'));
+const AdminDashboard = React.lazy(() => import('./views/AdminDashboard'));
+const NtaTestInterface = React.lazy(() => import('./views/NtaTestInterface'));
+const TestSystem = React.lazy(() => import('./views/TestSystem'));
+const TestSeriesPage = React.lazy(() => import('./views/TestSeriesPage'));
+const PremiumUltimateTestSeries = React.lazy(() => import('./views/PremiumUltimateTestSeries'));
+const TestSeriesExam = React.lazy(() => import('./views/TestSeriesExam'));
+const TestSeriesResult = React.lazy(() => import('./views/TestSeriesResult'));
+const BooksLibrary = React.lazy(() => import('./views/BooksLibrary'));
+const BookReader = React.lazy(() => import('./views/BookReader'));
+const BookChapterList = React.lazy(() => import('./views/BookChapterList'));
+const BookPractice = React.lazy(() => import('./views/BookPractice'));
+const StudentProgressDashboard = React.lazy(() => import('./views/StudentProgressDashboard'));
+const SubscriptionDashboard = React.lazy(() => import('./views/SubscriptionDashboard'));
 import { DEFAULT_SYLLABUS, DEFAULT_TOPPERS } from './utils/syllabusData';
 import { DEFAULT_TESTS, DEFAULT_BOOKS, DEFAULT_HOME_CONTENT } from './utils/defaultData';
 import { generateCustomTest } from './utils/testGenerator';
@@ -502,7 +504,7 @@ export default function App() {
       case 'login': return <Auth onLoginSuccess={handleLoginSuccess} setActivePage={setActivePage} isLight={isLight} />;
       case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
       case 'admin-dashboard': return <AdminDashboard user={user} courses={courses} setCourses={setCourses} setCustomLogo={setCustomLogo} syllabus={syllabus} setSyllabus={setSyllabus} toppers={toppers} setToppers={setToppers} homeData={homeData} setHomeData={setHomeData} booksData={booksData} setBooksData={setBooksData} testsData={testsData} setTestsData={setTestsData} />;
-      case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} />;
+      case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} isLight={isLight} />;
       case 'ultimate-test-series': 
         if (!user) return <RedirectToLogin />;
         return (
