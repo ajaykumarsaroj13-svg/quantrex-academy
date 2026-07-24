@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink, FileText, Settings2, Search, Mic, Share2 } from "lucide-react";
+import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink, FileText, Settings2, Search, Mic, Share2, Maximize2, Minimize2 } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 import RobotAvatar from './RobotAvatar'; // We added this component
 import FullScreenRobot from './FullScreenRobot'; // Full screen voice mode
-import SimilarQuestionsView from './SimilarQuestionsView'; // Most repeated questions view
 
 // Helper to get slug for test engine
 const getFetchSlug = (examKey, ch) => {
@@ -69,7 +68,7 @@ export default function JoviChatWidget() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isVoiceMode, setIsVoiceMode] = useState(false);
   const [lastRobotSpeech, setLastRobotSpeech] = useState(GREETING);
-  const [similarQuestionsChapter, setSimilarQuestionsChapter] = useState(null);
+  const [isExpanded, setIsExpanded] = useState(false);
   
   // State machine context
   const [chatContext, setChatContext] = useState({ 
@@ -121,7 +120,7 @@ export default function JoviChatWidget() {
     }
   }
 
-  const processNLQuery = (command) => {
+  const processNLQuery = async (command) => {
     const text = command.toLowerCase();
     
     let foundChapters = [];
@@ -158,9 +157,45 @@ export default function JoviChatWidget() {
         
         // Handle repeated questions
         if ((intent === 'repeated' || text.includes('question')) && foundChapters.length > 0) {
-            setSimilarQuestionsChapter(foundChapters[0]);
             setIsVoiceMode(false);
-            addMsg("bot", `I found the most repeated questions for ${foundChapters[0].title}. Displaying them on the screen!`);
+            
+            // True Pattern Recognition Algorithm (Last 5 Years)
+            try {
+                const slug = getFetchSlug(chatContext.examKey || 'jee-main', foundChapters[0]);
+                const response = await fetch(`/data/questions/${slug}.json`);
+                if (response.ok) {
+                    const data = await response.json();
+                    const currentYear = new Date().getFullYear();
+                    // 1. Filter last 5 years
+                    const recentQuestions = data.filter(q => q.year && q.year >= currentYear - 5);
+                    
+                    // 2. Group by topic
+                    const topicCounts = {};
+                    recentQuestions.forEach(q => {
+                        const t = q.topic || 'General';
+                        topicCounts[t] = (topicCounts[t] || 0) + 1;
+                    });
+                    
+                    // 3. Rank topics
+                    const sortedTopics = Object.entries(topicCounts).sort((a, b) => b[1] - a[1]);
+                    const topTopics = sortedTopics.slice(0, 2).map(t => t[0]); // Top 2 topics
+                    
+                    // 4. Select questions from top topics
+                    const topQuestions = recentQuestions.filter(q => topTopics.includes(q.topic)).slice(0, 10);
+                    
+                    if (topQuestions.length > 0) {
+                        setIsExpanded(true); // Auto expand to show the large list comfortably
+                        addMsg("bot", `I analyzed the ${foundChapters[0].title} questions from the last 5 years. The most repeated patterns belong to these topics: **${topTopics.join('** and **')}**. Here are the most frequently asked questions:`, [], { type: 'similar_questions', data: topQuestions, topics: topTopics });
+                    } else {
+                        addMsg("bot", `I couldn't find enough recent data for ${foundChapters[0].title} to identify strong repeated patterns.`);
+                    }
+                } else {
+                     addMsg("bot", `Failed to load data for ${foundChapters[0].title}. Please try again later.`);
+                }
+            } catch (err) {
+                console.error(err);
+                addMsg("bot", `Oops! Something went wrong while analyzing the patterns for ${foundChapters[0].title}.`);
+            }
             return true; // handled
         }
         
@@ -242,8 +277,8 @@ export default function JoviChatWidget() {
     return false; // not handled
   };
 
-  const handleVoiceCommand = (command) => {
-    const handled = processNLQuery(command);
+  const handleVoiceCommand = async (command) => {
+    const handled = await processNLQuery(command);
     if (!handled) {
        addMsg("bot", "I couldn't quite catch a specific chapter name or action. Please try saying it clearly, like 'Integration ka test' or 'Matrix ke repeated questions'.");
     }
@@ -258,13 +293,14 @@ export default function JoviChatWidget() {
     setIsLoading(true);
 
     const lowerText = text.toLowerCase();
-    await new Promise(resolve => setTimeout(resolve, 600));
-    setIsLoading(false);
     
     // First, attempt advanced NLP parsing if it wasn't a standard button click
     if (!textOverride) {
-        const handled = processNLQuery(text);
-        if (handled) return;
+        const handled = await processNLQuery(text);
+        if (handled) {
+            setIsLoading(false);
+            return;
+        }
     }
     
     const syllabus = window.DEFAULT_SYLLABUS || {};
@@ -534,18 +570,14 @@ export default function JoviChatWidget() {
         aiResponseText={lastRobotSpeech}
       />
     )}
-    {similarQuestionsChapter && (
-       <SimilarQuestionsView 
-         chapterSlug={similarQuestionsChapter.slug}
-         chapterTitle={similarQuestionsChapter.title}
-         onClose={() => setSimilarQuestionsChapter(null)}
-       />
-    )}
     <div style={{
-      position: "fixed", bottom: 20, right: 20, width: 380, height: 600,
+      position: "fixed", bottom: 20, right: 20, 
+      width: isExpanded ? Math.min(800, window.innerWidth - 40) : 380, 
+      height: isExpanded ? Math.min(800, window.innerHeight - 40) : 600,
       background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)",
       borderRadius: 24, boxShadow: "0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1)",
-      display: "flex", flexDirection: "column", zIndex: 99999, overflow: "hidden"
+      display: "flex", flexDirection: "column", zIndex: 99999, overflow: "hidden",
+      transition: "width 0.3s cubic-bezier(0.4, 0, 0.2, 1), height 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
     }}>
       {/* header */}
       <div style={{
@@ -582,6 +614,14 @@ export default function JoviChatWidget() {
             {isVoiceEnabled ? '🔊' : '🔇'}
           </button>
           
+          <button 
+            onClick={() => setIsExpanded(!isExpanded)} 
+            style={{ background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            title={isExpanded ? "Minimize Chat" : "Expand Chat"}
+          >
+            {isExpanded ? <Minimize2 size={20} /> : <Maximize2 size={20} />}
+          </button>
+
           <button onClick={() => setOpen(false)} style={{ background: "transparent", border: "none", color: "#94a3b8", cursor: "pointer" }}>
             <X size={20} />
           </button>
@@ -639,6 +679,28 @@ export default function JoviChatWidget() {
               )}
 
               {/* Custom Component Renders */}
+              {m.customData && m.customData.type === 'similar_questions' && (
+                  <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 12 }}>
+                      {m.customData.data.map((q, idx) => (
+                          <div key={idx} style={{ background: 'rgba(255,255,255,0.05)', padding: 16, borderRadius: 12, border: '1px solid rgba(255,255,255,0.1)' }}>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12, fontSize: 12, color: '#94a3b8' }}>
+                                  <span style={{ background: '#0284c7', color: 'white', padding: '2px 8px', borderRadius: 4 }}>{q.year}</span>
+                                  <span>{q.topic}</span>
+                              </div>
+                              <div className="math-content" style={{ color: '#f8fafc', fontSize: 14 }} dangerouslySetInnerHTML={{ __html: q.question }} />
+                              
+                              {q.options && q.options.length > 0 && (
+                                  <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                                      {q.options.map((opt, oIdx) => (
+                                          <div key={oIdx} style={{ padding: '8px 12px', background: 'rgba(0,0,0,0.2)', borderRadius: 8, fontSize: 13, border: '1px solid rgba(255,255,255,0.05)', color: '#cbd5e1' }} dangerouslySetInnerHTML={{ __html: opt }} />
+                                      ))}
+                                  </div>
+                              )}
+                          </div>
+                      ))}
+                  </div>
+              )}
+
               {m.customData && m.id === messages[messages.length-1].id && (
                 <div style={{ marginTop: 8 }}>
                   
