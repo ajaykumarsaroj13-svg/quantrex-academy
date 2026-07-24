@@ -1,166 +1,61 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Clock, BookOpen, MessageCircle, ChevronRight, Trophy, RotateCcw, Loader2 } from "lucide-react";
+import { Bot, X, Send, Sparkles, Clock, BookOpen, Settings, Trophy, RotateCcw, User, Loader2, Key } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 
-// ---------- Quantrex Academy chapter data (mirrors the live platform's chapter lists) ----------
+// ---------- Quantrex Academy Data ----------
 const SUBJECTS = {
-  Mathematics: [
-    "Sets and Relations", "Logarithm", "Quadratic Equations", "Sequence and Series",
-    "Mathematical Induction", "Binomial Theorem", "Matrices and Determinants",
-    "Permutation and Combination", "Probability", "Vector Algebra", "3D Geometry",
-    "Complex Numbers", "Statistics", "Trigonometric Ratios", "Trigonometric Equations",
-    "Inverse Trigonometry",
-  ],
-  Physics: [
-    "Units and Measurement", "Vector Algebra", "Motion In a Straight Line", "Motion In a Plane",
-    "Circular Motion", "Laws of Motion", "Work, Energy and Power", "Center of Mass and Collision",
-    "Rotational Motion", "Gravitation", "Elasticity", "Fluid Mechanics",
-    "Thermal Properties of Matter", "Kinetic Theory of Gases", "Thermodynamics", "Simple Harmonic Motion",
-  ],
-  Chemistry: [
-    "Mole Concept", "Atomic Structure", "Chemical Bonding", "States of Matter",
-    "Chemical Thermodynamics", "Equilibrium", "Redox Reactions", "Periodic Table",
-    "p-Block Elements", "d and f Block Elements", "Coordination Compounds",
-    "Organic Chemistry Basics", "Hydrocarbons", "Biomolecules", "Polymers", "Environmental Chemistry",
-  ],
+  Mathematics: ["Sets and Relations", "Logarithm", "Quadratic Equations", "Calculus", "Coordinate Geometry", "Algebra", "Trigonometry"],
+  Physics: ["Mechanics", "Thermodynamics", "Electromagnetism", "Optics", "Modern Physics"],
+  Chemistry: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry"],
 };
 
-const QUESTION_COUNTS = [10, 15, 20, 25];
-const TIME_OPTIONS = [15, 30, 45, 60];
+const GREETING = "Hello! I am Quantrex AI, the ultimate intelligent assistant for Quantrex Academy. I can solve mathematics problems step-by-step, generate mock tests, explain concepts, and analyze your performance. How can I assist you today?";
 
-const GREETING = {
-  hi: "Namaste! Main hoon Jovi 🤖 — Quantrex Academy ka AI assistant. Aap mujhse test banwa sakte ho, doubt puch sakte ho, ya chapters explore kar sakte ho. Kaise madad karu?",
-};
-
-// ---------- Claude API helper ----------
-async function askClaude(systemPrompt, userText) {
-  // IMPORTANT: For frontend usage, this requires Anthropic CORS headers or a proxy, 
-  // and exposing the API key is dangerous. Assuming the user provided this as a conceptual placeholder.
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { 
-        "Content-Type": "application/json",
-        "x-api-key": "", // API key would go here
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true"
-    },
-    body: JSON.stringify({
-      model: "claude-3-5-sonnet-20240620",
-      max_tokens: 1000,
-      system: systemPrompt,
-      messages: [{ role: "user", content: userText }],
-    }),
-  });
-  const data = await res.json();
-  const text = (data.content || [])
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("\n");
-  return text;
-}
-
-async function generateQuestions(subject, chapter, count) {
-  const system = `You are a question-setter for Quantrex Academy, an Indian JEE/NDA/BITSAT coaching platform. Generate exactly ${count} original multiple-choice questions for the topic "${chapter}" (${subject}), at JEE Main/Advanced difficulty. Respond with ONLY a raw JSON array, no markdown fences, no preamble. Each item: {"q": "question text (use plain text, describe any math in words/unicode, no LaTeX)", "options": ["A text","B text","C text","D text"], "correct": 0-3 index, "explanation": "short 1-2 line explanation"}.`;
-  const raw = await askClaude(system, `Generate the ${count} questions now as a JSON array only.`);
-  const cleaned = raw.replace(/```json|```/g, "").trim();
-  const start = cleaned.indexOf("[");
-  const end = cleaned.lastIndexOf("]");
-  const jsonStr = start >= 0 && end >= 0 ? cleaned.slice(start, end + 1) : cleaned;
-  return JSON.parse(jsonStr);
-}
-
-// ---------- Small UI pieces ----------
-function JoviAvatar({ size = 36 }) {
+// Simple Markdown + Math Renderer
+function MessageContent({ text }) {
+  const parts = text.split(/(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$)/g);
   return (
-    <div
-      style={{
-        width: size,
-        height: size,
-        borderRadius: "30%",
-        background: "linear-gradient(145deg, #1a2540, #0d1420)",
-        border: "1.5px solid #f5a623",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexShrink: 0,
-        boxShadow: "0 0 12px rgba(245,166,35,0.25)",
-      }}
-    >
-      <Bot size={size * 0.58} color="#4fb3ff" strokeWidth={2.2} />
-    </div>
-  );
-}
-
-function TypingDots() {
-  return (
-    <div style={{ display: "flex", gap: 4, padding: "10px 14px" }}>
-      {[0, 1, 2].map((i) => (
-        <span
-          key={i}
-          style={{
-            width: 6,
-            height: 6,
-            borderRadius: "50%",
-            background: "#4fb3ff",
-            animation: `joviBounce 1.1s ${i * 0.15}s infinite ease-in-out`,
-          }}
-        />
-      ))}
-      <style>{`@keyframes joviBounce{0%,80%,100%{transform:translateY(0);opacity:.5}40%{transform:translateY(-4px);opacity:1}}`}</style>
-    </div>
-  );
-}
-
-function QuickReplies({ options, onPick }) {
-  return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 8, padding: "6px 2px 2px" }}>
-      {options.map((opt, i) => (
-        <button
-          key={i}
-          onClick={() => onPick(opt)}
-          style={{
-            background: "rgba(79,179,255,0.08)",
-            border: "1px solid rgba(79,179,255,0.35)",
-            color: "#cfe6ff",
-            borderRadius: 18,
-            padding: "7px 14px",
-            fontSize: 13,
-            cursor: "pointer",
-            transition: "all .15s",
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(79,179,255,0.2)")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(79,179,255,0.08)")}
-        >
-          {opt.label}
-        </button>
-      ))}
+    <div style={{ whiteSpace: 'pre-wrap', lineHeight: 1.6, wordBreak: 'break-word' }}>
+      {parts.map((part, i) => {
+        if (part.startsWith('$$') && part.endsWith('$$')) {
+          return <BlockMath key={i} math={part.slice(2, -2)} />;
+        } else if (part.startsWith('$') && part.endsWith('$')) {
+          return <InlineMath key={i} math={part.slice(1, -1)} />;
+        }
+        // Basic bold markdown
+        let htmlText = part
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\*(.*?)\*/g, '<em>$1</em>')
+          .replace(/```([\s\S]*?)```/g, '<pre style="background:#1e293b;padding:10px;border-radius:6px;margin:8px 0;overflow-x:auto;">$1</pre>')
+          .replace(/`([^`]+)`/g, '<code style="background:#1e293b;padding:2px 4px;border-radius:4px;color:#38bdf8;">$1</code>');
+        return <span key={i} dangerouslySetInnerHTML={{__html: htmlText}} />;
+      })}
     </div>
   );
 }
 
 // ---------- Main widget ----------
 export default function JoviChatWidget() {
-  // Use Context instead of local state so "Ask AI" buttons across the app work
   const { isOpen: open, openAssistant, closeAssistant } = useAIAssistant();
   const setOpen = (val) => val ? openAssistant() : closeAssistant();
 
   const [messages, setMessages] = useState([
-    { id: 1, from: "bot", text: GREETING.hi },
+    { id: 1, from: "bot", text: GREETING },
   ]);
-  const [quickOptions, setQuickOptions] = useState([
-    { label: "📝 Test banao", value: "make_test" },
-    { label: "💬 Doubt puchna hai", value: "doubt" },
-    { label: "📚 Chapters dekhein", value: "chapters" },
-  ]);
-  const [typing, setTyping] = useState(false);
   const [input, setInput] = useState("");
-  const [flow, setFlow] = useState({ step: "menu" }); // tracks multi-step test-creation flow
-  const [activeQuiz, setActiveQuiz] = useState(null); // {questions, subject, chapter, timeLimit, idx, answers, secondsLeft}
+  const [isLoading, setIsLoading] = useState(false);
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem("quantrex_openai_key") || "");
+  const [showSettings, setShowSettings] = useState(false);
+  
+  // Test flow state
+  const [activeQuiz, setActiveQuiz] = useState(null); 
   const scrollRef = useRef(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-  }, [messages, typing, activeQuiz, open]);
+  }, [messages, isLoading, activeQuiz, open, showSettings]);
 
   // quiz countdown
   useEffect(() => {
@@ -178,114 +73,121 @@ export default function JoviChatWidget() {
     return () => clearInterval(t);
   }, [activeQuiz?.idx, !!activeQuiz]);
 
-  function addMsg(from, content, extra = {}) {
-    setMessages((m) => [...m, { id: Date.now() + Math.random(), from, ...extra, text: content }]);
+  function addMsg(from, content) {
+    setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content }]);
   }
 
-  function botSay(text, opts, delay = 500) {
-    setTyping(true);
-    setQuickOptions([]);
-    setTimeout(() => {
-      setTyping(false);
-      addMsg("bot", text);
-      if (opts) setQuickOptions(opts);
-    }, delay);
+  const saveApiKey = (key) => {
+    setApiKey(key);
+    localStorage.setItem("quantrex_openai_key", key);
+    setShowSettings(false);
+    addMsg("bot", "API Key saved successfully! I am now fully connected and ready to assist you.");
+  };
+
+  async function generateTestQuestions(topic, count) {
+    const prompt = `You are the Ultimate AI Agent for Quantrex Academy. Generate exactly ${count} multiple-choice questions for the topic "${topic}" at IIT JEE Advanced difficulty level. 
+    Respond strictly with a JSON array format only, with no markdown fences or other text.
+    Format: [{"q": "Question text here (use $ for inline math and $$ for block math)", "options": ["Option A", "Option B", "Option C", "Option D"], "correct": 0, "explanation": "Detailed explanation with math"}]`;
+    
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        model: "gpt-4o",
+        messages: [{ role: "system", content: prompt }],
+        temperature: 0.7
+      })
+    });
+
+    if (!response.ok) throw new Error("API call failed");
+    const data = await response.json();
+    let content = data.choices[0].message.content.trim();
+    content = content.replace(/```json/g, "").replace(/```/g, "").trim();
+    return JSON.parse(content);
   }
 
-  function resetToMenu() {
-    setFlow({ step: "menu" });
-    botSay("Aur kuch madad chahiye? Yeh options try karo:", [
-      { label: "📝 Test banao", value: "make_test" },
-      { label: "💬 Doubt puchna hai", value: "doubt" },
-      { label: "📚 Chapters dekhein", value: "chapters" },
-    ], 400);
-  }
+  async function handleSend() {
+    const text = input.trim();
+    if (!text) return;
+    setInput("");
+    addMsg("user", text);
 
-  function handleQuickPick(opt) {
-    addMsg("user", opt.label);
-    setQuickOptions([]);
+    if (!apiKey) {
+      setTimeout(() => {
+        addMsg("bot", "Please provide your OpenAI API Key in the settings to unlock my full capabilities (test generation, problem solving, etc.).");
+        setShowSettings(true);
+      }, 500);
+      return;
+    }
 
-    if (opt.value === "make_test") {
-      setFlow({ step: "subject" });
-      botSay("Great! Kis subject ka test banau?", Object.keys(SUBJECTS).map((s) => ({ label: s, value: s })));
-      return;
-    }
-    if (opt.value === "doubt") {
-      setFlow({ step: "doubt" });
-      botSay("Bilkul, apna doubt type karke bhejo — Hindi ya English, jaise comfortable ho. Main step-by-step samjhaunga.");
-      return;
-    }
-    if (opt.value === "chapters") {
-      setFlow({ step: "chapter_subject" });
-      botSay("Kis subject ke chapters dekhne hain?", Object.keys(SUBJECTS).map((s) => ({ label: s, value: s })));
-      return;
-    }
-    if (flow.step === "subject" && SUBJECTS[opt.value]) {
-      setFlow({ step: "chapter", subject: opt.value });
-      botSay(`${opt.value} — kaunsa chapter?`, SUBJECTS[opt.value].map((c) => ({ label: c, value: c })));
-      return;
-    }
-    if (flow.step === "chapter_subject" && SUBJECTS[opt.value]) {
-      const list = SUBJECTS[opt.value];
-      setFlow({ step: "menu" });
-      botSay(
-        `${opt.value} mein ye chapters available hain:\n\n${list.map((c, i) => `${i + 1}. ${c}`).join("\n")}\n\nInme se kisi ka test banwana ho to bas bolo — "test banao".`,
-        [{ label: "📝 Isi subject ka test banao", value: "make_test" }]
-      );
-      return;
-    }
-    if (flow.step === "chapter") {
-      setFlow({ step: "count", subject: flow.subject, chapter: opt.value });
-      botSay("Kitne questions ka test chahiye?", QUESTION_COUNTS.map((n) => ({ label: `${n} Questions`, value: n })).concat([{ label: "Custom", value: "custom_count" }]));
-      return;
-    }
-    if (flow.step === "count") {
-      if (opt.value === "custom_count") {
-        setFlow({ ...flow, step: "count_custom" });
-        botSay("Theek hai, number of questions type karke bhejo (jaise 12):");
+    setIsLoading(true);
+
+    // Basic intent detection for test creation
+    const lowerText = text.toLowerCase();
+    if (lowerText.includes("test") || lowerText.includes("quiz") || lowerText.includes("questions")) {
+      try {
+        const questions = await generateTestQuestions(text, 5); // Default to 5 for speed
+        setIsLoading(false);
+        addMsg("bot", `I have generated a high-quality test based on your request. Good luck!`);
+        setActiveQuiz({
+          topic: "Custom Test", timeLimit: 15,
+          questions, idx: 0, answers: Array(questions.length).fill(null),
+          secondsLeft: 15 * 60, finished: false,
+        });
+        return;
+      } catch (e) {
+        setIsLoading(false);
+        addMsg("bot", "I encountered an error while generating the test. Please ensure your API key is correct and has available quota.");
         return;
       }
-      setFlow({ ...flow, step: "time", count: opt.value });
-      botSay("Time limit kitni rakhein?", TIME_OPTIONS.map((n) => ({ label: `${n} min`, value: n })).concat([{ label: "Custom", value: "custom_time" }]));
-      return;
     }
-    if (flow.step === "time") {
-      if (opt.value === "custom_time") {
-        setFlow({ ...flow, step: "time_custom" });
-        botSay("Time limit minutes mein type karo (jaise 20):");
-        return;
-      }
-      startTestGeneration(flow.subject, flow.chapter, flow.count, opt.value);
-      return;
-    }
-  }
 
-  async function startTestGeneration(subject, chapter, count, timeMin) {
-    setFlow({ step: "generating" });
-    botSay(`Perfect ✅ ${subject} → ${chapter}\n${count} questions • ${timeMin} min\n\nTest generate ho raha hai, ek second...`, null, 400);
+    // Standard Chat with Streaming Simulation (or direct API call)
     try {
-      const questions = await generateQuestions(subject, chapter, count);
-      setTyping(false);
-      addMsg("bot", `Test ready hai! "${chapter}" — ${questions.length} questions, ${timeMin} minute. All the best! 🚀`);
-      setActiveQuiz({
-        subject, chapter, timeLimit: timeMin,
-        questions, idx: 0, answers: Array(questions.length).fill(null),
-        secondsLeft: timeMin * 60, finished: false,
+      const systemPrompt = `You are the Ultimate AI Agent for Quantrex Academy, founded by A.K. Sir. 
+      You are an expert in JEE Main, JEE Advanced, NDA, and BITSAT.
+      Always respond in highly professional English. Never say 'I don't know'. Provide step-by-step mathematical solutions using LaTeX formatting ($ for inline, $$ for block).
+      Prioritize logical reasoning and highlight shortcuts or tricks when solving problems.`;
+
+      // Pass conversation history
+      const apiMessages = [
+        { role: "system", content: systemPrompt },
+        ...messages.slice(-6).map(m => ({ role: m.from === "bot" ? "assistant" : "user", content: m.text })),
+        { role: "user", content: text }
+      ];
+
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model: "gpt-4o",
+          messages: apiMessages,
+          temperature: 0.7
+        })
       });
+
+      if (!response.ok) throw new Error("API call failed");
+      const data = await response.json();
+      setIsLoading(false);
+      addMsg("bot", data.choices[0].message.content);
+
     } catch (e) {
-      setTyping(false);
-      addMsg("bot", "Oops, test generate karte waqt thodi dikkat aa gayi. Dobara try karte hain?");
-      setQuickOptions([{ label: "🔁 Dobara try karo", value: "make_test" }]);
-      setFlow({ step: "menu" });
+      setIsLoading(false);
+      addMsg("bot", "Connection error. Please check your OpenAI API key in settings or try again later.");
     }
   }
 
   function finishQuiz(q) {
     const score = q.answers.reduce((s, a, i) => s + (a === q.questions[i].correct ? 1 : 0), 0);
     setTimeout(() => {
-      addMsg("bot", `Test khatam! Score: ${score}/${q.questions.length} (${Math.round((score / q.questions.length) * 100)}%). Neeche results dekh lo.`);
-      resetToMenu();
-    }, 300);
+      addMsg("bot", `Test completed! You scored **${score}/${q.questions.length}**. Keep practicing to master this topic!`);
+    }, 500);
     return { ...q, finished: true, score };
   }
 
@@ -304,41 +206,6 @@ export default function JoviChatWidget() {
     });
   }
 
-  async function handleSend() {
-    const text = input.trim();
-    if (!text) return;
-    setInput("");
-    addMsg("user", text);
-
-    if (flow.step === "count_custom") {
-      const n = parseInt(text.replace(/\D/g, ""), 10) || 10;
-      setFlow({ ...flow, step: "time", count: n });
-      botSay("Time limit kitni rakhein?", TIME_OPTIONS.map((t) => ({ label: `${t} min`, value: t })).concat([{ label: "Custom", value: "custom_time" }]));
-      return;
-    }
-    if (flow.step === "time_custom") {
-      const n = parseInt(text.replace(/\D/g, ""), 10) || 30;
-      startTestGeneration(flow.subject, flow.chapter, flow.count, n);
-      return;
-    }
-
-    // free-form doubt / general chat -> Claude
-    setTyping(true);
-    try {
-      const system = `Tum ho "Jovi" — Quantrex Academy (A K Sir) ka friendly AI doubt-solving coach for JEE Mains/Advanced, NDA aur BITSAT students. Style: warm, encouraging, thoda Hinglish (Hindi + English mix), jaise ek senior coaching mentor baat karta hai. Doubts ko step-by-step, seedhi bhasha mein samjhao. Math expressions plain text/unicode mein likho, LaTeX mat use karo. Jawab concise rakho (max ~120 words) jab tak student aur detail na maange.`;
-      const reply = await askClaude(system, text);
-      setTyping(false);
-      addMsg("bot", reply || "Hmm, samajh nahi paya — dobara thoda clearly likh sakte ho?");
-      setQuickOptions([
-        { label: "📝 Test banao", value: "make_test" },
-        { label: "❓ Aur doubt", value: "doubt" },
-      ]);
-    } catch (e) {
-      setTyping(false);
-      addMsg("bot", "Connection mein dikkat aa gayi, dobara try karo. Note: Anthropic API call may fail without a valid API key or proper CORS proxy in browser.");
-    }
-  }
-
   // ---------- render ----------
   if (!open) {
     return (
@@ -347,15 +214,18 @@ export default function JoviChatWidget() {
           onClick={() => setOpen(true)}
           style={{
             display: "flex", alignItems: "center", gap: 10,
-            background: "linear-gradient(135deg,#0d1420,#1a2540)",
-            border: "1px solid #f5a623", borderRadius: 30,
-            padding: "12px 18px", cursor: "pointer",
-            boxShadow: "0 4px 24px rgba(0,0,0,0.4), 0 0 20px rgba(245,166,35,0.2)",
+            background: "linear-gradient(135deg, #0f172a, #1e293b)",
+            border: "1px solid #38bdf8", borderRadius: 30,
+            padding: "12px 20px", cursor: "pointer",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.5), 0 0 15px rgba(56,189,248,0.3)",
+            transition: "transform 0.2s"
           }}
+          onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
+          onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
         >
-          <JoviAvatar size={32} />
-          <span style={{ color: "#fff", fontWeight: 600, fontSize: 14, fontFamily: "system-ui" }}>Chat with Jovi</span>
-          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#33d17a", boxShadow: "0 0 6px #33d17a" }} />
+          <Bot size={24} color="#38bdf8" />
+          <span style={{ color: "#fff", fontWeight: 600, fontSize: 14, fontFamily: "system-ui" }}>Quantrex AI</span>
+          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#34d399", boxShadow: "0 0 8px #34d399" }} />
         </button>
       </div>
     );
@@ -365,68 +235,98 @@ export default function JoviChatWidget() {
     <div
       style={{
         position: "fixed", bottom: 24, right: 24, zIndex: 9999,
-        width: 380, maxWidth: "94vw", height: 600, maxHeight: "85vh",
-        background: "#0b0f1a", borderRadius: 18,
-        border: "1px solid rgba(245,166,35,0.25)",
-        boxShadow: "0 12px 48px rgba(0,0,0,0.6)",
+        width: 400, maxWidth: "94vw", height: 650, maxHeight: "85vh",
+        background: "#0f172a", borderRadius: 16,
+        border: "1px solid rgba(56,189,248,0.3)",
+        boxShadow: "0 20px 50px rgba(0,0,0,0.8)",
         display: "flex", flexDirection: "column", overflow: "hidden",
         fontFamily: "system-ui, -apple-system, sans-serif",
       }}
     >
       {/* header */}
       <div style={{
-        display: "flex", alignItems: "center", gap: 10, padding: "12px 14px",
-        background: "linear-gradient(90deg,#0d1420,#141d33)", borderBottom: "1px solid rgba(255,255,255,0.06)",
+        display: "flex", alignItems: "center", gap: 12, padding: "16px",
+        background: "linear-gradient(90deg, #1e293b, #0f172a)", borderBottom: "1px solid rgba(255,255,255,0.1)",
       }}>
-        <JoviAvatar size={38} />
+        <div style={{ background: "#38bdf822", padding: 8, borderRadius: "50%", border: "1px solid #38bdf8" }}>
+          <Bot size={22} color="#38bdf8" />
+        </div>
         <div style={{ flex: 1 }}>
-          <div style={{ color: "#fff", fontWeight: 700, fontSize: 15 }}>Jovi</div>
-          <div style={{ color: "#7fd68f", fontSize: 11, display: "flex", alignItems: "center", gap: 4 }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#33d17a" }} />
-            Quantrex Academy AI • online
+          <div style={{ color: "#fff", fontWeight: 700, fontSize: 16, display: "flex", alignItems: "center", gap: 6 }}>
+            Quantrex AI <Sparkles size={14} color="#f5a623" />
+          </div>
+          <div style={{ color: "#94a3b8", fontSize: 12, display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
+            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#34d399" }} />
+            Ultimate Assistant
           </div>
         </div>
-        {activeQuiz && !activeQuiz.finished && (
-          <div style={{ display: "flex", alignItems: "center", gap: 4, color: "#f5a623", fontSize: 13, fontWeight: 600 }}>
-            <Clock size={14} />
-            {String(Math.floor(activeQuiz.secondsLeft / 60)).padStart(2, "0")}:{String(activeQuiz.secondsLeft % 60).padStart(2, "0")}
-          </div>
-        )}
-        <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "#8aa0c0", padding: 4 }}>
-          <X size={20} />
+        <button onClick={() => setShowSettings(!showSettings)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
+          <Settings size={20} />
+        </button>
+        <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
+          <X size={22} />
         </button>
       </div>
 
       {/* body */}
-      <div ref={scrollRef} style={{ flex: 1, overflowY: "auto", padding: "14px 12px", display: "flex", flexDirection: "column", gap: 10 }}>
-        {messages.map((m) => (
-          <div key={m.id} style={{ display: "flex", gap: 8, alignItems: "flex-start", flexDirection: m.from === "user" ? "row-reverse" : "row" }}>
-            {m.from === "bot" && <JoviAvatar size={26} />}
+      <div ref={scrollRef} style={{ flex: 1, overflowY: "auto", padding: "16px", display: "flex", flexDirection: "column", gap: 16 }}>
+        {showSettings ? (
+          <div style={{ background: "#1e293b", padding: 16, borderRadius: 12, border: "1px solid #334155" }}>
+            <h3 style={{ color: "#fff", marginTop: 0, fontSize: 15, display: "flex", alignItems: "center", gap: 6 }}>
+              <Key size={16} color="#38bdf8" /> AI Configuration
+            </h3>
+            <p style={{ color: "#94a3b8", fontSize: 13, marginBottom: 12 }}>Enter your OpenAI API Key to enable test generation and advanced problem solving.</p>
+            <input 
+              type="password" 
+              placeholder="sk-..." 
+              defaultValue={apiKey}
+              onKeyDown={(e) => {
+                if(e.key === 'Enter') saveApiKey(e.target.value);
+              }}
+              style={{ width: "100%", padding: "10px", borderRadius: 8, background: "#0f172a", border: "1px solid #475569", color: "#fff", outline: "none", boxSizing: "border-box" }}
+            />
+            <button 
+              onClick={(e) => saveApiKey(e.target.previousSibling.value)}
+              style={{ marginTop: 12, width: "100%", padding: "10px", background: "#38bdf8", color: "#0f172a", fontWeight: "bold", border: "none", borderRadius: 8, cursor: "pointer" }}>
+              Save API Key
+            </button>
+          </div>
+        ) : null}
+
+        {!showSettings && messages.map((m) => (
+          <div key={m.id} style={{ display: "flex", gap: 12, alignItems: "flex-start", flexDirection: m.from === "user" ? "row-reverse" : "row" }}>
+            {m.from === "bot" ? (
+              <div style={{ background: "#38bdf822", padding: 6, borderRadius: "50%", flexShrink: 0 }}>
+                <Bot size={20} color="#38bdf8" />
+              </div>
+            ) : (
+              <div style={{ background: "#3b82f6", padding: 6, borderRadius: "50%", flexShrink: 0 }}>
+                <User size={20} color="#fff" />
+              </div>
+            )}
             <div style={{
-              background: m.from === "user" ? "linear-gradient(135deg,#3b82f6,#2563eb)" : "#141d33",
-              color: m.from === "user" ? "#fff" : "#dce6f5",
-              borderRadius: 14,
-              borderTopRightRadius: m.from === "user" ? 4 : 14,
-              borderTopLeftRadius: m.from === "bot" ? 4 : 14,
-              padding: "9px 13px", fontSize: 13.5, lineHeight: 1.5, maxWidth: "78%", whiteSpace: "pre-wrap",
+              background: m.from === "user" ? "#3b82f6" : "#1e293b",
+              color: "#f8fafc",
+              borderRadius: 16,
+              borderTopRightRadius: m.from === "user" ? 4 : 16,
+              borderTopLeftRadius: m.from === "bot" ? 4 : 16,
+              padding: "12px 16px", fontSize: 14, maxWidth: "75%",
+              boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+              border: m.from === "bot" ? "1px solid rgba(255,255,255,0.05)" : "none"
             }}>
-              {m.text}
+              <MessageContent text={m.text} />
             </div>
           </div>
         ))}
 
-        {typing && (
-          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-            <JoviAvatar size={26} />
-            <div style={{ background: "#141d33", borderRadius: 14, borderTopLeftRadius: 4 }}>
-              <TypingDots />
+        {isLoading && (
+          <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+             <div style={{ background: "#38bdf822", padding: 6, borderRadius: "50%" }}>
+                <Bot size={20} color="#38bdf8" />
+              </div>
+            <div style={{ background: "#1e293b", borderRadius: 16, padding: "12px 16px", color: "#94a3b8", display: "flex", alignItems: "center", gap: 8 }}>
+              <Loader2 size={16} className="animate-spin" /> Thinking...
             </div>
-          </div>
-        )}
-
-        {quickOptions.length > 0 && !typing && (
-          <div style={{ marginLeft: 34 }}>
-            <QuickReplies options={quickOptions} onPick={handleQuickPick} />
           </div>
         )}
 
@@ -440,23 +340,33 @@ export default function JoviChatWidget() {
       </div>
 
       {/* input */}
-      <div style={{ display: "flex", gap: 8, padding: 10, borderTop: "1px solid rgba(255,255,255,0.06)", background: "#0d1420" }}>
-        <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleSend()}
-          placeholder="Message likho... (Hindi ya English)"
-          style={{
-            flex: 1, background: "#141d33", border: "1px solid rgba(255,255,255,0.08)",
-            borderRadius: 20, padding: "9px 14px", color: "#fff", fontSize: 13.5, outline: "none",
-          }}
-        />
-        <button onClick={handleSend} style={{
-          background: "#3b82f6", border: "none", borderRadius: "50%", width: 36, height: 36,
-          display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", flexShrink: 0,
-        }}>
-          <Send size={16} color="#fff" />
-        </button>
+      <div style={{ padding: "16px", borderTop: "1px solid rgba(255,255,255,0.1)", background: "#0f172a" }}>
+        <div style={{ display: "flex", gap: 10, background: "#1e293b", borderRadius: 24, padding: "6px 6px 6px 16px", border: "1px solid #334155" }}>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSend()}
+            placeholder="Ask a question or generate a test..."
+            style={{
+              flex: 1, background: "transparent", border: "none",
+              color: "#fff", fontSize: 14, outline: "none", width: "100%"
+            }}
+          />
+          <button 
+            onClick={handleSend} 
+            disabled={!input.trim() || isLoading}
+            style={{
+              background: input.trim() && !isLoading ? "#38bdf8" : "#334155", 
+              border: "none", borderRadius: "50%", width: 38, height: 38,
+              display: "flex", alignItems: "center", justifyContent: "center", cursor: input.trim() && !isLoading ? "pointer" : "default", flexShrink: 0,
+              transition: "background 0.2s"
+          }}>
+            <Send size={18} color={input.trim() && !isLoading ? "#0f172a" : "#94a3b8"} style={{ marginLeft: -2 }} />
+          </button>
+        </div>
+        <div style={{ textAlign: "center", color: "#64748b", fontSize: 10, marginTop: 8 }}>
+          Quantrex AI can make mistakes. Consider verifying important information.
+        </div>
       </div>
     </div>
   );
@@ -466,31 +376,34 @@ function QuizCard({ quiz, onSelect, onNext }) {
   const q = quiz.questions[quiz.idx];
   const chosen = quiz.answers[quiz.idx];
   return (
-    <div style={{ background: "#101a2e", border: "1px solid rgba(79,179,255,0.25)", borderRadius: 14, padding: 14, marginLeft: 34 }}>
-      <div style={{ color: "#8aa0c0", fontSize: 11, marginBottom: 6, display: "flex", justifyContent: "space-between" }}>
-        <span>{quiz.chapter}</span>
-        <span>Q{quiz.idx + 1} / {quiz.questions.length}</span>
+    <div style={{ background: "#1e293b", border: "1px solid rgba(56,189,248,0.3)", borderRadius: 16, padding: 16, marginLeft: 40, marginTop: 8 }}>
+      <div style={{ color: "#94a3b8", fontSize: 12, marginBottom: 12, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ background: "#0f172a", padding: "4px 8px", borderRadius: 6 }}>{quiz.topic}</span>
+        <span style={{ fontWeight: "bold", color: "#38bdf8" }}>Question {quiz.idx + 1} of {quiz.questions.length}</span>
       </div>
-      <div style={{ color: "#fff", fontSize: 14, marginBottom: 10, lineHeight: 1.5 }}>{q.q}</div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+      <div style={{ color: "#f8fafc", fontSize: 15, marginBottom: 16, fontWeight: 500 }}>
+        <MessageContent text={q.q} />
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
         {q.options.map((opt, i) => (
           <button key={i} onClick={() => onSelect(i)} style={{
-            textAlign: "left", padding: "8px 12px", borderRadius: 10, fontSize: 13,
-            border: chosen === i ? "1.5px solid #f5a623" : "1px solid rgba(255,255,255,0.1)",
-            background: chosen === i ? "rgba(245,166,35,0.12)" : "rgba(255,255,255,0.03)",
-            color: "#dce6f5", cursor: "pointer",
+            textAlign: "left", padding: "12px 16px", borderRadius: 12, fontSize: 14,
+            border: chosen === i ? "2px solid #38bdf8" : "1px solid #334155",
+            background: chosen === i ? "#38bdf815" : "#0f172a",
+            color: "#e2e8f0", cursor: "pointer", transition: "all 0.2s"
           }}>
-            {String.fromCharCode(65 + i)}. {opt}
+            <span style={{ fontWeight: "bold", marginRight: 8, color: chosen === i ? "#38bdf8" : "#94a3b8" }}>{String.fromCharCode(65 + i)}.</span>
+            <MessageContent text={opt} />
           </button>
         ))}
       </div>
       <button onClick={onNext} disabled={chosen === null} style={{
-        marginTop: 12, width: "100%", padding: "8px 0", borderRadius: 10, border: "none",
-        background: chosen === null ? "#22304d" : "linear-gradient(135deg,#f5a623,#e08e00)",
-        color: chosen === null ? "#5f7191" : "#0b0f1a", fontWeight: 700, fontSize: 13,
-        cursor: chosen === null ? "not-allowed" : "pointer",
+        marginTop: 16, width: "100%", padding: "12px 0", borderRadius: 12, border: "none",
+        background: chosen === null ? "#334155" : "#38bdf8",
+        color: chosen === null ? "#64748b" : "#0f172a", fontWeight: "bold", fontSize: 14,
+        cursor: chosen === null ? "not-allowed" : "pointer", transition: "background 0.2s"
       }}>
-        {quiz.idx + 1 === quiz.questions.length ? "Submit Test" : "Next Question →"}
+        {quiz.idx + 1 === quiz.questions.length ? "Submit Test" : "Next Question"}
       </button>
     </div>
   );
@@ -499,18 +412,24 @@ function QuizCard({ quiz, onSelect, onNext }) {
 function ResultsCard({ quiz, onClose }) {
   const score = quiz.score ?? quiz.answers.reduce((s, a, i) => s + (a === quiz.questions[i].correct ? 1 : 0), 0);
   const pct = Math.round((score / quiz.questions.length) * 100);
-  const color = pct >= 75 ? "#33d17a" : pct >= 45 ? "#f5a623" : "#ef4444";
+  const color = pct >= 75 ? "#34d399" : pct >= 45 ? "#fbbf24" : "#f87171";
+  
   return (
-    <div style={{ background: "#101a2e", border: `1px solid ${color}55`, borderRadius: 14, padding: 16, marginLeft: 34, textAlign: "center" }}>
-      <Trophy size={28} color={color} style={{ marginBottom: 6 }} />
-      <div style={{ color: "#fff", fontWeight: 700, fontSize: 16 }}>{score} / {quiz.questions.length}</div>
-      <div style={{ color, fontSize: 13, fontWeight: 600, marginBottom: 10 }}>{pct}% • {quiz.chapter}</div>
+    <div style={{ background: "#1e293b", border: `1px solid ${color}55`, borderRadius: 16, padding: 24, marginLeft: 40, marginTop: 8, textAlign: "center" }}>
+      <div style={{ background: `${color}15`, width: 60, height: 60, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
+        <Trophy size={32} color={color} />
+      </div>
+      <div style={{ color: "#fff", fontWeight: 800, fontSize: 24, marginBottom: 4 }}>{score} / {quiz.questions.length}</div>
+      <div style={{ color, fontSize: 14, fontWeight: 600, marginBottom: 20 }}>{pct}% Score • {quiz.topic}</div>
       <button onClick={onClose} style={{
-        background: "rgba(79,179,255,0.12)", border: "1px solid rgba(79,179,255,0.35)",
-        color: "#cfe6ff", borderRadius: 20, padding: "6px 16px", fontSize: 12.5, cursor: "pointer",
-        display: "inline-flex", alignItems: "center", gap: 6,
-      }}>
-        <RotateCcw size={13} /> Close Results
+        background: "#0f172a", border: "1px solid #334155",
+        color: "#e2e8f0", borderRadius: 24, padding: "10px 20px", fontSize: 14, fontWeight: 500, cursor: "pointer",
+        display: "inline-flex", alignItems: "center", gap: 8, transition: "background 0.2s"
+      }}
+      onMouseEnter={e => e.currentTarget.style.background = "#334155"}
+      onMouseLeave={e => e.currentTarget.style.background = "#0f172a"}
+      >
+        <RotateCcw size={16} /> Close Results
       </button>
     </div>
   );
