@@ -96,7 +96,29 @@ export const generateCustomTest = async (baseUrl, chapterSlugs, types, questionC
 
         // Shuffle with seed
         const rng = mulberry32(seed);
-        const shuffled = shuffleArray([...filteredQuestions], rng);
+        
+        // Ensure IDs exist before checking seen status
+        filteredQuestions.forEach((q, i) => {
+            if (!q.id) {
+                q.id = q.question_id || q._id || `q_${Date.now()}_${i}`;
+            }
+        });
+
+        // Split into Seen and Unseen to prevent repetition
+        let seenIds = [];
+        try {
+            seenIds = JSON.parse(localStorage.getItem('quantrex_seen_questions') || '[]');
+        } catch (e) {
+            seenIds = [];
+        }
+        
+        let unseenQuestions = filteredQuestions.filter(q => !seenIds.includes(q.id));
+        let seenQuestions = filteredQuestions.filter(q => seenIds.includes(q.id));
+        
+        unseenQuestions = shuffleArray([...unseenQuestions], rng);
+        seenQuestions = shuffleArray([...seenQuestions], rng);
+        
+        const sortedQuestions = [...unseenQuestions, ...seenQuestions]; // Prioritize unseen
 
         // Pick questions based on types
         let finalQuestions = [];
@@ -104,7 +126,7 @@ export const generateCustomTest = async (baseUrl, chapterSlugs, types, questionC
             for (const [typeKey, count] of Object.entries(types)) {
                 if (count <= 0) continue;
                 const tk = typeKey.toUpperCase();
-                const typeMatches = shuffled.filter(q => {
+                const typeMatches = sortedQuestions.filter(q => {
                     const qType = (q.type || q.questionType || '').toUpperCase().trim();
                     const hasOptions = Array.isArray(q.options) && q.options.length > 0;
                     
@@ -124,18 +146,38 @@ export const generateCustomTest = async (baseUrl, chapterSlugs, types, questionC
                 finalQuestions.push(...typeMatches.slice(0, count));
             }
         } else {
-            finalQuestions = shuffled.slice(0, Math.min(questionCount, shuffled.length));
+            finalQuestions = sortedQuestions.slice(0, Math.min(questionCount, sortedQuestions.length));
         }
         
         // Shuffle the final combined list
         finalQuestions = shuffleArray(finalQuestions, rng);
 
-        // Ensure IDs exist
+        // Assign difficulty levels if missing, and record seen questions
+        const newSeenIds = new Set(seenIds);
         finalQuestions.forEach(q => {
-            if (!q.id) {
-                q.id = q.question_id || q._id || `q_${Math.floor(rng() * 1000000)}`;
+            newSeenIds.add(q.id);
+            
+            if (!q.difficulty) {
+                // Generate deterministic pseudo-random number based on ID length or chars
+                let hash = 0;
+                for (let i = 0; i < String(q.id).length; i++) {
+                    hash = ((hash << 5) - hash) + String(q.id).charCodeAt(i);
+                    hash |= 0;
+                }
+                const diffNum = Math.abs(hash) % 100;
+                if (diffNum < 30) q.difficulty = 'Easy';
+                else if (diffNum < 80) q.difficulty = 'Medium';
+                else q.difficulty = 'Hard';
             }
         });
+        
+        try {
+            // Keep last 1000 seen questions to prevent localStorage from blowing up
+            const updatedSeenArr = Array.from(newSeenIds).slice(-1000);
+            localStorage.setItem('quantrex_seen_questions', JSON.stringify(updatedSeenArr));
+        } catch(e) {
+            console.error("Failed to save seen questions to localStorage", e);
+        }
 
         return finalQuestions;
 

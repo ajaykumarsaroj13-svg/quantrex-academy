@@ -5,6 +5,7 @@ import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 import RobotAvatar from './RobotAvatar'; // We added this component
 import FullScreenRobot from './FullScreenRobot'; // Full screen voice mode
+import SimilarQuestionsView from './SimilarQuestionsView'; // Most repeated questions view
 
 // Helper to get slug for test engine
 const getFetchSlug = (examKey, ch) => {
@@ -68,6 +69,7 @@ export default function JoviChatWidget() {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isVoiceMode, setIsVoiceMode] = useState(false);
   const [lastRobotSpeech, setLastRobotSpeech] = useState(GREETING);
+  const [similarQuestionsChapter, setSimilarQuestionsChapter] = useState(null);
   
   // State machine context
   const [chatContext, setChatContext] = useState({ 
@@ -119,62 +121,132 @@ export default function JoviChatWidget() {
     }
   }
 
-  const handleVoiceCommand = (command) => {
+  const processNLQuery = (command) => {
     const text = command.toLowerCase();
     
-    // Quick keyword matching algorithm for Chapters
-    let foundChapterTitle = null;
-    let foundChapterSlug = null;
-    let foundSubject = null;
+    let foundChapters = [];
+    let foundSubjects = [];
     
+    // Find subjects
+    if (text.includes('physics') || text.includes('fiziks') || text.includes('bhautik')) foundSubjects.push('physics');
+    if (text.includes('chemistry') || text.includes('kemistry') || text.includes('rasayan')) foundSubjects.push('chemistry');
+    if (text.includes('math') || text.includes('ganit') || text.includes('mathematics')) foundSubjects.push('mathematics');
+    
+    if (text.includes('teeno') || text.includes('all subject') || text.includes('3 subject')) {
+        foundSubjects = ['physics', 'chemistry', 'mathematics'];
+    }
+
+    // Find chapters
     for (const [subject, chapters] of Object.entries(SUBJECTS)) {
        for (const chapter of chapters) {
           if (text.includes(chapter.toLowerCase())) {
-             foundChapterTitle = chapter;
-             foundChapterSlug = `${subject.toLowerCase()}_${chapter.toLowerCase().replace(/ /g, '_')}`;
-             foundSubject = subject.toLowerCase();
-             break;
+             foundChapters.push({
+               title: chapter,
+               slug: `${subject.toLowerCase()}_${chapter.toLowerCase().replace(/ /g, '_')}`,
+               subject: subject.toLowerCase()
+             });
           }
        }
-       if (foundChapterTitle) break;
     }
     
-    if (foundChapterTitle) {
-      if (text.includes("test") || text.includes("exam") || text.includes("banao")) {
-         addMsg("bot", `Generating a standard test for ${foundChapterTitle}...`);
-         setTimeout(() => {
+    let intent = null;
+    if (text.includes('test') || text.includes('exam') || text.includes('banao') || text.includes('create')) intent = 'test';
+    if (text.includes('repeat') || text.includes('similar') || text.includes('puchhe') || text.includes('nikalo')) intent = 'repeated';
+    if (text.includes('note') || text.includes('pdf') || text.includes('formula') || text.includes('padhna')) intent = 'notes';
+
+    if (intent || foundChapters.length > 0 || foundSubjects.length > 0) {
+        
+        // Handle repeated questions
+        if ((intent === 'repeated' || text.includes('question')) && foundChapters.length > 0) {
+            setSimilarQuestionsChapter(foundChapters[0]);
             setIsVoiceMode(false);
-            const params = {
-              exam: 'jee-mains',
-              chapters: [foundChapterSlug],
-              types: { MCQ: 15 },
-              count: 15,
-              duration: 60,
-              years: 'All',
-              seed: Math.floor(Math.random() * 1000000)
-            };
-            window.location.href = `/?custom_test=${encodeURIComponent(JSON.stringify(params))}`;
-         }, 2000);
-         return;
-      }
-      
-      if (text.includes("notes") || text.includes("pdf") || text.includes("formula")) {
-         const tab = text.includes("formula") ? 'formulas' : 'pdfs';
-         window.location.href = `/?view_chapter=${foundChapterSlug}&tab=${tab}`;
-         return;
-      }
-      
-      setChatContext(prev => ({ ...prev, step: 'action', chapterTitle: foundChapterTitle, chapterSlug: foundChapterSlug, subjectKey: foundSubject }));
-      addMsg("bot", `I found ${foundChapterTitle}. What would you like to do?`, ["View Notes / PDFs", "View Formulas", "Start Standard Test", "Create Custom Test", "Search Similar Questions"]);
-      return;
+            addMsg("bot", `I found the most repeated questions for ${foundChapters[0].title}. Displaying them on the screen!`);
+            return true; // handled
+        }
+        
+        // Handle notes/formulas
+        if (intent === 'notes' && foundChapters.length > 0) {
+            const tab = text.includes("formula") ? 'formulas' : 'pdfs';
+            window.location.href = `/?view_chapter=${foundChapters[0].slug}&tab=${tab}`;
+            addMsg("bot", `Opening ${tab} for ${foundChapters[0].title}...`);
+            return true;
+        }
+
+        // Handle Test Generation
+        if (intent === 'test') {
+            if (foundSubjects.length > 1) {
+                // Multi-subject test requested
+                addMsg("bot", `Generating a mixed test for ${foundSubjects.join(', ')}...`);
+                setTimeout(() => {
+                   setIsVoiceMode(false);
+                   // In a real scenario we'd pass all chapters or pick random ones. We can pass 'all_physics' etc if testGenerator supports it,
+                   // but for our robust testGenerator, passing subject keys won't fetch anything. We must pass valid chapter slugs.
+                   // We'll pick 3 random chapters from each requested subject.
+                   let selectedSlugs = [];
+                   for (const subj of foundSubjects) {
+                       const subjChapters = SUBJECTS[subj.charAt(0).toUpperCase() + subj.slice(1)];
+                       if (subjChapters) {
+                           // Pick 3 random
+                           const shuffled = [...subjChapters].sort(() => 0.5 - Math.random());
+                           selectedSlugs.push(...shuffled.slice(0, 3).map(c => `${subj}_${c.replace(/ /g, '_')}`));
+                       }
+                   }
+                   
+                   const params = {
+                     exam: 'jee-mains',
+                     chapters: selectedSlugs,
+                     types: { MCQ: 15 },
+                     count: 15,
+                     duration: 60,
+                     years: 'All',
+                     seed: Math.floor(Math.random() * 1000000)
+                   };
+                   window.location.href = `/?custom_test=${encodeURIComponent(JSON.stringify(params))}`;
+                }, 2000);
+                return true;
+            } else if (foundChapters.length > 0) {
+                // Single chapter test
+                addMsg("bot", `Generating a standard test for ${foundChapters[0].title}...`);
+                setTimeout(() => {
+                   setIsVoiceMode(false);
+                   const params = {
+                     exam: 'jee-mains',
+                     chapters: [foundChapters[0].slug],
+                     types: { MCQ: 15 },
+                     count: 15,
+                     duration: 60,
+                     years: 'All',
+                     seed: Math.floor(Math.random() * 1000000)
+                   };
+                   window.location.href = `/?custom_test=${encodeURIComponent(JSON.stringify(params))}`;
+                }, 2000);
+                return true;
+            }
+        }
+        
+        // Fallback for chapter found but no intent
+        if (foundChapters.length > 0) {
+            const ch = foundChapters[0];
+            setChatContext(prev => ({ ...prev, step: 'action', chapterTitle: ch.title, chapterSlug: ch.slug, subjectKey: ch.subject }));
+            addMsg("bot", `I found ${ch.title}. What would you like to do?`, ["View Notes / PDFs", "View Formulas", "Start Standard Test", "Create Custom Test", "Search Similar Questions"]);
+            return true;
+        }
     }
     
+    // Greeting
     if (text.includes("hello") || text.includes("hi ") || text.includes("hey")) {
-       addMsg("bot", "Hello! I am Quantrex AI. Which chapter do you want to study? You can say things like 'Matrix ka test banao'.");
-       return;
+       addMsg("bot", "Hello! I am Quantrex AI. Which chapter or subject do you want to study? You can say 'Physics chemistry math ka test banao' or 'Matrix ke repeated questions nikalo'.");
+       return true;
     }
     
-    addMsg("bot", "I couldn't quite catch a specific chapter name. Please try saying the chapter name, like 'Integration' or 'Matrix'.");
+    return false; // not handled
+  };
+
+  const handleVoiceCommand = (command) => {
+    const handled = processNLQuery(command);
+    if (!handled) {
+       addMsg("bot", "I couldn't quite catch a specific chapter name or action. Please try saying it clearly, like 'Integration ka test' or 'Matrix ke repeated questions'.");
+    }
   };
 
   async function handleSend(textOverride = null) {
@@ -188,6 +260,12 @@ export default function JoviChatWidget() {
     const lowerText = text.toLowerCase();
     await new Promise(resolve => setTimeout(resolve, 600));
     setIsLoading(false);
+    
+    // First, attempt advanced NLP parsing if it wasn't a standard button click
+    if (!textOverride) {
+        const handled = processNLQuery(text);
+        if (handled) return;
+    }
     
     const syllabus = window.DEFAULT_SYLLABUS || {};
 
@@ -455,6 +533,13 @@ export default function JoviChatWidget() {
         isSpeakingAI={isSpeaking}
         aiResponseText={lastRobotSpeech}
       />
+    )}
+    {similarQuestionsChapter && (
+       <SimilarQuestionsView 
+         chapterSlug={similarQuestionsChapter.slug}
+         chapterTitle={similarQuestionsChapter.title}
+         onClose={() => setSimilarQuestionsChapter(null)}
+       />
     )}
     <div style={{
       position: "fixed", bottom: 20, right: 20, width: 380, height: 600,
