@@ -468,10 +468,12 @@ const BookPractice = ({ chapter, setActivePage, theme }) => {
       <style dangerouslySetInnerHTML={{ __html: `
         .math-content .katex { font-size: 1.15em; }
         .math-content .katex-display { margin: 0.5em 0; overflow-x: auto; overflow-y: hidden; padding: 0.2em 0; }
-        .math-content { color: ${isLight ? '#1f2937' : '#e5e7eb'} !important; }
-        .math-content .katex { color: ${isLight ? '#1f2937' : '#e5e7eb'} !important; }
-        .math-content img, .exam-math-content img, .nta-q-content img { opacity: 0; transition: opacity 0.3s ease; }
-        .math-content img[data-watermark-processed="true"], .exam-math-content img[data-watermark-processed="true"], .nta-q-content img[data-watermark-processed="true"] { 
+        .math-content, .math-content p, .math-content span, .math-content div, .math-content * { 
+          color: ${isLight ? '#1f2937' : '#e5e7eb'} !important; 
+          fill: ${isLight ? '#1f2937' : '#e5e7eb'} !important; 
+        }
+        .math-content img, .exam-math-content img, .nta-q-content img { 
+          transition: opacity 0.3s ease; 
           opacity: 1; 
           background-color: ${isLight ? 'transparent' : 'white'}; 
           padding: ${isLight ? '0' : '8px'}; 
