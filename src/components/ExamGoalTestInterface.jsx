@@ -20,7 +20,7 @@ const getExamLogo = (data) => {
   if (type.includes('nda')) {
     return <img src={logoNdaImg} alt="NDA" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
   }
-  return <img src={logoImg} alt="Quantrex" className="w-7 h-7 rounded-full object-cover border border-white/30 bg-white/10 p-0.5 shadow-sm" />;
+  return null;
 };
 
 export default function ExamGoalTestInterface({ pyqData, topic, onClose, isLight }) {
