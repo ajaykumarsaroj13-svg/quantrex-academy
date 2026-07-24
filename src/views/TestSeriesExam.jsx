@@ -622,7 +622,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           position: relative;
         }
         .nta-solution-box::before {
-          content: 'Quantrex Academy';
+          content: 'Official Paper';
           position: absolute;
           top: 0; left: 0; right: 0; bottom: 0;
           display: flex;
@@ -643,7 +643,7 @@ export default function TestSeriesExam({ testId, mode = 'exam', user, onSubmit, 
           <button className="nta-exit-btn" onClick={onExit}>✕ Exit</button>
           <div className="nta-logo flex items-center gap-2">
             {getExamLogo(testData)}
-            <span className="nta-logo-text">Quantrex Academy</span>
+            <span className="nta-logo-text">Official Paper</span>
           </div>
           <div className="nta-exam-title flex items-center gap-2">
             <span>{testData?.title || 'Test Paper'}</span>
