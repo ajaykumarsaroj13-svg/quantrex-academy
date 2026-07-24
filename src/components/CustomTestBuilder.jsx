@@ -53,11 +53,12 @@ const CustomTestBuilder = ({ selectedSyllabusClass, isLight, syllabus = DEFAULT_
   const getFetchSlug = (ch) => {
     const slug = (ch.url && ch.url !== '#') ? ch.url.split('/').pop() : (ch.id || '');
     let fetchSlug = String(slug || ch.id || 'unknown');
-    if (selectedSyllabusClass === 'jee-advanced') {
-      if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
-      else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
-      else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
+    
+    if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
+    else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
+    else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
 
+    if (selectedSyllabusClass === 'jee-advanced') {
       if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
         fetchSlug = 'adv-' + fetchSlug;
       }

@@ -80,6 +80,7 @@ export default function App() {
   const [initialClass, setInitialClass] = useState(() => localStorage.getItem('quantrex_initial_class') || null);
   const [initialTab, setInitialTab] = useState(() => localStorage.getItem('quantrex_initial_tab') || null);
   const [initialChapterTab, setInitialChapterTab] = useState(() => localStorage.getItem('quantrex_initial_chapter_tab') || null);
+  const [initialChapterId, setInitialChapterId] = useState(() => localStorage.getItem('quantrex_initial_chapter_id') || null);
 
   const [syllabus, setSyllabus] = useState(() => {
     // Clear old v6 syllabus cache if exists
@@ -194,6 +195,16 @@ export default function App() {
         setExamTest(JSON.parse(activeTest));
         setActivePage('exam-mode');
       }
+      return;
+    }
+
+    const viewChapterParam = searchParams.get('view_chapter');
+    const tabParam = searchParams.get('tab');
+    if (viewChapterParam) {
+      window.history.replaceState({path: newUrl}, '', newUrl);
+      setInitialChapterId(viewChapterParam);
+      setInitialChapterTab(tabParam || 'pdfs');
+      setActivePage('student-dashboard');
       return;
     }
 
@@ -331,6 +342,14 @@ export default function App() {
       localStorage.removeItem('quantrex_initial_class');
     }
   }, [initialClass]);
+
+  useEffect(() => {
+    if (initialChapterId) {
+      localStorage.setItem('quantrex_initial_chapter_id', initialChapterId);
+    } else {
+      localStorage.removeItem('quantrex_initial_chapter_id');
+    }
+  }, [initialChapterId]);
 
   useEffect(() => {
     if (initialTab) {
@@ -504,7 +523,7 @@ export default function App() {
       case 'book-practice': return <BookPractice chapter={practiceChapter} setActivePage={setActivePage} theme={isLight ? 'light' : 'dark'} />;
       case 'home': return <Home setActivePage={setActivePage} user={user} courses={courses} setCourses={setCourses} onEnrollSuccess={handleEnrollSuccess} onStartLearning={handleStartLearning} toppers={toppers} homeData={homeData} isLight={isLight} />;
       case 'login': return <Auth onLoginSuccess={handleLoginSuccess} setActivePage={setActivePage} isLight={isLight} />;
-      case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
+      case 'student-dashboard': return <StudentDashboard user={user} courses={courses} setActivePage={setActivePage} setExamTest={setExamTest} syllabus={syllabus} initialClass={initialClass} initialTab={initialTab} initialChapterTab={initialChapterTab} initialChapterId={initialChapterId} isLight={isLight} onToggleTheme={() => setIsLight(!isLight)} testsData={testsData} />;
       case 'admin-dashboard': return <AdminDashboard user={user} courses={courses} setCourses={setCourses} setCustomLogo={setCustomLogo} syllabus={syllabus} setSyllabus={setSyllabus} toppers={toppers} setToppers={setToppers} homeData={homeData} setHomeData={setHomeData} booksData={booksData} setBooksData={setBooksData} testsData={testsData} setTestsData={setTestsData} />;
       case 'test-series': return <TestSeriesPage user={user} onStartTest={handleStartTestSeries} onBack={() => setActivePage(user ? 'student-dashboard' : 'home')} testsData={testsData} isLight={isLight} />;
       case 'ultimate-test-series': 

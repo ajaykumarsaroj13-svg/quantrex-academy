@@ -1,18 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink } from "lucide-react";
+import { Bot, X, Send, Sparkles, Trophy, RotateCcw, User, Loader2, Database, ChevronRight, ExternalLink, FileText, Settings2, Search } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
+import RobotAvatar from './RobotAvatar'; // We added this component
 
 // Helper to get slug for test engine
 const getFetchSlug = (examKey, ch) => {
   const slug = (ch.url && ch.url !== '#') ? ch.url.split('/').pop() : (ch.id || '');
   let fetchSlug = String(slug || ch.id || 'unknown');
-  if (examKey === 'jee-advanced') {
-    if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
-    else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
-    else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
+  
+  if (fetchSlug.startsWith('physics_')) fetchSlug = fetchSlug.replace('physics_', '');
+  else if (fetchSlug.startsWith('chemistry_')) fetchSlug = fetchSlug.replace('chemistry_', '');
+  else if (fetchSlug.startsWith('mathematics_')) fetchSlug = fetchSlug.replace('mathematics_', '');
 
+  if (examKey === 'jee-advanced') {
     if (!fetchSlug.startsWith('adv-') && !fetchSlug.startsWith('ch_adv_math_')) {
       fetchSlug = 'adv-' + fetchSlug;
     }
@@ -27,7 +29,7 @@ const EXAM_OPTIONS = [
   { label: "NDA", value: "nda" }
 ];
 
-const GREETING = "Welcome to Quantrex AI! Let's generate a real test for you. Please select your target exam:";
+const GREETING = "Welcome to Quantrex AI! Let's get started. Please select your target exam:";
 
 // Simple Markdown + Math Renderer
 function MessageContent({ text }) {
@@ -61,28 +63,56 @@ export default function JoviChatWidget() {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isVoiceEnabled, setIsVoiceEnabled] = useState(true);
+  const [isSpeaking, setIsSpeaking] = useState(false);
   
   // State machine context
   const [chatContext, setChatContext] = useState({ 
-    step: 'exam', // exam -> subject -> chapter -> count -> time -> ready
+    step: 'exam', // exam -> subject -> chapter -> action -> test_config | search_keyword -> ready
     examKey: null, 
     subjectKey: null, 
     chapterSlug: null,
     chapterTitle: null,
-    qCount: null,
-    duration: null
+    customTestConfig: { duration: 60, count: 15 }
   });
   
   const [currentChapterPage, setCurrentChapterPage] = useState(0);
-
   const scrollRef = useRef(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, isLoading, open, currentChapterPage]);
 
+  // Initial Greeting Voice
+  useEffect(() => {
+    if (open && messages.length === 1 && !isSpeaking) {
+      speakText(GREETING);
+    }
+  }, [open]);
+
+  function speakText(text) {
+    if (!isVoiceEnabled || !window.speechSynthesis) return;
+    
+    window.speechSynthesis.cancel();
+    const cleanText = text.replace(/\*\*/g, '').replace(/```([\s\S]*?)```/g, 'Code block.').replace(/\$/g, '').replace(/_/g, ' ');
+
+    const msg = new SpeechSynthesisUtterance(cleanText);
+    msg.lang = 'en-US';
+    msg.rate = 1.0;
+    msg.pitch = 1.1; // robot-child pitch
+    
+    msg.onstart = () => setIsSpeaking(true);
+    msg.onend = () => setIsSpeaking(false);
+    msg.onerror = () => setIsSpeaking(false);
+    
+    window.speechSynthesis.speak(msg);
+  }
+
   function addMsg(from, content, options = null, customData = null) {
     setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content, options, customData }]);
+    if (from === "bot") {
+      speakText(content);
+    }
   }
 
   async function handleSend(textOverride = null) {
@@ -110,7 +140,7 @@ export default function JoviChatWidget() {
         }
         setChatContext(prev => ({ ...prev, step: 'subject', examKey: match.value }));
         const subjects = Object.keys(examData.subjects).map(k => examData.subjects[k].label || k);
-        addMsg("bot", `Great choice! Which subject do you want to practice for **${match.label}**?`, subjects);
+        addMsg("bot", `Great choice! Which subject do you want to study for **${match.label}**?`, subjects);
         return;
       }
     }
@@ -131,12 +161,12 @@ export default function JoviChatWidget() {
           return;
         }
         
-        addMsg("bot", `Awesome! Now select a chapter to practice:`, null, { type: 'chapter_select', chapters, subjectKey: subjKey, examKey: chatContext.examKey });
+        addMsg("bot", `Awesome! Now select a chapter:`, null, { type: 'chapter_select', chapters, subjectKey: subjKey, examKey: chatContext.examKey });
         return;
       }
     }
 
-    // Step 3: Select Chapter (handled via custom button clicks, but fallback text matching)
+    // Step 3: Select Chapter 
     if (chatContext.step === 'chapter') {
       const examData = syllabus[chatContext.examKey];
       const chapters = examData.subjects[chatContext.subjectKey].chapters || [];
@@ -144,145 +174,217 @@ export default function JoviChatWidget() {
       
       if (match) {
         const fetchSlug = getFetchSlug(chatContext.examKey, match);
-        setChatContext(prev => ({ ...prev, step: 'count', chapterSlug: fetchSlug, chapterTitle: match.title }));
+        setChatContext(prev => ({ ...prev, step: 'action', chapterSlug: fetchSlug, chapterTitle: match.title }));
         
-        addMsg("bot", `You selected **${match.title}**. How many questions would you like in this test?`, ["10 Questions", "15 Questions", "20 Questions", "30 Questions"]);
+        addMsg("bot", `What would you like to do with **${match.title}**?`, [
+          "Create Test", 
+          "Study Notes / PDFs", 
+          "View Formulas", 
+          "Search Similar Questions"
+        ]);
         return;
       }
     }
 
-    // Step 4: Question Count
-    if (chatContext.step === 'count') {
-      if (lowerText.includes("10") || lowerText.includes("15") || lowerText.includes("20") || lowerText.includes("30")) {
-        const count = parseInt(lowerText.match(/\d+/)[0]);
-        setChatContext(prev => ({ ...prev, step: 'time', qCount: count }));
-        
-        addMsg("bot", `Got it, **${count} questions**. How much time do you need?`, ["15 Mins", "30 Mins", "60 Mins"]);
+    // Step 4: Select Action
+    if (chatContext.step === 'action') {
+      if (lowerText.includes("test")) {
+        setChatContext(prev => ({ ...prev, step: 'test_config' }));
+        addMsg("bot", `Would you like a standard test or build your own custom test?`, ["Standard Test (15 Qs)", "Custom Test"]);
+        return;
+      } else if (lowerText.includes("note") || lowerText.includes("pdf")) {
+        addMsg("bot", `Opening Notes for ${chatContext.chapterTitle}...`, null, { type: 'launch_url', url: `/?view_chapter=${chatContext.chapterSlug}&tab=pdfs`, label: 'Open Notes' });
+        setChatContext(prev => ({ ...prev, step: 'ready' }));
+        return;
+      } else if (lowerText.includes("formula")) {
+        addMsg("bot", `Opening Formulas for ${chatContext.chapterTitle}...`, null, { type: 'launch_url', url: `/?view_chapter=${chatContext.chapterSlug}&tab=formulas`, label: 'Open Formulas' });
+        setChatContext(prev => ({ ...prev, step: 'ready' }));
+        return;
+      } else if (lowerText.includes("search") || lowerText.includes("similar")) {
+        setChatContext(prev => ({ ...prev, step: 'search_keyword' }));
+        addMsg("bot", `What topic or keyword are you looking for in ${chatContext.chapterTitle}? (e.g. 'integration', 'matrix')`);
         return;
       }
     }
 
-    // Step 5: Time Limit & Generate
-    if (chatContext.step === 'time') {
-      if (lowerText.includes("15") || lowerText.includes("30") || lowerText.includes("60") || lowerText.includes("45")) {
-        const duration = parseInt(lowerText.match(/\d+/)[0]);
-        
-        // Build real test payload
+    // Step 5: Test Config (Standard vs Custom)
+    if (chatContext.step === 'test_config') {
+      if (lowerText.includes("standard")) {
         const isAdv = chatContext.examKey === 'jee-advanced';
-        
-        // Distribute question counts based on total requested
-        let typesCount = {};
-        if (isAdv) {
-          const base = Math.floor(chatContext.qCount / 4);
-          typesCount = { MCQ: base*2 || 5, MULTI_CORRECT: base || 5, COMPREHENSION: 0, MATCHING: 0 };
-        } else {
-          const num = Math.floor(chatContext.qCount * 0.25);
-          const mcq = chatContext.qCount - num;
-          typesCount = { MCQ: mcq, NUMERICAL: num };
-        }
-
+        const types = isAdv ? { MCQ: 10, MULTI_CORRECT: 3, COMPREHENSION: 2 } : { MCQ: 10, NUMERICAL: 5 };
         const params = {
           exam: chatContext.examKey,
           chapters: [chatContext.chapterSlug],
-          types: typesCount,
-          count: chatContext.qCount,
-          duration: duration,
+          types: types,
+          count: 15,
+          duration: 60,
           years: 'All',
           seed: Math.floor(Math.random() * 1000000)
         };
-        
         const encodedParams = encodeURIComponent(JSON.stringify(params));
-        const testUrl = `/?custom_test=${encodedParams}`;
-        
-        addMsg("bot", `Your test on **${chatContext.chapterTitle}** is ready!`, null, { type: 'launch_test', url: testUrl });
-        
-        // Reset state so user can create another
-        setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, qCount: null, duration: null });
+        addMsg("bot", "Your standard test is ready!", null, { type: 'launch_test', url: `/?custom_test=${encodedParams}` });
+        setChatContext(prev => ({ ...prev, step: 'ready' }));
+        return;
+      } else if (lowerText.includes("custom")) {
+        addMsg("bot", "Configure your test settings:", null, { type: 'custom_test_ui' });
+        // The inline UI will handle launching.
         return;
       }
     }
 
-    // Free Text Fallback / Restart
-    addMsg("bot", `I'm an AI test generator. Let's restart the setup process. Which exam are you targeting?`, EXAM_OPTIONS.map(e => e.label));
-    setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, qCount: null, duration: null });
+    // Step 6: Search Keyword
+    if (chatContext.step === 'search_keyword') {
+      const keyword = text;
+      addMsg("bot", `Searching for "${keyword}"...`);
+      setIsLoading(true);
+      
+      try {
+        const response = await fetch(`${window.location.origin}/data/questions/${chatContext.chapterSlug}.json`);
+        if (!response.ok) throw new Error("File not found");
+        const data = await response.json();
+        
+        let questionsArray = [];
+        if (Array.isArray(data)) questionsArray = data;
+        else if (data && data.questions && Array.isArray(data.questions)) questionsArray = data.questions;
+        else if (data && data.data && Array.isArray(data.data)) questionsArray = data.data;
+
+        // Semantic keyword filtering (basic local implementation)
+        const matched = questionsArray.filter(q => {
+           const content = JSON.stringify(q).toLowerCase();
+           return content.includes(keyword.toLowerCase());
+        });
+
+        if (matched.length > 0) {
+          addMsg("bot", `I found ${matched.length} similar questions for "**${keyword}**". Here are a few:`, null, { type: 'search_results', results: matched.slice(0, 5) });
+        } else {
+          addMsg("bot", `I couldn't find any questions matching "**${keyword}**" in this chapter. Try another keyword or chapter.`);
+        }
+      } catch (err) {
+        addMsg("bot", `Sorry, I encountered an error searching for "${keyword}". Ensure the chapter database is available.`);
+      }
+
+      setIsLoading(false);
+      setChatContext(prev => ({ ...prev, step: 'action' })); // Let them choose action again
+      addMsg("bot", `What else would you like to do?`, ["Create Test", "Search Similar Questions"]);
+      return;
+    }
+
+    // Fallback logic / Ready state
+    addMsg("bot", "Let me help you restart.", ["JEE Main", "JEE Advanced", "NDA"]);
+    setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, customTestConfig: { duration: 60, count: 15 } });
   }
 
-  // ---------- render ----------
-  if (!open) {
+  // --- Inline components for Chat Custom Data ---
+
+  // Custom Test UI inside Chat
+  const renderCustomTestUI = (msg) => {
     return (
-      <div style={{ position: "fixed", bottom: 24, right: 24, zIndex: 9999 }}>
+      <div style={{ background: "#0f172a", borderRadius: 12, padding: 16, marginTop: 8, border: "1px solid #334155" }}>
+        <h4 style={{ color: "#fff", fontSize: 13, marginBottom: 12, fontWeight: "bold" }}><Settings2 size={14} style={{ display: 'inline', marginRight: 4 }}/> Custom Test Details</h4>
+        
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+          <span style={{ color: "#94a3b8", fontSize: 13 }}>Questions</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, background: "#1e293b", padding: "4px 8px", borderRadius: 8 }}>
+            <button onClick={() => setChatContext(c => ({...c, customTestConfig: {...c.customTestConfig, count: Math.max(5, c.customTestConfig.count - 5)}}))} style={{ background: "transparent", color: "#38bdf8", border: "none", cursor: "pointer", fontSize: 16 }}>-</button>
+            <span style={{ color: "#fff", fontSize: 14, width: 24, textAlign: 'center' }}>{chatContext.customTestConfig.count}</span>
+            <button onClick={() => setChatContext(c => ({...c, customTestConfig: {...c.customTestConfig, count: c.customTestConfig.count + 5}}))} style={{ background: "transparent", color: "#38bdf8", border: "none", cursor: "pointer", fontSize: 16 }}>+</button>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+          <span style={{ color: "#94a3b8", fontSize: 13 }}>Time (mins)</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, background: "#1e293b", padding: "4px 8px", borderRadius: 8 }}>
+            <button onClick={() => setChatContext(c => ({...c, customTestConfig: {...c.customTestConfig, duration: Math.max(15, c.customTestConfig.duration - 15)}}))} style={{ background: "transparent", color: "#38bdf8", border: "none", cursor: "pointer", fontSize: 16 }}>-</button>
+            <span style={{ color: "#fff", fontSize: 14, width: 24, textAlign: 'center' }}>{chatContext.customTestConfig.duration}</span>
+            <button onClick={() => setChatContext(c => ({...c, customTestConfig: {...c.customTestConfig, duration: c.customTestConfig.duration + 15}}))} style={{ background: "transparent", color: "#38bdf8", border: "none", cursor: "pointer", fontSize: 16 }}>+</button>
+          </div>
+        </div>
+
         <button
-          onClick={() => setOpen(true)}
-          style={{
-            display: "flex", alignItems: "center", gap: 10,
-            background: "linear-gradient(135deg, #0f172a, #1e293b)",
-            border: "1px solid #38bdf8", borderRadius: 30,
-            padding: "12px 20px", cursor: "pointer",
-            boxShadow: "0 8px 32px rgba(0,0,0,0.5), 0 0 15px rgba(56,189,248,0.3)",
-            transition: "transform 0.2s"
+          onClick={() => {
+            const types = chatContext.examKey === 'jee-advanced' 
+              ? { MCQ: chatContext.customTestConfig.count } 
+              : { MCQ: chatContext.customTestConfig.count };
+            const params = {
+              exam: chatContext.examKey,
+              chapters: [chatContext.chapterSlug],
+              types: types,
+              count: chatContext.customTestConfig.count,
+              duration: chatContext.customTestConfig.duration,
+              years: 'All',
+              seed: Math.floor(Math.random() * 1000000)
+            };
+            const encodedParams = encodeURIComponent(JSON.stringify(params));
+            window.location.href = `/?custom_test=${encodedParams}`;
           }}
-          onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
-          onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+          style={{
+            background: "linear-gradient(135deg, #38bdf8, #3b82f6)", border: "none", color: "#fff",
+            padding: "10px", borderRadius: 8, fontSize: 14, fontWeight: "bold",
+            cursor: "pointer", width: "100%", textAlign: "center"
+          }}
         >
-          <Bot size={24} color="#38bdf8" />
-          <span style={{ color: "#fff", fontWeight: 600, fontSize: 14, fontFamily: "system-ui" }}>Quantrex AI</span>
-          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#34d399", boxShadow: "0 0 8px #34d399" }} />
+          Start Custom Test
         </button>
       </div>
     );
-  }
+  };
+
+  if (!open) return null;
 
   return (
-    <div
-      style={{
-        position: "fixed", bottom: 24, right: 24, zIndex: 9999,
-        width: 400, maxWidth: "94vw", height: 650, maxHeight: "85vh",
-        background: "#0f172a", borderRadius: 16,
-        border: "1px solid rgba(56,189,248,0.3)",
-        boxShadow: "0 20px 50px rgba(0,0,0,0.8)",
-        display: "flex", flexDirection: "column", overflow: "hidden",
-        fontFamily: "system-ui, -apple-system, sans-serif",
-      }}
-    >
+    <div style={{
+      position: "fixed", bottom: 20, right: 20, width: 380, height: 600,
+      background: "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)",
+      borderRadius: 24, boxShadow: "0 20px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1)",
+      display: "flex", flexDirection: "column", zIndex: 99999, overflow: "hidden"
+    }}>
       {/* header */}
       <div style={{
-        display: "flex", alignItems: "center", gap: 12, padding: "16px",
-        background: "linear-gradient(90deg, #1e293b, #0f172a)", borderBottom: "1px solid rgba(255,255,255,0.1)",
+        padding: "20px 24px", background: "rgba(15,23,42,0.8)", backdropFilter: "blur(10px)",
+        borderBottom: "1px solid rgba(255,255,255,0.05)", display: "flex", justifyContent: "space-between", alignItems: "center"
       }}>
-        <div style={{ background: "#38bdf822", padding: 8, borderRadius: "50%", border: "1px solid #38bdf8" }}>
-          <Bot size={22} color="#38bdf8" />
-        </div>
-        <div style={{ flex: 1 }}>
-          <div style={{ color: "#fff", fontWeight: 700, fontSize: 16, display: "flex", alignItems: "center", gap: 6 }}>
-            Quantrex AI <Sparkles size={14} color="#f5a623" />
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div style={{ position: "relative" }}>
+            {/* The Avatar */}
+            <RobotAvatar isSpeaking={isSpeaking} className="w-10 h-10" />
+            <div style={{ position: "absolute", bottom: -2, right: -2, width: 12, height: 12, background: "#10b981", borderRadius: "50%", border: "2px solid #0f172a" }}></div>
           </div>
-          <div style={{ color: "#94a3b8", fontSize: 12, display: "flex", alignItems: "center", gap: 4, marginTop: 2 }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#34d399" }} />
-            Connected to Test Engine
+          <div>
+            <h3 style={{ margin: 0, color: "#f8fafc", fontSize: 16, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>
+              Quantrex AI <Sparkles size={14} color="#38bdf8" />
+            </h3>
+            <p style={{ margin: 0, color: "#94a3b8", fontSize: 12 }}>Smart Assistant</p>
           </div>
         </div>
-        <button onClick={() => {
-          setMessages([{ id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS.map(e => e.label) }]);
-          setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, qCount: null, duration: null });
-        }} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6, display: "flex", alignItems: "center" }} title="Restart Generator">
-          <RotateCcw size={18} />
-        </button>
-        <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
-          <X size={22} />
-        </button>
+        <div style={{ display: "flex", gap: 10 }}>
+          <button 
+            onClick={() => setIsVoiceEnabled(!isVoiceEnabled)}
+            style={{ background: isVoiceEnabled ? "#38bdf822" : "transparent", border: "none", color: isVoiceEnabled ? "#38bdf8" : "#94a3b8", cursor: "pointer", padding: 6, borderRadius: "50%" }}
+            title={isVoiceEnabled ? "Mute Voice" : "Enable Voice"}
+          >
+            {isVoiceEnabled ? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg> : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>}
+          </button>
+          <button onClick={() => setChatContext({ step: 'exam', examKey: null, subjectKey: null, chapterSlug: null, chapterTitle: null, customTestConfig: { duration: 60, count: 15 } })} style={{ background: "transparent", border: "none", color: "#94a3b8", cursor: "pointer" }}>
+            <RotateCcw size={18} />
+          </button>
+          <button onClick={() => setOpen(false)} style={{ background: "transparent", border: "none", color: "#94a3b8", cursor: "pointer" }}>
+            <X size={20} />
+          </button>
+        </div>
       </div>
 
-      {/* body */}
-      <div ref={scrollRef} style={{ flex: 1, overflowY: "auto", padding: "16px", display: "flex", flexDirection: "column", gap: 16 }}>
+      {/* chat area */}
+      <div ref={scrollRef} style={{ flex: 1, overflowY: "auto", padding: "20px", display: "flex", flexDirection: "column", gap: 16 }} className="custom-scrollbar">
         {messages.map((m) => (
-          <div key={m.id} style={{ display: "flex", gap: 12, alignItems: "flex-start", flexDirection: m.from === "user" ? "row-reverse" : "row" }}>
+          <div key={m.id} style={{ display: "flex", gap: 12, flexDirection: m.from === "user" ? "row-reverse" : "row" }}>
             {m.from === "bot" ? (
-              <div style={{ background: "#38bdf822", padding: 6, borderRadius: "50%", flexShrink: 0 }}>
-                <Bot size={20} color="#38bdf8" />
+              <div style={{ flexShrink: 0 }}>
+                {/* Small robot avatar for bot messages */}
+                <RobotAvatar isSpeaking={false} className="w-8 h-8" />
               </div>
             ) : (
-              <div style={{ background: "#3b82f6", padding: 6, borderRadius: "50%", flexShrink: 0 }}>
-                <User size={20} color="#fff" />
+              <div style={{ background: "#3b82f6", padding: 6, borderRadius: "50%", flexShrink: 0, width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <User size={18} color="#fff" />
               </div>
             )}
             <div style={{ display: "flex", flexDirection: "column", gap: 8, maxWidth: "80%" }}>
@@ -321,9 +423,11 @@ export default function JoviChatWidget() {
                 </div>
               )}
 
-              {/* Custom Component Renders (Chapter List / Launch Button) */}
+              {/* Custom Component Renders */}
               {m.customData && m.id === messages[messages.length-1].id && (
                 <div style={{ marginTop: 8 }}>
+                  
+                  {/* Chapter List */}
                   {m.customData.type === 'chapter_select' && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                       {m.customData.chapters.slice(currentChapterPage * 5, (currentChapterPage + 1) * 5).map((ch, idx) => (
@@ -362,7 +466,8 @@ export default function JoviChatWidget() {
                     </div>
                   )}
 
-                  {m.customData.type === 'launch_test' && (
+                  {/* Launch External Link / Test */}
+                  {(m.customData.type === 'launch_test' || m.customData.type === 'launch_url') && (
                     <button
                       onClick={() => window.location.href = m.customData.url}
                       style={{
@@ -372,9 +477,37 @@ export default function JoviChatWidget() {
                         boxShadow: "0 4px 15px rgba(56,189,248,0.4)"
                       }}
                     >
-                      <ExternalLink size={18} /> Open Test Interface
+                      <ExternalLink size={18} /> {m.customData.label || "Open Interface"}
                     </button>
                   )}
+
+                  {/* Inline Custom Test Editor */}
+                  {m.customData.type === 'custom_test_ui' && renderCustomTestUI(m)}
+
+                  {/* Search Results Display */}
+                  {m.customData.type === 'search_results' && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 10, background: "#0f172a", padding: 12, borderRadius: 12, border: "1px solid #334155" }}>
+                      {m.customData.results.map((q, idx) => (
+                        <div key={idx} style={{ background: "#1e293b", padding: 10, borderRadius: 8, fontSize: 12, color: "#e2e8f0", borderLeft: "3px solid #38bdf8" }}>
+                          {/* We try to render a snippet of the question text */}
+                          <MessageContent text={(q.questionText || q.question || q.text || JSON.stringify(q)).substring(0, 150) + "..."} />
+                        </div>
+                      ))}
+                      <button
+                        onClick={() => {
+                          const params = { exam: chatContext.examKey, chapters: [chatContext.chapterSlug], count: 10, duration: 30, types: { MCQ: 10 }, seed: Math.random() };
+                          window.location.href = `/?custom_test=${encodeURIComponent(JSON.stringify(params))}`;
+                        }}
+                        style={{
+                           background: "transparent", border: "1px solid #38bdf8", color: "#38bdf8",
+                           padding: "8px", borderRadius: 6, fontSize: 13, cursor: "pointer", textAlign: "center"
+                        }}
+                      >
+                        Create Test with these Topics
+                      </button>
+                    </div>
+                  )}
+                  
                 </div>
               )}
             </div>
@@ -383,8 +516,8 @@ export default function JoviChatWidget() {
 
         {isLoading && (
           <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-             <div style={{ background: "#38bdf822", padding: 6, borderRadius: "50%" }}>
-                <Bot size={20} color="#38bdf8" />
+             <div style={{ flexShrink: 0 }}>
+                <RobotAvatar isSpeaking={true} className="w-8 h-8" />
               </div>
             <div style={{ background: "#1e293b", borderRadius: 16, padding: "12px 16px", color: "#94a3b8", display: "flex", alignItems: "center", gap: 8 }}>
               <Loader2 size={16} className="animate-spin" /> Processing...
@@ -400,7 +533,7 @@ export default function JoviChatWidget() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
-            placeholder="Type your selection..."
+            placeholder="Type your response..."
             style={{
               flex: 1, background: "transparent", border: "none",
               color: "#fff", fontSize: 14, outline: "none", width: "100%"
@@ -419,7 +552,7 @@ export default function JoviChatWidget() {
           </button>
         </div>
         <div style={{ textAlign: "center", color: "#64748b", fontSize: 10, marginTop: 8, display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
-          <Database size={10} /> Integrated with Quantrex Test Engine
+          <Database size={10} /> Local Semantic Search Engine Active
         </div>
       </div>
     </div>

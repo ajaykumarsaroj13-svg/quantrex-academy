@@ -32,6 +32,7 @@ import chapterQuestionCounts from '../utils/chapterQuestionCounts.json';
 export default function StudentDashboard({ user, courses, setActivePage, setExamTest, syllabus, initialClass = 'jee-mains',
   initialTab = 'courses',
   initialChapterTab = 'videos',
+  initialChapterId = null,
   isLight,
   onToggleTheme,
   testsData
@@ -472,6 +473,29 @@ export default function StudentDashboard({ user, courses, setActivePage, setExam
       setChapterTab(initialChapterTab);
     }
   }, [initialChapterTab]);
+
+  useEffect(() => {
+    if (initialChapterId) {
+      // Find the subject that contains this chapter in the default syllabus
+      let foundSubject = null;
+      let foundClass = initialClass || 'jee-mains';
+      
+      const examData = syllabus?.[foundClass] || window.DEFAULT_SYLLABUS?.[foundClass];
+      if (examData && examData.subjects) {
+         for (const [subKey, subObj] of Object.entries(examData.subjects)) {
+            if (subObj.chapters?.find(c => String(c.id) === String(initialChapterId) || (c.url && c.url.includes(initialChapterId)))) {
+               foundSubject = subKey;
+               break;
+            }
+         }
+      }
+      
+      if (foundSubject) {
+         setSelectedSyllabusSubject(foundSubject);
+      }
+      setSelectedSyllabusChapterId(initialChapterId);
+    }
+  }, [initialChapterId, syllabus, initialClass]);
 
   useEffect(() => {
     const list = courses.filter(c => user?.purchasedCourses?.includes(c.id));
