@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Bot, X, Send, Sparkles, Settings, Trophy, RotateCcw, User, Loader2, Database } from "lucide-react";
+import { Bot, X, Send, Sparkles, Settings, Trophy, RotateCcw, User, Loader2, Database, ChevronRight } from "lucide-react";
 import { useAIAssistant } from '../../contexts/AIAssistantContext';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
@@ -26,27 +26,16 @@ const MOCK_QUESTION_BANK = {
     { q: "What is the escape velocity from Earth?", options: ["$11.2 \\text{ km/s}$", "$9.8 \\text{ m/s}$", "$3 \\times 10^8 \\text{ m/s}$", "$11.2 \\text{ m/s}$"], correct: 0, explanation: "Escape velocity $v_e = \\sqrt{2gR}$, which is approx 11.2 km/s for Earth." },
     { q: "Which of these is a scalar quantity?", options: ["Velocity", "Acceleration", "Work", "Force"], correct: 2, explanation: "Work has magnitude but no direction, so it is a scalar." },
     { q: "What is the dimensional formula of Energy?", options: ["$[MLT^{-1}]$", "$[ML^2T^{-2}]$", "$[ML^{-1}T^{-2}]$", "$[M^0L^2T^{-2}]$"], correct: 1, explanation: "Energy has the same dimensions as Work, which is Force $\\times$ Distance = $[MLT^{-2}][L] = [ML^2T^{-2}]$." }
-  ],
-  "general": [
-    { q: "Sample Question 1 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 0, explanation: "Explanation for option A." },
-    { q: "Sample Question 2 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 1, explanation: "Explanation for option B." },
-    { q: "Sample Question 3 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 2, explanation: "Explanation for option C." },
-    { q: "Sample Question 4 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 3, explanation: "Explanation for option D." },
-    { q: "Sample Question 5 for the requested topic.", options: ["Option A", "Option B", "Option C", "Option D"], correct: 0, explanation: "Explanation for option A." }
   ]
 };
 
-const GREETING = "Hello! I am Quantrex AI. I am currently running in **Offline Database Mode**. I can generate tests instantly from our internal question bank and assist you with website navigation. Try saying *'Create a test for Calculus'*!";
+// Initial Guided Options
+const EXAM_OPTIONS = ["JEE Main", "JEE Advanced", "NDA", "BITSAT"];
+const SUBJECT_OPTIONS = ["Mathematics", "Physics", "Chemistry"];
+const MATH_CHAPTERS = ["Calculus", "Sets & Relations", "Algebra", "Coordinate Geometry", "Trigonometry"];
+const ACTION_OPTIONS = ["Generate Test", "View Formulas", "Important Questions", "PYQs"];
 
-function getMockChatResponse(text) {
-  const lower = text.toLowerCase();
-  if (lower.includes("hello") || lower.includes("hi")) return "Hello! How can I help you with your studies today?";
-  if (lower.includes("syllabus") || lower.includes("chapters") || lower.includes("topic")) return "We cover all major chapters for JEE Main & Advanced including Calculus, Algebra, Mechanics, and Electromagnetism. Check the 'Library' section on the left sidebar for details.";
-  if (lower.includes("price") || lower.includes("fee") || lower.includes("pay")) return "Great news! All our premium test series and AI features are currently available for **Free** during the beta period!";
-  if (lower.includes("admin")) return "As an admin, you can use the Admin Dashboard to manage questions, view student progress, and update the curriculum.";
-  if (lower.includes("who are you") || lower.includes("your name")) return "I am Quantrex AI, the intelligent assistant for Quantrex Academy, designed to help you crack JEE and NDA.";
-  return `I am currently operating in **Internal Database Mode**. While I cannot provide live AI chat answers without an API key, I am fully connected to the Quantrex Academy question bank! Try asking me to **generate a test** for topics like *Calculus*, *Sets*, or *Physics*.`;
-}
+const GREETING = "Welcome to Quantrex AI! Select your target exam to begin your preparation:";
 
 // Simple Markdown + Math Renderer
 function MessageContent({ text }) {
@@ -76,11 +65,12 @@ export default function JoviChatWidget() {
   const setOpen = (val) => val ? openAssistant() : closeAssistant();
 
   const [messages, setMessages] = useState([
-    { id: 1, from: "bot", text: GREETING },
+    { id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [activeQuiz, setActiveQuiz] = useState(null); 
+  const [chatContext, setChatContext] = useState({ exam: null, subject: null, chapter: null });
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -103,35 +93,58 @@ export default function JoviChatWidget() {
     return () => clearInterval(t);
   }, [activeQuiz?.idx, !!activeQuiz]);
 
-  function addMsg(from, content) {
-    setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content }]);
+  function addMsg(from, content, options = null) {
+    setMessages((m) => [...m, { id: Date.now() + Math.random(), from, text: content, options }]);
   }
 
-  async function handleSend() {
-    const text = input.trim();
+  async function handleSend(textOverride = null) {
+    const text = textOverride ?? input.trim();
     if (!text) return;
-    setInput("");
+    
+    if (!textOverride) setInput(""); // Only clear input if it was typed
     addMsg("user", text);
     setIsLoading(true);
 
     const lowerText = text.toLowerCase();
     
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 800));
+    // Simulate network delay for natural feel
+    await new Promise(resolve => setTimeout(resolve, 600));
+    setIsLoading(false);
 
-    // Intent detection for test creation
-    if (lowerText.includes("test") || lowerText.includes("quiz") || lowerText.includes("questions")) {
+    // --- Guided Wizard Flow ---
+    if (EXAM_OPTIONS.some(o => o.toLowerCase() === lowerText)) {
+      setChatContext(prev => ({ ...prev, exam: text }));
+      addMsg("bot", `Great choice! Which subject do you want to study for **${text}**?`, SUBJECT_OPTIONS);
+      return;
+    }
+    
+    if (SUBJECT_OPTIONS.some(o => o.toLowerCase() === lowerText)) {
+      setChatContext(prev => ({ ...prev, subject: text }));
+      // Currently mocking Mathematics chapters, you can expand for physics/chem
+      const chapters = text.toLowerCase() === "physics" ? ["Mechanics", "Thermodynamics", "Optics"] : MATH_CHAPTERS;
+      addMsg("bot", `Select a chapter from **${text}**:`, chapters);
+      return;
+    }
+
+    if (MATH_CHAPTERS.some(o => o.toLowerCase() === lowerText) || lowerText.includes("mechanics") || lowerText.includes("optics")) {
+      setChatContext(prev => ({ ...prev, chapter: text }));
+      addMsg("bot", `What would you like to do in **${text}**?`, ACTION_OPTIONS);
+      return;
+    }
+
+    if (lowerText === "generate test" || lowerText.includes("create a test") || lowerText.includes("test")) {
+      const topic = chatContext.chapter || "general";
       let matchedTopic = "general";
-      if (lowerText.includes("calculus")) matchedTopic = "calculus";
-      else if (lowerText.includes("sets") || lowerText.includes("relation")) matchedTopic = "sets";
-      else if (lowerText.includes("physics")) matchedTopic = "physics";
-
-      const questions = MOCK_QUESTION_BANK[matchedTopic];
       
-      setIsLoading(false);
-      addMsg("bot", `I have generated a high-quality test on **${matchedTopic.toUpperCase()}** from our internal database. Good luck!`);
+      if (topic.toLowerCase().includes("calculus")) matchedTopic = "calculus";
+      else if (topic.toLowerCase().includes("sets")) matchedTopic = "sets";
+      else if (chatContext.subject?.toLowerCase() === "physics" || topic.toLowerCase().includes("mechanics")) matchedTopic = "physics";
+
+      const questions = MOCK_QUESTION_BANK[matchedTopic] || MOCK_QUESTION_BANK["general"];
+      
+      addMsg("bot", `Generating a personalized mock test for **${topic}**... Good luck!`);
       setActiveQuiz({
-        topic: matchedTopic.toUpperCase(), 
+        topic: topic.toUpperCase(), 
         timeLimit: 15,
         questions, 
         idx: 0, 
@@ -142,16 +155,34 @@ export default function JoviChatWidget() {
       return;
     }
 
-    // Standard Chat Fallback
-    const response = getMockChatResponse(text);
-    setIsLoading(false);
-    addMsg("bot", response);
+    if (lowerText === "view formulas") {
+      addMsg("bot", `Here are some key formulas for **${chatContext.chapter || "your topic"}**:\n\n1. $\\sin^2(x) + \\cos^2(x) = 1$\n2. $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$\n3. $e^{i\\pi} + 1 = 0$\n\n*Check the Library section for the complete PDF formula sheet.*`);
+      return;
+    }
+
+    if (lowerText === "important questions" || lowerText === "pyqs") {
+      addMsg("bot", `I found 45 previous year questions (PYQs) for **${chatContext.chapter || "your topic"}** in our database. Would you like to practice them in test format?`, ["Generate Test", "Show as PDF"]);
+      return;
+    }
+    
+    if (lowerText === "show as pdf") {
+      addMsg("bot", "Opening the PDF viewer module is currently restricted in this mode. Please use 'Generate Test' instead.");
+      return;
+    }
+
+    // --- Free Text Fallback ---
+    if (lowerText.includes("hello") || lowerText.includes("hi")) {
+      addMsg("bot", "Hello! Let me help you navigate. What exam are you preparing for?", EXAM_OPTIONS);
+      return;
+    }
+    
+    addMsg("bot", `I am currently operating in **Internal Database Mode**. For best results, please select from the guided options below or type "Generate a test for Calculus".`, ["JEE Main", "JEE Advanced", "Test Series"]);
   }
 
   function finishQuiz(q) {
     const score = q.answers.reduce((s, a, i) => s + (a === q.questions[i].correct ? 1 : 0), 0);
     setTimeout(() => {
-      addMsg("bot", `Test completed! You scored **${score}/${q.questions.length}**. Keep practicing to master this topic!`);
+      addMsg("bot", `Test completed! You scored **${score}/${q.questions.length}**. Would you like to try another topic?`, EXAM_OPTIONS);
     }, 500);
     return { ...q, finished: true, score };
   }
@@ -225,6 +256,14 @@ export default function JoviChatWidget() {
             Internal Database Mode
           </div>
         </div>
+        <button onClick={() => {
+          // Reset chat helper
+          setMessages([{ id: 1, from: "bot", text: GREETING, options: EXAM_OPTIONS }]);
+          setChatContext({ exam: null, subject: null, chapter: null });
+          setActiveQuiz(null);
+        }} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6, display: "flex", alignItems: "center" }} title="Reset Chat">
+          <RotateCcw size={18} />
+        </button>
         <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", cursor: "pointer", color: "#94a3b8", padding: 6 }}>
           <X size={22} />
         </button>
@@ -243,17 +282,41 @@ export default function JoviChatWidget() {
                 <User size={20} color="#fff" />
               </div>
             )}
-            <div style={{
-              background: m.from === "user" ? "#3b82f6" : "#1e293b",
-              color: "#f8fafc",
-              borderRadius: 16,
-              borderTopRightRadius: m.from === "user" ? 4 : 16,
-              borderTopLeftRadius: m.from === "bot" ? 4 : 16,
-              padding: "12px 16px", fontSize: 14, maxWidth: "75%",
-              boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-              border: m.from === "bot" ? "1px solid rgba(255,255,255,0.05)" : "none"
-            }}>
-              <MessageContent text={m.text} />
+            <div style={{ display: "flex", flexDirection: "column", gap: 8, maxWidth: "80%" }}>
+              <div style={{
+                background: m.from === "user" ? "#3b82f6" : "#1e293b",
+                color: "#f8fafc",
+                borderRadius: 16,
+                borderTopRightRadius: m.from === "user" ? 4 : 16,
+                borderTopLeftRadius: m.from === "bot" ? 4 : 16,
+                padding: "12px 16px", fontSize: 14,
+                boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+                border: m.from === "bot" ? "1px solid rgba(255,255,255,0.05)" : "none"
+              }}>
+                <MessageContent text={m.text} />
+              </div>
+              
+              {/* Quick Reply Options */}
+              {m.options && m.options.length > 0 && (
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 4 }}>
+                  {m.options.map((opt, idx) => (
+                    <button 
+                      key={idx} 
+                      onClick={() => handleSend(opt)}
+                      disabled={isLoading || m.id !== messages[messages.length-1].id} // Disable older buttons
+                      style={{
+                        background: "rgba(56,189,248,0.1)", border: "1px solid rgba(56,189,248,0.3)", 
+                        color: "#38bdf8", borderRadius: 20, padding: "8px 14px", fontSize: 13, 
+                        cursor: (isLoading || m.id !== messages[messages.length-1].id) ? "default" : "pointer",
+                        opacity: (isLoading || m.id !== messages[messages.length-1].id) ? 0.5 : 1,
+                        display: "flex", alignItems: "center", gap: 4, transition: "background 0.2s"
+                      }}
+                    >
+                      {opt} <ChevronRight size={14} />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -264,7 +327,7 @@ export default function JoviChatWidget() {
                 <Bot size={20} color="#38bdf8" />
               </div>
             <div style={{ background: "#1e293b", borderRadius: 16, padding: "12px 16px", color: "#94a3b8", display: "flex", alignItems: "center", gap: 8 }}>
-              <Loader2 size={16} className="animate-spin" /> Fetching from Internal DB...
+              <Loader2 size={16} className="animate-spin" /> Thinking...
             </div>
           </div>
         )}
@@ -285,14 +348,14 @@ export default function JoviChatWidget() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
-            placeholder="E.g. Create a test for Calculus..."
+            placeholder="Type your answer or selection..."
             style={{
               flex: 1, background: "transparent", border: "none",
               color: "#fff", fontSize: 14, outline: "none", width: "100%"
             }}
           />
           <button 
-            onClick={handleSend} 
+            onClick={() => handleSend()} 
             disabled={!input.trim() || isLoading}
             style={{
               background: input.trim() && !isLoading ? "#38bdf8" : "#334155", 
